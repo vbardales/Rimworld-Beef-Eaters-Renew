@@ -5,7 +5,7 @@
 
     Exit code is the number of failures, so it is usable as a gate.
 
-    WHY THESE CHECKS AND NOT OTHERS. This mod is two defs, one guarded patch and nineteen
+    WHY THESE CHECKS AND NOT OTHERS. This mod is two animals, one guarded patch and twenty
     textures. It has no assembly, so nothing here compiles and nothing can be caught by a build.
     What it has instead is four ways of breaking that the game does not refuse to load:
 

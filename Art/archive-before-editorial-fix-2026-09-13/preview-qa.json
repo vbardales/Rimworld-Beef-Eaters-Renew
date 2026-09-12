@@ -30,7 +30,7 @@
         "familyName": "Segoe UI",
         "postScriptName": "SegoeUI",
         "isCustomFont": false,
-        "glyphCount": 64
+        "glyphCount": 65
       }
     ],
     ".version": [
@@ -81,7 +81,7 @@
     "p": 7.190565898885699,
     "badge": 8.878858959688467
   },
-  "bytes": 448366,
+  "bytes": 448124,
   "size": {
     "width": 896,
     "height": 504

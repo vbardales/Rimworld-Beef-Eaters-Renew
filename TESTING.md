@@ -1,6 +1,6 @@
 # Test scenarios
 
-Two defs, nineteen textures, one guarded patch, no assembly. There is very little here to break,
+Two animals, twenty textures, one guarded patch, no assembly. There is very little here to break,
 and the one thing that *was* broken broke **silently**. That is why this mod needs the game rather
 than a file checker.
 
@@ -24,7 +24,7 @@ question.
 nelim.beefeatersrenew    this mod    after Core and all official expansions
 ```
 
-`<loadAfter>` names Core and the six expansions, which is all this mod needs: it inherits
+`<loadAfter>` names Core and five optional expansions. No expansion is required: the mod inherits
 `AnimalThingBase` and `AnimalKindBase` from Core, uses two Core bodies, and touches nothing else.
 
 **The original must stay off.** TheGoofyOne's Beef Eaters
@@ -320,8 +320,10 @@ installed on this machine, so this scenario can actually be run.
   Belgian blue beside a much smaller horned shaggy beefalo. Confirm the picture displays correctly.
 - Switch the game to French and restart: check both animal names and descriptions, the bull,
   calf labels and plurals, and the named attacks. With Animal Gear enabled, check the armour
-  name and description too. With it disabled, check for missing-def translation errors.
-  Switch back to English and confirm the original labels return. About metadata stays English.
+  name and description too, plus its generated smithy recipe label and work text. With it
+  disabled, check for missing-def translation errors. Switch back to English and repeat
+  these checks, confirming the original labels return. In both languages, check for raw keys,
+  unexpected fallback text, broken formatting and clipping. About metadata stays English.
 
 French translation keys can also be checked against the installed game types with
 `pwsh -NoProfile -File ../scripts/Check-DefInjected.ps1 -TransMod ./Mod`.

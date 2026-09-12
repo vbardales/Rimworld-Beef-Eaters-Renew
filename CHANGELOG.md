@@ -6,8 +6,8 @@ in game.
 
 ## [1.0.0] — unreleased
 
-On release: add `Mod/About/ModIcon.png` and `Mod/About/Preview.png`, create the `v1.0.0` tag and
-the matching GitHub release, then publish to the Workshop.
+The mod icon and preview are included. After final in-game validation, create the `v1.0.0`
+tag and the matching GitHub release, then publish to the Workshop.
 
 First release of the 1.6 update of **Beef Eaters**, by TheGoofyOne.
 
@@ -32,6 +32,10 @@ First release of the 1.6 update of **Beef Eaters**, by TheGoofyOne.
   collision with the original.
 
 ### Documentation
+
+- Replaced the inaccurate quarter-size claim in the description and preview with a
+  qualitative smaller muffalo crossbreed description. Added the final Steam-formatted
+  GitHub source link and refreshed the release checklist, texture count and load-order notes.
 
 - **The pygmy beefalo was described as the opposite of what it is.** The description called it a pen
   animal rather than a caravan animal: it has no `roamMtbDays`, so it needs no pen, and it carries
