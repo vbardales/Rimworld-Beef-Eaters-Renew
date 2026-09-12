@@ -25,6 +25,9 @@ Two livestock animals.
 
 No DLC required. No Harmony, no framework, no dependency of any kind.
 
+Languages: English and French. French covers animal names and descriptions, calves, attack
+labels, and the optional Animal Gear armour.
+
 Content mod: removing it mid-save will lose any Belgian blue cow or pygmy beefalo already in play.
 
 ## What changed in the 1.6 update

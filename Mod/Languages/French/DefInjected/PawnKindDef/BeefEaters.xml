@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <BelgianBlueCow.label>vache blanc-bleu belge</BelgianBlueCow.label>
+  <BelgianBlueCow.labelMale>taureau blanc-bleu belge</BelgianBlueCow.labelMale>
+  <BelgianBlueCow.lifeStages.Belgian_Blue_Calf.label>veau blanc-bleu belge</BelgianBlueCow.lifeStages.Belgian_Blue_Calf.label>
+  <BelgianBlueCow.lifeStages.Belgian_Blue_Calf.labelPlural>veaux blanc-bleu belges</BelgianBlueCow.lifeStages.Belgian_Blue_Calf.labelPlural>
+  <PygmyBeefalo.label>beefalo pygmée</PygmyBeefalo.label>
+  <PygmyBeefalo.lifeStages.pygmy_beefalo_calf.label>veau beefalo pygmée</PygmyBeefalo.lifeStages.pygmy_beefalo_calf.label>
+  <PygmyBeefalo.lifeStages.pygmy_beefalo_calf.labelPlural>veaux beefalos pygmées</PygmyBeefalo.lifeStages.pygmy_beefalo_calf.labelPlural>
+</LanguageData>

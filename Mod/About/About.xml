@@ -35,7 +35,17 @@ No balance value was changed.
 
 Content mod: removing it mid-save will lose any Belgian blue cow or pygmy beefalo already in play.
 
-Source, changelog and the full account of the port: https://github.com/vbardales/Rimworld-Beef-Eaters-Renew
+LANGUAGES
+
+English and French. French translations cover the animals, calves, attack labels and optional Animal Gear armour.
+
+LINKS
+
+GitHub source: https://github.com/vbardales/Rimworld-Beef-Eaters-Renew
+Report an issue: https://github.com/vbardales/Rimworld-Beef-Eaters-Renew/issues
+Changelog: https://github.com/vbardales/Rimworld-Beef-Eaters-Renew/blob/main/CHANGELOG.md
+Credits and licence review: https://github.com/vbardales/Rimworld-Beef-Eaters-Renew/blob/main/ATTRIBUTION.md
+Original Workshop mod: https://steamcommunity.com/sharedfiles/filedetails/?id=1988048034
 
 The original states no licence anywhere - no file, nothing in its About, no repository, nothing on its Workshop page. This port therefore rests on the Workshop's own custom for abandoned mods: named credit to the author, and a takedown on request.
 

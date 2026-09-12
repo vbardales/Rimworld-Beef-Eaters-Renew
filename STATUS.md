@@ -16,10 +16,9 @@ remaining:
   - unverified: the Animal Gear patch, inert without that mod and never exercised (scenario M)
   - unverified: AnimalFarm added to the pygmy beefalo, so it can be traded at all; no trader has been forced yet (scenario I)
   - unverified: incompatibleWith TheGoofyOne.BeefEaters, never seen firing in the mod list (scenario N)
-  - defect: the showcase shows two shaggy muffalo-like beasts of one size; the Belgian blue, pale and twice the other, is the mod's signature and is not in the picture
-  - feature: no translations, so both animals keep their English labels in every language
+  - unverified: French translations added for 21 fields; in-game French display and optional armour still to verify
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-09-12, the mod's own session
+updated:      2026-09-13, preview illustration replaced
 ---
 
 # Beef Eaters Renew — status
@@ -36,23 +35,14 @@ repaired here, along with the four the sweep could not know:
 
 - **`stage`** — `preTest`. The port itself is whole and has been since the first commit: wildness
   moved from a `RaceProperties` field to a stat under `statBases`, on both animals, which is the one
-  line 1.6 required. Both pictures were made on 2026-09-12. Nothing is left but the game, and then
+  line 1.6 required. The icon was made on 2026-09-12; the preview illustration was replaced on 2026-09-13. Nothing is left but the game, and then
   the Workshop, which is what `preTest` means here.
 - **`tested_on`** — empty, and that is accurate rather than an omission. Neither animal has ever
   been seen in a running game. No calf spawned, no information card read, no pen filled.
 - **`licence`** — `silent`. The original states nothing in any of the four places `ATTRIBUTION.md`
   lists, and it stopped at 1.4 in March 2023. Published on the Workshop's custom for abandoned
   mods: named credit, takedown on request.
-- **`remaining`** — the sweep's catch-all line is replaced by six real ones, now that `TESTING.md`
-  exists and says precisely what has not been checked. Three faults were found while writing it,
-  none of them the port's doing, and all three were fixed the same day: the description of the
-  pygmy beefalo contradicted its own def, its only trade tag was one nothing in the game reads, and
-  nothing declared the original incompatible. Two of the three are now `unverified` rather than
-  `defect`, because the fix is in the files and has not been seen running. What is left as a defect
-  is the showcase: the picture is good and it is not of this mod. It shows two shaggy
-  brown beasts of about one size under a lantern, where the mod's subject is the contrast between
-  a pale double-muscled cow of body size 6.0 and a muffalo shrunk to 1.0. Engraved and shipped as
-  it stands, it sells an animal the mod does not contain.
+- **`remaining`** — manual game scenarios and French display remain unverified. The previous preview defect was fixed on 2026-09-13: the new illustration clearly contrasts a large pale muscular Belgian blue with a small horned shaggy beefalo.
 
 The `remaining` categories: `feature` for something missing from a first release, `defect` for a
 known fault left unfixed, `unverified` for what could not be checked.
@@ -65,6 +55,17 @@ The `licence` vocabulary: `open` an explicit licence, `silent` no licence and a 
 to anyone — not a name, not an idea traceable to one mod, not a value derived from its assets.
 
 ## Verification on 2026-09-12
+
+- **French translation:** added 21 DefInjected fields in
+  `Mod/Languages/French/DefInjected/ThingDef/BeefEaters.xml` and
+  `Mod/Languages/French/DefInjected/PawnKindDef/BeefEaters.xml`: animal descriptions and names,
+  bull/calf labels and plurals, named attacks, and optional armour. The external
+  `Check-DefInjected.ps1 -TransMod ./Mod` checked 21 keys with zero errors, using the installed
+  game types. `Tools/Check-Mod.ps1` also passed, including all six XML files. In-game language
+  switching and armour-present/absent cases remain unplayed; scenario P now covers them.
+- **About links:** the description now has an explicit links section for GitHub source, issues,
+  changelog, attribution/licence review and the original Workshop item. No port Workshop URL
+  was invented: this port has not been published there.
 
 - **Title:** `Beef Eaters Renew (unofficial)` already identifies the continuation and its
   unofficial status. Keep the existing suffix; no additional suffix is needed.
@@ -118,11 +119,9 @@ establish that the author is inactive everywhere, nor supply an explicit redistr
 
 ## How the showcase was built
 
-Overlay recomposed on 2026-09-12 according to `../STYLE_RIMWORLD.md`.
+Illustration replaced and overlay recomposed on 2026-09-13 according to `../STYLE_RIMWORLD.md`.
 
-- **Source:** `Art/Preview.png`, copied byte-for-byte from the existing unlettered
-  `Art/Preview-source.png`. The illustration was retained, not replaced; the original remains
-  available at its previous path. Its known subject mismatch remains recorded above.
+- **Source:** new unlettered illustration generated with built-in ImageGen, saved in `Art/Preview.png` and visually checked before composition. The pale short-coated muscular cow and much smaller horned shaggy beefalo resolve the old subject mismatch. The previous source was archived before generation at `Art/Preview-archive-2026-09-12.png`; `Art/Preview-source.png` also remains untouched. The exact generation prompt is saved in `Art/PROMPT_Preview.md`.
 - **Composition:** `Art/preview.html`, at 896 x 504. Name and summary preserved. The tag is
   separate from the title. Strong title words and summary share the same primary ink. Renew
   remains in the title at 65% (29.9 px), weight 600, in secondary ink. Placement, typography,
@@ -131,7 +130,7 @@ Overlay recomposed on 2026-09-12 according to `../STYLE_RIMWORLD.md`.
 - **Palette:** `Art/preview-palette.json` is the sole colour reference, loaded by the HTML.
   The veil comes from the broad brown plank floor. The secondary ink is a lightened, coloured
   ochre from the dominant wood/straw family, not an average of the pixels. The vivid accent
-  comes from the blue-green water visible in the bucket, lightened and saturated into turquoise.
+  comes from the blue-green water visible in the trough, lightened and saturated into turquoise.
   This cool family clearly separates the rule and badge from the warm ochre secondary ink and
   dominant wooden scene. The darker veil is held across the text area to protect contrast.
 - **Rendering:** `Art/render-preview.cjs` serves the local composition, waits for
@@ -142,13 +141,13 @@ Overlay recomposed on 2026-09-12 according to `../STYLE_RIMWORLD.md`.
 - **QA:** `Art/preview-qa.json` records font evidence, bounds, dimensions, size and contrast.
   `Art/preview-background.png` is the rendered background with lettering hidden. Minimum
   contrasts across the entire text rectangles, including corners and all interior pixels:
-  primary title ink 7.50:1, Renew 6.57:1, summary 4.69:1, tag 4.72:1.
-  Badge digits on the opaque accent: 9.16:1.
+  primary title ink 8.76:1, Renew 6.78:1, summary 7.19:1, tag 5.87:1.
+  Badge digits on the opaque accent: 8.88:1.
   Shadows were not credited in these measurements.
 - **Visual checks:** inspected `Mod/About/Preview.png` at 896 x 504 and
   `Art/preview-268.png` at 268 px wide. No clipped text or overlap; title and version identifiable,
   reduced title suffix readable, rule visible, cool accent distinct from the warm secondary ink.
-  Output: 459,203 bytes, below 900 KB. No publication performed.
+  Output: 448,124 bytes, below 900 KB. No publication performed.
 
 The icon is unchanged: `Mod/About/ModIcon.png`, 128 x 128.
 ## What was fixed on 2026-09-12, and what it cost

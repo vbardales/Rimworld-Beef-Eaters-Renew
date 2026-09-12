@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <BelgianBlueCow.label>vache blanc-bleu belge</BelgianBlueCow.label>
+  <BelgianBlueCow.description>Un énorme ongulé domestique, sélectionné pour produire de grandes quantités de lait et de muscle. Les vaches blanc-bleu belges sont exceptionnellement lentes et dociles : elles ne ripostent jamais, même lorsqu'elles sont blessées à répétition. La plupart sont si adaptées à la vie à la ferme qu'elles ne peuvent pas survivre à l'état sauvage.</BelgianBlueCow.description>
+  <BelgianBlueCow.tools.head.label>tête</BelgianBlueCow.tools.head.label>
+  <BelgianBlueCow.tools.left_hoof.label>sabot avant gauche</BelgianBlueCow.tools.left_hoof.label>
+  <BelgianBlueCow.tools.right_hoof.label>sabot avant droit</BelgianBlueCow.tools.right_hoof.label>
+  <PygmyBeefalo.label>beefalo pygmée</PygmyBeefalo.label>
+  <PygmyBeefalo.description>Ce croisement nonchalant entre un taureau et un muffalo porte des cornes chez les deux sexes. Il a été sélectionné pour sa capacité à produire du lait dans des milieux pauvres en végétation. Des millénaires d'élevage l'ont rendu particulièrement intelligent, bien qu'il reste environ deux fois plus petit qu'une vache ordinaire.</PygmyBeefalo.description>
+  <PygmyBeefalo.tools.horn-0.label>corne</PygmyBeefalo.tools.horn-0.label>
+  <PygmyBeefalo.tools.horn-1.label>corne</PygmyBeefalo.tools.horn-1.label>
+  <PygmyBeefalo.tools.head.label>tête</PygmyBeefalo.tools.head.label>
+  <PygmyBeefalo.tools.left_hoof.label>sabot avant gauche</PygmyBeefalo.tools.left_hoof.label>
+  <PygmyBeefalo.tools.right_hoof.label>sabot avant droit</PygmyBeefalo.tools.right_hoof.label>
+  <Apparel_PygmyBeefaloArmour.label>armure pour beefalo pygmée</Apparel_PygmyBeefaloArmour.label>
+  <Apparel_PygmyBeefaloArmour.description>Des plaques d'armure qui recouvrent le corps. Protègent des tirs et des attaques au corps à corps.</Apparel_PygmyBeefaloArmour.description>
+</LanguageData>

@@ -315,13 +315,16 @@ installed on this machine, so this scenario can actually be run.
 - The name reads `Beef Eaters Renew (unofficial)` and the author line credits TheGoofyOne first.
 - The description includes `https://github.com/vbardales/Rimworld-Beef-Eaters-Renew`.
 - `About/ModIcon.png` is drawn at about 32 px in the mod list. It is 128 × 128 and 21 KB.
-- `About/Preview.png` is 896 × 504 and 509 KB, under Steam's hard megabyte.
-- **Both pictures are new art made for this port** and are named as such in `ATTRIBUTION.md`. The
-  showcase has a known fault, recorded in `STATUS.md`: it shows neither animal as written, and in
-  particular not the pale Belgian blue that the mod is named for.
-- The mod ships **no translation files**, so in French both animals keep their English labels and
-  the description stays in English. That is the upstream state and is not a fault. Confirm only that
-  nothing logs about a missing `Languages` folder, because nothing should.
+- `About/Preview.png` is 896 × 504 and below 900 KB; confirm the title and version remain legible.
+- The preview illustration was replaced on 2026-09-13. It now shows a large pale muscular
+  Belgian blue beside a much smaller horned shaggy beefalo. Confirm the picture displays correctly.
+- Switch the game to French and restart: check both animal names and descriptions, the bull,
+  calf labels and plurals, and the named attacks. With Animal Gear enabled, check the armour
+  name and description too. With it disabled, check for missing-def translation errors.
+  Switch back to English and confirm the original labels return. About metadata stays English.
+
+French translation keys can also be checked against the installed game types with
+`pwsh -NoProfile -File ../scripts/Check-DefInjected.ps1 -TransMod ./Mod`.
 
 ## What cannot be tested offline
 
