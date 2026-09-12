@@ -118,26 +118,39 @@ establish that the author is inactive everywhere, nor supply an explicit redistr
 
 ## How the showcase was built
 
-Both pictures were generated on 2026-09-12 and processed the same day, per `STYLE_RIMWORLD.md`.
-The full-resolution originals are in `Art/`, never in `About/`.
+Overlay recomposed on 2026-09-12 according to `../STYLE_RIMWORLD.md`.
 
-`Art/preview.html` is the engraving page: headless Chrome rasterises it at 896 × 504, so the
-glyphs are composed at final size and never resampled. The veil follows the rule of 2026-09-12 —
-a colour taken from the picture rather than the old near-black — and here that colour is the plank
-floor, `#4A3A2C`, sampled over the block the text occupies. Its luminance is 0.047, under the
-0.18 line, so the ink is the pale one and the shadows stay.
+- **Source:** `Art/Preview.png`, copied byte-for-byte from the existing unlettered
+  `Art/Preview-source.png`. The illustration was retained, not replaced; the original remains
+  available at its previous path. Its known subject mismatch remains recorded above.
+- **Composition:** `Art/preview.html`, at 896 x 504. Name and summary preserved. The tag is
+  separate from the title. Strong title words and summary share the same primary ink. Renew
+  remains in the title at 65% (29.9 px), weight 600, in secondary ink. Placement, typography,
+  rule and triangular version badge follow the guide. Version is read from the delivered
+  `Mod/About/About.xml`, choosing the highest stable declared version (currently 1.6).
+- **Palette:** `Art/preview-palette.json` is the sole colour reference, loaded by the HTML.
+  The veil comes from the broad brown plank floor. The secondary ink is a lightened, coloured
+  ochre from the dominant wood/straw family, not an average of the pixels. The vivid accent
+  comes from the blue-green water visible in the bucket, lightened and saturated into turquoise.
+  This cool family clearly separates the rule and badge from the warm ochre secondary ink and
+  dominant wooden scene. The darker veil is held across the text area to protect contrast.
+- **Rendering:** `Art/render-preview.cjs` serves the local composition, waits for
+  `document.fonts.ready` and image decoding, then captures at device scale 1. Run with Node.js,
+  Playwright and sharp available through NODE_PATH. Actual Chrome platform fonts were verified:
+  Segoe UI Semibold for the title, Segoe UI regular for tag/summary, Segoe UI Bold for the badge.
+  No fallback font was used.
+- **QA:** `Art/preview-qa.json` records font evidence, bounds, dimensions, size and contrast.
+  `Art/preview-background.png` is the rendered background with lettering hidden. Minimum
+  contrasts across the entire text rectangles, including corners and all interior pixels:
+  primary title ink 7.50:1, Renew 6.57:1, summary 4.69:1, tag 4.72:1.
+  Badge digits on the opaque accent: 9.16:1.
+  Shadows were not credited in these measurements.
+- **Visual checks:** inspected `Mod/About/Preview.png` at 896 x 504 and
+  `Art/preview-268.png` at 268 px wide. No clipped text or overlap; title and version identifiable,
+  reduced title suffix readable, rule visible, cool accent distinct from the warm secondary ink.
+  Output: 459,203 bytes, below 900 KB. No publication performed.
 
-Two departures from the standard, both measured rather than chosen: the wash holds its strength
-further out, and the summary column is 290px rather than 430. The lamp pool climbs into the text
-column lower down, where the standard wash was already dead, and the tail of the summary measured
-2.9:1 against the 4.5:1 the guide requires. Worst point under a glyph is now 5.6:1, verified on
-the rendered PNG with the text hidden.
-
-| | |
-|---|---|
-| `About/Preview.png` | 896 × 504, 509 KB |
-| `About/ModIcon.png` | 128 × 128, 21 KB |
-
+The icon is unchanged: `Mod/About/ModIcon.png`, 128 x 128.
 ## What was fixed on 2026-09-12, and what it cost
 
 Three faults, none of them introduced by the port, all found while writing `TESTING.md`.
