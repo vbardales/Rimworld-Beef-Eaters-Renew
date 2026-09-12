@@ -1,12 +1,12 @@
 ---
-mod:          Beef Eaters Renew
+mod:          Beef Eaters Renew (unofficial)
 packageId:    nelim.beefeatersrenew
 repo:         Rimworld-Beef-Eaters-Renew
 visibility:   public
 detached:     yes
 stage:        preTest
 licence:      silent
-licence_at:   four places, all searched for a refusal rather than a permission; source dead since 1.4, March 2023
+licence_at:   browser-verified 2026-09-12; original files, live description, all 29 comments, 9 changelog entries and author profile; no reuse terms; last mod update 2023-03-11
 dependencies: none
 showcase:     complete
 tested_on:
@@ -63,6 +63,58 @@ conversation.
 The `licence` vocabulary: `open` an explicit licence, `silent` no licence and a dead source,
 `alive` no licence but a living source, `forbidden` a written refusal, `original` owing nothing
 to anyone — not a name, not an idea traceable to one mod, not a value derived from its assets.
+
+## Verification on 2026-09-12
+
+- **Title:** `Beef Eaters Renew (unofficial)` already identifies the continuation and its
+  unofficial status. Keep the existing suffix; no additional suffix is needed.
+- **Manual functional tests:** sixteen scenarios, A-P, exist in `TESTING.md`, with steps and
+  expected outcomes covering loading, wildness, production, pens, caravans, training, spawning,
+  trade, graphics, breeding, Animal Gear, conflicts and saves. They remain unplayed; `stage`
+  stays `preTest` and `tested_on` stays empty. Scenario P now uses the full suffixed title.
+- **Automated tests:** `powershell -NoProfile -ExecutionPolicy Bypass -File Tools/Check-Mod.ps1`
+  passed with exit code 0. It checks XML parsing, the wildness migration, local texture paths,
+  package metadata, trade tags and attribution consistency. Added checks protect the title,
+  GitHub links and the Animal Gear patch guard. Malformed XML now stops the checker before
+  dependent checks. Negative controls on a temporary copy detected all four introduced
+  metadata/guard failures and returned one failure for malformed XML.
+- **XML field validation:** `pwsh -NoProfile -File ../scripts/Check-XmlFields.ps1 -ModPath ./Mod`
+  passed with exit code 0: four files checked, no unknown 1.6 fields. This external checker
+  requires the installed game assemblies. Neither checker proves runtime behaviour or Animal
+  Gear compatibility; scenario M remains outstanding.
+- **GitHub:** the description and `<url>` in `Mod/About/About.xml` both contain
+  `https://github.com/vbardales/Rimworld-Beef-Eaters-Renew`, matching the local Git remote.
+- **Licence:** `silent`, the repository's classification for an upstream source with no stated
+  licence and recorded as inactive. The follow-up below rechecks the evidence and its limits.
+  No MIT, GPL or other explicit licence is present.
+  The port's documented terms preserve credit, promise removal on the original author's
+  request, and allow a continuation if the maintainer does not respond within a reasonable
+  time. These terms do not establish an explicit upstream licence.
+
+## Licence follow-up on 2026-09-12
+
+`silent` is confirmed under this repository's classification after direct browser verification:
+
+- The installed original Workshop item `1988048034` was inspected recursively. It contains
+  no licence or copying file. Its XML and text files contain no licence, permission or
+  redistribution restriction found by the search. Its `About.xml` has `<url>about:blank</url>`.
+- The [original Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=1988048034)
+  was read live in the Codex browser, including all three pages containing its 29 comments.
+  It lists support through 1.4 and a last update of 11 March 2023.
+  Neither its description nor any of its comments states reuse terms. Author comments concern
+  updates and discussion of the animals;
+  a reader's August 2025 proposal to merge the mod is not permission from the author.
+- No upstream GitHub repository or explicit Beef Eaters reuse policy was found by targeted
+  searches. This is a search result, not proof that none exists elsewhere.
+- All nine [changelog entries](https://steamcommunity.com/sharedfiles/filedetails/changelog/1988048034)
+  were read live: only automatic update notices, with no licence or restriction.
+- The public [author profile](https://steamcommunity.com/profiles/76561197964775630)
+  shows no general mod reuse policy or linked source repository.
+- Browser access succeeded after the earlier web and shell requests failed. The earlier
+  cached-page and unread-comments limitations are resolved. The installed copy was not refreshed.
+
+Here `silent` describes this mod's apparent inactivity and lack of stated terms; it does not
+establish that the author is inactive everywhere, nor supply an explicit redistribution licence.
 
 ## How the showcase was built
 

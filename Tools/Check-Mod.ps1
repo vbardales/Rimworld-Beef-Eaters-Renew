@@ -40,6 +40,7 @@ foreach ($f in $xmlFiles) {
     catch { Bad "$($f.Name) : $($_.Exception.Message)" }
 }
 if ($xmlFiles.Count -lt 4) { Bad "only $($xmlFiles.Count) XML files found under Mod\, expected at least 4" }
+if ($fail -gt 0) { exit $fail }
 
 # --- 2. the wildness fault ---------------------------------------------------
 Head '2. wildness is a stat, not a RaceProperties field'
@@ -93,6 +94,12 @@ Head '4. decisions that a re-merge would silently drop'
 [xml]$about = Get-Content (Join-Path $mod 'About\About.xml') -Raw
 $meta = $about.ModMetaData
 
+if ($meta.name -eq 'Beef Eaters Renew (unofficial)') { Ok 'unofficial title suffix' }
+else { Bad 'the title must identify this unofficial continuation' }
+$repoUrl = 'https://github.com/vbardales/Rimworld-Beef-Eaters-Renew'
+if ($meta.url -eq $repoUrl -and $meta.description.Contains($repoUrl)) { Ok 'GitHub URL in metadata and description' }
+else { Bad 'GitHub URL missing or changed in metadata or description' }
+
 if ($meta.packageId -eq 'nelim.beefeatersrenew') { Ok 'packageId' } else { Bad "packageId is $($meta.packageId)" }
 
 $versions = @($meta.supportedVersions.li)
@@ -112,6 +119,18 @@ $a = Join-Path $root 'ATTRIBUTION.md'
 $b = Join-Path $mod  'ATTRIBUTION.md'
 if ((Get-FileHash $a).Hash -eq (Get-FileHash $b).Hash) { Ok 'the two copies of ATTRIBUTION.md are identical' }
 else { Bad 'ATTRIBUTION.md and Mod\ATTRIBUTION.md have drifted apart' }
+
+# --- 5. optional patch must remain guarded ------------------------------------
+Head '5. Animal Gear patch guard'
+[xml]$armor = Get-Content (Join-Path $mod 'Patches\Armor.xml') -Raw
+$operations = @($armor.SelectNodes('/Patch/Operation'))
+$guard = $armor.SelectSingleNode('/Patch/Operation[@Class="PatchOperationFindMod"][mods/li="Animal Gear"]')
+if ($operations.Count -eq 1 -and $guard -and -not $guard.nomatch) {
+    Ok 'the only patch operation is guarded by Animal Gear, with no absent-mod branch'
+} else { Bad 'Animal Gear patch is no longer exclusively guarded' }
+$apparel = $armor.SelectNodes('/Patch/Operation[@Class="PatchOperationFindMod"]/match[@Class="PatchOperationSequence"]/operations/li[@Class="PatchOperationAdd"][xpath="Defs"]/value/ThingDef[defName="Apparel_PygmyBeefaloArmour"]')
+if ($apparel.Count -eq 1) { Ok 'guarded patch adds the expected armour def' }
+else { Bad 'expected guarded armour addition missing or duplicated' }
 
 # --- verdict -----------------------------------------------------------------
 Write-Host ""

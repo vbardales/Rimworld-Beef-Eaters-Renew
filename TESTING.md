@@ -57,12 +57,16 @@ Lines naming other mods are not ours to fix, and are worth leaving in whatever g
 powershell -ExecutionPolicy Bypass -File Tools\Check-Mod.ps1
 ```
 
-Four groups, all of them things that break **without the game refusing to load**: every XML file
+Five groups covering file consistency and publication metadata: every XML file
 parses; no lowercase `<wildness>` has come back and both animals carry the stat at 0.05 and 0.5;
 every `texPath` the defs name has a file behind it; and the three decisions this port made on
 purpose are still in place — the packageId and the 1.6 support, the incompatibility with the
 original, the beefalo's `AnimalFarm` tag, and the two copies of `ATTRIBUTION.md` being identical.
 Exit code is the number of failures.
+
+The checker also preserves the `(unofficial)` title suffix, the GitHub URL in both metadata and
+description, and the Animal Gear guard around the armour addition. This last check validates the
+patch structure only; scenario M still requires the game with and without Animal Gear.
 
 It was run once against a deliberately broken copy — wildness removed, a texture renamed, the trade
 tag deleted, the attribution files desynchronised — and reported exactly those four. A checker
@@ -308,7 +312,8 @@ installed on this machine, so this scenario can actually be run.
 
 ## P — the mod list entry and the Workshop page
 
-- The name reads `Beef Eaters Renew` and the author line credits TheGoofyOne first.
+- The name reads `Beef Eaters Renew (unofficial)` and the author line credits TheGoofyOne first.
+- The description includes `https://github.com/vbardales/Rimworld-Beef-Eaters-Renew`.
 - `About/ModIcon.png` is drawn at about 32 px in the mod list. It is 128 × 128 and 21 KB.
 - `About/Preview.png` is 896 × 504 and 509 KB, under Steam's hard megabyte.
 - **Both pictures are new art made for this port** and are named as such in `ATTRIBUTION.md`. The

@@ -1,4 +1,6 @@
-# Beef Eaters Renew
+# Beef Eaters Renew (unofficial)
+
+UNOFFICIAL. This mod is published without the original author's explicit consent. If the original author contacts me to request its removal, I undertake to take it down promptly.
 
 The Belgian blue cow and the pygmy beefalo, brought forward to RimWorld 1.6.
 
