@@ -141,6 +141,11 @@
     </race>
     <tradeTags>
       <li>StandardAnimal</li>
+      <!-- Added by the 1.6 port. StandardAnimal above is the original's only tag, and no trader
+           def in Core or the expansions reads it - nothing in the game data declares it at all -
+           so the animal could be neither bought nor sold. AnimalFarm is the tag of the vanilla
+           cow, sheep and chicken, read by eight trader files. See ATTRIBUTION.md. -->
+      <li>AnimalFarm</li>
     </tradeTags>
   </ThingDef>
   

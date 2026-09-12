@@ -47,7 +47,19 @@ The same line, twice.
   can catch missing wildness stats on animals". The cow's 0.05 — nearly born tame, and the point of
   the animal — and the beefalo's 0.5 were both doing nothing.
 
-A diff against the original files shows those two lines and nothing else.
+- **`AnimalFarm` added to the pygmy beefalo's trade tags.** Its only tag was `StandardAnimal`, and
+  **no trader def in Core or in any expansion reads that tag — nothing in the game data declares it
+  at all**. The animal could therefore be neither bought nor sold, in either direction, by anybody.
+  `AnimalFarm` is the tag of the vanilla cow, sheep and chicken, read by eight trader files. The
+  Belgian blue already carried it. This is design rather than porting, and it is the only change
+  here that is not a repair.
+- **`incompatibleWith` naming `TheGoofyOne.BeefEaters` added to `About.xml`.** Both mods declare the
+  same two `defName`s, so with both enabled the last one loaded wins in silence and the wildness
+  fault comes back with no visible sign. The original declares no such guard because it had nothing
+  to guard against.
+
+Apart from the trade tag, a diff against the original files shows the two wildness lines and
+nothing else. No balance value was touched.
 
 ## What was left alone, and why
 
