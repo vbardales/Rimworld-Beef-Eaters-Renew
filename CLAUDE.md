@@ -42,18 +42,50 @@ Le contenu est celui de TheGoofyOne. Ce dépôt ne contient que le passage en 1.
 
 ## Tester
 
-Pas de build. Vérifier que le XML est bien formé, puis charger le mod dans le jeu :
+Pas de build. Le contrôle hors jeu tient en une commande, à passer après toute modification des
+defs ou de l'About :
+
+```
+powershell -ExecutionPolicy Bypass -File Tools\Check-Mod.ps1
+```
+
+Il vérifie le XML, la réparation de `wildness`, les `texPath`, et les trois décisions que ce
+portage a prises exprès et qu'une refusion avec l'original perdrait sans bruit. Son code de sortie
+est le nombre d'échecs. Il ne connaît pas les noms de champs de 1.6 : ça, c'est l'outillage du
+monorepo.
+
+Puis charger le mod dans le jeu :
 copier ou jonctionner `Mod/` vers `C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BeefEatersRenew`.
 Le journal utile est `C:\Users\nelim\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\Player.log`.
+
+## `STATUS.md` — à moi de le tenir
+
+`STATUS.md` vit à la racine, jamais dans `Mod/`, pour que Steam ne le reçoive pas. Il est lu par un
+balayage qui passe sur tous les mods, donc **le frontmatter est un format, pas de la prose** : ne
+pas renommer de champ, ne pas en retirer, garder le vocabulaire des autres fiches.
+
+C'est moi qui le tiens à jour, sans qu'on me le redemande. Il se met à jour **quand l'état change**,
+pas à la fin de chaque échange : une étape franchie, un défaut trouvé ou corrigé, une image posée,
+un essai en jeu, la publication. `updated:` prend la date et `2026-09-12, the mod's own session`.
+Le champ `session:` ne se touche pas, il vient du balayage.
+
+Le balayage écrit parfois des champs cassés — `licence: licence_ou:`, une clé `vitrine:` avalée par
+`licence_at:`. Les réparer au passage plutôt que les recopier.
 
 ## Reste à faire avant publication
 
 Le mod est en `1.0.0` **non publié**. Manquent, et rien d'autre :
 
-1. `Mod/About/ModIcon.png` (128x128, rendu à 32 px) et `Mod/About/Preview.png` (896x504, < 900 Ko).
-   L'original pleine résolution va dans `Art/`, jamais dans `About/`.
+1. L'essai en jeu. Rien n'a jamais tourné. Les scénarios sont écrits dans `TESTING.md`, seize en
+   tout ; trois d'entre eux (F, I, N) se terminent par une décision à prendre avant publication.
 2. Le tag `v1.0.0` et la release GitHub.
 3. La publication Workshop, puis `Mod/About/PublishedFileId.txt` renvoyé dans le dépôt.
+
+Les deux images sont faites depuis le 2026-09-12 : `About/Preview.png` en 896x504 et
+`About/ModIcon.png` en 128x128, gravées depuis `Art/` par `Art/preview.html`. **Les sources pleine
+résolution restent dans `Art/`, jamais dans `About/`** — c'est de là qu'on regrave, et une source
+laissée dans `About/` partirait vers Steam. La vitrine a un défaut connu, noté dans `STATUS.md` :
+elle ne montre pas la vache blanc-bleu.
 
 Les deux guides qui commandent ces étapes vivent hors du dépôt, dans le monorepo :
 `..\STYLE_RIMWORLD.md` pour la vitrine et l'icône, `..\PUBLISHING.md` pour l'envoi. Les lire avant,
