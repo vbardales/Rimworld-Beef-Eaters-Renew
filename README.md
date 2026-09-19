@@ -62,6 +62,6 @@ any other of my mods, including publishing a continuation of it. All credit must
 ## Credits
 
 - **TheGoofyOne** — the mod, both animals, and their textures.
-- 1.6 update by nelim. Written with the help of Claude (Anthropic).
+- 1.6 update by Nelim. Written with the help of Claude (Anthropic).
 
 See [ATTRIBUTION.md](ATTRIBUTION.md) for the licence check and the port in detail.
