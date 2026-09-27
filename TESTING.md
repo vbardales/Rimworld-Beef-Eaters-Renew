@@ -21,7 +21,7 @@ question.
 ## Load order
 
 ```
-nelim.beefeatersrenew    this mod    after Core and all official expansions
+nelim.beefeaters    this mod    after Core and all official expansions
 ```
 
 `<loadAfter>` names Core and five optional expansions. No expansion is required: the mod inherits
@@ -335,3 +335,40 @@ on runtime selection: map generation reading the biome list, and trader stock ge
 trade tags. Reading the defs shows that one door is open and the other is not, never who walks
 through either. Everything else here is a reading of the information card, which is exactly where
 the silent fault hid.
+
+## Pickle scope — not yet written
+
+**Open gap, found on 2026-09-27 while applying `AUDIT.md`.** The `preTest -> done` transition
+requires Gherkin scenarios to exist, scoped to whatever only a running game can show. This
+document has never had any: A through P are prose, read and played by a person, never scripted.
+
+A real case exists for at least three of them, because they fit the rule exactly — nothing but a
+running game proves them:
+
+- **B** (wildness on the information card) — a stat-card read, only provable in game.
+- **I** (the pygmy beefalo's trade tag) — forcing a trader and reading its stock.
+- **N** (the collision with the original) — `a warning matching {string} was logged` for `Adding
+  duplicate`, and `mod {string} is not loaded` once `incompatibleWith` is exercised. Both are in
+  Pickle's own step vocabulary (`AUDIT.md`, list near the end of the Pickle section).
+
+Scenarios D, E, G, J, K, L are numbers and behaviour read off vanilla systems (hunger, ageing,
+training, breeding) that this mod does not touch beyond a stat value; whether those need their own
+Gherkin or stay prose is a scope call for whoever writes the suite, not decided here.
+
+**No suite has been written and none is claimed.** Until one exists — or a scenario-by-scenario
+justification says why prose is enough for each — the `done` this mod carries does not actually
+meet the current text of `AUDIT.md`'s `preTest -> done` transition. `STATUS.md` records this as
+`unverified` rather than silently moving the stage back; see the audit note there for the
+reasoning.
+
+## Evidence to keep, once a suite exists
+
+Written ahead of any suite, so whoever writes one does not have to guess. Per `AGENTS.md` and
+`AUDIT.md`: `Tests/Pickle/Evidence/` is a disk-only record, gitignored, never committed — a run's
+captures and `Player.log` belong there, not in Git. What belongs in the repository is a short text
+summary per run, one line, under `docs/runs/`, named the way `SkillIcons` does it
+(`docs/runs/<date>-<short-sha>-summary.md`), and cited from `STATUS.md`. Per mod and per scenario,
+keep only the latest report for the revision currently in the repository, plus any older report
+that is the sole proof of a check the latest run did not repeat; delete the rest as soon as a
+newer report supersedes it. A report about a superseded build proves nothing about the one shipping
+now.

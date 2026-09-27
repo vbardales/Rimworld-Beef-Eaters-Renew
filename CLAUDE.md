@@ -7,7 +7,7 @@ Un seul remote : `origin` → https://github.com/vbardales/Rimworld-Beef-Eaters-
 | | |
 |---|---|
 | Mod | Beef Eaters Renew |
-| packageId | `nelim.beefeatersrenew` |
+| packageId | `nelim.beefeaters` |
 | Version cible | RimWorld 1.6, et elle seule |
 | Auteur d'origine | TheGoofyOne — [Workshop 1988048034](https://steamcommunity.com/sharedfiles/filedetails/?id=1988048034), resté en 1.4 |
 | Licence de la source | aucune, nulle part — voir `ATTRIBUTION.md` |

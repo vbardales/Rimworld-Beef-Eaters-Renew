@@ -100,7 +100,7 @@ $repoUrl = 'https://github.com/vbardales/Rimworld-Beef-Eaters-Renew'
 if ($meta.url -eq $repoUrl -and $meta.description.Contains($repoUrl)) { Ok 'GitHub URL in metadata and description' }
 else { Bad 'GitHub URL missing or changed in metadata or description' }
 
-if ($meta.packageId -eq 'nelim.beefeatersrenew') { Ok 'packageId' } else { Bad "packageId is $($meta.packageId)" }
+if ($meta.packageId -eq 'nelim.beefeaters') { Ok 'packageId' } else { Bad "packageId is $($meta.packageId)" }
 
 $versions = @($meta.supportedVersions.li)
 if ($versions -contains '1.6') { Ok "supportedVersions: $($versions -join ', ')" }

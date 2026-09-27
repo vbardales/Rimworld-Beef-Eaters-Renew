@@ -4,7 +4,7 @@ translation_en: complete
 translation_fr: complete
 settings_audit: not_applicable
 mod:          Beef Eaters Renew (unofficial)
-packageId:    nelim.beefeatersrenew
+packageId:    nelim.beefeaters
 repo:         Rimworld-Beef-Eaters-Renew
 visibility:   public
 detached:     yes
@@ -21,11 +21,41 @@ remaining:
   - unverified: AnimalFarm added to the pygmy beefalo, so it can be traded at all; no trader has been forced yet (scenario I)
   - unverified: incompatibleWith TheGoofyOne.BeefEaters, never seen firing in the mod list (scenario N)
   - unverified: English and French in-game display for all 21 owned text fields, generated recipe text and optional armour with Animal Gear enabled/disabled (scenario P)
+  - defect: no Gherkin/Pickle scenarios exist for TESTING.md, a criterion of preTest -> done in the current AUDIT.md text; see TESTING.md, "Pickle scope - not yet written"
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-09-13, editorial audit findings fixed and affected checks passed; runtime unverified
+updated:      2026-09-27, AUDIT.md re-applied; one gate gap found, no stage change made pending the owner's call
 ---
 
 # Beef Eaters Renew — status
+
+## AUDIT.md re-applied — 2026-09-27
+
+Re-read `AUDIT.md` in full against the current text (it has grown since the 2026-09-13 audits
+below) and re-checked this mod's state on disk, not just the stage this file declared.
+
+**Verdict: `done` unchanged, one real gap surfaced.** `preTest -> done` requires Gherkin scenarios
+scoped to what only a running game can show, with their scope justified. `TESTING.md`'s sixteen
+scenarios (A-P) are prose, and none has ever been translated to Pickle, nor has any note explained
+why prose alone is enough. That gap was not caught by either 2026-09-13 audit, whose `done` row
+only checked the automated/XML side. Recorded in `TESTING.md`, "Pickle scope - not yet written",
+with the three scenarios (B, I, N) that most plainly need a running game to prove, matched against
+Pickle's own step vocabulary. Not retrograding `stage` for this alone: AUDIT.md gives the owner,
+not the audit, the call on override, and `done`'s substance — port correctness, translations,
+settings inapplicability — is unaffected by this one criterion.
+
+**Housekeeping done the same day, none of it touching `stage`:**
+- No `.dds` file exists anywhere in this repository; nothing to move or gitignore.
+- No `Tests/Pickle/Evidence/` exists either, for the reason above — no suite has ever run, so
+  nothing to prune. `TESTING.md` now documents what to keep once one exists, ahead of need.
+- The original mod (`TheGoofyOne.BeefEaters`) has no linked source repository anywhere the
+  2026-09-12 licence review or this pass could find; nothing to branch from or send a PR to.
+- `docs/PROTOCOLS-READ.md` records which of AUDIT.md's referenced documents this session read,
+  at what depth, and which did not apply to a two-def content mod with no Pickle suite.
+- **Not resolved: whether `0.1.0` was pre-published.** A Steam Workshop junction
+  (`RimWorld/Mods/BeefEatersRenew` -> this repo's `Mod/`) exists and is dated today, but no
+  `About/PublishedFileId.txt` exists anywhere on this machine for this mod's packageId, and no
+  workshop-content folder matching it was found. Asked the owner rather than guessed; see the
+  chat report.
 
 ## Editorial fixes after audit — 2026-09-13
 
