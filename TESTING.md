@@ -242,7 +242,7 @@ proves it took.
 
 ## K — the textures and the life stages
 
-Nineteen files, byte-identical to the original's.
+Twenty files, byte-identical to the original's.
 
 - Watch each animal walk in all four directions. **West is not shipped**; RimWorld mirrors `_east`,
   so a west-facing animal showing its far side reversed is correct.

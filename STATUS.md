@@ -16,12 +16,9 @@ showcase:     complete
 tested_on:
 workshop:
 remaining:
-  - unverified: the sixteen scenarios of TESTING.md, none played - no animal spawned, no pen built, no milk taken
-  - unverified: the Animal Gear patch, inert without that mod and never exercised (scenario M)
-  - unverified: AnimalFarm added to the pygmy beefalo, so it can be traded at all; no trader has been forced yet (scenario I)
-  - unverified: incompatibleWith TheGoofyOne.BeefEaters, never seen firing in the mod list (scenario N)
-  - unverified: English and French in-game display for all 21 owned text fields, generated recipe text and optional armour with Animal Gear enabled/disabled (scenario P)
-  - unverified: six Gherkin features now exist under Tests/Pickle/ (wildness, textures, save round trip, Animal Gear absent, collision with the original, EN/FR labels), none executed - see Tests/Pickle/README.md
+  - unverified: the sixteen prose scenarios of TESTING.md (A-P), none played - no animal spawned, no pen built, no milk taken
+  - unverified: the six Tests/Pickle features (wildness, textures, save round trip, Animal Gear absent, collision with the original, EN/FR labels), written 2026-09-27, none executed - see Tests/Pickle/README.md
+  - unverified: the Animal Gear patch's present half (scenario M/04) - that mod's packageId/Workshop id is not yet confirmed, so no wsl-deps map stages it
   - defect: scenario I (the pygmy beefalo's trade tag reaching a trader) has no matching step anywhere in Pickle or PickleTools; stays prose, genuinely untestable without new tooling
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
 updated:      2026-09-27, AUDIT.md re-applied and its Pickle gap closed; six features written, none run
