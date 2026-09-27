@@ -336,30 +336,45 @@ trade tags. Reading the defs shows that one door is open and the other is not, n
 through either. Everything else here is a reading of the information card, which is exactly where
 the silent fault hid.
 
-## Pickle scope — not yet written
+## Pickle scope — written 2026-09-27
 
-**Open gap, found on 2026-09-27 while applying `AUDIT.md`.** The `preTest -> done` transition
-requires Gherkin scenarios to exist, scoped to whatever only a running game can show. This
-document has never had any: A through P are prose, read and played by a person, never scripted.
+**Gap found while applying `AUDIT.md`, closed the same day after the owner's call.** The
+`preTest -> done` transition requires Gherkin scenarios, scoped to whatever only a running game
+can show. A through P had never had any. Reading `PickleTools/docs/steps.md` and Pickle's own
+built-in catalogue changed the count first proposed (B, I, M, N — four) after actually checking
+what each needs against what exists:
 
-A real case exists for at least three of them, because they fit the rule exactly — nothing but a
-running game proves them:
+- **B** (wildness) — `def raw stat` / `def stat`, at the main menu, no save. Written.
+- **K** (textures) — `TextureOwner`'s "answered by the mod" step, which the first pass missed
+  entirely: cheap, no save, proves the file is actually read rather than merely present. Written.
+- **M** (Animal Gear) — only the absent half is written (no def, no log, Animal Gear not staged
+  anywhere here). The present half needs that mod's packageId/Workshop id, not looked up yet.
+- **N** (collision with the original) — `mod ... is loaded` plus `a warning matching ... was
+  logged` for `Adding duplicate`, staged against the original itself (Workshop 1988048034, its
+  packageId read from the installed copy) rather than assumed. Written.
+- **O** (save round trip) — not in the first proposal, added on inspection: `the save round trips`
+  is a built-in step and the concern is real (does the stat survive a save, not just a load).
+  Narrowed to one process, since two separate mod installs in one save is not a Pickle scenario.
+  Written.
+- **P** (English/French display) — added the same way: DefInjected overwrites the def's own field
+  at load, so reading it after load proves display, not just that the injection path resolves.
+  Two feature files, one expected text per language, run under `-Language English` /
+  `-Language French` respectively. Written.
+- **I** (the pygmy beefalo's trade tag) — the one that does **not** exist. No step in Pickle's
+  catalogue or in `PickleTools` reads a trader's generated stock or forces one; a scenario built
+  on `def field "tradeTags"` would only reread what the offline checker already confirms. Left
+  undone rather than forced onto the wrong step. Genuine, open gap.
+- **A, C, D, E, F (partly), G, H (partly), J, L** — left as prose. Each is either already proven
+  offline by `Tools/Check-Mod.ps1`, or is the vanilla engine reacting to a value this mod merely
+  supplies (`CompMilkable`, Biotech's gestation math, `trainability`), which the authoring guide's
+  own rule puts out of scope. `H`'s procedural multi-day biome spawn and `L`'s full breeding cycle
+  stay out for the same reason `NewColony` in `PickleTools` is optional and costly: real in-game
+  time nothing here compresses, for what a declared-value check already covers.
 
-- **B** (wildness on the information card) — a stat-card read, only provable in game.
-- **I** (the pygmy beefalo's trade tag) — forcing a trader and reading its stock.
-- **N** (the collision with the original) — `a warning matching {string} was logged` for `Adding
-  duplicate`, and `mod {string} is not loaded` once `incompatibleWith` is exercised. Both are in
-  Pickle's own step vocabulary (`AUDIT.md`, list near the end of the Pickle section).
-
-Scenarios D, E, G, J, K, L are numbers and behaviour read off vanilla systems (hunger, ageing,
-training, breeding) that this mod does not touch beyond a stat value; whether those need their own
-Gherkin or stay prose is a scope call for whoever writes the suite, not decided here.
-
-**No suite has been written and none is claimed.** Until one exists — or a scenario-by-scenario
-justification says why prose is enough for each — the `done` this mod carries does not actually
-meet the current text of `AUDIT.md`'s `preTest -> done` transition. `STATUS.md` records this as
-`unverified` rather than silently moving the stage back; see the audit note there for the
-reasoning.
+See `Tests/Pickle/README.md` for the six feature files, their passes, and the reasoning table in
+full. None has been executed: `preTest -> done` requires the scenarios to exist and be scoped,
+not to have run — `done -> tested` is where execution and captures are required. `STATUS.md`
+tracks the remaining gap (scenario I) and the unexecuted state separately.
 
 ## Evidence to keep, once a suite exists
 

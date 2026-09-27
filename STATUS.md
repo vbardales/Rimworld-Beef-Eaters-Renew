@@ -21,9 +21,10 @@ remaining:
   - unverified: AnimalFarm added to the pygmy beefalo, so it can be traded at all; no trader has been forced yet (scenario I)
   - unverified: incompatibleWith TheGoofyOne.BeefEaters, never seen firing in the mod list (scenario N)
   - unverified: English and French in-game display for all 21 owned text fields, generated recipe text and optional armour with Animal Gear enabled/disabled (scenario P)
-  - defect: no Gherkin/Pickle scenarios exist for TESTING.md, a criterion of preTest -> done in the current AUDIT.md text; see TESTING.md, "Pickle scope - not yet written"
+  - unverified: six Gherkin features now exist under Tests/Pickle/ (wildness, textures, save round trip, Animal Gear absent, collision with the original, EN/FR labels), none executed - see Tests/Pickle/README.md
+  - defect: scenario I (the pygmy beefalo's trade tag reaching a trader) has no matching step anywhere in Pickle or PickleTools; stays prose, genuinely untestable without new tooling
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-09-27, AUDIT.md re-applied; one gate gap found, no stage change made pending the owner's call
+updated:      2026-09-27, AUDIT.md re-applied and its Pickle gap closed; six features written, none run
 ---
 
 # Beef Eaters Renew — status
@@ -33,24 +34,38 @@ updated:      2026-09-27, AUDIT.md re-applied; one gate gap found, no stage chan
 Re-read `AUDIT.md` in full against the current text (it has grown since the 2026-09-13 audits
 below) and re-checked this mod's state on disk, not just the stage this file declared.
 
-**Verdict: `done` unchanged, one real gap surfaced.** `preTest -> done` requires Gherkin scenarios
-scoped to what only a running game can show, with their scope justified. `TESTING.md`'s sixteen
-scenarios (A-P) are prose, and none has ever been translated to Pickle, nor has any note explained
-why prose alone is enough. That gap was not caught by either 2026-09-13 audit, whose `done` row
-only checked the automated/XML side. Recorded in `TESTING.md`, "Pickle scope - not yet written",
-with the three scenarios (B, I, N) that most plainly need a running game to prove, matched against
-Pickle's own step vocabulary. Not retrograding `stage` for this alone: AUDIT.md gives the owner,
-not the audit, the call on override, and `done`'s substance — port correctness, translations,
-settings inapplicability — is unaffected by this one criterion.
+**Verdict: `done` unchanged, one real gap surfaced and mostly closed.** `preTest -> done` requires
+Gherkin scenarios scoped to what only a running game can show, with their scope justified.
+`TESTING.md`'s sixteen scenarios (A-P) were prose only, and none had ever been translated to
+Pickle, nor had any note explained why prose alone was enough. That gap was not caught by either
+2026-09-13 audit, whose `done` row only checked the automated/XML side.
+
+Closed the same day, after relaying the scope through TicketDispatcher for the owner's call: six
+Gherkin features now exist under `Tests/Pickle/` (wildness B, textures K, save round trip O,
+Animal Gear absent M, collision with the original N, English/French labels P), written only after
+actually reading `PickleTools/docs/steps.md`, Pickle's own built-in catalogue and the authoring
+guide rather than assuming a step existed. The first proposal (B, I, N) undercounted what a real
+running-game criterion covers (K, O, P belonged too) and overcounted what exists: **scenario I,
+the pygmy beefalo's trade tag reaching a trader, has no matching step anywhere** and stays prose,
+a genuine gap rather than a scenario forced onto the wrong tool. None of the six has been
+executed — `preTest -> done` asks that they exist and be scoped, not that they have run;
+execution and reviewed captures belong to `done -> tested`. Not retrograding `stage` for the
+remaining scenario I gap: `done`'s substance — port correctness, translations, settings
+inapplicability — is unaffected by this one criterion, and AUDIT.md gives the owner, not the
+audit, the override call. See `Tests/Pickle/README.md` for the full reasoning and pass matrix.
 
 **Housekeeping done the same day, none of it touching `stage`:**
 - No `.dds` file exists anywhere in this repository; nothing to move or gitignore.
-- No `Tests/Pickle/Evidence/` exists either, for the reason above — no suite has ever run, so
-  nothing to prune. `TESTING.md` now documents what to keep once one exists, ahead of need.
+- `Tests/Pickle/Evidence/` is gitignored ahead of any run existing, per `TESTING.md`'s evidence
+  section and `Tests/Pickle/README.md`.
 - The original mod (`TheGoofyOne.BeefEaters`) has no linked source repository anywhere the
-  2026-09-12 licence review or this pass could find; nothing to branch from or send a PR to.
+  2026-09-12 licence review or this pass could find; nothing to branch from or send a PR to. Its
+  Workshop id (1988048034) is recorded in `Tests/Pickle/wsl-ids.map` for the incompatibility pass.
 - `docs/PROTOCOLS-READ.md` records which of AUDIT.md's referenced documents this session read,
-  at what depth, and which did not apply to a two-def content mod with no Pickle suite.
+  at what depth, including the Pickle docs read once a suite became worth writing.
+- `packageId` dropped its `renew` suffix: `nelim.beefeatersrenew` -> `nelim.beefeaters`, at the
+  owner's request, updated everywhere it appeared (`About.xml`, this file, `TESTING.md`,
+  `CLAUDE.md`, `Tools/Check-Mod.ps1`) before any Workshop item is confirmed to exist.
 - **Not resolved: whether `0.1.0` was pre-published.** A Steam Workshop junction
   (`RimWorld/Mods/BeefEatersRenew` -> this repo's `Mod/`) exists and is dated today, but no
   `About/PublishedFileId.txt` exists anywhere on this machine for this mod's packageId, and no
