@@ -18,7 +18,7 @@ workshop:
 remaining:
   - unverified: the sixteen prose scenarios of TESTING.md (A-P), none played - no animal spawned, no pen built, no milk taken
   - unverified: the seven Tests/Pickle features (wildness, textures, save round trip, Animal Gear absent, collision with the original, EN/FR labels, trade via a local WillTrade step), written 2026-09-27, none executed - see Tests/Pickle/README.md
-  - unverified: the Animal Gear patch's present half (scenario M/04) - that mod's packageId/Workshop id is not yet confirmed, so no wsl-deps map stages it
+  - unverified: the Animal Gear patch's present half (scenario M/04) - the mod itself is confirmed (by Dylan, Workshop 1541438907, updated to 1.6 on 2025-09-21, per the live page read 2026-09-28), but its packageId is not confirmed from an actual About.xml (a search answer suggested dylan.animalgear, unverified and not trusted) - so no wsl-deps map stages it yet
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
 updated:      2026-09-27, AUDIT.md re-applied and its Pickle gap closed; six features written, none run
 ---

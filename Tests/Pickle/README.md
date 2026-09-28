@@ -51,7 +51,12 @@ in `PickleTools`: real in-game time nothing here can compress, not worth the mac
 what a declared-value check already covers.
 
 **Animal Gear present.** `04` proves the guard is silent without it. Proving the guard actually
-fires with it present needs Animal Gear's own packageId and Workshop id, neither looked up yet.
+fires with it present needs a `wsl-deps.animalgear.map`, one line short of existing: the mod
+itself is confirmed — by Dylan, Workshop 1541438907, updated to 1.6 on 2025-09-21, read from the
+live page on 2026-09-28 — but its packageId is not, and a wrong guess would silently stage the
+wrong mod. A search turned up `dylan.animalgear` as a candidate; not trusted without seeing it in
+an actual `About.xml`, which needs the item downloaded first (steamcmd, outside this session's
+own reach without a heavier, more invasive step than confirming a name was).
 
 ## Setup, once
 
