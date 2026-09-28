@@ -11,6 +11,7 @@ detached:     yes
 stage:        done
 licence:      silent
 licence_at:   browser-verified 2026-09-12; original files, live description, all 29 comments, 9 changelog entries and author profile; no reuse terms; last mod update 2023-03-11
+upstream_mod_remotes: N/A
 dependencies: none
 showcase:     complete
 tested_on:
@@ -244,6 +245,14 @@ conversation.
 The `licence` vocabulary: `open` an explicit licence, `silent` no licence and a dead source,
 `alive` no licence but a living source, `forbidden` a written refusal, `original` owing nothing
 to anyone — not a name, not an idea traceable to one mod, not a value derived from its assets.
+
+`upstream_mod_remotes`, distinct from both `repo` (this mod's own repository name) and `origin`
+(this repository's own git remote): the git repository URLs of the *source* mods this port draws
+from, one per `- ` list item, `N/A` when none is found. Here, `N/A` — no GitHub link for
+TheGoofyOne's Beef Eaters (Workshop 1988048034) anywhere in its installed files or its live
+Workshop page, confirmed 2026-09-12 and rechecked 2026-09-28 with a bounded grep over the
+installed copy per `SEARCHING.md`, not the full Workshop corpus (one already-identified source
+mod, not an unknown-collision search).
 
 ## Translation audit — 2026-09-13
 
