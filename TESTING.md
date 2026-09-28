@@ -372,7 +372,7 @@ what each needs against what exists:
   stay out for the same reason `NewColony` in `PickleTools` is optional and costly: real in-game
   time nothing here compresses, for what a declared-value check already covers.
 
-See `Tests/Pickle/README.md` for the seven feature files, their passes, and the reasoning table in
+See `Tests/Pickle/README.md` for the eight feature files, their passes, and the reasoning table in
 full. None has been executed: `preTest -> done` requires the scenarios to exist and be scoped,
 not to have run — `done -> tested` is where execution and captures are required. `STATUS.md`
 tracks the unexecuted state and what remains (Animal Gear's present half only, now that I is

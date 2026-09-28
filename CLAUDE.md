@@ -91,7 +91,7 @@ Le mod est en `1.0.0` **non publié**. Manquent, et rien d'autre :
 1. L'essai en jeu. Rien n'a jamais tourné. Seize scénarios en prose dans `TESTING.md`, sept
    features Pickle dans `Tests/Pickle/` (écrites, jamais jouées). Les décisions de F, I et N sont
    prises et appliquées, voir `CHANGELOG.md`. Reste aussi la moitié « Animal Gear présent » du
-   scénario M, qui attend que le mod (Workshop 1541438907) soit téléchargé pour lire son packageId.
+   scénario M, écrite (`08`, `wsl-deps.animalgear.map`, `Dylan.AnimalGear`) mais jamais jouée.
 2. Le tag `v1.0.0` et la release GitHub.
 3. La publication Workshop, puis `Mod/About/PublishedFileId.txt` renvoyé dans le dépôt.
 

@@ -20,6 +20,7 @@ offline and its own behavior in the relevant pass").
 | `03-save-roundtrip` | minimal | A spawned animal of each kind, and its wildness stat, survive a real save/load round trip |
 | `04-animal-gear-absent` | minimal | With Animal Gear not loaded, the guarded armour def does not exist and nothing was logged about it |
 | `05-collision-with-original` | `wsl-deps.incompat-original.map` | With TheGoofyOne's original also loaded, RimWorld's own "Adding duplicate" warning still names both defNames — `@requires:TheGoofyOne.BeefEaters` skips it in every other pass |
+| `08-animal-gear-present` | `wsl-deps.animalgear.map` | With Animal Gear (`Dylan.AnimalGear`, Workshop 1541438907) loaded, the guarded armour def exists and nothing is logged; `@requires` skips it elsewhere |
 | `06-labels-english` / `06-labels-french` | minimal, one launch per language | The animal labels reach the def as the active language's text, not just that a DefInjected path resolves offline |
 | `07-trade` | minimal | A local step (`Tests/Pickle/Source/TradeSteps.cs`) calls `TraderKindDef.WillTrade(ThingDef)` directly — the method the trade window itself calls — to prove `Base_Outlander_Standard` trades both animals on their declared tags, without forcing a trader or rolling RNG |
 
@@ -71,13 +72,7 @@ multi-day biome spawn and `L`'s full breeding cycle stay out for the same reason
 in `PickleTools`: real in-game time nothing here can compress, not worth the machine-hours for
 what a declared-value check already covers.
 
-**Animal Gear present.** `04` proves the guard is silent without it. Proving the guard actually
-fires with it present needs a `wsl-deps.animalgear.map`, one line short of existing: the mod
-itself is confirmed — by Dylan, Workshop 1541438907, updated to 1.6 on 2025-09-21, read from the
-live page on 2026-09-28 — but its packageId is not, and a wrong guess would silently stage the
-wrong mod. A search turned up `dylan.animalgear` as a candidate; not trusted without seeing it in
-an actual `About.xml`, which needs the item downloaded first (steamcmd, outside this session's
-own reach without a heavier, more invasive step than confirming a name was).
+**Animal Gear present.** Covered by `08`. The mod was downloaded through `scripts/download-workshop-wsl.sh` under `Use-Wsl.ps1` on 2026-09-28 and its packageId read from its own `About.xml`: `Dylan.AnimalGear` (framework, name "Animal Gear", supports 1.6, hard dependency Harmony only). `Dylan.AnimalGearBasic` (1541439112) is content, not the guard target, and is not staged. The earlier search guess `dylan.animalgear` was right but unverified; it is now read.
 
 ## Setup, once
 

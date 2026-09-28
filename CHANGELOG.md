@@ -39,7 +39,7 @@ First release of the 1.6 update of **Beef Eaters**, by TheGoofyOne.
 - **`Tests/Pickle/`**, six Gherkin features run by Pickle: the wildness repair surviving the
   game's own load, each shipped texture actually loading, an animal surviving a save/reload round
   trip, the Animal Gear patch staying silent in its absence, the collision with the original still
-  warning as declared, and both animals' labels reaching the def in English and in French. Not
+  warning as declared, both animals' labels reaching the def in English and in French, a farm trader accepting both animals, and the Animal Gear patch firing when Animal Gear is present. Not
   yet executed — see `Tests/Pickle/README.md` for scope and what deliberately stays out (no
   existing step reads a trader's generated stock, so the pygmy beefalo's trade tag stays a
   documented gap rather than a scenario forced onto the wrong tool).
