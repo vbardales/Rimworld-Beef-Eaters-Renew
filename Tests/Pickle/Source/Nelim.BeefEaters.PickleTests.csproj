@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    One step, local to this mod: whether a TraderKindDef's own stock generators would actually
+    handle a given animal ThingDef. Written because no such step exists in Pickle's built-in
+    catalogue or in PickleTools/docs/steps.md (checked 2026-09-27 before writing any of this).
+
+    Deliberately calls RimWorld.TraderKindDef.WillTrade(ThingDef) itself rather than
+    re-implementing its loop over stockGenerators: that method is what the game's own trade
+    window calls, so this step can never drift from the real rule by re-deriving it independently.
+    It needs no save, no RNG roll and no forced trader: membership in a StockGenerator's trade
+    tags is static def data, decided the moment defs finish loading. See
+    RimWorld.StockGenerator_Animals.HandlesThingDef (decompiled with ilspycmd from the installed
+    Assembly-CSharp.dll, RimWorld 1.6.4871 rev590, 2026-09-27) for what WillTrade calls into.
+
+    This lives in Tests/Pickle/Source, not PickleTools: it is specific to this mod's own suite
+    for now. Nothing stops it from being promoted into a shared PickleTools tool later if another
+    mod needs the same question answered, but that is the owner's call, not this session's.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>Nelim.BeefEaters.PickleTests</AssemblyName>
+    <RootNamespace>Nelim.BeefEaters.PickleTests</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <Deterministic>true</Deterministic>
+    <DebugType>none</DebugType>
+    <OutputPath>..\Mod\Pickle\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Compile-time stubs only: the game and the Pickle mod supply the real assemblies. -->
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.*-*" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="RimWorks.Pickle.Ref" Version="4.*" ExcludeAssets="runtime" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

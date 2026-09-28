@@ -360,10 +360,11 @@ what each needs against what exists:
   at load, so reading it after load proves display, not just that the injection path resolves.
   Two feature files, one expected text per language, run under `-Language English` /
   `-Language French` respectively. Written.
-- **I** (the pygmy beefalo's trade tag) — the one that does **not** exist. No step in Pickle's
-  catalogue or in `PickleTools` reads a trader's generated stock or forces one; a scenario built
-  on `def field "tradeTags"` would only reread what the offline checker already confirms. Left
-  undone rather than forced onto the wrong step. Genuine, open gap.
+- **I** (the pygmy beefalo's trade tag) — the one no built-in or shared step covered, closed with a
+  local step instead of forced onto the wrong one. `Tests/Pickle/Source/TradeSteps.cs` calls
+  `RimWorld.TraderKindDef.WillTrade(ThingDef)` directly — the method the trade window itself
+  calls, found by decompiling the installed `Assembly-CSharp.dll` — so no save, no forced trader
+  and no RNG roll are needed: it is static def data, decided once loading finishes. Written.
 - **A, C, D, E, F (partly), G, H (partly), J, L** — left as prose. Each is either already proven
   offline by `Tools/Check-Mod.ps1`, or is the vanilla engine reacting to a value this mod merely
   supplies (`CompMilkable`, Biotech's gestation math, `trainability`), which the authoring guide's
@@ -371,10 +372,11 @@ what each needs against what exists:
   stay out for the same reason `NewColony` in `PickleTools` is optional and costly: real in-game
   time nothing here compresses, for what a declared-value check already covers.
 
-See `Tests/Pickle/README.md` for the six feature files, their passes, and the reasoning table in
+See `Tests/Pickle/README.md` for the seven feature files, their passes, and the reasoning table in
 full. None has been executed: `preTest -> done` requires the scenarios to exist and be scoped,
 not to have run — `done -> tested` is where execution and captures are required. `STATUS.md`
-tracks the remaining gap (scenario I) and the unexecuted state separately.
+tracks the unexecuted state and what remains (Animal Gear's present half only, now that I is
+written).
 
 ## Evidence to keep, once a suite exists
 

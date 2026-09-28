@@ -21,15 +21,25 @@ offline and its own behavior in the relevant pass").
 | `04-animal-gear-absent` | minimal | With Animal Gear not loaded, the guarded armour def does not exist and nothing was logged about it |
 | `05-collision-with-original` | `wsl-deps.incompat-original.map` | With TheGoofyOne's original also loaded, RimWorld's own "Adding duplicate" warning still names both defNames — `@requires:TheGoofyOne.BeefEaters` skips it in every other pass |
 | `06-labels-english` / `06-labels-french` | minimal, one launch per language | The animal labels reach the def as the active language's text, not just that a DefInjected path resolves offline |
+| `07-trade` | minimal | A local step (`Tests/Pickle/Source/TradeSteps.cs`) calls `TraderKindDef.WillTrade(ThingDef)` directly — the method the trade window itself calls — to prove `Base_Outlander_Standard` trades both animals on their declared tags, without forcing a trader or rolling RNG |
+
+## The local step, and why it is not in PickleTools
+
+Written 2026-09-27, closing what had been the one real, undone gap: no step in Pickle's built-in
+catalogue or in `PickleTools/docs/steps.md` reads a trader's generated stock or checks whether a
+`TraderKindDef` would handle a given `ThingDef`. Rather than force a trader and roll RNG — flaky,
+and provable only probabilistically — `TradeSteps.cs` calls
+`RimWorld.TraderKindDef.WillTrade(ThingDef)` itself, which is static def data decided once loading
+finishes: no save, no forced trader, no RNG roll. Confirmed by decompiling the installed
+`Assembly-CSharp.dll` with `ilspycmd` (RimWorld 1.6.4871 rev590, 2026-09-27) before writing a line
+of the step, per the authoring guide's "Add C# only for a missing observation or action."
+
+It lives in `Tests/Pickle/Source/`, local to this mod, not in `PickleTools`: the question is
+generic enough that another mod's suite could want it, but promoting a step to shared
+infrastructure is the owner's call, not this session's. `dotnet build -c Release` from
+`Tests/Pickle/Source/` compiles it straight into `Tests/Pickle/Mod/Pickle/Assemblies/`.
 
 ## What is deliberately not here
-
-**Scenario I (trade)**, TESTING.md: whether `AnimalFarm` on the pygmy beefalo actually reaches a
-trader's generated stock. No step in Pickle's own catalogue or in this collection's `PickleTools`
-reads trader stock or forces one to generate; `def "PygmyBeefalo" field "tradeTags"` would only
-reread what the offline checker already confirms about the declared tag, not that a trader
-picks it up. This stays a genuine, documented gap rather than a scenario built on the wrong step,
-until such a step exists somewhere in Pickle or PickleTools.
 
 **Scenarios A, C, D, E, F (partly), G, H (partly), J, L**, TESTING.md: reading a declared stat, a
 training flag, a comfy-temperature value, a litter curve, or a biome weight is either already

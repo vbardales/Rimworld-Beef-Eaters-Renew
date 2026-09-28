@@ -17,9 +17,8 @@ tested_on:
 workshop:
 remaining:
   - unverified: the sixteen prose scenarios of TESTING.md (A-P), none played - no animal spawned, no pen built, no milk taken
-  - unverified: the six Tests/Pickle features (wildness, textures, save round trip, Animal Gear absent, collision with the original, EN/FR labels), written 2026-09-27, none executed - see Tests/Pickle/README.md
+  - unverified: the seven Tests/Pickle features (wildness, textures, save round trip, Animal Gear absent, collision with the original, EN/FR labels, trade via a local WillTrade step), written 2026-09-27, none executed - see Tests/Pickle/README.md
   - unverified: the Animal Gear patch's present half (scenario M/04) - that mod's packageId/Workshop id is not yet confirmed, so no wsl-deps map stages it
-  - defect: scenario I (the pygmy beefalo's trade tag reaching a trader) has no matching step anywhere in Pickle or PickleTools; stays prose, genuinely untestable without new tooling
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
 updated:      2026-09-27, AUDIT.md re-applied and its Pickle gap closed; six features written, none run
 ---
@@ -63,11 +62,19 @@ audit, the override call. See `Tests/Pickle/README.md` for the full reasoning an
 - `packageId` dropped its `renew` suffix: `nelim.beefeatersrenew` -> `nelim.beefeaters`, at the
   owner's request, updated everywhere it appeared (`About.xml`, this file, `TESTING.md`,
   `CLAUDE.md`, `Tools/Check-Mod.ps1`) before any Workshop item is confirmed to exist.
-- **Not resolved: whether `0.1.0` was pre-published.** A Steam Workshop junction
-  (`RimWorld/Mods/BeefEatersRenew` -> this repo's `Mod/`) exists and is dated today, but no
-  `About/PublishedFileId.txt` exists anywhere on this machine for this mod's packageId, and no
-  workshop-content folder matching it was found. Asked the owner rather than guessed; see the
-  chat report.
+- **Resolved 2026-09-28: `0.1.0` was not pre-published.** The Steam Workshop junction
+  (`RimWorld/Mods/BeefEatersRenew` -> this repo's `Mod/`) exists, but per `PUBLISHING.md`
+  ("Juste après") the upload itself writes `About/PublishedFileId.txt` straight into that folder
+  — and a junction to this repository's `Mod/` means it would have landed here too. Nothing did,
+  on two separate checks a day apart. Absence of that file **is** absence of the item, by the
+  owner's own call once asked. No `## [0.1.0]` entry is added to `CHANGELOG.md`; `1.0.0` stays the
+  only version, `unreleased`.
+- **Closed 2026-09-28: scenario I now has a Pickle scenario.** `Tests/Pickle/Source/TradeSteps.cs`
+  is a small local step, `dotnet build`-verified, calling `RimWorld.TraderKindDef.WillTrade`
+  directly rather than forcing a trader and rolling RNG. Found by decompiling the installed
+  `Assembly-CSharp.dll` with `ilspycmd` before writing it, once asked to write the missing steps
+  rather than leave the gap documented. See `Tests/Pickle/README.md`, "The local step, and why it
+  is not in PickleTools." Seven features now exist under `Tests/Pickle/`, none executed.
 
 ## Editorial fixes after audit — 2026-09-13
 
