@@ -39,6 +39,27 @@ generic enough that another mod's suite could want it, but promoting a step to s
 infrastructure is the owner's call, not this session's. `dotnet build -c Release` from
 `Tests/Pickle/Source/` compiles it straight into `Tests/Pickle/Mod/Pickle/Assemblies/`.
 
+## Checking the suite before it is queued
+
+```powershell
+powershell -ExecutionPolicy Bypass -File Tools\Check-PickleSteps.ps1
+```
+
+Compiles the local step patterns with Pickle's own Cucumber engine, then matches every step line
+of every feature against Pickle's vocabulary, the engine's save steps, the TextureOwner tool and
+the local steps: each line must resolve to **exactly one** step. An invalid pattern makes a run play
+zero scenarios, and a step that does not exist or matches twice fails a healthy scenario, so all
+three are cheaper to find here than in a queued run. Exit code 1 on any problem. It reads the
+installed Pickle (Workshop 3791648678), Mono.Cecil from the NuGet cache and `PickleTools/TextureOwner`.
+
+Run 2026-09-28 (31 step lines, 8 features): all resolve. It first reported `the save round trips`
+unresolved, which was the checker's fault, not the suite's: the runner handles the save steps
+without an attribute the extraction can see, and the installed Pickle's own `save-reload.feature`
+uses each verbatim; the checker now lists them with that evidence. Seen failing on a deliberately
+broken copy (an invalid pattern, two nonexistent lines): it reported exactly those.
+
+It proves a line can be dispatched, never that it passes. Nothing here has run in a game.
+
 ## What is deliberately not here
 
 **Scenarios A, C, D, E, F (partly), G, H (partly), J, L**, TESTING.md: reading a declared stat, a
