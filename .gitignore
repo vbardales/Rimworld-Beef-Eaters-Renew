@@ -25,3 +25,6 @@ Tests/Pickle/Evidence/
 # Intermediaires du step local Tests/Pickle/Source/ : seul le DLL compile sous
 # Tests/Pickle/Mod/Pickle/Assemblies/ part avec la suite.
 Tests/Pickle/.build/
+
+# Textures compilees (.dds) : jamais versionnees. Aucune n existe ici ; garde-fou.
+*.dds

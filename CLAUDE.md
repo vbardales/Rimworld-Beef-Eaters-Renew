@@ -93,7 +93,7 @@ Le mod est en `1.0.0` **non publié**. Manquent, et rien d'autre :
    prises et appliquées, voir `CHANGELOG.md`. Reste aussi la moitié « Animal Gear présent » du
    scénario M, écrite (`08`, `wsl-deps.animalgear.map`, `Dylan.AnimalGear`) mais jamais jouée.
 2. Le tag `v1.0.0` et la release GitHub.
-3. La publication Workshop, puis `Mod/About/PublishedFileId.txt` renvoyé dans le dépôt.
+3. La `1.0.0` sur l'item Workshop 3811290251, créé en privé par la prépublication `0.1.0` du 2026-10-01 (`PublishedFileId.txt` commité). Il reste privé tant que Virginie ne l'a pas basculé elle-même.
 
 Les deux images sont faites depuis le 2026-09-12 : `About/Preview.png` en 896x504 et
 `About/ModIcon.png` en 128x128, gravées depuis `Art/` par `Art/preview.html`. **Les sources pleine

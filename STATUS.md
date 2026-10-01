@@ -9,23 +9,57 @@ repo:         Rimworld-Beef-Eaters-Renew
 visibility:   public
 detached:     yes
 stage:        done
+workflow_stage: done
 licence:      silent
 licence_at:   browser-verified 2026-09-12; original files, live description, all 29 comments, 9 changelog entries and author profile; no reuse terms; last mod update 2023-03-11
 upstream_mod_remotes: N/A
 dependencies: none
 showcase:     complete
 tested_on:
-workshop:
+workshop:     3811290251
 remaining:
   - unverified: the sixteen prose scenarios of TESTING.md (A-P), none played - no animal spawned, no pen built, no milk taken
   - unverified: the eight Tests/Pickle features (wildness, textures, save round trip, Animal Gear absent, collision with the original, EN/FR labels, trade via a local WillTrade step), written 2026-09-27, none executed; every step line resolves to exactly one step per Tools/Check-PickleSteps.ps1 (2026-09-28) - see Tests/Pickle/README.md
   - unverified: the Animal Gear patch firing with Animal Gear loaded (scenario M, Tests/Pickle/08): feature written and step-checked; Dylan.AnimalGear (Workshop 1541438907) read from its own About.xml after a steamcmd download 2026-09-28, but never run
+  - unverified: animal integrations of PUBLISHING.md (ADS 2, Nocturnal Animals, Dogs mate, Better Crossbreeding): no applicability decision written for BelgianBlueCow or PygmyBeefalo, analogue vanilla not yet compared
+  - unverified: the `tested` gate of AUDIT.md (2026-10-01 text): no `@wip` (none exists), every `@requires` feature run with a map that mounts its mod (02 textureowner, 05 original, 08 Animal Gear), no manual scenario left to tick - TESTING.md "Gate for `tested`" maps A-P to green Pickle or N/A
   - unverified: French review by Virginie - FRENCH_REVIEW.md generated 2026-09-30 by Tools/Generate-FrenchReview.ps1, every row resolved against the shipped Defs (no not-found cells, no flagged rows); no text in this mod agrees with a pawn's gender, so TRANSLATIONS.md's three-segment switch does not apply here
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-09-30, French review prepared - FRENCH_REVIEW.md generated, translation_fr set to partial pending Virginie's own reading
+updated:      2026-10-01, the mod's own session - AUDIT.md re-applied; 0.1.0 pre-publication recorded (PublishedFileId.txt committed), CHANGELOG 0.1.0, .dds ignored, tested criteria and evidence rules written down
 ---
 
 # Beef Eaters Renew — status
+
+## AUDIT.md re-applied — 2026-10-01
+
+Re-read `AUDIT.md` (2026-09-29 text), `AGENTS.md`, `TRANSLATIONS.md` (2026-09-30) and the other
+protocol documents (hashes in `docs/PROTOCOLS-READ.md`). Revision at entry: `fdb5c3a`; only
+`Mod/About/PublishedFileId.txt` was untracked.
+
+**Verdict: `stage: done` and `workflow_stage: done` unchanged.** Nothing before `done` regressed:
+`Tools/Check-Mod.ps1` (exit 0) and `Tools/Check-PickleSteps.ps1` (34 step lines in 9 features, each
+resolving to exactly one step; its default Pickle path moved to `1.6\Assemblies`) both pass. `workflow_stage` was missing from the front matter and is now written.
+
+- **0.1.0 pre-published, 2026-10-01.** `Mod/About/PublishedFileId.txt` exists (3811290251). It was
+  written 14:38 that day, so the upload held `Mod/` at `720c0de`; `Preview.png` was recomposed
+  later (`fdb5c3a`, 20:05) and is not in the item. Committed as `Add published Workshop file ID for
+  0.1.0`, with the `## [0.1.0]` CHANGELOG entry. The act of pre-publishing is not a stage: the
+  item is private and untested, so `prepublished` is not claimed. The 2026-09-28 paragraph below
+  that says 0.1.0 was not pre-published is replaced by this one.
+- **`.dds`**: none exists on disk or in git; `*.dds` is now in `.gitignore` as a guard.
+- **Evidence**: no `Tests/Pickle/Evidence/` exists (no run ever happened), nothing to delete.
+  The rule on what to keep is now written in `TESTING.md`, "Evidence to keep".
+- **Original mod repository**: none found. Steam page 1988048034 links no source, GitHub search
+  for the mod name and author returns only this repository, and the 2026-09-12 review found
+  nothing. `upstream_mod_remotes: N/A` stands; there is no code to base on and no PR target.
+- **New `tested` criteria** (no `@wip`, every conditional scenario run, no manual test left) are
+  in `TESTING.md`, "Gate for `tested`". No `@wip` exists. Three features are conditional
+  (`02` TextureOwner, `05` original mod, `08` Animal Gear) and need their own pass.
+- **New rule found, not yet answered**: `PUBLISHING.md` asks every animal mod to decide four
+  integrations (ADS 2, Nocturnal Animals, Dogs mate, Better Crossbreeding) before `preTest`.
+  Listed in `remaining` as `unverified`; it may move `stage` once read against the Defs.
+- Missing documents, unchanged: `PUBLICATION.md` (needed from `tested -> prepublished`),
+  `LICENSE` (deliberate, `licence: silent`), `BACKLOG.md`, `NOTES.md`, `BUGS.md`.
 
 ## AUDIT.md re-applied — 2026-09-27
 
@@ -64,7 +98,7 @@ audit, the override call. See `Tests/Pickle/README.md` for the full reasoning an
 - `packageId` dropped its `renew` suffix: `nelim.beefeatersrenew` -> `nelim.beefeaters`, at the
   owner's request, updated everywhere it appeared (`About.xml`, this file, `TESTING.md`,
   `CLAUDE.md`, `Tools/Check-Mod.ps1`) before any Workshop item is confirmed to exist.
-- **Resolved 2026-09-28: `0.1.0` was not pre-published.** The Steam Workshop junction
+- **Replaced 2026-10-01 (kept for history): at 2026-09-28 `0.1.0` had not been pre-published.** The Steam Workshop junction
   (`RimWorld/Mods/BeefEatersRenew` -> this repo's `Mod/`) exists, but per `PUBLISHING.md`
   ("Juste après") the upload itself writes `About/PublishedFileId.txt` straight into that folder
   — and a junction to this repository's `Mod/` means it would have landed here too. Nothing did,

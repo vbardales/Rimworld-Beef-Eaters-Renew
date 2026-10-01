@@ -1,54 +1,31 @@
 # Protocoles lus pour ce mod
 
-Ce que cette session a lu dans le monorepo pour auditer BeefEatersRenew, avec la révision
-(commit court) au moment de la lecture, pour éviter de relire ce qui n'a pas bougé.
+Ce que cette session a lu, à quelle version. Hash = 8 premiers caractères du sha256 du fichier,
+date = mtime. **Si le hash n'a pas changé, ne pas relire.** Chemins relatifs au monorepo
+`C:\Users\nelim\Documents\rimworld`.
 
-| Document | Lu le | Révision monorepo | Utile ici ? |
-|---|---|---|---|
-| `AUDIT.md` | 2026-09-27 | tel quel sur disque, pas de dépôt Git séparé | Oui, en entier — c'est le texte qui commande cet audit |
-| `AGENTS.md` | 2026-09-27 | idem | Oui — publication CI uniquement, pas de bouton Steam |
-| `MOD_SETTINGS.md` | 2026-09-27 | idem | Oui, en entier — confirme `settings_audit: not_applicable` |
-| `TRANSLATIONS.md` | 2026-09-27 | idem | Oui, en entier — confirme les trois champs `complete` |
-| `PUBLISHING.md` | 2026-09-27 | idem | Partiel — sections « Au moment d'envoyer », « Juste après », « Publier par la CI ». Pas relu : « Description », « Images », « Licence », « Mentions », « Dépôt », « Topics » (déjà appliquées lors du premier envoi, rien n'a changé côté mod depuis) |
-| `STYLE_RIMWORLD.md` | non relu cette session | — | La vitrine et l'icône existent déjà et ont été validées par l'audit du 2026-09-13 ; rien ne les a changées depuis |
-| `WORKSHOP_COMMENTS.md` | non lu | — | Inutile tant que le mod n'est pas public : les remerciements se postent après bascule en public |
-| `scripts/SEARCHING.md` | non lu | — | Aucune recherche de mod à faire pour ce port |
-| `PickleTools/README.md` | 2026-09-27 | tel quel sur disque | Oui — table des dix-sept outils, pour repérer `TextureOwner` |
-| `PickleTools/Authoring/README.md` | 2026-09-27 | idem | Oui, en entier — pass matrix, `@requires`, règle « on ne teste pas le jeu », conventions de fichiers |
-| `PickleTools/docs/steps.md` | 2026-09-27 | idem | Oui, en entier — catalogue des 91 steps des outils PickleTools |
-| `PickleTools/Headless/README.md` | non lu | — | Rien à lancer soi-même : les runs se déposent via `Submit-PickleRun.ps1`, jamais lancés par une session |
-| Pickle `Docs/steps.md` (`vbardales/Rimworld-Pickle`, fork de RimWorks) | 2026-09-27 | `main`, décodé via `gh api ... --jq .content \| base64 -d` | Oui, en entier — le catalogue natif : `def raw stat`, `def stat`, `def field`, `mod ... is loaded`, `the save round trips`, `a warning matching ... was logged`, etc. |
-| `Rimworld-Release-Admin/docs/OPERATIONS.md` | non lu | — | Aucun envoi CI n'a encore eu lieu pour ce mod |
-| `Rimworld-Ticket-Dispatcher/docs/WELCOME.md` | non lu | — | Aucun run Pickle déposé pour ce mod à ce jour ; à lire avant le premier dépôt |
-| `Rimworld-Ticket-Dispatcher/docs/SUBMIT.md` | non lu | — | Idem — à lire avant d'appeler `Submit-PickleRun.ps1` pour ce mod |
+| Document | Hash | mtime | Lu le | Utile ici ? |
+|---|---|---|---|---|
+| `AGENTS.md` | 7a236f03 | 2026-09-29 | 2026-10-01 | Oui. Règle des évidences, publication par la CI |
+| `AUDIT.md` | 0fb60fdf | 2026-09-29 | 2026-10-01 | Oui, en entier : commande tout |
+| `MOD_SETTINGS.md` | 404916bc | 2026-09-13 | 2026-10-01 | Partiel. Seulement pour justifier `settings_audit: not_applicable` |
+| `TRANSLATIONS.md` | e5197820 | 2026-09-30 | 2026-10-01 | Oui, en entier. Revue FR par Virginie ; pas de genre dans les textes du mod |
+| `PUBLISHING.md` | ba43a4d2 | 2026-10-01 | 2026-10-01 | Oui. « Juste après », mise en production, règle des animaux (4 intégrations), galerie |
+| `STYLE_RIMWORLD.md` | b1f9b1be | 2026-10-01 | 2026-10-01 | Partiel. Contrôles d'icône et de Preview seulement ; propriétaire génère |
+| `WORKSHOP_COMMENTS.md` | 3fb37586 | 2026-09-29 | 2026-10-01 | Oui, plus tard : registre sans ligne pour 1988048034 ni Animal Gear |
+| `scripts/SEARCHING.md` | 013075b0 | 2026-09-27 | 2026-10-01 | **Non, ne pas relire.** Pas de recherche de corpus ; jamais de `find /` |
+| `PickleTools/README.md` | 40e44a5d | 2026-10-01 | 2026-10-01 | Partiel. `TextureOwner` ; `LoadAudit` facultatif |
+| `PickleTools/Headless/README.md` | 2310bb97 | 2026-09-26 | 2026-10-01 | Oui. Dépôt par `Submit-PickleRun.ps1`, `-DepMap`, `@requires` comptés ignorés |
+| `PickleTools/docs/steps.md` | 6cb87154 | 2026-10-01 | 2026-10-01 | Oui. 126 steps ; `Check-PickleSteps.ps1` confirme que chaque ligne des features résout |
+| `Rimworld-Release-Admin/docs/OPERATIONS.md` | 23fcf642 | 2026-09-26 | 2026-10-01 | Plus tard (envoi CI : dry-run, SHA complet, `PUBLICATION.md` requis) |
+| `Rimworld-Ticket-Dispatcher/docs/WELCOME.md` | 08b440a0 | 2026-09-27 | 2026-10-01 | Oui. Un correctif = un test ; SHA dans `-Label` ; arbre figé |
+| `Rimworld-Ticket-Dispatcher/docs/SUBMIT.md` | eaca3969 | 2026-09-26 | 2026-10-01 | Oui. `-Owner local_<id>`, `-EvidenceDir`, `-RunTimeoutMinutes 120` pour une passe complète |
 
-## Mise à jour du 2026-09-27
+Absents de ce dépôt, à dessein ou pas encore : `LICENSE` (licence `silent`), `PUBLICATION.md`
+(requis dès `tested -> prepublished`), `BACKLOG.md`, `NOTES.md`, `BUGS.md` (`STATUS.md.remaining`
+tient ce rôle), `docs/runs/` (aucun run n'a jamais eu lieu).
 
-Une suite Pickle a finalement été écrite pour ce mod le jour même, une fois la question posée à
-la propriétaire (via TicketDispatcher) et sa réponse obtenue : scripter B, K, N, O, P et la moitié
-« absent » de M, laisser I en prose faute d'outillage, et laisser le reste en prose parce que
-c'est soit déjà prouvé hors jeu, soit le moteur qui réagit à une valeur déclarée. Voir
-`Tests/Pickle/README.md` pour le détail, et `TESTING.md` pour le compte-rendu.
-
-Les guides Pickle et PickleTools ci-dessus ont donc été lus **avant d'écrire un seul step**, pas
-après coup : `PickleTools/docs/steps.md` et le catalogue natif de Pickle d'abord, pour savoir ce
-qui existe réellement, `Authoring/README.md` ensuite pour la disposition des fichiers et la
-matrice de passes. Le premier essai de proposition (B, I, N) s'est révélé faux sur les deux
-tableaux une fois le catalogue réellement lu : trop court (K, O, P manquaient) et trop long (I
-n'a tout simplement aucun step qui lui corresponde nulle part).
-
-`Headless/README.md` et les deux guides de Ticket Dispatcher restent non lus : rien n'a encore
-été lancé ni déposé pour ce mod.
-
-## Fichiers de doc que ce dépôt ne porte pas, et pourquoi
-
-La liste demandée contenait plusieurs noms qu'on cherche parfois à la racine d'un mod. Ici :
-
-| Fichier | État |
-|---|---|
-| `LICENSE` | Absent, à dessein — le contenu original n'a aucune licence déclarée (`licence: silent`), et `ATTRIBUTION.md` explique pourquoi en inventer une serait faux |
-| `PUBLICATION.md` | Absent — c'est le fichier de la transition `tested -> prepublished` d'AUDIT.md ; ce mod n'y est pas |
-| `BACKLOG.md` | Absent — rien n'attend au-delà de ce que `STATUS.md` liste déjà en `remaining` |
-| `docs/runs/` | Absent — aucun run Pickle n'a jamais tourné pour ce mod, donc aucun résumé à y ranger |
-| `Tests/Pickle/` | Absent — aucune suite Gherkin écrite, voir plus haut |
-| `NOTES.md`, `BUGS.md` | Absents — `STATUS.md.remaining` et `TESTING.md` couvrent ce rôle pour ce mod |
+Aussi lus le 2026-09-27 et inchangés dans leur rôle : `PickleTools/Authoring/README.md` (pass
+matrix, `@requires`) et le catalogue natif `Docs/steps.md` du fork Pickle de `vbardales`.
+Le premier relevé (2026-09-27) disait de lire les guides Pickle avant d'écrire un step : fait,
+puis `Check-PickleSteps.ps1` l'a confirmé.

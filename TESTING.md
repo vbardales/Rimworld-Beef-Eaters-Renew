@@ -389,3 +389,33 @@ keep only the latest report for the revision currently in the repository, plus a
 that is the sole proof of a check the latest run did not repeat; delete the rest as soon as a
 newer report supersedes it. A report about a superseded build proves nothing about the one shipping
 now.
+
+### What to keep from a run
+
+Per run, per pass, per scenario. Keep on disk, in `Tests/Pickle/Evidence/<run>/`, only:
+`summary.md`/`junit.xml` (it carries `exitReason`, discovered vs played counts and `setName`), the
+`@review` captures of the scenarios that have them, and `Player.log` only when a scenario failed or
+logged a warning the scenario asserts. Delete `report.html`, `messages.ndjson`, captures of scenarios
+without `@review`, and every report of a superseded revision once the new one is in place. Never
+delete a report `STATUS.md` still cites: repoint first. In git: one line per run in
+`docs/runs/history.md`, nothing else.
+
+## Gate for `tested` (AUDIT.md text of 2026-09-29)
+
+`done -> tested` needs all of these, and none is met yet:
+
+1. No scenario tagged `@wip`. None exists today; a scenario set aside is repaired and replayed or
+   deleted with its reason, never left tagged.
+2. Every conditional scenario has run, on a map that mounts its mod, and its report was read
+   (suite name and `setName` checked, the report folder is shared by the whole machine):
+   `02-textures-load` (`@requires:nelim.pickletools.textureowner`, map `wsl-deps.textures.map`),
+   `05-collision-with-original` (`@requires:TheGoofyOne.BeefEaters`, map
+   `wsl-deps.incompat-original.map`), `08-animal-gear-present` (`@requires:Dylan.AnimalGear`, map
+   `wsl-deps.animalgear.map`). A scenario skipped for want of its condition has not passed.
+3. No manual test left to tick. Each of the sixteen prose scenarios A-P is either covered by a green
+   Pickle scenario (the table in `Tests/Pickle/README.md` says which) or listed here as not
+   applicable with its reason. Those still only in prose today: see `STATUS.md` `remaining`.
+   `@review` captures are still looked at, but that is reading an image a scenario already proved
+   to be in the intended state, not another manual test.
+4. Minimal pass and every `@requires` pass green, with `exitReason: passed` read before the
+   counts; English and French each by their own pass (`-Language`).
