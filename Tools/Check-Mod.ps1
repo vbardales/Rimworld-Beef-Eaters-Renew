@@ -132,6 +132,63 @@ $apparel = $armor.SelectNodes('/Patch/Operation[@Class="PatchOperationFindMod"]/
 if ($apparel.Count -eq 1) { Ok 'guarded patch adds the expected armour def' }
 else { Bad 'expected guarded armour addition missing or duplicated' }
 
+
+# --- 6. optional-mod patches (ADS 2, Dogs mate) applied to synthetic defs -----
+# System.Xml speaks XPath 1.0 like the game. Each patch file is a PatchOperationConditional whose
+# guard is the target itself; run it on a document with the target (must add exactly the expected
+# defNames, and leave a decoy node alone) and on one without (must change nothing).
+Head '6. ADS 2 and Dogs mate patches'
+function Apply-Patch($patchPath, [xml]$doc) {
+    [xml]$p = Get-Content $patchPath -Raw
+    function Run($op, $doc) {
+        switch ($op.Class) {
+            'PatchOperationConditional' {
+                if ($doc.SelectNodes($op.xpath).Count -gt 0 -and $op.match) { Run $op.match $doc }
+                elseif ($doc.SelectNodes($op.xpath).Count -eq 0 -and $op.nomatch) { Run $op.nomatch $doc }
+            }
+            'PatchOperationSequence' { foreach ($o in $op.operations.li) { Run $o $doc } }
+            'PatchOperationAdd' {
+                foreach ($t in $doc.SelectNodes($op.xpath)) {
+                    foreach ($n in $op.value.ChildNodes) { [void]$t.AppendChild($doc.ImportNode($n, $true)) }
+                }
+            }
+            default { throw "unhandled operation class $($op.Class)" }
+        }
+    }
+    foreach ($o in $p.Patch.Operation) { Run $o $doc }
+}
+function Users($doc, $xp) { @($doc.SelectNodes($xp) | ForEach-Object { $_.InnerText }) -join ',' }
+
+$ads = Join-Path $mod 'Patches\ADS2.xml'
+$adsDoc = '<Defs>' + (1..3 | ForEach-Object { "<RecipeDef Name=`"ADS_Cat$_`" Abstract=`"True`"><recipeUsers/></RecipeDef>" }) + '<RecipeDef Name="Decoy"><recipeUsers/></RecipeDef></Defs>'
+[xml]$d = $adsDoc; Apply-Patch $ads $d
+$c1 = Users $d '/Defs/RecipeDef[@Name="ADS_Cat1"]/recipeUsers/li'
+$c2 = Users $d '/Defs/RecipeDef[@Name="ADS_Cat2"]/recipeUsers/li'
+$c3 = Users $d '/Defs/RecipeDef[@Name="ADS_Cat3"]/recipeUsers/li'
+$dc = Users $d '/Defs/RecipeDef[@Name="Decoy"]/recipeUsers/li'
+if ($c1 -eq 'BelgianBlueCow,PygmyBeefalo' -and $c2 -eq 'BelgianBlueCow,PygmyBeefalo' -and $c3 -eq 'PygmyBeefalo' -and $dc -eq '') {
+    Ok 'ADS 2: cow in Cat1+Cat2, beefalo in Cat1+Cat2+Cat3, decoy recipe untouched'
+} else { Bad "ADS 2 lists wrong: Cat1=[$c1] Cat2=[$c2] Cat3=[$c3] decoy=[$dc]" }
+[xml]$d = '<Defs><RecipeDef Name="Decoy"><recipeUsers/></RecipeDef></Defs>'; Apply-Patch $ads $d
+if ((Users $d '//li') -eq '') { Ok 'ADS 2 absent: patch changes nothing' } else { Bad 'ADS 2 absent: patch still wrote something' }
+
+$dm = Join-Path $mod 'Patches\DogsMate.xml'
+$g = { param($n) "<Revolus.DogsMate.AnimalGroupDef><defName>$n</defName><pawnKinds><li>Vanilla$n</li></pawnKinds></Revolus.DogsMate.AnimalGroupDef>" }
+[xml]$d = '<Defs>' + (& $g 'Cow') + (& $g 'Bison') + (& $g 'Dog') + '</Defs>'; Apply-Patch $dm $d
+$cow = Users $d '/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Cow"]/pawnKinds/li'
+$bis = Users $d '/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Bison"]/pawnKinds/li'
+$dog = Users $d '/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Dog"]/pawnKinds/li'
+if ($cow -eq 'VanillaCow,BelgianBlueCow' -and $bis -eq 'VanillaBison,PygmyBeefalo' -and $dog -eq 'VanillaDog') {
+    Ok 'Dogs mate: cow in group Cow, beefalo in group Bison, other groups untouched, existing members kept'
+} else { Bad "Dogs mate groups wrong: Cow=[$cow] Bison=[$bis] Dog=[$dog]" }
+[xml]$d = '<Defs/>'; Apply-Patch $dm $d
+if ($d.Defs.ChildNodes.Count -eq 0) { Ok 'Dogs mate absent: patch changes nothing' } else { Bad 'Dogs mate absent: patch wrote something' }
+
+[xml]$about = Get-Content (Join-Path $mod 'About\About.xml') -Raw
+if ($about.ModMetaData.loadBefore.li -contains 'SamBucher.ADogSaidAnimalProsthetics2') { Ok 'About.xml loads before ADS 2' }
+else { Bad 'About.xml lost loadBefore ADS 2' }
+if (-not $about.ModMetaData.modDependencies) { Ok 'no hard dependency was added' } else { Bad 'a modDependencies block appeared' }
+
 # --- verdict -----------------------------------------------------------------
 Write-Host ""
 if ($fail -eq 0) { Write-Host 'All checks passed. Nothing here says the animals behave - see TESTING.md.' -ForegroundColor Green }

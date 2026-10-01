@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Enrols both animals in Dogs mate (Continued) (Mlie.DogsMate).
+
+	     Dogs mate does not change how the game mates animals: it activates the crossbreeds that its
+	     Revolus.DogsMate.AnimalGroupDef lists describe, and animals of one group can mate. The groups
+	     are read in 1.6/Defs/CompatibleSpecies/Mammalia.xml, and the choice follows the vanilla analogue:
+	       - Group "Cow" (Cow, Yak): BelgianBlueCow, a cow breed.
+	       - Group "Bison" (Bison, Muffalo): PygmyBeefalo, which its description makes a cross
+	         between a bull and a muffalo.
+	     The model is the mod's own compatibility patches, 1.6/Patches/Glacial.CowVarity.xml. The guard is
+	     the target group itself: without Dogs mate the xpath selects nothing, no <nomatch> is declared,
+	     and nothing is logged. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Cow"]/pawnKinds</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Cow"]/pawnKinds</xpath>
+			<value>
+				<li>BelgianBlueCow</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Bison"]/pawnKinds</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Bison"]/pawnKinds</xpath>
+			<value>
+				<li>PygmyBeefalo</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

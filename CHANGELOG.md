@@ -25,6 +25,8 @@ First release of the 1.6 update of **Beef Eaters**, by TheGoofyOne.
 
 ### Added
 
+- **Optional patches for A Dog Said... Animal Prosthetics 2 and Dogs mate (Continued).** Both are guarded by their own targets and do nothing, and log nothing, without the mod; neither is a dependency. ADS 2: the Belgian blue cow follows the vanilla cow, the pygmy beefalo the muffalo; `loadBefore` ADS 2 in About. Dogs mate: the cow joins the cattle group, the pygmy beefalo the bison group.
+
 - **`incompatibleWith` naming `TheGoofyOne.BeefEaters`.** Both mods define `BelgianBlueCow` and
   `PygmyBeefalo` under those names, so with both enabled the last one loaded won in silence and the
   wildness fault came back with it.

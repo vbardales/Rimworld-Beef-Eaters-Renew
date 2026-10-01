@@ -21,7 +21,7 @@ remaining:
   - unverified: the sixteen prose scenarios of TESTING.md (A-P), none played - no animal spawned, no pen built, no milk taken
   - unverified: the eight Tests/Pickle features (wildness, textures, save round trip, Animal Gear absent, collision with the original, EN/FR labels, trade via a local WillTrade step), written 2026-09-27, none executed; every step line resolves to exactly one step per Tools/Check-PickleSteps.ps1 (2026-09-28) - see Tests/Pickle/README.md
   - unverified: the Animal Gear patch firing with Animal Gear loaded (scenario M, Tests/Pickle/08): feature written and step-checked; Dylan.AnimalGear (Workshop 1541438907) read from its own About.xml after a steamcmd download 2026-09-28, but never run
-  - unverified: animal integrations of PUBLISHING.md (ADS 2, Nocturnal Animals, Dogs mate, Better Crossbreeding): no applicability decision written for BelgianBlueCow or PygmyBeefalo, analogue vanilla not yet compared
+  - unverified: the ADS 2 and Dogs mate patches (Mod/Patches/ADS2.xml, DogsMate.xml) applied in a running game with those mods loaded; offline XPath check only (Tools/Check-Mod.ps1, section 6, shown able to fail). No Pickle map mounts them yet
   - unverified: the `tested` gate of AUDIT.md (2026-10-01 text): no `@wip` (none exists), every `@requires` feature run with a map that mounts its mod (02 textureowner, 05 original, 08 Animal Gear), no manual scenario left to tick - TESTING.md "Gate for `tested`" maps A-P to green Pickle or N/A
   - unverified: French review by Virginie - FRENCH_REVIEW.md generated 2026-09-30 by Tools/Generate-FrenchReview.ps1, every row resolved against the shipped Defs (no not-found cells, no flagged rows); no text in this mod agrees with a pawn's gender, so TRANSLATIONS.md's three-segment switch does not apply here
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
@@ -56,7 +56,7 @@ resolving to exactly one step; its default Pickle path moved to `1.6\Assemblies`
 - **New `tested` criteria** (no `@wip`, every conditional scenario run, no manual test left) are
   in `TESTING.md`, "Gate for `tested`". No `@wip` exists. Three features are conditional
   (`02` TextureOwner, `05` original mod, `08` Animal Gear) and need their own pass.
-- **New rule found, not yet answered**: `PUBLISHING.md` asks every animal mod to decide four
+- **Animal integrations decided 2026-10-01 (PUBLISHING.md rule of 2026-09-28/10-01), Virginie agreeing to the scope.** Four mods, read in their installed Workshop folders: **ADS 2** patched (`Patches/ADS2.xml`): vanilla Cow is in ADS_Cat2 and ADS_Cat1 only, Muffalo in all three, so BelgianBlueCow gets Cat1+Cat2 and PygmyBeefalo Cat1+Cat2+Cat3; `loadBefore` ADS 2 added to About.xml. **Dogs mate** patched (`Patches/DogsMate.xml`): BelgianBlueCow into group `Cow`, PygmyBeefalo into group `Bison` (its description makes it a bull x muffalo cross). **Nocturnal Animals**: not applicable, no patch - its `Patches/Core` files name neither Cow nor Muffalo, so both analogues stay diurnal, and so do these animals. **Better Crossbreeding**: not applicable - no vanilla analogue crosses, so a crossbreed would be new design, not porting; revisit on Virginie's call.
   integrations (ADS 2, Nocturnal Animals, Dogs mate, Better Crossbreeding) before `preTest`.
   Listed in `remaining` as `unverified`; it may move `stage` once read against the Defs.
 - Missing documents, unchanged: `PUBLICATION.md` (needed from `tested -> prepublished`),

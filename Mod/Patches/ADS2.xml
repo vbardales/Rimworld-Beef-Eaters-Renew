@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Enrols both animals in A Dog Said... Animal Prosthetics 2 (SamBucher.ADogSaidAnimalProsthetics2).
+
+	     ADS 2 keeps three abstract RecipeDefs, ADS_Cat1, ADS_Cat2 and ADS_Cat3, and copies their
+	     recipeUsers onto the real surgery bases in its own last patch. Adding an animal means adding
+	     one <li> to the lists it belongs in. The classification follows the vanilla analogue, read in
+	     1.6/Defs/AnimalCategories/Animal_Categories.xml:
+	       - Cow is listed in ADS_Cat2 and ADS_Cat1, not in ADS_Cat3: BelgianBlueCow goes to those two.
+	       - Muffalo is listed in all three: PygmyBeefalo, a muffalo cross and a pack animal, goes to all three.
+
+	     The guard is PatchOperationConditional on ADS_Cat1. Without ADS 2 the xpath selects nothing,
+	     no <nomatch> is declared, and nothing is logged. Not MayRequire: it is never read on an
+	     <Operation>. Every branch of the predicate repeats @Name=, because [@Name="A" or "B"] is true
+	     for every RecipeDef in the document. About.xml declares loadBefore ADS 2, which copies the
+	     lists once, at its last patch. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/RecipeDef[@Name="ADS_Cat1"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name="ADS_Cat1" or @Name="ADS_Cat2"]/recipeUsers</xpath>
+					<value>
+						<li>BelgianBlueCow</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name="ADS_Cat1" or @Name="ADS_Cat2" or @Name="ADS_Cat3"]/recipeUsers</xpath>
+					<value>
+						<li>PygmyBeefalo</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

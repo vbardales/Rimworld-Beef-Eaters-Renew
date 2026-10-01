@@ -54,6 +54,9 @@ If I do not answer within a reasonable time after being contacted, anyone may fr
 The update work was done with the help of an AI assistant (Claude, by Anthropic).
 
 [url=https://github.com/vbardales/Rimworld-Beef-Eaters-Renew]Source code on GitHub[/url]</description>
+  <loadBefore>
+    <li>SamBucher.ADogSaidAnimalProsthetics2</li>
+  </loadBefore>
   <incompatibleWith>
     <li>TheGoofyOne.BeefEaters</li>
   </incompatibleWith>

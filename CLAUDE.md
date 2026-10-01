@@ -38,7 +38,7 @@ Le contenu est celui de TheGoofyOne. Ce dépôt ne contient que le passage en 1.
 - **Le patch Animal Gear reste tel que l'auteur l'a écrit.** Il est gardé derrière son
   `PatchOperationFindMod` (qui cherche le **nom** « Animal Gear ») et n'est pas à nous à réécrire.
   Animal Gear n'est pas encore installé ici : seule sa moitié « absent » est couverte.
-- **Deux ajouts de contenu assumés, et rien d'autre** : `AnimalFarm` sur le beefalo pygmée, et
+- **Ajouts de contenu assumés, et rien d'autre** : `AnimalFarm` sur le beefalo pygmée, `Patches/ADS2.xml` et `Patches/DogsMate.xml` (décision du 2026-10-01, règle « mods d'animaux » de PUBLISHING.md), et
   `incompatibleWith` l'original. Tout le reste est du portage ou de la documentation.
 - Le crédit nommé et la promesse de retrait sur demande sont la seule base de ce portage. Ils
   figurent dans `About.xml`, `README.md` et `ATTRIBUTION.md` : ils ne s'allègent pas.
