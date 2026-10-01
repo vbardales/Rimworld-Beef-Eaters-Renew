@@ -49,6 +49,7 @@ resolving to exactly one step; its default Pickle path moved to `1.6\Assemblies`
 - **`.dds`**: none exists on disk or in git; `*.dds` is now in `.gitignore` as a guard.
 - **Evidence**: no `Tests/Pickle/Evidence/` exists (no run ever happened), nothing to delete.
   The rule on what to keep is now written in `TESTING.md`, "Evidence to keep".
+- **French review, 2026-10-01: corrections applied, review not validated yet.** Virginie asked: milk and meat wording, `sabot gauche/droit`, beefalo robustness and "about half the size", race name `Blanc Bleu Belge`. `FRENCH_REVIEW.md` regenerated; `translation_fr` stays `partial` until she re-reads.
 - **Original mod repository**: none found. Steam page 1988048034 links no source, GitHub search
   for the mod name and author returns only this repository, and the 2026-09-12 review found
   nothing. `upstream_mod_remotes: N/A` stands; there is no code to base on and no PR target.
