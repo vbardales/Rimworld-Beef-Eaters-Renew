@@ -71,3 +71,11 @@ double-muscled breed too heavy to walk.
 The mod's Animal Gear patch is carried over untouched, behind the `PatchOperationFindMod` its
 author put on it. Animal Gear is not installed on this machine, so the patch has only been proven
 silent in its absence; it stays inert there and unexercised in its presence.
+
+## [0.1.0] — 2026-10-01
+
+Creation of the Workshop item: the `About/PublishedFileId.txt` it wrote. Steam creates every item
+private, and this one has not been made public. This entry does not say the mod is tested.
+
+The upload contained `Mod/` as it stood at commit `720c0de`. Nothing in `Mod/` has changed since
+except `About/Preview.png` (recomposed in `fdb5c3a`), which is not in the uploaded item.
