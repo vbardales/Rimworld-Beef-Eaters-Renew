@@ -19,6 +19,7 @@ tested_on:
 workshop:     3811290251
 remaining:
   - unverified: the sixteen prose scenarios of TESTING.md (A-P), none played - no animal spawned, no pen built, no milk taken
+  - unverified: SEVENTH TICKET (gallery, feature 10, map galerie) submitted 2026-10-02 at c2290ce; captures to read by eye, then copy chosen ones to Art/Gallery/ as 1-..png
   - unverified: SIX PICKLE TICKETS SUBMITTED 2026-10-02 at cefade3 (min EN, min FR, textureowner, original, animalgear, animals; ids 20261002-072839-419-f84f .. -072850-480-c166, evidence Tests/Pickle/Evidence/20261001-*): awaiting RUN_DONE, verdicts not read; keep the Mod tree frozen until then
   - unverified: the eight Tests/Pickle features (wildness, textures, save round trip, Animal Gear absent, collision with the original, EN/FR labels, trade via a local WillTrade step), written 2026-09-27, none executed; every step line resolves to exactly one step per Tools/Check-PickleSteps.ps1 (2026-09-28) - see Tests/Pickle/README.md
   - unverified: the Animal Gear patch firing with Animal Gear loaded (scenario M, Tests/Pickle/08): feature written and step-checked; Dylan.AnimalGear (Workshop 1541438907) read from its own About.xml after a steamcmd download 2026-09-28, but never run
