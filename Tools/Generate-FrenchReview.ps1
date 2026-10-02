@@ -101,7 +101,8 @@ $out = New-Object System.Text.StringBuilder
 [void]$out.AppendLine("non-English source (see ATTRIBUTION.md); the mod ships no ``Mod/Languages/English`` either, so")
 [void]$out.AppendLine("both Original and English are read directly from the shipped Def (``Mod/Defs``, ``Mod/Patches``).")
 [void]$out.AppendLine()
-[void]$out.AppendLine("Generated $(Get-Date -Format 'yyyy-MM-dd'), revision: working tree, no French text changed since.")
+$rev = (git -C $root rev-parse --short HEAD).Trim(); $dirty = if (git -C $root status --porcelain -- Mod) { " + uncommitted changes under Mod/" } else { "" }
+[void]$out.AppendLine("Generated $(Get-Date -Format 'yyyy-MM-dd'), revision: $rev$dirty.")
 [void]$out.AppendLine()
 
 foreach ($ff in $frenchFiles) {

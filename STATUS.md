@@ -1,7 +1,7 @@
 ---
 localization: complete
 translation_en: complete
-translation_fr: partial
+translation_fr: complete
 settings_audit: not_applicable
 mod:          Beef Eaters Renew (unofficial)
 packageId:    nelim.beefeaters
@@ -24,9 +24,8 @@ remaining:
   - unverified: the Animal Gear patch firing with Animal Gear loaded (scenario M, Tests/Pickle/08): feature written and step-checked; Dylan.AnimalGear (Workshop 1541438907) read from its own About.xml after a steamcmd download 2026-09-28, but never run
   - unverified: the ADS 2 and Dogs mate patches (Mod/Patches/ADS2.xml, DogsMate.xml) applied in a running game with those mods loaded; offline XPath check only (Tools/Check-Mod.ps1, section 6, shown able to fail). No Pickle map mounts them yet
   - unverified: the `tested` gate of AUDIT.md (2026-10-01 text): no `@wip` (none exists), every `@requires` feature run with a map that mounts its mod (02 textureowner, 05 original, 08 Animal Gear), no manual scenario left to tick - TESTING.md "Gate for `tested`" maps A-P to green Pickle or N/A
-  - unverified: French review by Virginie - FRENCH_REVIEW.md generated 2026-09-30 by Tools/Generate-FrenchReview.ps1, every row resolved against the shipped Defs (no not-found cells, no flagged rows); no text in this mod agrees with a pawn's gender, so TRANSLATIONS.md's three-segment switch does not apply here
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-10-01, the mod's own session - AUDIT.md re-applied; 0.1.0 pre-publication recorded (PublishedFileId.txt committed), CHANGELOG 0.1.0, .dds ignored, tested criteria and evidence rules written down
+updated:      2026-10-02, the mod's own session - French review validated by Virginie, translation_fr complete; six Pickle tickets submitted, pending
 ---
 
 # Beef Eaters Renew — status
@@ -51,6 +50,7 @@ resolving to exactly one step; its default Pickle path moved to `1.6\Assemblies`
 - **Evidence**: no `Tests/Pickle/Evidence/` exists (no run ever happened), nothing to delete.
   The rule on what to keep is now written in `TESTING.md`, "Evidence to keep".
 - **French review, 2026-10-01: corrections applied, review not validated yet.** Virginie asked: milk and meat wording, `sabot gauche/droit`, beefalo robustness and "about half the size", race name `Blanc Bleu Belge`. `FRENCH_REVIEW.md` regenerated; `translation_fr` stays `partial` until she re-reads.
+- **French review validated by Virginie, 2026-10-02** (relayed in chat, recorded here by the session): `Blanc Bleu Belge` consistent as a breed name, `beefalo pygmée` correct, descriptions natural and faithful, no dynamic colon agreement. Revision reviewed: `3eef8da`; French text last changed in `55393db`. `FRENCH_REVIEW.md` regenerated from that clean tree, its header now names the commit. `translation_fr: complete`.
 - **Original mod repository**: none found. Steam page 1988048034 links no source, GitHub search
   for the mod name and author returns only this repository, and the 2026-09-12 review found
   nothing. `upstream_mod_remotes: N/A` stands; there is no code to base on and no PR target.
