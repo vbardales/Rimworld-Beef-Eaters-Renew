@@ -13,7 +13,7 @@ Feature: Beef Eaters Renew — the wildness stat survives a save and reload
     Then a "BelgianBlueCow" exists
     When the save round trips
     Then a "BelgianBlueCow" exists
-    And def "BelgianBlueCow" stat "Wildness" is 0.05
+    And Beef Eaters Renew: the animal "BelgianBlueCow" has the raw stat "Wildness" at 0.05
 
   Scenario: a pygmy beefalo's map round-trips through a save with wildness intact
     Given the save "test-colony" is loaded
@@ -21,4 +21,4 @@ Feature: Beef Eaters Renew — the wildness stat survives a save and reload
     Then a "PygmyBeefalo" exists
     When the save round trips
     Then a "PygmyBeefalo" exists
-    And def "PygmyBeefalo" stat "Wildness" is 0.5
+    And Beef Eaters Renew: the animal "PygmyBeefalo" has the raw stat "Wildness" at 0.5

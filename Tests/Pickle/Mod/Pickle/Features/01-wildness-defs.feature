@@ -9,9 +9,7 @@ Feature: Beef Eaters Renew — the wildness repair survives the game's own load
   scenario B.
 
   Scenario: the Belgian blue cow's wildness survives the load, as the XML wrote it
-    Then def "BelgianBlueCow" raw stat "Wildness" is 0.05
-    And def "BelgianBlueCow" stat "Wildness" is 0.05
+    Then Beef Eaters Renew: the animal "BelgianBlueCow" has the raw stat "Wildness" at 0.05
 
   Scenario: the pygmy beefalo's wildness survives the load, as the XML wrote it
-    Then def "PygmyBeefalo" raw stat "Wildness" is 0.5
-    And def "PygmyBeefalo" stat "Wildness" is 0.5
+    Then Beef Eaters Renew: the animal "PygmyBeefalo" has the raw stat "Wildness" at 0.5

@@ -8,7 +8,7 @@ Feature: Beef Eaters Renew — DefInjected labels reach the def in French
   scenario P. Pair with 06-labels-english.feature, run under -Language English.
 
   Scenario: the Belgian blue cow's label is in French
-    Then def "BelgianBlueCow" field "label" is "vache blanc-bleu belge"
+    Then Beef Eaters Renew: the animal "BelgianBlueCow" has the label "vache Blanc Bleu Belge"
 
   Scenario: the pygmy beefalo's label is in French
-    Then def "PygmyBeefalo" field "label" is "beefalo pygmée"
+    Then Beef Eaters Renew: the animal "PygmyBeefalo" has the label "beefalo pygmée"

@@ -65,5 +65,30 @@ namespace Nelim.BeefEaters.PickleTests
                 $"TraderKindDef '{traderDefName}' WOULD trade '{animalDefName}' " +
                 $"(tradeTags: {TagReport(thing)}), which this scenario expected it not to.");
         }
+
+        // Pickle's own def/stat/field steps look a def up by name alone and refuse a name that a
+        // ThingDef and a PawnKindDef share, which is true of both animals here. These two name the
+        // ThingDef, the one that holds the label and the statBases.
+        [Then("Beef Eaters Renew: the animal {string} has the raw stat {string} at {float}")]
+        public void RawStat(PickleContext ctx, string defName, string statName, float expected)
+        {
+            var thing = Animal(ctx, defName);
+            var stat = DefDatabase<StatDef>.GetNamedSilentFail(statName);
+            ctx.Require(stat != null, $"No StatDef named '{statName}'.");
+            float raw = thing.GetStatValueAbstract(stat);
+            var listed = thing.statBases?.FirstOrDefault(s => s.stat == stat);
+            ctx.Assert(listed != null && System.Math.Abs(listed.value - expected) < 0.0001f,
+                $"ThingDef '{defName}' statBases {statName}: " + (listed == null ? "not listed (stat default would apply)" : listed.value.ToString("R")) + $", expected {expected}.");
+            ctx.Assert(System.Math.Abs(raw - expected) < 0.0001f,
+                $"ThingDef '{defName}' computed {statName} is {raw:R}, expected {expected}.");
+        }
+
+        [Then("Beef Eaters Renew: the animal {string} has the label {string}")]
+        public void Label(PickleContext ctx, string defName, string expected)
+        {
+            var thing = Animal(ctx, defName);
+            ctx.Assert(thing.label == expected,
+                $"ThingDef '{defName}' label is \"{thing.label}\", expected \"{expected}\".");
+        }
     }
 }
