@@ -26,6 +26,7 @@ remaining:
   - ADS 2 + Dogs mate pass c166 (2026-10-02): 10 passed 3 failed 6 skipped; both mods load with this one without a word (green); the Dogs mate patch DID fire (Cow patched by Dogs mate and Beef Eaters Renew) - the red was my step naming the mod by packageId instead of display name, fixed, rerun submitted; 2 French reds = language pass
   - gallery run 8ab8 (2026-10-02) green but its three images read by Claude and rejected: animals thumbnail-sized at PickleTools zoom 9 on the orange studio floor; rewritten with local spawn+camera steps (cow, bull, beefalo, together), gallery v2 submitted; nothing copied to Art/Gallery yet
   - gallery v3 (2026-10-02, ec71e99): staged story (evening on the cattle farm), lamp + rose + bush placed around each subject then removed, per owner's rule; ticket 743e (queued as v2) plays this tree; images still to be read by eye before any is copied to Art/Gallery/; the decor is plain Core props, a colonist-free scene, no tattoos/clothes apply to animals
+  - 2026-10-02 c404f1d: TESTING.md now maps A-P to a Pickle scenario or a reasoned not-applicable (gate criterion 'no manual test left'); new feature 11-def-values (author's numbers read after load), ticket 8265 submitted; the gallery (743e) and Dogs mate rerun (69c3) still queued
   - unverified: SEVENTH TICKET (gallery, feature 10, map galerie) submitted 2026-10-02 at c2290ce; captures to read by eye, then copy chosen ones to Art/Gallery/ as 1-..png
   - unverified: SIX PICKLE TICKETS SUBMITTED 2026-10-02 at cefade3 (min EN, min FR, textureowner, original, animalgear, animals; ids 20261002-072839-419-f84f .. -072850-480-c166, evidence Tests/Pickle/Evidence/20261001-*): awaiting RUN_DONE, verdicts not read; keep the Mod tree frozen until then
   - unverified: the eight Tests/Pickle features (wildness, textures, save round trip, Animal Gear absent, collision with the original, EN/FR labels, trade via a local WillTrade step), written 2026-09-27, none executed; every step line resolves to exactly one step per Tools/Check-PickleSteps.ps1 (2026-09-28) - see Tests/Pickle/README.md
@@ -481,3 +482,8 @@ read off the copy subscribed on this machine rather than guessed.
 **The Animal Gear patch still cannot be tested here.** It is kept exactly as TheGoofyOne wrote it,
 behind his `PatchOperationFindMod`, and Animal Gear is not installed. Inert and silent in its
 absence, unknown in its presence.
+
+
+## Preview source migration — 2026-10-02
+
+Copy, typography, layout and palette are consolidated in `Art/Preview.config.json`. The canonical inputs are `Art/Preview-source.png`, `Art/echo.png` and `Art/ModIcon-source.png`; the shared renderer writes temporary diagnostics under ignored `Art/.render/`. Existing distributed Preview, gallery and ICO outputs were preserved because they were present and coherent; no render was run for this migration. Superseded JSON files and generated QA intermediates were removed. Nothing published.
