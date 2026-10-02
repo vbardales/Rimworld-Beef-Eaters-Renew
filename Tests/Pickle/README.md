@@ -102,3 +102,11 @@ is a short summary line per run under `docs/runs/` (`docs/runs/<date>-<short-sha
 cited from `STATUS.md`. Keep, per pass, only the latest report for the revision now in the
 repository, plus any older report that is the sole proof of a check the latest run did not
 repeat; delete the rest as soon as a newer report supersedes it.
+
+## Language and the two label features
+
+`06-labels-english` and `06-labels-french` each assert one language, and a pass runs in one language
+(`-Language`, default English). A full pass in English therefore shows `06-labels-french` red, and the
+reverse: that red is the pass, not the mod. Play the English passes with `-Filter '!06-labels-french'`
+and the French pass with `-Filter '06-labels-french'` (the other features do not depend on language).
+Found 2026-10-02 (run b655): the texture pass, in English, ran the French feature.
