@@ -137,5 +137,33 @@ namespace Nelim.BeefEaters.PickleTests
                 Find.CameraDriver.config.sizeRange = savedSizeRange.Value;
             savedSizeRange = null;
         }
+
+        // ---- gallery decor: props around a subject, then taken away so the next portrait has the same ground ----
+
+        private static readonly List<Thing> stagedDecor = new List<Thing>();
+
+        [When("Beef Eaters Renew: I stage the decor {string} {int} cells east and {int} cells north of {string}")]
+        public void StageDecor(PickleContext ctx, string defName, int east, int north, string colonistName)
+        {
+            var def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
+            ctx.Require(def != null, $"no ThingDef named {defName}");
+            var map = Find.CurrentMap;
+            var cell = ColonistNamed(ctx, colonistName).Position + new IntVec3(east, 0, north);
+            ctx.Require(cell.InBounds(map), $"cell {cell} is off the map");
+            ctx.Require(!cell.GetThingList(map).Any(t => t is Pawn || t.def.category == ThingCategory.Building),
+                $"cell {cell} already holds a pawn or a building");
+            foreach (var p in cell.GetThingList(map).Where(t => t.def.category == ThingCategory.Plant).ToList()) p.Destroy();
+            var thing = ThingMaker.MakeThing(def, def.MadeFromStuff ? GenStuff.DefaultStuffFor(def) : null);
+            if (thing is Plant plant) plant.Growth = 1f;
+            GenSpawn.Spawn(thing, cell, map);
+            stagedDecor.Add(thing);
+        }
+
+        [When("Beef Eaters Renew: the staged decor is removed")]
+        public void RemoveStagedDecor(PickleContext ctx)
+        {
+            foreach (var t in stagedDecor) if (!t.Destroyed) t.Destroy();
+            stagedDecor.Clear();
+        }
     }
 }
