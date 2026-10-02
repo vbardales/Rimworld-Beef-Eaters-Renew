@@ -419,3 +419,29 @@ delete a report `STATUS.md` still cites: repoint first. In git: one line per run
    to be in the intended state, not another manual test.
 4. Minimal pass and every `@requires` pass green, with `exitReason: passed` read before the
    counts; English and French each by their own pass (`-Language`).
+
+## Scenarios A-P: what covers each, and what is not applicable (2026-10-02)
+
+The `tested` gate asks that no manual test is left to tick. Each prose scenario above is either covered by a
+Pickle scenario, or is listed here as not applicable with its reason. "Engine" means the check only asks
+whether RimWorld honours a value the def declares, which the project's rule "we do not test the game" excludes
+once the value itself is asserted.
+
+| Scenario | Covered by | Not applicable, and why |
+|---|---|---|
+| A, both animals exist and draw | `11-def-values` (body size, speed), `02-textures-load`, the gallery pictures read by eye | The look of a walking animal beside a vanilla one: a picture a person reads, not an assertion |
+| B, wildness | `01-wildness-defs`, `03-save-roundtrip` | The information card line and taming odds: engine reading a stat already asserted |
+| C, negative control | `Tools/Check-Mod.ps1` section 2 (fails if the field moves back) | Run once by design, "to be run once and written down, not kept" |
+| D, the enormous cow | `11-def-values` (body size, speed, filth, value, hunger, health, life) | Watching it cross a room, a quadrum of filth, hauling a corpse: engine behaviour of declared numbers |
+| E, milk and wool | `11-def-values` (milk and shear comps, meat and leather sources) | Milking for a quadrum and butchering: engine |
+| F, pens, roaming | `11-def-values` (`roamMtbDays`, `packAnimal`) | Pen food, caravan loading: engine; the wording against `README.md` is a read, done in the 2026-09-13 editorial pass |
+| G, training | `11-def-values` (`trainability`, nuzzle) | Training a beefalo to Haul: engine |
+| H, spawning | `11-def-values` (cow has no wild biome) | A herd appearing on a tundra map within days: engine and chance; starting animal lists: nothing in this mod touches them |
+| I, trade | `07-trade` (both animals reach a farm trader on their tag) | Rolling a caravan's stock: chance, and the engine |
+| J, temperature | `11-def-values` (comfort minimum) | Cold injuries over a winter: engine |
+| K, textures, life stages | `02-textures-load` | Walking in four directions, tints, the drawn size per life stage, dessicated corpses: how the game draws, shown by the gallery pictures |
+| L, breeding, ageing | `11-def-values` (gestation, life expectancy) | Ageing to death, litters, life-stage swap: engine |
+| M, Animal Gear | `04-animal-gear-absent`, `08-animal-gear-present` (passed, run ad6a) | Making and wearing the barding: the author's patch and Animal Gear's behaviour |
+| N, collision with the original | `05-collision-with-original` (passed, run b0a3) | none |
+| O, saves | `03-save-roundtrip` | Adding the mod to a colony, swapping the original for this port, removing the mod: how the game handles a mod list, not this mod |
+| P, display, Workshop page | `06-labels-english`, `06-labels-french` (passed, runs e01a, f86e); the owner's French review | The Workshop page and the mod-list entry's look: offline checks of the audit, and the page exists only after publication (listed for Virginie) |

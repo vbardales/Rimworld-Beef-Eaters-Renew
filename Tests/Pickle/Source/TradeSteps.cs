@@ -159,6 +159,47 @@ namespace Nelim.BeefEaters.PickleTests
             stagedDecor.Add(thing);
         }
 
+        // ---- def values, read after the game's own load (scenarios A, D-L of TESTING.md) --------------------
+
+        private static string Walk(object start, string path)
+        {
+            object cur = start;
+            foreach (var part in path.Split('.'))
+            {
+                if (cur == null) return "<null>";
+                var t = cur.GetType();
+                var f = t.GetField(part, System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
+                if (f != null) { cur = f.GetValue(cur); continue; }
+                var p = t.GetProperty(part, System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Instance);
+                if (p == null) return $"<no member '{part}' on {t.Name}>";
+                cur = p.GetValue(cur, null);
+            }
+            if (cur is Def d) return d.defName;
+            if (cur is float fl) return fl.ToString("R", System.Globalization.CultureInfo.InvariantCulture);
+            if (cur is bool b) return b ? "true" : "false";
+            return cur == null ? "<null>" : System.Convert.ToString(cur, System.Globalization.CultureInfo.InvariantCulture);
+        }
+
+        [Then("Beef Eaters Renew: the animal {string} has the field {string} at {string}")]
+        public void FieldIs(PickleContext ctx, string defName, string path, string expected)
+        {
+            var actual = Walk(Animal(ctx, defName), path);
+            ctx.Assert(string.Equals(actual, expected, System.StringComparison.OrdinalIgnoreCase),
+                $"ThingDef '{defName}' {path} is \"{actual}\", expected \"{expected}\".");
+        }
+
+        [Then("Beef Eaters Renew: the animal {string} has the {string} comp with {string} at {string}")]
+        public void CompFieldIs(PickleContext ctx, string defName, string compClass, string path, string expected)
+        {
+            var thing = Animal(ctx, defName);
+            var comp = thing.comps?.FirstOrDefault(c => c.GetType().Name == compClass);
+            ctx.Assert(comp != null, $"ThingDef '{defName}' has no {compClass}; its comps are: " +
+                string.Join(", ", (thing.comps ?? new List<CompProperties>()).Select(c => c.GetType().Name)));
+            var actual = Walk(comp, path);
+            ctx.Assert(string.Equals(actual, expected, System.StringComparison.OrdinalIgnoreCase),
+                $"ThingDef '{defName}' {compClass}.{path} is \"{actual}\", expected \"{expected}\".");
+        }
+
         [When("Beef Eaters Renew: the staged decor is removed")]
         public void RemoveStagedDecor(PickleContext ctx)
         {
