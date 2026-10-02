@@ -110,3 +110,7 @@ repeat; delete the rest as soon as a newer report supersedes it.
 reverse: that red is the pass, not the mod. Play the English passes with `-Filter '!06-labels-french'`
 and the French pass with `-Filter '06-labels-french'` (the other features do not depend on language).
 Found 2026-10-02 (run b655): the texture pass, in English, ran the French feature.
+
+Same shape for Animal Gear: `04-animal-gear-absent` is red by construction in the pass that stages Animal
+Gear (run ad6a, 2026-10-02: the armour def exists there, which `08-animal-gear-present` proves green). Play
+that pass with `-Filter '!04-animal-gear-absent,!06-labels-french'`.
