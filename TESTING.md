@@ -293,7 +293,7 @@ installed on this machine, so this scenario can actually be run.
 
 - Enable TheGoofyOne's Beef Eaters alongside this port. **The mod list must say so**, in the way it
   reports any declared incompatibility.
-- Force it anyway, if the game lets you, and expect `Adding duplicate` in the log naming
+- Force it anyway, if the game lets you. (Run 3cad, 2026-10-02: 1.6 logs no `Adding duplicate` line; the clash is silent.) Expect
   `BelgianBlueCow` and `PygmyBeefalo`. Whichever loads last wins, silently, and if that is the
   original then the wildness fault is back with no other visible sign. That silence is the reason
   the declaration exists.
@@ -349,8 +349,8 @@ what each needs against what exists:
   entirely: cheap, no save, proves the file is actually read rather than merely present. Written.
 - **M** (Animal Gear) — only the absent half is written (no def, no log, Animal Gear not staged
   anywhere here). The present half needs that mod's packageId/Workshop id, not looked up yet.
-- **N** (collision with the original) — `mod ... is loaded` plus `a warning matching ... was
-  logged` for `Adding duplicate`, staged against the original itself (Workshop 1988048034, its
+- **N** (collision with the original) — `mod ... is loaded` plus `mod ... loads before ...` plus the repaired wildness still read (run 3cad found no duplicate warning is logged; was
+  `a warning matching`), staged against the original itself (Workshop 1988048034, its
   packageId read from the installed copy) rather than assumed. Written.
 - **O** (save round trip) — not in the first proposal, added on inspection: `the save round trips`
   is a built-in step and the concern is real (does the stat survive a save, not just a load).
