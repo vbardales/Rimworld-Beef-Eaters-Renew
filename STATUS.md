@@ -123,6 +123,8 @@ audit, the override call. See `Tests/Pickle/README.md` for the full reasoning an
   rather than leave the gap documented. See `Tests/Pickle/README.md`, "The local step, and why it
   is not in PickleTools." Seven features now exist under `Tests/Pickle/`, none executed.
 
+> **Art/ restructured 2026-10-02.** The local Preview chain named in the dated sections below (Art/preview.html, ender-preview.cjs, compose-preview.cjs, preview-palette.json, preview-qa.json, preview-background.png, Preview-layout.html, rchive-before-editorial-fix-2026-09-13/) was replaced by the shared Preview renderer: Art/Preview.config.json, Art/Preview-original.png and Art/Preview-source.png; the delivered Mod/About/Preview.png and Art/Gallery/0-preview.png are unchanged by this. Those sections stay as history. Generated diagnostics go to Art/.render/, which is git-ignored.
+
 ## Editorial fixes after audit — 2026-09-13
 
 The user requested correction of the audit findings. All editorial findings listed in the

@@ -96,7 +96,7 @@ Le mod est en `1.0.0` **non publié**. Manquent, et rien d'autre :
 3. La `1.0.0` sur l'item Workshop 3811290251, créé en privé par la prépublication `0.1.0` du 2026-10-01 (`PublishedFileId.txt` commité). Il reste privé tant que Virginie ne l'a pas basculé elle-même.
 
 Les deux images sont faites depuis le 2026-09-12 : `About/Preview.png` en 896x504 et
-`About/ModIcon.png` en 128x128, gravées depuis `Art/` par `Art/preview.html`. **Les sources pleine
+`About/ModIcon.png` en 128x128, composée depuis `Art/` par le moteur partagé de Preview (`Art/Preview.config.json`, source `Art/Preview-original.png`; l'ancienne chaîne `Art/preview.html` et `render-preview.cjs` a disparu le 2026-10-02). **Les sources pleine
 résolution restent dans `Art/`, jamais dans `About/`** — c'est de là qu'on regrave, et une source
 laissée dans `About/` partirait vers Steam. La vitrine a un défaut connu, noté dans `STATUS.md` :
 elle ne montre pas la vache blanc-bleu.
