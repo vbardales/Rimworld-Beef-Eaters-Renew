@@ -1,0 +1,5 @@
+# Pass "galerie": the zen meadow studio of PickleTools plus CoatSteps, for the pictures of feature 10 (Workshop gallery).
+# Presentation set, staged only here. The fixture save nelim-zen-meadow-studio is written by PickleTools own suite.
+nelim.pickletools.screenshotstudio   path:PickleTools/ScreenshotStudio/Mod
+nelim.pickletools.clearscreen   path:PickleTools/ClearScreen/Mod
+nelim.pickletools.coatsteps   path:PickleTools/CoatSteps/Mod

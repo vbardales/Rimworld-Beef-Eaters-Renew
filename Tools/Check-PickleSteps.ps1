@@ -45,12 +45,13 @@ $registry = [Activator]::CreateInstance($registryType)
 function New-Expr($pattern) { New-Object CucumberExpressions.CucumberExpression($pattern, $registry) }
 
 # The attribute argument is a C# literal: undo its escaping to get the pattern Pickle sees.
-$attr = '\[(?:Given|When|Then)\("((?:[^"\\]|\\.)*)"'
+$attr = '\[(?:Given|When|Then)\((Prefix \+ )?"((?:[^"\\]|\\.)*)"'
 function Read-Patterns($dir, $source) {
     foreach ($f in Get-ChildItem -LiteralPath $dir -Filter *.cs -ErrorAction SilentlyContinue) {
         $text = [IO.File]::ReadAllText($f.FullName)
         foreach ($m in [regex]::Matches($text, $attr)) {
-            [pscustomobject]@{ Source = $source; File = $f.Name; Pattern = ($m.Groups[1].Value -replace '\\\\', '\' -replace '\\"', '"') }
+            $lead = if ($m.Groups[1].Success) { "Nelim's Pickle Tools: " } else { '' }
+            [pscustomobject]@{ Source = $source; File = $f.Name; Pattern = $lead + ($m.Groups[2].Value -replace '\\\\', '\' -replace '\\"', '"') }
         }
     }
 }
@@ -97,12 +98,14 @@ foreach ($p in 'the save {string} is loaded', 'I save and reload', 'I save and r
 
 # --- the one PickleTools tool the texture pass stages ---------------------------------------------------
 $toolCount = 0
-$toolSource = Join-Path $ToolsRoot 'TextureOwner\Source'
-if (Test-Path $toolSource) {
-    foreach ($p in Read-Patterns $toolSource 'tool:TextureOwner') {
-        try { $candidates += [pscustomobject]@{ Source = $p.Source; Pattern = $p.Pattern; Regex = (New-Expr $p.Pattern).Regex }; $toolCount++ } catch { }
-    }
-} else { Write-Host "note: $toolSource not found, TextureOwner lines cannot resolve" -ForegroundColor Yellow }
+foreach ($tool in 'TextureOwner', 'CoatSteps', 'ScreenshotStudio', 'ClearScreen') {
+    $toolSource = Join-Path $ToolsRoot "$tool\Source"
+    if (Test-Path $toolSource) {
+        foreach ($p in Read-Patterns $toolSource "tool:$tool") {
+            try { $candidates += [pscustomobject]@{ Source = $p.Source; Pattern = $p.Pattern; Regex = (New-Expr $p.Pattern).Regex }; $toolCount++ } catch { }
+        }
+    } else { Write-Host "note: $toolSource not found, $tool lines cannot resolve" -ForegroundColor Yellow }
+}
 
 # --- 2. every step line of every feature -----------------------------------------------------------------
 $features = @(Get-ChildItem -LiteralPath (Join-Path $suite 'Mod\Pickle\Features') -Filter *.feature)
@@ -123,7 +126,7 @@ foreach ($file in $features) {
 }
 
 Write-Host ''
-Write-Host "$localCount local pattern(s) compile. $lines step line(s) in $($features.Count) feature file(s) checked against $($candidates.Count) candidates ($pickleCount Pickle, $toolCount TextureOwner, $localCount local)."
+Write-Host "$localCount local pattern(s) compile. $lines step line(s) in $($features.Count) feature file(s) checked against $($candidates.Count) candidates ($pickleCount Pickle, $toolCount PickleTools, $localCount local)."
 Write-Host ''
 if ($bad -gt 0) {
     Write-Host "$bad PROBLEM(S). An invalid pattern makes a run play zero scenarios; an unresolved line is a step that does not exist; an ambiguous line fails a healthy scenario." -ForegroundColor Red
