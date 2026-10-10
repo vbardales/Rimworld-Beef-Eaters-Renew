@@ -15,30 +15,14 @@ licence_at:   browser-verified 2026-09-12; original files, live description, all
 upstream_mod_remotes: N/A
 dependencies: none
 showcase:     complete
-tested_on:     2026-10-10, bedb34a, RimWorld 1.6 (WSL), 11-def-values 9/9 (partial: see remaining)
+tested_on:     2026-10-02 cefade3 (min EN/FR, textures, original, Animal Gear, ADS 2 + Dogs mate, green after rerun) and 2026-10-10 bedb34a (11-def-values 9/9), RimWorld 1.6 (WSL); gallery pending
 workshop:     3811290251
 remaining:
-  - unverified 2026-10-10: gallery `10-gallery-animals` rewritten 2026-10-10 for SanctuaryBacklot (5 pictures, map `wsl-deps.sanctuary.map`), first run pending; no accepted image in `Art/Gallery/` apart from `0-preview.png`
-- feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
-  - unverified 2026-10-10: the sixteen prose scenarios of TESTING.md (A-P), none played - no animal spawned, no pen built, no milk taken
-  - defect found 2026-10-02 (run f84f, min EN at cefade3, 3 passed 8 failed 8 skipped): the 8 reds were all `names more than one def (PawnKindDef, ThingDef)`, Pickle def steps refuse the animals shared defNames; fixed by two local steps naming the ThingDef (commit dd32b9f), rerun of 01, 03, 06-english submitted; 06-french red likely same cause and rides the pending FR ticket
-  - textures pass b655 (2026-10-02): 9 passed 5 failed 5 skipped; textures red = animals are Graphic_Multi, bare texPath is no file, steps now name the _south file, rerun submitted; label-French reds = French feature run under an English pass, not a mod defect (Tests/Pickle/README.md, "Language and the two label features")
-  - original-collision pass 3cad (2026-10-02): 9 passed 3 failed 7 skipped; the original loads (its wildness XML error is logged) but 1.6 logs no `Adding duplicate` line, the scenario asserted a guess; rewritten to load order + wildness wins, rerun submitted; French reds = language pass, not a defect
-  - Animal Gear pass ad6a (2026-10-02): 9 passed 3 failed 7 skipped; `08-animal-gear-present` PASSED (the guarded patch fires with Animal Gear loaded, closing scenario M); the 3 reds are `04-animal-gear-absent` (red by construction when the mod is present) and the two French labels (language pass) - no defect, no rerun
-  - ADS 2 + Dogs mate pass c166 (2026-10-02): 10 passed 3 failed 6 skipped; both mods load with this one without a word (green); the Dogs mate patch DID fire (Cow patched by Dogs mate and Beef Eaters Renew) - the red was my step naming the mod by packageId instead of display name, fixed, rerun submitted; 2 French reds = language pass
-  - gallery run 8ab8 (2026-10-02) green but its three images read by Claude and rejected: animals thumbnail-sized at PickleTools zoom 9 on the orange studio floor; rewritten with local spawn+camera steps (cow, bull, beefalo, together), gallery v2 submitted; nothing copied to Art/Gallery yet
-  - gallery v3 (2026-10-02, ec71e99): staged story (evening on the cattle farm), lamp + rose + bush placed around each subject then removed, per owner's rule; ticket 743e (queued as v2) plays this tree; images still to be read by eye before any is copied to Art/Gallery/; the decor is plain Core props, a colonist-free scene, no tattoos/clothes apply to animals
-  - 2026-10-02 c404f1d: TESTING.md now maps A-P to a Pickle scenario or a reasoned not-applicable (gate criterion 'no manual test left'); new feature 11-def-values (author's numbers read after load), ticket 8265 submitted; the gallery (743e) and Dogs mate rerun (69c3) still queued
-  - unverified: SEVENTH TICKET (gallery, feature 10, map galerie) submitted 2026-10-02 at c2290ce; captures to read by eye, then copy chosen ones to Art/Gallery/ as 1-..png
-  - evidence trimmed 2026-10-05 (disk request): Tests/Pickle/Evidence/20261001-* kept as summary + junit + Player.log only (their reds are superseded by the 20261002-*-rerun folders; the greens they alone prove, 04, 07, 08, 09-load, stay readable in summary.json); 20261002-gallery (rejected v1 images) deleted, its verdict is in the gallery line below
-  - unverified: SIX PICKLE TICKETS SUBMITTED 2026-10-02 at cefade3 (min EN, min FR, textureowner, original, animalgear, animals; ids 20261002-072839-419-f84f .. -072850-480-c166, evidence Tests/Pickle/Evidence/20261001-*): awaiting RUN_DONE, verdicts not read; keep the Mod tree frozen until then
-  - unverified: the eight Tests/Pickle features (wildness, textures, save round trip, Animal Gear absent, collision with the original, EN/FR labels, trade via a local WillTrade step), written 2026-09-27, none executed; every step line resolves to exactly one step per Tools/Check-PickleSteps.ps1 (2026-09-28) - see Tests/Pickle/README.md
-  - unverified: the Animal Gear patch firing with Animal Gear loaded (scenario M, Tests/Pickle/08): feature written and step-checked; Dylan.AnimalGear (Workshop 1541438907) read from its own About.xml after a steamcmd download 2026-09-28, but never run
-  - unverified: the ADS 2 and Dogs mate patches (Mod/Patches/ADS2.xml, DogsMate.xml) applied in a running game with those mods loaded; offline XPath check only (Tools/Check-Mod.ps1, section 6, shown able to fail). No Pickle map mounts them yet
-  - unverified: the `tested` gate of AUDIT.md (2026-10-01 text): no `@wip` (none exists), every `@requires` feature run with a map that mounts its mod (02 textureowner, 05 original, 08 Animal Gear), no manual scenario left to tick - TESTING.md "Gate for `tested`" maps A-P to green Pickle or N/A
+  - unverified 2026-10-11: gallery `10-gallery-animals` (v6, SanctuaryBacklot, map `wsl-deps.sanctuary.map`) ticket 20261010-215307-702-afc3 queued; no image read yet, nothing accepted in `Art/Gallery/` apart from `0-preview.png`
+  - feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
 updated:      2026-10-10, the mod's own session - playTests[1.0.0] exit criteria met, code review done, now shootGallery[1.0.0]
-protocols_read_sha: a959f76528043543b1ac9025b40dc8efcefd9e56
+protocols_read_sha: a5c7cf48b349ae00e7d28fd643e852dc860dfaf2
 ---
 
 # Beef Eaters Renew — status
