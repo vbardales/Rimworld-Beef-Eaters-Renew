@@ -2,7 +2,7 @@
 # workshop-1 to workshop-5). Rewritten 2026-10-10 for Nelim's Sanctuary Backlot (AUDIT.md 9.a): the zen meadow
 # studio of the first tries is gone, and the session directs the series. Second version the same day, after
 # reading the five captures of run 9575: frames too wide and empty, sleeping Z motes left on the ground at 06 h,
-# the barn cow standing on the table.
+# the barn cow standing on the table. Third version after run a840: pen frames accepted (fence, bamboo, readable); a campfire left at the pen edge now cleared (area to z 222), barn beefalo moved in front of the cow instead of behind her rear (campfires at z 240 and 234, x 200 and 204).
 #
 # The story: one day on a small cattle farm at the Sanctuary, told in the light of its hours. Nelim, the only
 # colonist, is the farmer; she walks the pen from morning to evening and each picture is one animal of the farm
@@ -38,7 +38,7 @@ Feature: Beef Eaters Renew Workshop gallery
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I let 60 ticks pass
-    And Nelim's Pickle Tools: the area from (132, 206) to (166, 221) is cleared
+    And Nelim's Pickle Tools: the area from (132, 206) to (166, 222) is cleared
     And Beef Eaters Renew: time is paused
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (140, 221) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (141, 220) fully grown
@@ -61,7 +61,7 @@ Feature: Beef Eaters Renew Workshop gallery
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I let 60 ticks pass
-    And Nelim's Pickle Tools: the area from (132, 206) to (166, 221) is cleared
+    And Nelim's Pickle Tools: the area from (132, 206) to (166, 222) is cleared
     And Beef Eaters Renew: time is paused
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (153, 221) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (154, 220) fully grown
@@ -82,7 +82,7 @@ Feature: Beef Eaters Renew Workshop gallery
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I let 60 ticks pass
-    And Nelim's Pickle Tools: the area from (132, 206) to (166, 221) is cleared
+    And Nelim's Pickle Tools: the area from (132, 206) to (166, 222) is cleared
     And Beef Eaters Renew: time is paused
     And Nelim's Pickle Tools: I place the decor "Hay" at (153, 217)
     And Nelim's Pickle Tools: I place the decor "Hay" at (153, 219)
@@ -104,7 +104,7 @@ Feature: Beef Eaters Renew Workshop gallery
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I let 60 ticks pass
-    And Nelim's Pickle Tools: the area from (132, 206) to (166, 221) is cleared
+    And Nelim's Pickle Tools: the area from (132, 206) to (166, 222) is cleared
     And Beef Eaters Renew: time is paused
     And Nelim's Pickle Tools: I place the decor "Hay" at (148, 216)
     And Nelim's Pickle Tools: I place the decor "Hay" at (149, 216)
@@ -128,7 +128,7 @@ Feature: Beef Eaters Renew Workshop gallery
     And Nelim's Pickle Tools: I let 60 ticks pass
     And Beef Eaters Renew: time is paused
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (201, 237) facing East
-    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (203, 237) facing West
+    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (202, 235) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (202, 239) facing South
     And Nelim's Pickle Tools: I frame the rectangle from (197, 233) to (205, 242)
     And Beef Eaters Renew: the map is shown alone for a capture
