@@ -8,18 +8,17 @@ packageId:    nelim.beefeaters
 repo:         Rimworld-Beef-Eaters-Renew
 visibility:   public
 detached:     yes
-workflow_stage: playTests[1.0.0]
+workflow_stage: shootGallery[1.0.0]
+code_review_sha: bedb34a1f17300aae13d54a347574ac24af5cb15
 licence:      silent
 licence_at:   browser-verified 2026-09-12; original files, live description, all 29 comments, 9 changelog entries and author profile; no reuse terms; last mod update 2023-03-11
 upstream_mod_remotes: N/A
 dependencies: none
 showcase:     complete
-tested_on:
+tested_on:     2026-10-10, bedb34a, RimWorld 1.6 (WSL), 11-def-values 9/9 (partial: see remaining)
 workshop:     3811290251
 remaining:
-  - unverified 2026-10-10: `11-def-values` (11 scenarios) has never run: ticket 8265 and the gallery ticket 743e of 2026-10-02 came back `invalid` (no owner, no mod, nothing played), so the author's numbers are asserted offline only; re-submitted 2026-10-10 as a small ticket, see "AUDIT.md applied 2026-10-10"
   - unverified 2026-10-10: gallery `10-gallery-animals` (map `galerie`) never played either, it belongs to `shootGallery`; no accepted image in `Art/Gallery/` apart from `0-preview.png`
-  - unverified 2026-10-10: code review (AUDIT.md 8.m) not done, `code_review_sha` absent: review `Mod/` and `Tests/Pickle/Source/` from the first commit (no tag), after the last `playTests` run
   - unverified 2026-10-10: the sixteen prose scenarios of TESTING.md (A-P), none played - no animal spawned, no pen built, no milk taken
   - defect found 2026-10-02 (run f84f, min EN at cefade3, 3 passed 8 failed 8 skipped): the 8 reds were all `names more than one def (PawnKindDef, ThingDef)`, Pickle def steps refuse the animals shared defNames; fixed by two local steps naming the ThingDef (commit dd32b9f), rerun of 01, 03, 06-english submitted; 06-french red likely same cause and rides the pending FR ticket
   - textures pass b655 (2026-10-02): 9 passed 5 failed 5 skipped; textures red = animals are Graphic_Multi, bare texPath is no file, steps now name the _south file, rerun submitted; label-French reds = French feature run under an English pass, not a mod defect (Tests/Pickle/README.md, "Language and the two label features")
@@ -37,8 +36,8 @@ remaining:
   - unverified: the ADS 2 and Dogs mate patches (Mod/Patches/ADS2.xml, DogsMate.xml) applied in a running game with those mods loaded; offline XPath check only (Tools/Check-Mod.ps1, section 6, shown able to fail). No Pickle map mounts them yet
   - unverified: the `tested` gate of AUDIT.md (2026-10-01 text): no `@wip` (none exists), every `@requires` feature run with a map that mounts its mod (02 textureowner, 05 original, 08 Animal Gear), no manual scenario left to tick - TESTING.md "Gate for `tested`" maps A-P to green Pickle or N/A
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-10-10, the mod's own session - AUDIT.md applied: done -> playTests[1.0.0], def-values ticket re-submitted
-protocols_read_sha: 1405c22e11d72011390df2af5013f748f6ed374b
+updated:      2026-10-10, the mod's own session - playTests[1.0.0] exit criteria met, code review done, now shootGallery[1.0.0]
+protocols_read_sha: a959f76528043543b1ac9025b40dc8efcefd9e56
 ---
 
 # Beef Eaters Renew — status
@@ -60,7 +59,7 @@ reviewed by Virginie 2026-10-02), Pickle suites written with their scope and map
 and `TESTING.md`.
 
 What `playTests` still lacks (all `unverified`, none a defect):
-- **`11-def-values` never played.** Its ticket 8265 came back `invalid` on 2026-10-03, as did the gallery
+- **`11-def-values` played 2026-10-10, ticket 1de2: 9 of 9 passed** (exitReason passed, 9 discovered and played; earlier I wrote 11, the file has 9). Before that its ticket 8265 had come back `invalid` on 2026-10-03, as had the gallery
   ticket 743e. The 2026-10-02 notes above called them "queued": they were not. Re-submitted this day.
 - Reds of 2026-10-02 that were replayed green on a fixed build: animals 69c3 (2 of 2 passed, Dogs mate patch
   fired), textures, original collision, English and French labels, Animal Gear present. `04-animal-gear-absent`
@@ -336,3 +335,13 @@ absence, unknown in its presence.
 ## Preview source migration — 2026-10-02
 
 Copy, typography, layout and palette are consolidated in `Art/Preview.config.json`. The canonical inputs are `Art/Preview-source.png`, `Art/echo.png` and `Art/ModIcon-source.png`; the shared renderer writes temporary diagnostics under ignored `Art/.render/`. Existing distributed Preview, gallery and ICO outputs were preserved because they were present and coherent; no render was run for this migration. Superseded JSON files and generated QA intermediates were removed. Nothing published.
+
+## playTests[1.0.0] closed, shootGallery[1.0.0] entered, 2026-10-10
+
+Protocol update read first (AUDIT.md sentence on the `protocols_read_sha` ERROR, AGENTS.md markers and "while waiting", PUBLISHING.md and AUDIT.md 11.b/13.b, `USE_THIS_INSTEAD.md`), then `Mark-ProtocolsRead.ps1` (`a959f765`).
+
+- Ticket 1de2 (`11-def-values`): 9 of 9 passed, exitReason passed.
+- Every red of 2026-10-02 replayed green alone on a build that holds the fix: min-en-rerun 6/6, min-fr-rerun 6/6, textures-rerun 3/3, original-rerun 1/1, animals-rerun 2/2; Animal Gear present passed (ad6a). Two passes without optional mods, four with. No `@wip`. A-P all covered or not applicable (`TESTING.md`).
+- Code review (8.m), `code_review_sha` = `bedb34a`, range first commit to HEAD, read in full: `Mod/Defs` (one added trade tag), both patches (guards hold, predicates repeat `@Name=`), `About.xml`, French DefInjected (keys match the defs), `Tests/Pickle/Source/TradeSteps.cs` (test-side only, never shipped). No defect found.
+- Open for later states: `10-gallery-animals` never played (ticket 743e was `invalid`), gallery images, echo review, `PUBLICATION.md` absent, and at publish a `drafted` row in `USE_THIS_INSTEAD.md` (this is a Renew mod; source 1988048034, to be read from the Workshop page).
+- Prune-Evidence dry run proposes deleting `20261002-min-en-rerun` (1.6 MB); not applied, the list was not trusted blindly.
