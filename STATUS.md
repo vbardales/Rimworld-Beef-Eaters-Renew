@@ -326,7 +326,6 @@ Copy, typography, layout and palette are consolidated in `Art/Preview.config.jso
 Protocol update read first (AUDIT.md sentence on the `protocols_read_sha` ERROR, AGENTS.md markers and "while waiting", PUBLISHING.md and AUDIT.md 11.b/13.b, `USE_THIS_INSTEAD.md`), then `Mark-ProtocolsRead.ps1` (`a959f765`).
 
 - Ticket 1de2 (`11-def-values`): 9 of 9 passed, exitReason passed.
-- Every red of 2026-10-02 replayed green alone on a build that holds the fix: min-en-rerun 6/6, min-fr-rerun 6/6, textures-rerun 3/3, original-rerun 1/1, animals-rerun 2/2; Animal Gear present passed (ad6a). Two passes without optional mods, four with. No `@wip`. A-P all covered or not applicable (`TESTING.md`).
+- Every red of 2026-10-02 replayed green alone on a build that holds the fix: min EN rerun 6/6, min-fr-rerun 6/6, textures-rerun 3/3, original-rerun 1/1, animals-rerun 2/2; Animal Gear present passed (ad6a). Two passes without optional mods, four with. No `@wip`. A-P all covered or not applicable (`TESTING.md`).
 - Code review (8.m), `code_review_sha` = `bedb34a`, range first commit to HEAD, read in full: `Mod/Defs` (one added trade tag), both patches (guards hold, predicates repeat `@Name=`), `About.xml`, French DefInjected (keys match the defs), `Tests/Pickle/Source/TradeSteps.cs` (test-side only, never shipped). No defect found.
 - Open for later states: `10-gallery-animals` never played (ticket 743e was `invalid`), gallery images, echo review, `PUBLICATION.md` absent, and at publish a `drafted` row in `USE_THIS_INSTEAD.md` (this is a Renew mod; source 1988048034, to be read from the Workshop page).
-- Prune-Evidence dry run proposes deleting `20261002-min-en-rerun` (1.6 MB); not applied, the list was not trusted blindly.
