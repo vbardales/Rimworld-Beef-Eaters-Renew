@@ -14,7 +14,7 @@
     2. A step line that matches NO expression (a plausible step that does not exist), or MORE THAN ONE
        (an "Ambiguous step", which fails a healthy scenario). The candidate set is what a pass of this
        suite can actually load together: Pickle's own vocabulary, the engine's save step, this suite's
-       local steps, and the PickleTools tool the texture pass stages (TextureOwner).
+       local steps, the PickleTools tools the passes stage, and the Sanctuary Backlot steps of the gallery pass.
 
   What it cannot do: run anything. A line that resolves is a line Pickle can dispatch, not a line that
   passes. Lines are read as text; Scenario Outline placeholders are not expanded (this suite has none).
@@ -46,11 +46,11 @@ function New-Expr($pattern) { New-Object CucumberExpressions.CucumberExpression(
 
 # The attribute argument is a C# literal: undo its escaping to get the pattern Pickle sees.
 $attr = '\[(?:Given|When|Then)\((Prefix \+ )?"((?:[^"\\]|\\.)*)"'
-function Read-Patterns($dir, $source) {
+function Read-Patterns($dir, $source, $prefix = "Nelim's Pickle Tools: ") {
     foreach ($f in Get-ChildItem -LiteralPath $dir -Filter *.cs -ErrorAction SilentlyContinue) {
         $text = [IO.File]::ReadAllText($f.FullName)
         foreach ($m in [regex]::Matches($text, $attr)) {
-            $lead = if ($m.Groups[1].Success) { "Nelim's Pickle Tools: " } else { '' }
+            $lead = if ($m.Groups[1].Success) { $prefix } else { '' }
             [pscustomobject]@{ Source = $source; File = $f.Name; Pattern = $lead + ($m.Groups[2].Value -replace '\\\\', '\' -replace '\\"', '"') }
         }
     }
@@ -98,7 +98,7 @@ foreach ($p in 'the save {string} is loaded', 'I save and reload', 'I save and r
 
 # --- the one PickleTools tool the texture pass stages ---------------------------------------------------
 $toolCount = 0
-foreach ($tool in 'TextureOwner', 'CoatSteps', 'ScreenshotStudio', 'ClearScreen') {
+foreach ($tool in 'TextureOwner', 'CoatSteps', 'ScreenshotStudio', 'ClearScreen', 'StageDecor', 'ColonistRace', 'ScreenshotMode') {
     $toolSource = Join-Path $ToolsRoot "$tool\Source"
     if (Test-Path $toolSource) {
         foreach ($p in Read-Patterns $toolSource "tool:$tool") {
@@ -106,6 +106,14 @@ foreach ($tool in 'TextureOwner', 'CoatSteps', 'ScreenshotStudio', 'ClearScreen'
         }
     } else { Write-Host "note: $toolSource not found, $tool lines cannot resolve" -ForegroundColor Yellow }
 }
+
+# --- the Sanctuary's own steps (gallery pass, wsl-deps.sanctuary.map) ------------------------------------
+$backlotSource = Join-Path (Split-Path $ToolsRoot -Parent) 'SanctuaryBacklot\Source'
+if (Test-Path $backlotSource) {
+    foreach ($p in Read-Patterns $backlotSource 'tool:SanctuaryBacklot' "Nelim's Sanctuary: ") {
+        try { $candidates += [pscustomobject]@{ Source = $p.Source; Pattern = $p.Pattern; Regex = (New-Expr $p.Pattern).Regex }; $toolCount++ } catch { }
+    }
+} else { Write-Host "note: $backlotSource not found, Nelim's Sanctuary lines cannot resolve" -ForegroundColor Yellow }
 
 # --- 2. every step line of every feature -----------------------------------------------------------------
 $features = @(Get-ChildItem -LiteralPath (Join-Path $suite 'Mod\Pickle\Features') -Filter *.feature)

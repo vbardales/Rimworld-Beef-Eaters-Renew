@@ -91,74 +91,6 @@ namespace Nelim.BeefEaters.PickleTests
                 $"ThingDef '{defName}' label is \"{thing.label}\", expected \"{expected}\".");
         }
 
-        // ---- gallery: spawn an adult of a given sex on clear ground, and bring the camera close -------
-
-        private static FloatRange? savedSizeRange;
-
-        private static Pawn ColonistNamed(PickleContext ctx, string name)
-        {
-            var found = Find.CurrentMap.mapPawns.FreeColonists
-                .Where(p => p.LabelShort == name || (p.Name != null && p.Name.ToStringShort == name)).ToList();
-            ctx.Assert(found.Count == 1, $"expected exactly one colonist called {name}, found {found.Count}");
-            return found[0];
-        }
-
-        [When("Beef Eaters Renew: I spawn an adult {string} {string} {int} cells east of {string}")]
-        public void SpawnAdultEast(PickleContext ctx, string kindDefName, string sex, int cells, string colonistName)
-        {
-            ctx.Require(Find.CurrentMap != null, "load a map first");
-            var kind = DefDatabase<PawnKindDef>.GetNamedSilentFail(kindDefName);
-            ctx.Require(kind != null, $"no PawnKindDef named {kindDefName}");
-            ctx.Require(sex == "male" || sex == "female", "sex is \"male\" or \"female\"");
-            var stages = kind.RaceProps.lifeStageAges;
-            float adultAge = stages[stages.Count - 1].minAge + 0.1f;
-            var request = new PawnGenerationRequest(kind, Faction.OfPlayer, PawnGenerationContext.NonPlayer,
-                fixedGender: sex == "male" ? Gender.Male : Gender.Female, fixedBiologicalAge: adultAge, fixedChronologicalAge: adultAge);
-            var pawn = PawnGenerator.GeneratePawn(request);
-            var wanted = ColonistNamed(ctx, colonistName).Position + new IntVec3(cells, 0, 0);
-            GenSpawn.Spawn(pawn, CellFinder.StandableCellNear(wanted, Find.CurrentMap, 6f), Find.CurrentMap, Rot4.South);
-        }
-
-        [When("Beef Eaters Renew: I bring the camera to {int} cells' height {int} cells east of {string}")]
-        public void CameraEast(PickleContext ctx, int rootSize, int cells, string colonistName)
-        {
-            var at = ColonistNamed(ctx, colonistName).DrawPos;
-            var driver = Find.CameraDriver;
-            var config = driver.config;
-            if (!savedSizeRange.HasValue) savedSizeRange = config.sizeRange;
-            config.sizeRange = new FloatRange(System.Math.Min(config.sizeRange.min, rootSize), config.sizeRange.max);
-            driver.SetRootPosAndSize(new UnityEngine.Vector3(at.x + cells, at.y, at.z), rootSize);
-        }
-
-        [AfterScenario]
-        public void RestoreCameraRange()
-        {
-            if (savedSizeRange.HasValue && Find.CameraDriver != null)
-                Find.CameraDriver.config.sizeRange = savedSizeRange.Value;
-            savedSizeRange = null;
-        }
-
-        // ---- gallery decor: props around a subject, then taken away so the next portrait has the same ground ----
-
-        private static readonly List<Thing> stagedDecor = new List<Thing>();
-
-        [When("Beef Eaters Renew: I stage the decor {string} {int} cells east and {int} cells north of {string}")]
-        public void StageDecor(PickleContext ctx, string defName, int east, int north, string colonistName)
-        {
-            var def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
-            ctx.Require(def != null, $"no ThingDef named {defName}");
-            var map = Find.CurrentMap;
-            var cell = ColonistNamed(ctx, colonistName).Position + new IntVec3(east, 0, north);
-            ctx.Require(cell.InBounds(map), $"cell {cell} is off the map");
-            ctx.Require(!cell.GetThingList(map).Any(t => t is Pawn || t.def.category == ThingCategory.Building),
-                $"cell {cell} already holds a pawn or a building");
-            foreach (var p in cell.GetThingList(map).Where(t => t.def.category == ThingCategory.Plant).ToList()) p.Destroy();
-            var thing = ThingMaker.MakeThing(def, def.MadeFromStuff ? GenStuff.DefaultStuffFor(def) : null);
-            if (thing is Plant plant) plant.Growth = 1f;
-            GenSpawn.Spawn(thing, cell, map);
-            stagedDecor.Add(thing);
-        }
-
         // ---- def values, read after the game's own load (scenarios A, D-L of TESTING.md) --------------------
 
         private static string Walk(object start, string path)
@@ -198,13 +130,6 @@ namespace Nelim.BeefEaters.PickleTests
             var actual = Walk(comp, path);
             ctx.Assert(string.Equals(actual, expected, System.StringComparison.OrdinalIgnoreCase),
                 $"ThingDef '{defName}' {compClass}.{path} is \"{actual}\", expected \"{expected}\".");
-        }
-
-        [When("Beef Eaters Renew: the staged decor is removed")]
-        public void RemoveStagedDecor(PickleContext ctx)
-        {
-            foreach (var t in stagedDecor) if (!t.Destroyed) t.Destroy();
-            stagedDecor.Clear();
         }
     }
 }

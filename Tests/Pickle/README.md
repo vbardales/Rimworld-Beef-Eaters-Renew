@@ -23,6 +23,7 @@ offline and its own behavior in the relevant pass").
 | `08-animal-gear-present` | `wsl-deps.animalgear.map` | With Animal Gear (`Dylan.AnimalGear`, Workshop 1541438907) loaded, the guarded armour def exists and nothing is logged; `@requires` skips it elsewhere |
 | `06-labels-english` / `06-labels-french` | minimal, one launch per language | The animal labels reach the def as the active language's text, not just that a DefInjected path resolves offline |
 | `07-trade` | minimal | A local step (`Tests/Pickle/Source/TradeSteps.cs`) calls `TraderKindDef.WillTrade(ThingDef)` directly — the method the trade window itself calls — to prove `Base_Outlander_Standard` trades both animals on their declared tags, without forcing a trader or rolling RNG |
+| `10-gallery-animals` | `wsl-deps.sanctuary.map` (English) | Not a test: five staged pictures for the Workshop gallery, played at the Sanctuary Backlot (`enclosure-south`, `barn`) with Nelim as the farmer; `@review`, the images are read by eye. Local steps in `Source/GallerySteps.cs`. Rewritten 2026-10-10 (the studio meadow no longer exists) |
 
 ## The local step, and why it is not in PickleTools
 

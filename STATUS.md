@@ -18,7 +18,7 @@ showcase:     complete
 tested_on:     2026-10-10, bedb34a, RimWorld 1.6 (WSL), 11-def-values 9/9 (partial: see remaining)
 workshop:     3811290251
 remaining:
-  - unverified 2026-10-10: gallery `10-gallery-animals` (map `galerie`) never played either, it belongs to `shootGallery`; no accepted image in `Art/Gallery/` apart from `0-preview.png`
+  - unverified 2026-10-10: gallery `10-gallery-animals` rewritten 2026-10-10 for SanctuaryBacklot (5 pictures, map `wsl-deps.sanctuary.map`), first run pending; no accepted image in `Art/Gallery/` apart from `0-preview.png`
   - unverified 2026-10-10: the sixteen prose scenarios of TESTING.md (A-P), none played - no animal spawned, no pen built, no milk taken
   - defect found 2026-10-02 (run f84f, min EN at cefade3, 3 passed 8 failed 8 skipped): the 8 reds were all `names more than one def (PawnKindDef, ThingDef)`, Pickle def steps refuse the animals shared defNames; fixed by two local steps naming the ThingDef (commit dd32b9f), rerun of 01, 03, 06-english submitted; 06-french red likely same cause and rides the pending FR ticket
   - textures pass b655 (2026-10-02): 9 passed 5 failed 5 skipped; textures red = animals are Graphic_Multi, bare texPath is no file, steps now name the _south file, rerun submitted; label-French reds = French feature run under an English pass, not a mod defect (Tests/Pickle/README.md, "Language and the two label features")

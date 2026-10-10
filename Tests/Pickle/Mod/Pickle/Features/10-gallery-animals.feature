@@ -1,66 +1,133 @@
-# Pictures for the Workshop gallery, not a test. Staged photographs, per the owner's rule of 2026-10-02: every
-# gallery picture is a set-up photograph (menus excepted), nothing left at its default. The assertions only say
-# the animals exist; the pictures are the point and are read by eye (@review).
+# The Workshop gallery of Beef Eaters Renew, in the order it is uploaded (0- is the copy of the Preview, then
+# workshop-1 to workshop-5). Rewritten 2026-10-10 for Nelim's Sanctuary Backlot (AUDIT.md 9.a): the zen meadow
+# studio of the first tries is gone, and the session directs the series.
 #
-# THE STORY OF THE SERIES: evening on a small cattle farm. One standing lamp has just been lit at the corner of
-# the pen; the cows have come in from the pasture and stand in its warm light, a rose and a bush that someone
-# planted by the fence behind them. The beefalo, half their size, is the farm's pack animal and stands at the
-# same fence a little later. The ground is the studio meadow throughout, kept the same from one picture to the
-# next: the decor is placed, photographed, removed, and the next subject gets the same lamp, rose and bush
-# placed around it.
+# The story: one day on a small cattle farm at the Sanctuary, told in the light of its hours. Nelim, the only
+# colonist, is the farmer; she walks the pen from dawn to evening and each picture is one animal of the farm
+# beside her, never a row of them:
+#   1 dawn, 06 h, the south pen: a Belgian blue cow, hay at her feet, Nelim beside her (the scale of the animal);
+#   2 morning, 10 h, the pen: the bull, seen from the front, the double-muscled build that is the mod's whole point;
+#   3 noon, 12 h, the pen: a cow and her calf (the calf life stage has its own texture);
+#   4 afternoon, 15 h, the pen: the pygmy beefalo, the farm's pack animal, with its calf, Nelim feeding them;
+#   5 evening, 19 h, the barn, torches burning: the cow and the beefalo side by side, which is the one picture
+#     that shows the difference in size (body size 6.0 against 1.0).
+# Everything on the ground is vanilla Core (hay, daylilies); nothing staged ships with the mod. No optional
+# integration (ADS 2, Dogs mate) is shown: neither belongs in a picture.
 #
-# Subjects (a photographer's choices, none of them left to a random spawn): an adult female cow, an adult bull
-# (the animal whose build is the mod's whole point), an adult pygmy beefalo, and the cow and the beefalo side
-# by side, which is the one picture that shows the difference in size (body size 2.4 against 1.0). All face
-# the camera, on cleared meadow cells 10 to 58 east of Rina.
+# Places (SanctuaryBacklot/docs/SANCTUAIRE-LIEUX.md, read 2026-10-10): `enclosure-south`, the fenced earth pen
+# of the lower enclosure (x 130-168, z 204-223), cleared inside the fence of its bamboo and campfires; `barn`,
+# the straw-floored barn with its animal beds and lit campfires (interior x 188-204, z 230-244). Both stay
+# in the same corner from one picture to the next; the set dressing belongs to its picture and is removed.
+# Cell choices are first guesses read from the empty photographs of the places: this is the first real run, the
+# images are to be looked at before anything is moved to Art/Gallery/.
 #
-# First try (run 8ab8) was rejected: thumbnail-sized animals on the orange studio floor. Second try (run 743e)
-# fixed the framing but had no set dressing; this one adds it.
-@review @en-only @requires:nelim.pickletools.screenshotstudio
-Feature: Gallery pictures of the animals
+# Each scenario is @review: a green run proves a picture was taken, not that it is worth uploading. Open every
+# capture and drop one that shows the launcher, a dev-mode bar, another mod's animal, or an empty frame.
+@review @en-only
+Feature: Beef Eaters Renew Workshop gallery
 
-  Scenario: evening on the cattle farm: a cow, a bull, a pygmy beefalo, then a cow and a beefalo together
-    Given the save "nelim-zen-meadow-studio" is loaded
-    And game speed is paused
-    And a colonist "Rina" exists
-    When Beef Eaters Renew: I spawn an adult "BelgianBlueCow" "female" 10 cells east of "Rina"
-    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" "male" 25 cells east of "Rina"
-    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" "female" 40 cells east of "Rina"
-    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" "female" 55 cells east of "Rina"
-    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" "male" 58 cells east of "Rina"
-    Then 3 "BelgianBlueCow" exist
-    And 2 "PygmyBeefalo" exist
-    When Nelim's Pickle Tools: studio presentation mode is enabled
+  Background:
+    Given the save "Nelims-tribe" is loaded
 
-    # picture 1: the cow in the lamplight
-    And Beef Eaters Renew: I stage the decor "StandingLamp" 8 cells east and 3 cells north of "Rina"
-    And Beef Eaters Renew: I stage the decor "Plant_Rose" 12 cells east and 3 cells north of "Rina"
-    And Beef Eaters Renew: I stage the decor "Plant_Bush" 13 cells east and 2 cells north of "Rina"
-    And Beef Eaters Renew: I bring the camera to 4 cells' height 10 cells east of "Rina"
-    And I take a screenshot "gallery belgian blue cow"
-    And Beef Eaters Renew: the staged decor is removed
+  Scenario: workshop 1 - dawn in the pen, the Belgian blue cow and the farmer
+    Given I set the hour to 6
+    And I set the weather to "Clear"
+    And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: I let 60 ticks pass
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Pickle Tools: the area from (134, 208) to (164, 220) is cleared
+    And Beef Eaters Renew: time is paused
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (137, 211) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (138, 209) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (136, 209) fully grown
+    And Nelim's Pickle Tools: I place the decor "Hay" at (151, 213)
+    And Nelim's Pickle Tools: I place the decor "Hay" at (152, 214)
+    And Nelim's Pickle Tools: I place the decor "Hay" at (151, 215)
+    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (147, 214) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (142, 213) facing East
+    And Nelim's Pickle Tools: I frame the rectangle from (136, 208) to (158, 220)
+    And Beef Eaters Renew: the map is shown alone for a capture
+    When I take a screenshot "workshop-1-dawn"
+    And Beef Eaters Renew: the interface is shown again
+    And Nelim's Pickle Tools: the decor is removed
 
-    # picture 2: the bull, same lamp, same planting
-    And Beef Eaters Renew: I stage the decor "StandingLamp" 23 cells east and 3 cells north of "Rina"
-    And Beef Eaters Renew: I stage the decor "Plant_Rose" 27 cells east and 3 cells north of "Rina"
-    And Beef Eaters Renew: I stage the decor "Plant_Bush" 28 cells east and 2 cells north of "Rina"
-    And Beef Eaters Renew: I bring the camera to 4 cells' height 25 cells east of "Rina"
-    And I take a screenshot "gallery belgian blue bull"
-    And Beef Eaters Renew: the staged decor is removed
+  Scenario: workshop 2 - morning, the bull faces the camera
+    Given I set the hour to 10
+    And I set the weather to "Clear"
+    And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: I let 60 ticks pass
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Pickle Tools: the area from (134, 208) to (164, 220) is cleared
+    And Beef Eaters Renew: time is paused
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (156, 210) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (157, 209) fully grown
+    And Nelim's Pickle Tools: I place the decor "Hay" at (143, 212)
+    And Nelim's Pickle Tools: I place the decor "Hay" at (144, 212)
+    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" male at (148, 214) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (154, 214) facing West
+    And Nelim's Pickle Tools: I frame the rectangle from (140, 208) to (158, 220)
+    And Beef Eaters Renew: the map is shown alone for a capture
+    When I take a screenshot "workshop-2-the-bull"
+    And Beef Eaters Renew: the interface is shown again
+    And Nelim's Pickle Tools: the decor is removed
 
-    # picture 3: the pygmy beefalo at the fence
-    And Beef Eaters Renew: I stage the decor "StandingLamp" 38 cells east and 2 cells north of "Rina"
-    And Beef Eaters Renew: I stage the decor "Plant_Rose" 42 cells east and 2 cells north of "Rina"
-    And Beef Eaters Renew: I stage the decor "Plant_Bush" 43 cells east and 1 cells north of "Rina"
-    And Beef Eaters Renew: I bring the camera to 3 cells' height 40 cells east of "Rina"
-    And I take a screenshot "gallery pygmy beefalo"
-    And Beef Eaters Renew: the staged decor is removed
+  Scenario: workshop 3 - noon, a cow and her calf
+    Given I set the hour to 12
+    And I set the weather to "Clear"
+    And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: I let 60 ticks pass
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Pickle Tools: the area from (134, 208) to (164, 220) is cleared
+    And Beef Eaters Renew: time is paused
+    And Nelim's Pickle Tools: I place the decor "Hay" at (152, 213)
+    And Nelim's Pickle Tools: I place the decor "Hay" at (152, 215)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (138, 210) fully grown
+    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (144, 214) facing East
+    And Beef Eaters Renew: I spawn a "BelgianBlueCow" female in life stage 0 at (149, 215) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (150, 211) facing West
+    And Nelim's Pickle Tools: I frame the rectangle from (138, 208) to (158, 220)
+    And Beef Eaters Renew: the map is shown alone for a capture
+    When I take a screenshot "workshop-3-the-calf"
+    And Beef Eaters Renew: the interface is shown again
+    And Nelim's Pickle Tools: the decor is removed
 
-    # picture 4: the cow and the beefalo together, for the difference in size
-    And Beef Eaters Renew: I stage the decor "StandingLamp" 53 cells east and 4 cells north of "Rina"
-    And Beef Eaters Renew: I stage the decor "Plant_Rose" 59 cells east and 4 cells north of "Rina"
-    And Beef Eaters Renew: I stage the decor "Plant_Bush" 61 cells east and 3 cells north of "Rina"
-    And Beef Eaters Renew: I bring the camera to 5 cells' height 56 cells east of "Rina"
-    And I take a screenshot "gallery cow and beefalo together"
-    And Beef Eaters Renew: the staged decor is removed
-    Then no errors were logged
+  Scenario: workshop 4 - afternoon, the pygmy beefalo and its calf
+    Given I set the hour to 15
+    And I set the weather to "Clear"
+    And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: I let 60 ticks pass
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Pickle Tools: the area from (134, 208) to (164, 220) is cleared
+    And Beef Eaters Renew: time is paused
+    And Nelim's Pickle Tools: I place the decor "Hay" at (148, 212)
+    And Nelim's Pickle Tools: I place the decor "Hay" at (149, 212)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (156, 217) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (157, 216) fully grown
+    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (146, 215) facing East
+    And Beef Eaters Renew: I spawn a "PygmyBeefalo" male in life stage 0 at (149, 215) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (152, 214) facing West
+    And Nelim's Pickle Tools: I frame the rectangle from (140, 210) to (158, 219)
+    And Beef Eaters Renew: the map is shown alone for a capture
+    When I take a screenshot "workshop-4-the-beefalo"
+    And Beef Eaters Renew: the interface is shown again
+    And Nelim's Pickle Tools: the decor is removed
+
+  Scenario: workshop 5 - evening in the barn, the cow and the beefalo side by side
+    Given I set the hour to 19
+    And I set the weather to "Clear"
+    And Nelim's Sanctuary: I am at the sanctuary "barn"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: I let 60 ticks pass
+    And Nelim's Pickle Tools: all animals are removed
+    And Beef Eaters Renew: time is paused
+    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (198, 237) facing East
+    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (202, 237) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (200, 241) facing North
+    And Nelim's Pickle Tools: I frame the rectangle from (194, 232) to (205, 243)
+    And Beef Eaters Renew: the map is shown alone for a capture
+    When I take a screenshot "workshop-5-the-barn"
+    And Beef Eaters Renew: the interface is shown again
