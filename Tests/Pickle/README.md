@@ -44,7 +44,7 @@ infrastructure is the owner's call, not this session's. `dotnet build -c Release
 ## Checking the suite before it is queued
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File Tools\Check-PickleSteps.ps1
+powershell -ExecutionPolicy Bypass -File ..\scripts\Check-Steps.ps1 -Mod BeefEatersRenew
 ```
 
 Compiles the local step patterns with Pickle's own Cucumber engine, then matches every step line

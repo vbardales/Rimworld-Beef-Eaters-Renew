@@ -49,7 +49,7 @@ Le mod n'a pas de build. Deux contrôles hors jeu, à passer après toute modifi
 
 ```
 powershell -ExecutionPolicy Bypass -File Tools\Check-Mod.ps1
-powershell -ExecutionPolicy Bypass -File Tools\Check-PickleSteps.ps1
+powershell -ExecutionPolicy Bypass -File ..\scripts\Check-Steps.ps1 -Mod BeefEatersRenew
 ```
 
 Le premier, après toute modification des defs ou de l'About, vérifie le XML, la réparation de
