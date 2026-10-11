@@ -1,0 +1,14 @@
+{
+  "templateStamp": "ba64b0c1b25d",
+  "workshopId": "3811290251",
+  "packageId": "nelim.beefeaters",
+  "releaseTitle": "Beef Eaters Renew (unofficial) {version}",
+  "requirePaths": [
+    "Defs"
+  ],
+  "forbidPaths": [
+    "Assemblies"
+  ],
+  "previewFile": "About/Preview.png",
+  "galleryDir": "Art/Gallery"
+}
