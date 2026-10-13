@@ -25,6 +25,8 @@ First release of the 1.6 update of **Beef Eaters**, by TheGoofyOne.
 
 ### Added
 
+- **RimWorld 1.7 declared** in `supportedVersions` after a green 1.7 run (wildness of both animals survives the load, 2 of 2).
+
 - **Optional patches for A Dog Said... Animal Prosthetics 2 and Dogs mate (Continued).** Both are guarded by their own targets and do nothing, and log nothing, without the mod; neither is a dependency. ADS 2: the Belgian blue cow follows the vanilla cow, the pygmy beefalo the muffalo; `loadBefore` ADS 2 in About. Dogs mate: the cow joins the cattle group, the pygmy beefalo the bison group.
 
 - **`incompatibleWith` naming `TheGoofyOne.BeefEaters`.** Both mods define `BelgianBlueCow` and
