@@ -194,12 +194,10 @@ first real target is the SHA of the 1.0.0 that passes its dry-run; write it here
 
 Renew mod: Mlie's Use This Instead page must be told once, after the item is public (`USE_THIS_INSTEAD.md`).
 The row goes in the register as `drafted` at `publish`, then `posted` once the owner has pasted this on
-[the page](https://steamcommunity.com/sharedfiles/filedetails/?id=3396308787). The old name and author are
-**not yet read from the original's page** (`USE_THIS_INSTEAD.md`: never from memory); fill the `<...>`
-fields from it first.
+[the page](https://steamcommunity.com/sharedfiles/filedetails/?id=3396308787). Old name (`Beef Eaters`) and Workshop id read through the Steam API (GetPublishedFileDetails) on 2026-10-13; the author name `TheGoofyOne` and the packageId come from `ATTRIBUTION.md` and the About.xml `incompatibleWith`. `oldVersions` is 1.4 (the page: Version 1.1, updated to 1.4).
 
 ```
-Hi Mlie! A replacement for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1988048034]<old name>[/url] (<old author>, packageId TheGoofyOne.BeefEaters, RimWorld 1.4): [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811290251]Beef Eaters Renew (unofficial)[/url] by Nelim (packageId nelim.beefeaters, RimWorld 1.6). Declared incompatible with the original. Thanks for the list!
+Hi Mlie! A replacement for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1988048034]Beef Eaters[/url] (TheGoofyOne, packageId TheGoofyOne.BeefEaters, RimWorld 1.4): [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811290251]Beef Eaters Renew (unofficial)[/url] by Nelim (packageId nelim.beefeaters, RimWorld 1.6 and 1.7). Declared incompatible with the original. Thanks for the list!
 ```
 
 ## Comments on other mods' pages
