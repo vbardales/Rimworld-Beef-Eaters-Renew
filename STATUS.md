@@ -15,18 +15,27 @@ licence_at:   browser-verified 2026-09-12; original files, live description, all
 upstream_mod_remotes: N/A
 dependencies: none
 showcase:     complete
-tested_on:     2026-10-02 cefade3 (min EN/FR, textures, original, Animal Gear, ADS 2 + Dogs mate, green after rerun) and 2026-10-10 bedb34a (11-def-values 9/9), RimWorld 1.6 (WSL); gallery pending
+tested_on:     2026-10-02 cefade3 (min EN/FR, textures, original, Animal Gear, ADS 2 + Dogs mate, green after rerun) and 2026-10-10 bedb34a (11-def-values 9/9), RimWorld 1.6 (WSL); gallery pending; and 2026-10-13 (p17-beefeaters-01-wildness-defs, ticket 88c2, 2/2) RimWorld 1.7 (WSL, validated by Audit)
 tested_1_7:   yes
 workshop:     3811290251
 remaining:
   - gallery 2026-10-13: from run 20261012-gallery-v6b (5 of 5 passed) Virginie accepted workshop 1 (barn, cow + beefalo) and 3 (cow + calf), now `Art/Gallery/1-barn-both.png` and `2-cow-calf.png`; pen cow, bull and beefalo captures refused. Beefalo reframed tight, ticket 20261013-102416-981-8a7d queued (gallery v7, workshop 4 only, `Tests/Pickle/Evidence/20261013-gallery-v7`); tree must stay put until RUN_DONE. Then echo review and `PUBLICATION.md` gallery table
+  - unverified 2026-10-13: `PUBLICATION.md` drafted (Steam block, About.xml generated from it); to read before posting: Use This Instead comment still holds `<old name>` and `<old author>` (read them on the Workshop page 1988048034), Animal Gear author not thanked (unknown), Dogs mate author line, the four Workshop links, gallery table to complete once ticket 8a7d is read; echo review (`echo_review_sha`) and Virginie review of PUBLICATION.md + CHANGELOG.md (`publication_changelog_review_sha`) not done
   - feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-10-13, the mod's own session - shootGallery[1.0.0], gallery candidates chosen; PUBLICATION.md drafted, About.xml now generated from it
+updated:      2026-10-13, the mod's own session - shootGallery[1.0.0], 1.7 declared, Preview regenerated, PUBLICATION.md drafted
 protocols_read_sha: 8ca1edc7ab50f4a7d9ecf725bcfa2641baa8fc8c
 ---
 
 # Beef Eaters Renew — status
+
+## 2026-10-13: 1.7, Preview, PUBLICATION.md, gallery
+
+- **1.7**: `tested_1_7: yes` (run 88c2, 2 of 2 passed on 1.7; `docs/runs/history.md`). Virginie confirmed, `<li>1.7</li>` added to `supportedVersions` (`8c2844b`), CHANGELOG line added.
+- **Preview** regenerated with the 1.7 badge (`150a5db`); `0-preview.png` copy and both ICOs follow. The old defect (showcase without the Belgian blue cow) is gone: it now shows the cow and the beefalo in the barn.
+- **About.xml** description is generated from the `## Steam description` block of `PUBLICATION.md` (`.github/publish.config.json` gained `aboutFromDescription` and `description`); it names no RimWorld version, which clears the `rimworld-version` warning.
+- **Gallery**: images 1 (barn) and 2 (cow + calf) accepted from run `20261012-gallery-v6b`; beefalo reframed tight, ticket `20261013-102416-981-8a7d` (gallery v7, workshop 4) queued. Ticket afc3 was the earlier v6 run (exit 5, in-progress), not the 5/5 one.
+- Protocols read at `8ca1edc7`; `AUDIT.md`, `scripts.md`, `STYLE_RIMWORLD.md`, `USE_THIS_INSTEAD.md` changed since, to re-read before the next stage change.
 
 ## AUDIT.md applied — 2026-10-10
 
