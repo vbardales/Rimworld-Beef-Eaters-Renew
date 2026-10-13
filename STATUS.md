@@ -18,11 +18,11 @@ showcase:     complete
 tested_on:     2026-10-02 cefade3 (min EN/FR, textures, original, Animal Gear, ADS 2 + Dogs mate, green after rerun) and 2026-10-10 bedb34a (11-def-values 9/9), RimWorld 1.6 (WSL); gallery pending
 workshop:     3811290251
 remaining:
-  - unverified 2026-10-11: gallery `10-gallery-animals` (v6, SanctuaryBacklot, map `wsl-deps.sanctuary.map`) ticket 20261010-215307-702-afc3 queued; no image read yet, nothing accepted in `Art/Gallery/` apart from `0-preview.png`
+  - gallery 2026-10-13: from run 20261012-gallery-v6b (5 of 5 passed) Virginie accepted workshop 1 (barn, cow + beefalo) and 3 (cow + calf), now `Art/Gallery/1-barn-both.png` and `2-cow-calf.png`; pen cow, bull and beefalo captures refused. Beefalo reframed tight, ticket 20261013-102416-981-8a7d queued (gallery v7, workshop 4 only, `Tests/Pickle/Evidence/20261013-gallery-v7`); tree must stay put until RUN_DONE. Then echo review and `PUBLICATION.md` gallery table
   - feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-10-10, the mod's own session - playTests[1.0.0] exit criteria met, code review done, now shootGallery[1.0.0]
-protocols_read_sha: a5c7cf48b349ae00e7d28fd643e852dc860dfaf2
+updated:      2026-10-13, the mod's own session - shootGallery[1.0.0], gallery candidates chosen; PUBLICATION.md drafted, About.xml now generated from it
+protocols_read_sha: 8ca1edc7ab50f4a7d9ecf725bcfa2641baa8fc8c
 ---
 
 # Beef Eaters Renew — status

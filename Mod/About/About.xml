@@ -9,51 +9,68 @@
   <url>https://github.com/vbardales/Rimworld-Beef-Eaters-Renew</url>
   <description>UNOFFICIAL. This mod is published without the original author's explicit consent. If the original author contacts me to request its removal, I undertake to take it down promptly.
 
-The Belgian blue cow and the pygmy beefalo, brought forward to RimWorld 1.6. One is all meat and no speed; the other is a much smaller muffalo crossbreed.
+Two livestock animals, brought forward to the latest RimWorld version: the Belgian blue cow, all meat and no speed, and the pygmy beefalo, a much smaller muffalo crossbreed.
 
-I am not the author of this mod. Both animals are TheGoofyOne's; all I did was the work needed to make them run on 1.6. Credit goes to them, mistakes in the update are mine. If they come back to it, or ask me to take this down, it comes down.
+No DLC, no dependency, no assembly. Two animals and a few guarded XML patches.
 
-Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=1988048034 - last supporting 1.4, last updated in March 2023. Abandoned, not withdrawn.
+I am not the author of this mod. Both animals are TheGoofyOne's. All I did was the work needed to make them run on the current game, and write the French. Credit goes to them; mistakes in the update are mine.
 
-WHAT IT ADDS
+Original mod: Beef Eaters (https://steamcommunity.com/sharedfiles/filedetails/?id=1988048034), last updated in March 2023. Abandoned, not withdrawn.
 
-Two livestock animals.
+What's in it
 
-The Belgian blue cow is the double-muscled breed, and the stats say so: body size 6.0, the largest thing in most colonies, and a move speed of 0.8, slower than a walking colonist. Wildness 0.05, which is as close to born-tame as the game allows. Milkable.
+- The Belgian blue cow. The double-muscled breed, and the stats say so: body size 6.0, the largest thing in most colonies, and a move speed of 0.8, slower than a walking colonist. Wildness 5 %, as close to born-tame as the game allows. Milkable. It needs a pen.
+- The pygmy beefalo. A muffalo scaled down to body size 1.0 instead of the muffalo's 2.4: fifteen years of life, move speed 4.2, wildness 50 %, trainable to Advanced where the muffalo is not trainable at all, milkable and shearable for muffalo wool. It needs no pen, and it carries a pack in a caravan like the muffalo it comes from.
+- An Animal Gear armour patch, carried over as the author wrote it. It applies only when that mod is present.
 
-The pygmy beefalo is a muffalo scaled down to body size 1.0 rather than the muffalo's own 2.4: fifteen years, move speed 4.2, wildness 0.5, trainable to Advanced where the muffalo is trainable to nothing at all, milkable and shearable for muffalo wool. It needs no pen, unlike the cow, and it carries a pack in a caravan like the muffalo it comes from.
+What changed
 
-An Animal Gear patch ships with them, guarded so that it only applies when that mod is present.
+The repair. Wildness stopped being a field of the animal and became a stat. The old form is not an error, it is simply never read, and the stat defaults to -1, outside the range the game uses, so the cow written to be nearly born-tame and the beefalo at 50 % both behaved like any other animal. It is now a stat under statBases on both, written the way vanilla's own animals write it.
 
-WHAT CHANGED IN THE 1.6 UPDATE
+On purpose, and not a repair. The pygmy beefalo's only trade tag was one no trader in the game reads, so nobody could buy or sell it. It now carries AnimalFarm as well, the tag of the vanilla cow, which the Belgian blue already had. That is design, not porting, and it is said here rather than buried.
 
-Two lines, the same line twice. Wildness stopped being a field of RaceProperties in 1.6 and became a StatDef declared under statBases. The old form is not an error, it is simply never read, and the stat defaults to -1, outside the range the game uses - so the cow written to be nearly born-tame at 0.05 and the beefalo at 0.5 both behaved like anything else.
+The original is declared incompatible: both mods define the same two animals under the same names, and the last one loaded would win in silence. Run one or the other.
 
-Two other things were found on the way. The pygmy beefalo's only trade tag was one no trader in the game reads, so it could be neither bought nor sold by anybody; it now carries AnimalFarm as well, the tag of the vanilla cow, which the Belgian blue already had. And TheGoofyOne's original is now declared incompatible, because both mods define the same two animals under the same names and the last one loaded would win in silence.
+No balance value was changed, including the cow's 0.8 move speed, which is the joke of a double-muscled breed too heavy to walk.
 
-No balance value was changed.
+Optional compatibility
 
-Content mod: removing it mid-save will lose any Belgian blue cow or pygmy beefalo already in play.
+None of these is required, and each patch does nothing, and logs nothing, when its mod is absent.
 
-LANGUAGES
+- A Dog Said... Animal Prosthetics 2 (https://steamcommunity.com/sharedfiles/filedetails/?id=3238353862): the cow is offered the surgeries of the vanilla cow, the beefalo those of the muffalo. This mod loads before it, which its metadata declares.
+- Dogs mate (Continued) (https://steamcommunity.com/sharedfiles/filedetails/?id=2441132298): the cow joins the cattle group, the beefalo the bison group.
+- Animal Gear: the armour patch above.
 
-English and French. French translations cover the animals, calves, attack labels and optional Animal Gear armour.
+Nocturnal Animals needed nothing: the cow and the muffalo it follows are both diurnal, so both animals stay diurnal.
 
-LINKS
+Credit and removal
 
-GitHub source: https://github.com/vbardales/Rimworld-Beef-Eaters-Renew
-Report an issue: https://github.com/vbardales/Rimworld-Beef-Eaters-Renew/issues
-Changelog: https://github.com/vbardales/Rimworld-Beef-Eaters-Renew/blob/main/CHANGELOG.md
-Credits and licence review: https://github.com/vbardales/Rimworld-Beef-Eaters-Renew/blob/main/ATTRIBUTION.md
-Original Workshop mod: https://steamcommunity.com/sharedfiles/filedetails/?id=1988048034
+TheGoofyOne declared no licence: no file in the mod, nothing in its About.xml, no linked repository, nothing on its Steam page. It is republished here under the usual convention for abandoned mods: full credit, a link to the original, and removal on request. If they would rather this port did not exist, say so and it comes down, no argument, no delay.
 
-The original states no licence anywhere - no file, nothing in its About, no repository, nothing on its Workshop page. This port therefore rests on the Workshop's own custom for abandoned mods: named credit to the author, and a takedown on request.
+Content mod: removing it mid-save destroys any Belgian blue cow or pygmy beefalo already in the colony.
+
+Languages
+
+English and French. French covers both animals, calves, attack labels and the optional Animal Gear armour.
+
+If I go quiet
 
 If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
 
-The update work was done with the help of an AI assistant (Claude, by Anthropic).
+AI-generated
 
-[url=https://github.com/vbardales/Rimworld-Beef-Eaters-Renew]Source code on GitHub[/url]</description>
+The port work (the XML, the patches, the tests, the documentation and the pictures) was done with the help of an AI assistant, Claude (Anthropic), under human direction.
+
+Thanks
+
+- TheGoofyOne, for the Belgian blue cow and the pygmy beefalo.
+- SamBucher, for A Dog Said... Animal Prosthetics 2.
+- Mlie, who maintains Dogs mate (Continued), and Revoluss, its original author.
+- The authors of Pickle (https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678), used to test the port in game. It is for development only and never a dependency of this mod.
+
+Licence and what was carried over: see ATTRIBUTION.md in the source repository.
+
+Source code on GitHub (https://github.com/vbardales/Rimworld-Beef-Eaters-Renew)</description>
   <loadBefore>
     <li>SamBucher.ADogSaidAnimalProsthetics2</li>
   </loadBefore>

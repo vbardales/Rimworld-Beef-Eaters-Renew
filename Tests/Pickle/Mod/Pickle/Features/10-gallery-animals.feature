@@ -23,6 +23,8 @@
 # z 235 and 240, read on the captures of run 9575, one cell is about 90 px at the barn frame).
 # Both stay in the same corner from one picture to the next; the set dressing belongs to its picture and is removed.
 #
+# Fourth version, 2026-10-13: workshop 4 reframed tight (9 x 5 cells) because the beefalo, body size 1.0, was lost in the 15 x 10 frame; workshops 2 and 4 of run v6b were refused, 1, 3 and 5 kept.
+#
 # Each scenario is @review: a green run proves a picture was taken, not that it is worth uploading. Open every
 # capture and drop one that shows the launcher, a dev-mode bar, another mod's animal, or an empty frame.
 @review @en-only
@@ -110,10 +112,10 @@ Feature: Beef Eaters Renew Workshop gallery
     And Nelim's Pickle Tools: I place the decor "Hay" at (149, 216)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (154, 221) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (155, 220) fully grown
-    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (146, 219) facing East
+    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (147, 219) facing East
     And Beef Eaters Renew: I spawn a "PygmyBeefalo" male in life stage 0 at (149, 219) facing West
-    And Nelim's Pickle Tools: "Nelim" stands at (152, 218) facing West
-    And Nelim's Pickle Tools: I frame the rectangle from (141, 214) to (156, 224)
+    And Nelim's Pickle Tools: "Nelim" stands at (151, 218) facing West
+    And Nelim's Pickle Tools: I frame the rectangle from (144, 216) to (152, 221)
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-4-the-beefalo"
     And Beef Eaters Renew: the interface is shown again
