@@ -4,7 +4,7 @@ Format inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 This file serves the repository and the writing of Steam patch notes; RimWorld does not display it
 in game.
 
-## [1.0.0] — unreleased
+## [Unreleased]
 
 After final in-game validation, create the `v1.0.0` tag and the matching GitHub release, then
 publish to the Workshop. See `STATUS.md` for what remains.

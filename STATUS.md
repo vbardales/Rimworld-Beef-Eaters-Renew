@@ -9,7 +9,7 @@ repo:         Rimworld-Beef-Eaters-Renew
 visibility:   public
 detached:     yes
 workflow_stage: shootGallery[1.0.0]
-code_review_sha: bedb34a1f17300aae13d54a347574ac24af5cb15
+code_review_sha: fe3c067a35b4efc90318e51d7addefe07d51d326
 licence:      silent
 licence_at:   browser-verified 2026-09-12; original files, live description, all 29 comments, 9 changelog entries and author profile; no reuse terms; last mod update 2023-03-11
 upstream_mod_remotes: N/A
@@ -36,6 +36,7 @@ protocols_read_sha: 8ca1edc7ab50f4a7d9ecf725bcfa2641baa8fc8c
 - **Preview** regenerated with the 1.7 badge (`150a5db`); `0-preview.png` copy and both ICOs follow. The old defect (showcase without the Belgian blue cow) is gone: it now shows the cow and the beefalo in the barn.
 - **About.xml** description is generated from the `## Steam description` block of `PUBLICATION.md` (`.github/publish.config.json` gained `aboutFromDescription` and `description`); it names no RimWorld version, which clears the `rimworld-version` warning.
 - **Gallery**: images 1 (barn) and 2 (cow + calf) accepted from run `20261012-gallery-v6b`; beefalo reframed tight, ticket `20261013-102416-981-8a7d` (gallery v7, workshop 4) queued. Ticket afc3 was the earlier v6 run (exit 5, in-progress), not the 5/5 one.
+- **Code review reopened and redone, 2026-10-13** (AUDIT.md 8.m): `bedb34a..fe3c067` read in full: `Mod/About/About.xml` (description generated from PUBLICATION.md, 1.7 added), `Mod/About/Preview.png`, `Tests/Pickle/Source/GallerySteps.cs` and the trimmed `TradeSteps.cs` (test-side only, gallery steps split out, nothing ships), `Directory.Build.props` (build/ path). No defect. `Mod/Defs`, `Mod/Patches` and the French files are unchanged since `bedb34a`, so the 1.6 runs stay valid for them.
 - Protocols read at `8ca1edc7`; `AUDIT.md`, `scripts.md`, `STYLE_RIMWORLD.md`, `USE_THIS_INSTEAD.md` changed since, to re-read before the next stage change.
 
 ## AUDIT.md applied — 2026-10-10
