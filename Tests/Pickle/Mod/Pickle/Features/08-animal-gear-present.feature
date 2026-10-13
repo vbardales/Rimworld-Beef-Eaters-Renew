@@ -8,7 +8,7 @@ Feature: Beef Eaters Renew — the Animal Gear patch fires when Animal Gear is p
   dependency Harmony only, which every pass already stages). Animal Gear Basic is not needed: the
   patch guards on the framework's name alone. @requires skips this in every other pass. If Animal
   Gear ever renames itself, this block stops firing and nothing is logged; this scenario is what
-  catches it. See TESTING.md, scenario M.
+  catches it. See TEST_SCENARIOS.md, scenario M.
 
   Scenario: the guarded armour def exists once Animal Gear is loaded
     Given mod "Dylan.AnimalGear" is loaded

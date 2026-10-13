@@ -33,7 +33,7 @@ Le contenu est celui de TheGoofyOne. Ce dépôt ne contient que le passage en 1.
 - **Aucune valeur d'équilibrage ne se touche.** La vache à 0.8 de vitesse pour 6.0 de corpulence est
   une blague d'auteur, pas un oubli.
 - **Ne pas reformater les fichiers de l'auteur.** `Mod/Patches/Armor.xml` est indenté à la tabulation
-  et de travers ; il reste tel quel. L'`.editorconfig` vaut pour ce qu'on écrit, pas pour ce qu'on
+  et de travers ; il reste tel quel. Aucun `.editorconfig` (retiré le 2026-10-13, règle de racine propre) : on écrit proprement ce qu'on écrit, pas ce qu'on
   hérite.
 - **Le patch Animal Gear reste tel que l'auteur l'a écrit.** Il est gardé derrière son
   `PatchOperationFindMod` (qui cherche le **nom** « Animal Gear ») et n'est pas à nous à réécrire.
@@ -88,7 +88,7 @@ Le balayage écrit parfois des champs cassés — `licence: licence_ou:`, une cl
 
 Le mod est en `1.0.0` **non publié**. Manquent, et rien d'autre :
 
-1. L'essai en jeu. Rien n'a jamais tourné. Seize scénarios en prose dans `TESTING.md`, sept
+1. L'essai en jeu. Rien n'a jamais tourné. Seize scénarios en prose dans `TEST_SCENARIOS.md`, sept
    features Pickle dans `Tests/Pickle/` (écrites, jamais jouées). Les décisions de F, I et N sont
    prises et appliquées, voir `CHANGELOG.md`. Reste aussi la moitié « Animal Gear présent » du
    scénario M, écrite (`08`, `wsl-deps.animalgear.map`, `Dylan.AnimalGear`) mais jamais jouée.

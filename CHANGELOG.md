@@ -38,7 +38,7 @@ First release of the 1.6 update of **Beef Eaters**, by TheGoofyOne.
 - **`Mod/About/Preview.png`** (896×504) and **`Mod/About/ModIcon.png`** (128×128), generated and
   engraved per `STYLE_RIMWORLD.md`. Full-resolution sources and the composition page are kept in
   `Art/`, never in `About/`.
-- **`TESTING.md`**, sixteen prose scenarios (A–P) covering both animals, the Animal Gear patch,
+- **`TEST_SCENARIOS.md`**, sixteen prose scenarios (A–P) covering both animals, the Animal Gear patch,
   translations and the collision with the original.
 - **`Tests/Pickle/`**, eight Gherkin features run by Pickle: the wildness repair surviving the
   game's own load, each shipped texture actually loading, an animal surviving a save/reload round

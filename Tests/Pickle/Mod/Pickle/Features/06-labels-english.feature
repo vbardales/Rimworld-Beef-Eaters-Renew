@@ -6,7 +6,7 @@ Feature: Beef Eaters Renew — labels reach the def in English
   load — English here is the Def's own literal value, with no DefInjected entry needed — so
   reading the field after load is what the game actually displays, not just that a resource
   exists for it (Check-DefInjected.ps1 already proves the injection paths resolve offline). No
-  save needed: this reads the def database built at the main menu. See TESTING.md, scenario P.
+  save needed: this reads the def database built at the main menu. See TEST_SCENARIOS.md, scenario P.
   Pair with 06-labels-french.feature, run under -Language French, for the other half.
 
   Scenario: the Belgian blue cow's label is in English

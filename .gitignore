@@ -19,7 +19,7 @@ PROMPT_*.md
 **/PROMPT_*.md
 
 # Preuves de run Pickle : sur disque, jamais dans Git (captures et Player.log grossissent sans
-# limite). Voir TESTING.md, "Evidence to keep", et AGENTS.md.
+# limite). Voir TEST_SCENARIOS.md, "Evidence to keep", et AGENTS.md.
 Tests/Pickle/Evidence/
 
 # Intermediaires du step local Tests/Pickle/Source/ : seul le DLL compile sous

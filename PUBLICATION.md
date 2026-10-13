@@ -143,7 +143,7 @@ Animal Gear and Dogs mate are named only by a `PatchOperationFindMod` or by the 
 ## Manual validations of the owner
 
 `AUDIT.md` lists them among the things a `publish` does not skip without saying which. A proposal
-drawn from `TESTING.md`; it is hers to change.
+drawn from `TEST_SCENARIOS.md`; it is hers to change.
 
 | # | What to look at | Why a test cannot |
 |---|---|---|

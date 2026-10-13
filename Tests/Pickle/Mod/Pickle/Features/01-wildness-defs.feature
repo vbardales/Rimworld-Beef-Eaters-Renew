@@ -5,7 +5,7 @@ Feature: Beef Eaters Renew — the wildness repair survives the game's own load
   read. No save is loaded: these run at the main menu, against the def database RimWorld itself
   built, patches and inheritance included — a stronger check than parsing the XML, because it
   passes through Core's own loading pipeline instead of around it. Tools/Check-Mod.ps1 already
-  proves the file says 0.05/0.5; this proves the game agrees after loading it. See TESTING.md,
+  proves the file says 0.05/0.5; this proves the game agrees after loading it. See TEST_SCENARIOS.md,
   scenario B.
 
   Scenario: the Belgian blue cow's wildness survives the load, as the XML wrote it

@@ -21,7 +21,7 @@
     `<wildness>` - only this one, by name. That check needs the game's own type dump and lives in
     the monorepo as scripts\Check-XmlFields.ps1 with rw16_types.txt beside it; vendoring a 300 KB
     type list into a two-def mod would cost more than it returns. And nothing here runs the game:
-    a clean pass means the files are consistent, never that the animals behave. That is TESTING.md.
+    a clean pass means the files are consistent, never that the animals behave. That is TEST_SCENARIOS.md.
 #>
 
 $root = Split-Path -Parent $PSScriptRoot
@@ -191,6 +191,6 @@ if (-not $about.ModMetaData.modDependencies) { Ok 'no hard dependency was added'
 
 # --- verdict -----------------------------------------------------------------
 Write-Host ""
-if ($fail -eq 0) { Write-Host 'All checks passed. Nothing here says the animals behave - see TESTING.md.' -ForegroundColor Green }
+if ($fail -eq 0) { Write-Host 'All checks passed. Nothing here says the animals behave - see TEST_SCENARIOS.md.' -ForegroundColor Green }
 else             { Write-Host "$fail check(s) failed." -ForegroundColor Red }
 exit $fail

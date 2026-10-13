@@ -64,7 +64,7 @@ It proves a line can be dispatched, never that it passes. Nothing here has run i
 
 ## What is deliberately not here
 
-**Scenarios A, C, D, E, F (partly), G, H (partly), J, L**, TESTING.md: reading a declared stat, a
+**Scenarios A, C, D, E, F (partly), G, H (partly), J, L**, TEST_SCENARIOS.md: reading a declared stat, a
 training flag, a comfy-temperature value, a litter curve, or a biome weight is either already
 proven by `Tools/Check-Mod.ps1` (no game needed), or is the vanilla engine reacting to a value
 this mod merely supplies (`CompMilkable` producing milk, Biotech's gestation math, the trainer

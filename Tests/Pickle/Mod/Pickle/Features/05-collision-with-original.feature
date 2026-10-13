@@ -11,7 +11,7 @@ Feature: Beef Eaters Renew — the declared incompatibility still describes what
   engine starts logging the clash, this scenario goes red and says so.
   Run only against wsl-deps.incompat-original.map, which stages TheGoofyOne's original (Workshop
   1988048034) alongside this port; @requires skips this scenario in every other pass. Re-run when
-  the original mod changes. See TESTING.md, scenario N.
+  the original mod changes. See TEST_SCENARIOS.md, scenario N.
 
   Scenario: with the original loaded, this port still loads last and its wildness repair wins
     Given mod "TheGoofyOne.BeefEaters" is loaded

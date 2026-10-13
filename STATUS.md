@@ -53,7 +53,7 @@ Replayed offline on this revision: `Tools/Check-Mod.ps1` all ok; `Tools/Check-Pi
 in 12 features, each resolving to exactly one step. Everything before `playTests` holds: dependencies and
 the four animal integrations (2026-10-01), `settings_audit: not_applicable`, translations complete (French
 reviewed by Virginie 2026-10-02), Pickle suites written with their scope and maps in `Tests/Pickle/README.md`
-and `TESTING.md`.
+and `TEST_SCENARIOS.md`.
 
 What `playTests` still lacks (all `unverified`, none a defect):
 - **`11-def-values` played 2026-10-10, ticket 1de2: 9 of 9 passed** (exitReason passed, 9 discovered and played; earlier I wrote 11, the file has 9). Before that its ticket 8265 had come back `invalid` on 2026-10-03, as had the gallery
@@ -87,14 +87,14 @@ resolving to exactly one step; its default Pickle path moved to `1.6\Assemblies`
   that says 0.1.0 was not pre-published is replaced by this one.
 - **`.dds`**: none exists on disk or in git; `*.dds` is now in `.gitignore` as a guard.
 - **Evidence**: no `Tests/Pickle/Evidence/` exists (no run ever happened), nothing to delete.
-  The rule on what to keep is now written in `TESTING.md`, "Evidence to keep".
+  The rule on what to keep is now written in `TEST_SCENARIOS.md`, "Evidence to keep".
 - **French review, 2026-10-01: corrections applied, review not validated yet.** Virginie asked: milk and meat wording, `sabot gauche/droit`, beefalo robustness and "about half the size", race name `Blanc Bleu Belge`. `FRENCH_REVIEW.md` regenerated; `translation_fr` stays `partial` until she re-reads.
 - **French review validated by Virginie, 2026-10-02** (relayed in chat, recorded here by the session): `Blanc Bleu Belge` consistent as a breed name, `beefalo pygmée` correct, descriptions natural and faithful, no dynamic colon agreement. Revision reviewed: `3eef8da`; French text last changed in `55393db`. `FRENCH_REVIEW.md` regenerated from that clean tree, its header now names the commit. `translation_fr: complete`.
 - **Original mod repository**: none found. Steam page 1988048034 links no source, GitHub search
   for the mod name and author returns only this repository, and the 2026-09-12 review found
   nothing. `upstream_mod_remotes: N/A` stands; there is no code to base on and no PR target.
 - **New `tested` criteria** (no `@wip`, every conditional scenario run, no manual test left) are
-  in `TESTING.md`, "Gate for `tested`". No `@wip` exists. Three features are conditional
+  in `TEST_SCENARIOS.md`, "Gate for `tested`". No `@wip` exists. Three features are conditional
   (`02` TextureOwner, `05` original mod, `08` Animal Gear) and need their own pass.
 - **Animal integrations decided 2026-10-01 (PUBLISHING.md rule of 2026-09-28/10-01), Virginie agreeing to the scope.** Four mods, read in their installed Workshop folders: **ADS 2** patched (`Patches/ADS2.xml`): vanilla Cow is in ADS_Cat2 and ADS_Cat1 only, Muffalo in all three, so BelgianBlueCow gets Cat1+Cat2 and PygmyBeefalo Cat1+Cat2+Cat3; `loadBefore` ADS 2 added to About.xml. **Dogs mate** patched (`Patches/DogsMate.xml`): BelgianBlueCow into group `Cow`, PygmyBeefalo into group `Bison` (its description makes it a bull x muffalo cross). **Nocturnal Animals**: not applicable, no patch - its `Patches/Core` files name neither Cow nor Muffalo, so both analogues stay diurnal, and so do these animals. **Better Crossbreeding**: not applicable - no vanilla analogue crosses, so a crossbreed would be new design, not porting; revisit on Virginie's call.
   integrations (ADS 2, Nocturnal Animals, Dogs mate, Better Crossbreeding) before `preTest`.
@@ -221,7 +221,7 @@ to `unchecked` and repeat this audit before claiming the gate is complete again.
 
 - **Title:** `Beef Eaters Renew (unofficial)` already identifies the continuation and its
   unofficial status. Keep the existing suffix; no additional suffix is needed.
-- **Manual functional tests:** sixteen scenarios, A-P, exist in `TESTING.md`, with steps and
+- **Manual functional tests:** sixteen scenarios, A-P, exist in `TEST_SCENARIOS.md`, with steps and
   expected outcomes covering loading, wildness, production, pens, caravans, training, spawning,
   trade, graphics, breeding, Animal Gear, conflicts and saves. They remain unplayed and
   `tested_on` stays empty. The user subsequently accepted `done` on 2026-09-13.
@@ -305,7 +305,7 @@ Illustration replaced and overlay recomposed on 2026-09-13 according to `../STYL
 The icon is unchanged: `Mod/About/ModIcon.png`, 128 x 128.
 ## What was fixed on 2026-09-12, and what it cost
 
-Three faults, none of them introduced by the port, all found while writing `TESTING.md`.
+Three faults, none of them introduced by the port, all found while writing `TEST_SCENARIOS.md`.
 
 **The pygmy beefalo was described as the opposite of what it is.** The README and the `About.xml`
 called it a pen animal rather than a caravan animal. It has no `roamMtbDays`, so it is not a roamer
@@ -338,6 +338,6 @@ Copy, typography, layout and palette are consolidated in `Art/Preview.config.jso
 Protocol update read first (AUDIT.md sentence on the `protocols_read_sha` ERROR, AGENTS.md markers and "while waiting", PUBLISHING.md and AUDIT.md 11.b/13.b, `USE_THIS_INSTEAD.md`), then `Mark-ProtocolsRead.ps1` (`a959f765`).
 
 - Ticket 1de2 (`11-def-values`): 9 of 9 passed, exitReason passed.
-- Every red of 2026-10-02 replayed green alone on a build that holds the fix: min EN rerun 6/6, min-fr-rerun 6/6, textures-rerun 3/3, original-rerun 1/1, animals-rerun 2/2; Animal Gear present passed (ad6a). Two passes without optional mods, four with. No `@wip`. A-P all covered or not applicable (`TESTING.md`).
+- Every red of 2026-10-02 replayed green alone on a build that holds the fix: min EN rerun 6/6, min-fr-rerun 6/6, textures-rerun 3/3, original-rerun 1/1, animals-rerun 2/2; Animal Gear present passed (ad6a). Two passes without optional mods, four with. No `@wip`. A-P all covered or not applicable (`TEST_SCENARIOS.md`).
 - Code review (8.m), `code_review_sha` = `bedb34a`, range first commit to HEAD, read in full: `Mod/Defs` (one added trade tag), both patches (guards hold, predicates repeat `@Name=`), `About.xml`, French DefInjected (keys match the defs), `Tests/Pickle/Source/TradeSteps.cs` (test-side only, never shipped). No defect found.
 - Open for later states: `10-gallery-animals` never played (ticket 743e was `invalid`), gallery images, echo review, `PUBLICATION.md` absent, and at publish a `drafted` row in `USE_THIS_INSTEAD.md` (this is a Renew mod; source 1988048034, to be read from the Workshop page).

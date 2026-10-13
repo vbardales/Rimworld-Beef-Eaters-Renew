@@ -1,7 +1,7 @@
-# The numbers of TESTING.md scenarios A, D, E, F, G, H, J and L, read from the def database the game built at
+# The numbers of TEST_SCENARIOS.md scenarios A, D, E, F, G, H, J and L, read from the def database the game built at
 # the main menu. They replace the "watch it in the game" prose of those scenarios for everything that is a value
 # the author wrote: if the game loaded the def, patches and inheritance included, the value is here. What is NOT
-# here, and stays out of this suite on purpose (see TESTING.md, "Gate for tested"): how an animal looks while
+# here, and stays out of this suite on purpose (see TEST_SCENARIOS.md, "Gate for tested"): how an animal looks while
 # walking (A, K, a picture a person reads), what the game does with a value (taming odds, caravan loading, pen
 # food, trader rolls: that is testing the engine), and anything that needs a quadrum of play (D, J, L).
 Feature: Beef Eaters Renew — the author's numbers survive the game's own load

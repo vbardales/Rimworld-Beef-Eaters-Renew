@@ -8,7 +8,7 @@ namespace Nelim.BeefEaters.PickleTests
 {
     /// <summary>
     /// Asserts whether a TraderKindDef's own stock generators would actually handle a given
-    /// animal ThingDef: the question TESTING.md's scenario I asks and no step in Pickle's built-in
+    /// animal ThingDef: the question TEST_SCENARIOS.md's scenario I asks and no step in Pickle's built-in
     /// catalogue or in PickleTools answers, checked against both before this was written.
     ///
     /// Calls <see cref="TraderKindDef.WillTrade(ThingDef)"/> directly rather than re-reading trade
@@ -91,7 +91,7 @@ namespace Nelim.BeefEaters.PickleTests
                 $"ThingDef '{defName}' label is \"{thing.label}\", expected \"{expected}\".");
         }
 
-        // ---- def values, read after the game's own load (scenarios A, D-L of TESTING.md) --------------------
+        // ---- def values, read after the game's own load (scenarios A, D-L of TEST_SCENARIOS.md) --------------------
 
         private static string Walk(object start, string path)
         {

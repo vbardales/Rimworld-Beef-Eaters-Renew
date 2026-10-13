@@ -3,7 +3,7 @@ Feature: Beef Eaters Renew — the wildness stat survives a save and reload
   The port's own worry, recorded in ATTRIBUTION.md and CHANGELOG.md, is that the wildness fix
   changed where a stat lives, not what a save stores. This proves the stat still reads correctly
   after a real save/load round trip, with an animal of each kind actually present on the map —
-  the concern behind TESTING.md's scenario O, narrowed to what one process can prove without a
+  the concern behind TEST_SCENARIOS.md's scenario O, narrowed to what one process can prove without a
   second mod install to swap against. The def-level stat check needs no fresh pawn lookup after
   the reload, so it is not affected by the stale-reference pitfall a per-pawn check would hit.
 
