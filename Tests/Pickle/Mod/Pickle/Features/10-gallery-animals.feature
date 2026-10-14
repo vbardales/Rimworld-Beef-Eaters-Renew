@@ -23,7 +23,10 @@
 # z 235 and 240, read on the captures of run 9575, one cell is about 90 px at the barn frame).
 # Both stay in the same corner from one picture to the next; the set dressing belongs to its picture and is removed.
 #
-# Fourth version, 2026-10-13: workshop 4 reframed tight (9 x 5 cells) because the beefalo, body size 1.0, was lost in the 15 x 10 frame; workshops 2 and 4 of run v6b were refused, 1, 3 and 5 kept.
+# Fifth version, 2026-10-15, after reading GALLERY.md in full: workshops 2 and 4 recomposed. Run v6b kept workshop 1 (cow and calf, noon) and 5 (barn, evening) and refused 2 and 4: animals lost in a bare pen. The series is one day, so the order of the upload follows the hours: 12 h, 15 h, 17 h, 19 h. Shooting plan, one line per image (place, hour, subject, composition, life, what it says):
+#   2: enclosure-south, 15 h, the bull FACE ON (rule of 2026-10-14: animals facing the camera in at least one capture), tight frame 10 x 7 cells from z 217 to 224 so the north fence closes the top of the picture, hay at his feet, daylilies at the fence, Nelim beside him for scale; says: this is the breed, the build is the point;
+#   4: same corner, 17 h, the pygmy beefalo and her calf, tight frame on the fence, a lit torch lamp (vanilla TorchLamp) casting the first warm light of the evening, tall yellow grass and hay as straw, Nelim feeding them; says: the small one, the horned one, the pack animal, and the day is ending;
+#   1 and 5 unchanged.
 #
 # Each scenario is @review: a green run proves a picture was taken, not that it is worth uploading. Open every
 # capture and drop one that shows the launcher, a dev-mode bar, another mod's animal, or an empty frame.
@@ -56,8 +59,8 @@ Feature: Beef Eaters Renew Workshop gallery
     And Beef Eaters Renew: the interface is shown again
     And Nelim's Pickle Tools: the decor is removed
 
-  Scenario: workshop 2 - mid-morning, the bull faces the camera
-    Given I set the hour to 10
+  Scenario: workshop 2 - mid-afternoon, the bull faces the camera at the fence
+    Given I set the hour to 15
     And I set the weather to "Clear"
     And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -65,18 +68,17 @@ Feature: Beef Eaters Renew Workshop gallery
     And Nelim's Pickle Tools: I let 60 ticks pass
     And Nelim's Pickle Tools: the area from (132, 206) to (166, 222) is cleared
     And Beef Eaters Renew: time is paused
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (153, 221) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (154, 220) fully grown
-    And Nelim's Pickle Tools: I place the decor "Hay" at (143, 216)
-    And Nelim's Pickle Tools: I place the decor "Hay" at (144, 216)
-    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" male at (148, 218) facing South
-    And Nelim's Pickle Tools: "Nelim" stands at (154, 217) facing West
-    And Nelim's Pickle Tools: I frame the rectangle from (141, 214) to (156, 224)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (146, 222) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (154, 222) fully grown
+    And Nelim's Pickle Tools: I place the decor "Hay" at (147, 218)
+    And Nelim's Pickle Tools: I place the decor "Hay" at (148, 218)
+    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" male at (150, 220) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (154, 219) facing West
+    And Nelim's Pickle Tools: I frame the rectangle from (145, 217) to (155, 224)
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-2-the-bull"
     And Beef Eaters Renew: the interface is shown again
     And Nelim's Pickle Tools: the decor is removed
-
   Scenario: workshop 3 - noon, a cow and her calf
     Given I set the hour to 12
     And I set the weather to "Clear"
@@ -99,8 +101,8 @@ Feature: Beef Eaters Renew Workshop gallery
     And Beef Eaters Renew: the interface is shown again
     And Nelim's Pickle Tools: the decor is removed
 
-  Scenario: workshop 4 - afternoon, the pygmy beefalo and its calf
-    Given I set the hour to 14
+  Scenario: workshop 4 - late afternoon, the pygmy beefalo and its calf by the lamp
+    Given I set the hour to 17
     And I set the weather to "Clear"
     And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -108,19 +110,21 @@ Feature: Beef Eaters Renew Workshop gallery
     And Nelim's Pickle Tools: I let 60 ticks pass
     And Nelim's Pickle Tools: the area from (132, 206) to (166, 222) is cleared
     And Beef Eaters Renew: time is paused
-    And Nelim's Pickle Tools: I place the decor "Hay" at (148, 216)
-    And Nelim's Pickle Tools: I place the decor "Hay" at (149, 216)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (154, 221) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (155, 220) fully grown
-    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (147, 219) facing East
-    And Beef Eaters Renew: I spawn a "PygmyBeefalo" male in life stage 0 at (149, 219) facing West
-    And Nelim's Pickle Tools: "Nelim" stands at (151, 218) facing West
-    And Nelim's Pickle Tools: I frame the rectangle from (144, 216) to (152, 221)
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (147, 218)
+    And Nelim's Pickle Tools: I place the decor "Hay" at (149, 218)
+    And Nelim's Pickle Tools: I place the decor "Hay" at (150, 218)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (146, 222) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (153, 222) fully grown
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (153, 220)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (153, 220) is lit
+    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (148, 220) facing South
+    And Beef Eaters Renew: I spawn a "PygmyBeefalo" male in life stage 0 at (150, 221) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (151, 219) facing West
+    And Nelim's Pickle Tools: I frame the rectangle from (145, 217) to (155, 224)
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-4-the-beefalo"
     And Beef Eaters Renew: the interface is shown again
     And Nelim's Pickle Tools: the decor is removed
-
   Scenario: workshop 5 - evening in the barn, the cow and the beefalo side by side
     Given I set the hour to 19
     And I set the weather to "Clear"
