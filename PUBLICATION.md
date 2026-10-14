@@ -212,6 +212,7 @@ drafts below are starting points to rewrite, not text to paste.
 | Pickle | 3791648678 | already `posted` | Add `Beef Eaters Renew` to `Covers` |
 | Dogs mate (Continued) | 2441132298 | `drafted` | Draft below. Add this mod to `Covers` |
 | Beef Eaters (original) | 1988048034 | to add as `drafted` | Draft below. Also the way TheGoofyOne can reach the owner |
+| [HB] Beef Eaters Reskin | 2943088425 | `drafted` (register row added 2026-10-14) | **Permission request**, not a thank-you. Post it now (the item need not be public: the link is the GitHub repository). Nothing of the reskin is bundled before she answers |
 
 ### Dogs mate (Continued), 2441132298
 
@@ -226,3 +227,13 @@ Hi TheGoofyOne! I ported your two animals to the current game (unofficially, cre
 ```
 
 Check the last comments of each page first, and whether it takes comments, as `WORKSHOP_COMMENTS.md` asks.
+
+### [HB] Beef Eaters Reskin (HannahBug), 2943088425: permission request
+
+HannahBug is alive (updated July 2025) and states no licence, so her textures are not ours to copy. Her page asks to be told if someone makes a continued version of the main mod: this is that message, and the question. Her `About.xml` depends on `TheGoofyOne.BeefEaters`, which this mod declares incompatible, so her reskin cannot load next to this mod as it is. If she says yes, the same 21 file names drop into `Mod/Textures/` (credit in the description, `THANKS` and `ATTRIBUTION.md`); if she prefers to keep her mod separate, she adds `nelim.beefeaters` as an alternative and this mod only names hers.
+
+```
+Hi HannahBug! Love your HD reskin :) I made a continued version of Beef Eaters for the current game, since the original stopped at 1.4: [url=https://github.com/vbardales/Rimworld-Beef-Eaters-Renew]Beef Eaters Renew (unofficial)[/url] (nelim.beefeaters). Wildness fix, French, same animals otherwise. Your page says to tell you, so, hi! Could I ask your permission to include your textures in it, with full credit to you? Or if you would rather keep your mod separate, could it also accept my packageId as the base? Either way I will not touch your files without your yes. Thanks for the lovely cows!
+```
+
+Check her last comments first, and whether the page takes comments (`WORKSHOP_COMMENTS.md`). About 700 characters.
