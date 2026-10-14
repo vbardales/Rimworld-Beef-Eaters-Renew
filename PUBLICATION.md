@@ -212,7 +212,7 @@ drafts below are starting points to rewrite, not text to paste.
 | Pickle | 3791648678 | already `posted` | Add `Beef Eaters Renew` to `Covers` |
 | Dogs mate (Continued) | 2441132298 | `drafted` | Draft below. Add this mod to `Covers` |
 | Beef Eaters (original) | 1988048034 | to add as `drafted` | Draft below. Also the way TheGoofyOne can reach the owner |
-| [HB] Beef Eaters Reskin | 2943088425 | `drafted` (register row added 2026-10-14) | **Permission request**, not a thank-you. Post it now (the item need not be public: the link is the GitHub repository). Nothing of the reskin is bundled before she answers |
+| [HB] Beef Eaters Reskin | 2943088425 | `posted` 2026-10-14, awaiting her answer (register row added 2026-10-14) | **Permission request**, not a thank-you. Post it now (the item need not be public: the link is the GitHub repository). Nothing of the reskin is bundled before she answers |
 
 ### Dogs mate (Continued), 2441132298
 
