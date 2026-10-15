@@ -11,7 +11,7 @@ anywhere. The workflow stage is `shootGallery[1.0.0]` (see `STATUS.md`).
 
 Only what is specific to this mod; the gates themselves are in `AUDIT.md`.
 
-- The gallery is not made: ticket `10-gallery-animals` is queued, no image has been read (see "Images").
+- Two gallery candidates (2 and 3) wait for the owner (see "Images").
 - The echo review (`echo_review_sha`) and the owner's review of this file and `CHANGELOG.md`
   (`publication_changelog_review_sha`) are not done.
 - The rollback target cannot exist before the first publish (see "Fail fast").
@@ -123,9 +123,12 @@ owner is asked (`GALLERY.md`).
 | Order | File | What it shows | Source |
 |---|---|---|---|
 | 0 | `0-preview.png` | Copy of `Mod/About/Preview.png`, byte for byte | Done |
-| 1+ | not made | Both animals at the Sanctuary Backlot (`enclosure-south`, `barn`), the cow beside the beefalo to show the size gap, the information cards (wildness, body size) | Pickle `10-gallery-animals` (v6), ticket `20261010-215307-702-afc3` queued, no image read yet |
+| 1 | `1-cow-calf.png` | Noon, the Belgian blue cow and her calf in the pen | Pickle `10-gallery-animals`, workshop 3, run v6b; accepted |
+| 2 | `2-candidate-bull-face-on.png` | 15 h, the bull face on at the fence, Nelim for scale | workshop 2, run v8; candidate |
+| 3 | `3-candidate-beefalo-lamp.png` | 17 h, the pygmy beefalo and its calf by a lit torch | workshop 4, run v8; candidate |
+| 4 | `4-barn-both.png` | 19 h, the barn: cow and beefalo side by side, the size gap | workshop 5, run v6b; accepted |
 
-Replace the last row with one row per accepted capture, then reindex so the numbers are contiguous.
+The order follows the hours of one day. Drop `candidate` from 2 and 3 once the owner accepts them.
 
 ## Dependencies and DLCs
 

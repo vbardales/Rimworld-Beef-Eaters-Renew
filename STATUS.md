@@ -19,13 +19,13 @@ tested_on:     2026-10-02 cefade3 (min EN/FR, textures, original, Animal Gear, A
 tested_1_7:   yes
 workshop:     3811290251
 remaining:
-  - gallery 2026-10-13: from run 20261012-gallery-v6b (5 of 5 passed) Virginie accepted workshop 1 (barn, cow + beefalo) and 3 (cow + calf), now `Art/Gallery/1-cow-calf.png` (noon) then `2-barn-both.png` (evening), in the order of the story (GALLERY.md, one story, time passing); pen cow, bull and beefalo captures refused. Beefalo reframed tight, ticket 20261013-102416-981-8a7d queued (gallery v7, workshop 4 only, `Tests/Pickle/Evidence/20261013-gallery-v7`); tree must stay put until RUN_DONE. Then echo review and `PUBLICATION.md` gallery table
+  - gallery 2026-10-15 (AUDIT 9.e), one story, one day, in the order of the hours; run v6b (5/5) and v8 (ticket dd46, 2/2 passed) read by the session: `0-preview.png` (copy of the Preview) | `1-cow-calf.png` 12 h, cow and calf, accepted by Virginie | `2-candidate-bull-face-on.png` 15 h, the bull face on at the fence (rule of 2026-10-14), candidate | `3-candidate-beefalo-lamp.png` 17 h, beefalo and calf by a lit torch, candidate | `4-barn-both.png` 19 h, cow and beefalo side by side in the barn, accepted by Virginie. Refused: v6b pen cow, v6b bull, v6b and v7b beefalo (animals lost in bare earth). Waiting for Virginie to accept or refuse candidates 2 and 3; then drop `candidate`, echo review (`echo-preview.png` is invalidated by the gallery, redo as `echo-source.png`, AUDIT 9.f), `PUBLICATION.md` table
   - unverified 2026-10-13: `PUBLICATION.md` drafted (Steam block, About.xml generated from it); to read before posting: Use This Instead comment filled 2026-10-13 (old name `Beef Eaters` read through the Steam API; author name from ATTRIBUTION.md), Animal Gear author not thanked (unknown), Dogs mate author line, the four Workshop links, gallery table to complete once ticket 8a7d is read; echo review (`echo_review_sha`) and Virginie review of PUBLICATION.md + CHANGELOG.md (`publication_changelog_review_sha`) not done
   - unverified 2026-10-14: permission request to HannahBug for her HD reskin (Workshop 2943088425) posted by Virginie on 2026-10-14; her textures are not bundled before she answers. Yes: drop her 21 same-named PNGs into `Mod/Textures/` with credit (description, THANKS, ATTRIBUTION.md); she also may accept `nelim.beefeaters` as base. No answer or no: nothing changes
   - feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
 updated:      2026-10-13, the mod's own session - shootGallery[1.0.0], 1.7 declared, Preview regenerated, PUBLICATION.md drafted
-protocols_read_sha: 8ca1edc7ab50f4a7d9ecf725bcfa2641baa8fc8c
+protocols_read_sha: 23f263539905e7d5a57ecaf3f85c29c92dc4b10d
 ---
 
 # Beef Eaters Renew — status
@@ -36,7 +36,7 @@ protocols_read_sha: 8ca1edc7ab50f4a7d9ecf725bcfa2641baa8fc8c
 - `tested_1_7: yes` holds for English only: the 1.7 install ships no French pack (AUDIT.md, 2026-10-13), so French is not proven on 1.7.
 - **Preview** regenerated with the 1.7 badge (`150a5db`); `0-preview.png` copy and both ICOs follow. The old defect (showcase without the Belgian blue cow) is gone: it now shows the cow and the beefalo in the barn.
 - **About.xml** description is generated from the `## Steam description` block of `PUBLICATION.md` (`.github/publish.config.json` gained `aboutFromDescription` and `description`); it names no RimWorld version, which clears the `rimworld-version` warning.
-- **Gallery**: images 1 (barn) and 2 (cow + calf) accepted from run `20261012-gallery-v6b`; beefalo reframed tight, ticket `20261013-102416-981-8a7d` (gallery v7, workshop 4) queued. Ticket afc3 was the earlier v6 run (exit 5, in-progress), not the 5/5 one.
+- **Gallery**: images 1 (barn) and 2 (cow + calf) accepted from run `20261012-gallery-v6b`; beefalo reframed tight, ticket 8a7d (no report) and ea15 (v7b, 1/1) refused, replaced by v8 (dd46). Ticket afc3 was the earlier v6 run (exit 5, in-progress), not the 5/5 one.
 - **Code review reopened and redone, 2026-10-13** (AUDIT.md 8.m): `bedb34a..fe3c067` read in full: `Mod/About/About.xml` (description generated from PUBLICATION.md, 1.7 added), `Mod/About/Preview.png`, `Tests/Pickle/Source/GallerySteps.cs` and the trimmed `TradeSteps.cs` (test-side only, gallery steps split out, nothing ships), `Directory.Build.props` (build/ path). No defect. `Mod/Defs`, `Mod/Patches` and the French files are unchanged since `bedb34a`, so the 1.6 runs stay valid for them.
 - Protocols read at `8ca1edc7`; `AUDIT.md`, `scripts.md`, `STYLE_RIMWORLD.md`, `USE_THIS_INSTEAD.md` changed since, to re-read before the next stage change.
 
