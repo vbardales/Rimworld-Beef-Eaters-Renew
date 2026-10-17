@@ -53,8 +53,12 @@ Feature: Beef Eaters Renew Workshop gallery, props variant (feed trough, large h
     And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (152, 220)
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (147, 218) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (143, 218) facing East
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (70, 100, 150)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (139, 214) to (154, 224)
+    And Nelim's Sanctuary: Nelim has her own face
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-1-dawn"
     And Beef Eaters Renew: the interface is shown again
@@ -76,8 +80,12 @@ Feature: Beef Eaters Renew Workshop gallery, props variant (feed trough, large h
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (144, 218) facing East
     And Beef Eaters Renew: I spawn a "BelgianBlueCow" female in life stage 0 at (149, 219) facing East
     And Nelim's Pickle Tools: "Nelim" stands at (150, 216) facing West
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (70, 100, 150)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (139, 214) to (156, 224)
+    And Nelim's Sanctuary: Nelim has her own face
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-2-the-calf"
     And Beef Eaters Renew: the interface is shown again
@@ -96,8 +104,12 @@ Feature: Beef Eaters Renew Workshop gallery, props variant (feed trough, large h
     And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (146, 220)
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" male at (150, 220) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (154, 219) facing West
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (70, 100, 150)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (145, 217) to (155, 224)
+    And Nelim's Sanctuary: Nelim has her own face
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-3-the-bull"
     And Beef Eaters Renew: the interface is shown again
@@ -121,8 +133,12 @@ Feature: Beef Eaters Renew Workshop gallery, props variant (feed trough, large h
     And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (148, 220) facing South
     And Beef Eaters Renew: I spawn a "PygmyBeefalo" male in life stage 0 at (150, 221) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (151, 219) facing West
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (70, 100, 150)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (145, 217) to (155, 224)
+    And Nelim's Sanctuary: Nelim has her own face
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-4-the-beefalo"
     And Beef Eaters Renew: the interface is shown again
@@ -139,8 +155,12 @@ Feature: Beef Eaters Renew Workshop gallery, props variant (feed trough, large h
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (201, 237) facing East
     And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (202, 235) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (202, 239) facing South
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (70, 100, 150)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (197, 233) to (205, 242)
+    And Nelim's Sanctuary: Nelim has her own face
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-5-the-barn"
     And Beef Eaters Renew: the interface is shown again

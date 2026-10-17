@@ -25,8 +25,12 @@ Feature: Beef Eaters Renew Workshop gallery, pygmy beefalo replacement shots
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (154, 217) fully grown
     And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (150, 217) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (152, 218) facing West
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (70, 100, 150)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (146, 215) to (155, 221)
+    And Nelim's Sanctuary: Nelim has her own face
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "beefalo-a-face-on"
     And Beef Eaters Renew: the interface is shown again
@@ -48,8 +52,12 @@ Feature: Beef Eaters Renew Workshop gallery, pygmy beefalo replacement shots
     And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (149, 218) facing East
     And Beef Eaters Renew: I spawn a "PygmyBeefalo" male in life stage 0 at (151, 218) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (150, 216) facing South
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (70, 100, 150)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (146, 215) to (155, 221)
+    And Nelim's Sanctuary: Nelim has her own face
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "beefalo-b-calf"
     And Beef Eaters Renew: the interface is shown again
