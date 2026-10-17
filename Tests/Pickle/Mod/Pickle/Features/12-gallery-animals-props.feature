@@ -50,7 +50,7 @@ Feature: Beef Eaters Renew Workshop gallery, props variant (feed trough, large h
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (141, 220) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (139, 220) fully grown
     And Nelim's Pickle Tools: I place the decor "AnimalFeedTroughSmall" at (150, 218)
-    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (152, 222)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (152, 220)
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (147, 218) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (143, 218) facing East
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
@@ -70,7 +70,7 @@ Feature: Beef Eaters Renew Workshop gallery, props variant (feed trough, large h
     And Nelim's Pickle Tools: the area from (132, 206) to (166, 222) is cleared
     And Beef Eaters Renew: time is paused
     And Nelim's Pickle Tools: I place the decor "AnimalFeedTroughSmall" at (153, 218)
-    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (154, 222)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (155, 220)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (141, 221) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (142, 220) fully grown
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (144, 218) facing East
@@ -93,7 +93,7 @@ Feature: Beef Eaters Renew Workshop gallery, props variant (feed trough, large h
     And Nelim's Pickle Tools: the area from (132, 206) to (166, 222) is cleared
     And Beef Eaters Renew: time is paused
     And Nelim's Pickle Tools: I place the decor "AnimalFeedTroughSmall" at (148, 218)
-    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (147, 222)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (146, 220)
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" male at (150, 220) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (154, 219) facing West
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
@@ -114,7 +114,7 @@ Feature: Beef Eaters Renew Workshop gallery, props variant (feed trough, large h
     And Beef Eaters Renew: time is paused
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (147, 218)
     And Nelim's Pickle Tools: I place the decor "AnimalFeedTroughSmall" at (150, 218)
-    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (147, 222)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (146, 220)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (153, 222) fully grown
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (153, 220)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (153, 220) is lit

@@ -20,9 +20,9 @@ Feature: Beef Eaters Renew Workshop gallery, pygmy beefalo replacement shots
     And Nelim's Pickle Tools: the area from (132, 206) to (166, 222) is cleared
     And Beef Eaters Renew: time is paused
     And Nelim's Pickle Tools: I place the decor "AnimalFeedTroughSmall" at (150, 219)
-    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (152, 221)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (154, 219)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (147, 220) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (153, 218) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (154, 217) fully grown
     And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (150, 217) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (152, 218) facing West
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
@@ -42,9 +42,9 @@ Feature: Beef Eaters Renew Workshop gallery, pygmy beefalo replacement shots
     And Nelim's Pickle Tools: the area from (132, 206) to (166, 222) is cleared
     And Beef Eaters Renew: time is paused
     And Nelim's Pickle Tools: I place the decor "AnimalFeedTroughSmall" at (149, 220)
-    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (152, 220)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (154, 219)
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (146, 219)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (154, 218) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (154, 217) fully grown
     And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (149, 218) facing East
     And Beef Eaters Renew: I spawn a "PygmyBeefalo" male in life stage 0 at (151, 218) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (150, 216) facing South

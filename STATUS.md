@@ -19,14 +19,14 @@ tested_on:     2026-10-02 cefade3 (min EN/FR, textures, original, Animal Gear, A
 tested_1_7:   yes
 workshop:     3811290251
 remaining:
-  - gallery 2026-10-17 (AUDIT 9.e), one day, subtitled (GALLERY.md): `0-preview.png` | `1-cow-calf.jpg` noon | `2-bull-face-on.jpg` afternoon | `3-barn-both.jpg` dusk, all three accepted by Virginie; originals in `Art/Gallery-clean/`, lines in PUBLICATION.md. Refused: beefalo evening torch picture (v8). Missing: a beefalo-alone picture. Tickets waiting: f557 (`12-gallery-animals-props`, props variant) and f268 (`13-gallery-beefalo`, scenarios A face on, B with calf), then read captures, accept or refuse with Virginie, subtitle the kept one, `echo-source.png` review (AUDIT 9.f), `PUBLICATION.md` table. `publication_changelog_review_sha` done 2026-10-17
+  - gallery 2026-10-17 (AUDIT 9.e), one day, subtitled (GALLERY.md): `0-preview.png` | `1-cow-calf.jpg` noon | `2-bull-face-on.jpg` afternoon | `3-barn-both.jpg` dusk, all three accepted by Virginie; originals in `Art/Gallery-clean/`, lines in PUBLICATION.md. Refused: beefalo evening torch picture (v8). Missing: a beefalo-alone picture. f557 done 2026-10-17 (5/5, all five refused: hay bale straddles the fence row z 222, duplicates of accepted pictures; bales moved to z 219-220 in features 12 and 13), refiled as 0556 (`12-gallery-animals-props`). Tickets waiting: 0556 and f268 (`13-gallery-beefalo`, scenarios A face on, B with calf), then read captures, accept or refuse with Virginie, subtitle the kept one, `echo-source.png` review (AUDIT 9.f), `PUBLICATION.md` table. `publication_changelog_review_sha` done 2026-10-17
   - unverified 2026-10-13: `PUBLICATION.md` drafted (Steam block, About.xml generated from it); to read before posting: Use This Instead comment filled 2026-10-13 (old name `Beef Eaters` read through the Steam API; author name from ATTRIBUTION.md), Animal Gear author not thanked (unknown), Dogs mate author line, the four Workshop links, gallery table to complete once ticket 8a7d is read; echo review (`echo_review_sha`) and Virginie review of PUBLICATION.md + CHANGELOG.md (`publication_changelog_review_sha`) not done
   - unverified 2026-10-14: permission request to HannahBug for her HD reskin (Workshop 2943088425) posted by Virginie on 2026-10-14; her textures are not bundled before she answers. Yes: drop her 21 same-named PNGs into `Mod/Textures/` with credit (description, THANKS, ATTRIBUTION.md); she also may accept `nelim.beefeaters` as base. No answer or no: nothing changes
   - feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-10-17, the mod's own session - shootGallery[1.0.0], ticket f557 (props variant) submitted, session code BE
+updated:      2026-10-17, the mod's own session - shootGallery[1.0.0], f557 refused (bale on fence), features 12 and 13 fixed, ticket 0556 filed, session code BE
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
-protocols_read_sha: 233f007e69f3660973329f2202d9115562d5ed8a
+protocols_read_sha: 78bf85cc96d564b99ea1a0e122ba9beb10d77268
 ---
 # Beef Eaters Renew — status
 
