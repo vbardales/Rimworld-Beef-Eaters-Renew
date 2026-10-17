@@ -26,7 +26,7 @@ remaining:
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
 updated:      2026-10-17, the mod's own session - shootGallery[1.0.0], f557 refused (bale on fence), features 12 and 13 fixed, ticket 0556 filed, session code BE
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
-protocols_read_sha: 78bf85cc96d564b99ea1a0e122ba9beb10d77268
+protocols_read_sha: 117fb9642df7e57bece2318904c644a9c39296df
 ---
 # Beef Eaters Renew — status
 
