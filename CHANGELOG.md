@@ -35,8 +35,7 @@ First release of the 1.6 update of **Beef Eaters**, by TheGoofyOne.
 - **French translation**, covering both animals' names, descriptions, bull/calf labels and
   plurals, named attacks, and the optional Animal Gear armour: 21 owned text fields, all covered.
   English is supplied by the original Def values; no redundant English DefInjected file.
-- **`Mod/About/Preview.png`** (896×504) and **`Mod/About/ModIcon.png`** (128×128), generated and
-  engraved per `STYLE_RIMWORLD.md`. Full-resolution sources and the composition page are kept in
+- **`Mod/About/Preview.png`** (896×504), composed per `STYLE_RIMWORLD.md`, and **`Mod/About/ModIcon.png`** (128×128), made from the owner's own source image. Full-resolution sources and the composition page are kept in
   `Art/`, never in `About/`.
 - **`TEST_SCENARIOS.md`**, sixteen prose scenarios (A–P) covering both animals, the Animal Gear patch,
   translations and the collision with the original.
@@ -57,8 +56,7 @@ First release of the 1.6 update of **Beef Eaters**, by TheGoofyOne.
   original author's explicit consent, with the standing offer to take it down on request.
 - **`packageId` dropped its `renew` suffix**: `nelim.beefeatersrenew` → `nelim.beefeaters`.
 - **The mod's own name gained an `(unofficial)` suffix**: `Beef Eaters Renew (unofficial)`.
-- **The description now closes with a links section** (GitHub source, issues, changelog,
-  attribution/licence review, the original Workshop item) and the exact Steam-formatted
+- **The description links the original Workshop item and closes with** the exact Steam-formatted
   `[url=...]Source code on GitHub[/url]` line publication requires.
 - **The pygmy beefalo was described as the opposite of what it is.** The description called it a
   pen animal rather than a caravan animal: it has no `roamMtbDays`, so it needs no pen, and it

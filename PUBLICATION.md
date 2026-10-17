@@ -11,7 +11,7 @@ anywhere. The workflow stage is `shootGallery[1.0.0]` (see `STATUS.md`).
 
 Only what is specific to this mod; the gates themselves are in `AUDIT.md`.
 
-- Two gallery candidates (2 and 3) wait for the owner (see "Images").
+- The gallery has no picture of the beefalo alone: the evening scene was refused, a new one is to be shot (see "Screenshots").
 - The echo review (`echo_review_sha`) and the owner's review of this file and `CHANGELOG.md`
   (`publication_changelog_review_sha`) are not done.
 - The rollback target cannot exist before the first publish (see "Fail fast").
@@ -123,16 +123,24 @@ owner is asked (`GALLERY.md`).
 | Order | File | What it shows | Source |
 |---|---|---|---|
 | 0 | `0-preview.png` | Copy of `Mod/About/Preview.png`, byte for byte | Done |
-| 1 | `1-cow-calf.png` | Noon, the Belgian blue cow and her calf in the pen | Pickle `10-gallery-animals`, workshop 3, run v6b; accepted |
-| 2 | `2-candidate-bull-face-on.png` | 15 h, the bull face on at the fence, Nelim for scale | workshop 2, run v8; candidate |
-| 3 | `3-candidate-beefalo-lamp.png` | 17 h, the pygmy beefalo and its calf by a lit torch | workshop 4, run v8; candidate |
-| 4 | `4-barn-both.png` | 19 h, the barn: cow and beefalo side by side, the size gap | workshop 5, run v6b; accepted |
+| 1 | `1-cow-calf.jpg` | Noon, the Belgian blue cow and her calf in the pen | Pickle `10-gallery-animals`, run v6b; accepted |
+| 2 | `2-bull-face-on.jpg` | Afternoon, the bull face on at the fence, Nelim for scale | run v8; accepted |
+| 3 | `3-barn-both.jpg` | Dusk, the barn: cow and beefalo side by side, the size gap | run v6b; accepted |
 
-The order follows the hours of one day. Drop `candidate` from 2 and 3 once the owner accepts them.
+The beefalo evening scene (v8, torch) was refused by the owner on 2026-10-17: the gallery has no beefalo-alone picture yet. A new staging is to be shot (props variant `12-gallery-animals-props`, ticket f557, may serve). Images are the subtitled ones; unsubtitled originals are in `Art/Gallery-clean/` (`.jpg`).
+## Gallery subtitles
+
+One English line at the bottom of each scene without an interface window (`GALLERY.md`, "Sous-titres"). `0-` carries none. Lines describe what each capture shows; the hay lies on the ground in every pen image, so no line says Nelim feeds an animal. Applied 2026-10-17 with `scripts/Add-Subtitle.ps1` from the originals in `Art/Gallery-clean/`.
+
+| Index | File | Line |
+|---|---|---|
+| 1 | `1-cow-calf.jpg` | Noon: the Belgian blue cow and her calf in the pen. |
+| 2 | `2-bull-face-on.jpg` | Afternoon: the Belgian blue bull, face on, at the fence. |
+| 3 | `3-barn-both.jpg` | Dusk in the barn: the cow and the beefalo side by side. |
 
 ## Dependencies and DLCs
 
-**No DLC and no mod is required.** `supportedVersions` declares 1.6 only; `modDependencies` is empty.
+**No DLC and no mod is required.** `supportedVersions` declares 1.6 and 1.7; `modDependencies` is empty.
 
 | Declared | packageId | Actually required |
 |---|---|---|
@@ -158,8 +166,9 @@ drawn from `TEST_SCENARIOS.md`; it is hers to change.
 
 ## Mature content checkboxes
 
-**None of them.** The mod adds two livestock animals. The Preview and ModIcon were opened; the gallery is
-not produced, and each image must be opened before this answer is final.
+**None of them.** The mod adds two livestock animals. The Preview and ModIcon were opened; the three
+accepted gallery images were opened on 2026-10-17; a picture of the beefalo alone is still to be shot,
+and it must be opened too before this answer is final.
 
 ## Steam change notes
 
