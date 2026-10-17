@@ -1,6 +1,6 @@
 # Publication
 
-What the Workshop page needs and the rest of the repository does not hold. It serves twice: for the
+What the Workshop page needs but the rest of the repository does not hold. It serves twice: for the
 first release, and for whoever takes the mod over.
 
 **Status: drafted, 2026-10-13.** The Workshop item exists since 2026-10-01 (0.1.0 prepublication,
