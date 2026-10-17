@@ -25,6 +25,7 @@ remaining:
   - feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
 updated:      2026-10-17, the mod's own session - shootGallery[1.0.0], ticket f557 (props variant) submitted, session code BE
+publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
 protocols_read_sha: 233f007e69f3660973329f2202d9115562d5ed8a
 ---
 # Beef Eaters Renew — status
