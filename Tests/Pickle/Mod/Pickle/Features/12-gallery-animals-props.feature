@@ -12,7 +12,7 @@
 #     bridge behind Nelim; says: the small horned pack animal, built for the road;
 #   5 evening, 19 h, `barn` (accepted composition of run v8, kept): the cow and the beefalo side by side, the day ends;
 #     the one picture that shows the size difference (body size 6.0 against 1.0).
-# Nelim is dressed in every picture in her own fixture kit (corset and trousers, kept: the owner confirmed that look, 2026-10-18) plus a dyed CowboyHat, carries hay, has her own face last; her
+# Nelim is dressed in every picture in her own fixture kit (corset and trousers, kept: the owner confirmed that look, 2026-10-18) plus a dyed CowboyHat; hair let down (hairstyle Long, a bun would not show) and drawn under the hat by Show Hair (RaccoonCuddler.ShowHair, already in the pass map), carries hay, has her own face last; her
 # clothes follow the day (catalogue PickleTools/ColonistRace/docs/CATALOGUE-APPAREL.md): a duster over the shirt in the
 # dawn fog, shirt and hat at noon and in the afternoon, a green jacket at the bridge and in the barn as the evening cools.
 # Two lit vanilla torches (TorchLamp, as in run v8) stand at the bridge ends in picture 4.
@@ -44,6 +44,7 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (147, 133) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (150, 132) facing West
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (140, 128) to (156, 137)
@@ -65,6 +66,7 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Beef Eaters Renew: I spawn a "BelgianBlueCow" female in life stage 0 at (155, 102) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (157, 101) facing West
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (146, 98) to (162, 106)
     And Nelim's Sanctuary: Nelim has her own face
@@ -87,6 +89,7 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" male at (150, 220) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (154, 219) facing West
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (145, 217) to (155, 224)
     And Nelim's Sanctuary: Nelim has her own face
@@ -111,6 +114,7 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Beef Eaters Renew: I spawn a "PygmyBeefalo" male in life stage 0 at (131, 124) facing East
     And Nelim's Pickle Tools: "Nelim" stands at (136, 124) facing East
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Jacket" dyed rgb (92, 112, 82)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (127, 119) to (141, 129)
@@ -132,6 +136,7 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (202, 235) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (202, 239) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Jacket" dyed rgb (92, 112, 82)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (197, 233) to (205, 242)
