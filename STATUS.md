@@ -24,7 +24,7 @@ remaining:
   - unverified 2026-10-14: permission request to HannahBug for her HD reskin (Workshop 2943088425) posted by Virginie on 2026-10-14; her textures are not bundled before she answers. Yes: drop her 21 same-named PNGs into `Mod/Textures/` with credit (description, THANKS, ATTRIBUTION.md); she also may accept `nelim.beefeaters` as base. No answer or no: nothing changes
   - feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-10-18, the mod's own session - shootGallery[1.0.0], seed Mod_3753978140_MovingVanillaEyesMod.xml was missing from config/sanctuary (SB has it), 0556 captures refused, to refile
+updated:      2026-10-18, the mod's own session - shootGallery[1.0.0], shotlist rated (lowest 2, redo 1, 2, 5), 0556 captures refused
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
 protocols_read_sha: b7ed0bd92ef9c1a1a5c74fa52332110b024377dd
 ---
@@ -332,3 +332,16 @@ Protocol update read first (AUDIT.md sentence on `protocols_read_sha` ERROR, AGE
 - Every red of 2026-10-02 replayed green alone on build holding fix: min EN rerun 6/6, min-fr-rerun 6/6, textures-rerun 3/3, original-rerun 1/1, animals-rerun 2/2; Animal Gear present passed (ad6a). Two passes without optional mods, four with. No `@wip`. A-P all covered or not applicable (`TEST_SCENARIOS.md`).
 - Code review (8.m), `code_review_sha` = `bedb34a`, range first commit to HEAD, read in full: `Mod/Defs` (one added trade tag), both patches (guards hold, predicates repeat `@Name=`), `About.xml`, French DefInjected (keys match defs), `Tests/Pickle/Source/TradeSteps.cs` (test-side only, never shipped). No defect found.
 - Open for later states: `10-gallery-animals` never played (ticket 743e was `invalid`), gallery images, echo review, `PUBLICATION.md` absent, and at publish a `drafted` row in `USE_THIS_INSTEAD.md` (Renew mod; source 1988048034, to be read from Workshop page).
+## Shotlist self-rating, 2026-10-18 (AUDIT 9.0, owner rule: 4/5 or more before playing)
+
+Story (feature 12 header): one farm day, dawn to evening, Nelim leads the Belgian blue cow, her calf, the bull and the pygmy beefalo through the farm; one place per picture. Ratings read against run 0556 captures (read 2026-10-18, owner refused all three kept candidates; Moving Vanilla Eyes seed was missing, added, so Nelim's face is unproven until the rerun).
+
+| # | shot | place, hour | now | main risk | rework to reach 4 |
+|---|---|---|---|---|---|
+| 1 | dawn, cow to the water | right-bank, 07 h fog | 3 | cow small and hunched in confusing grass, fog flattens it | tighter frame, cow 3/4 facing camera, cleaner patch of grass |
+| 2 | noon, cow and calf | flower-garden, 12 h | 2 | green blueprint ghost under the cow, statues and a wall bed in frame | move the cells away from statues and bed, or another place |
+| 3 | bull face on at the trough | enclosure-south, 15 h | 4 | bare dirt background | fence nearer, keep |
+| 4 | beefalo and calf on the bridge | river-bridge, 17 h | 4 | none big | keep |
+| 5 | evening, both side by side | barn, 19 h | 2 | reads as hay floor with firepits and a yellow table, orange tint on the cow | other place or accepted composition `3-barn-both`, no firepits in frame |
+
+Lowest 2; scenes to redo 1, 2, 5. Older accepted `1-cow-calf`, `2-bull-face-on`, `3-barn-both` (undressed Nelim) stay until the farm day replaces them; feature 13 not needed.
