@@ -27,6 +27,11 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
 
   Background:
     Given the save "Nelims-tribe" is loaded
+    And game speed is paused
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: the eclipse of the map is ended
+    And Nelim's Pickle Tools: all filth is cleaned
+    And Nelim's Pickle Tools: all humans but "Nelim" are removed
 
   Scenario: workshop 1 - dawn fog on the river bank, the farmer leads the Belgian blue cow down to the water
     Given I set the hour to 7
@@ -38,8 +43,8 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Beef Eaters Renew: time is paused
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (147, 133) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (150, 132) facing West
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (70, 100, 150)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
@@ -61,8 +66,8 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (151, 102) facing East
     And Beef Eaters Renew: I spawn a "BelgianBlueCow" female in life stage 0 at (155, 102) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (157, 101) facing West
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (70, 100, 150)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (146, 98) to (162, 106)
@@ -85,8 +90,8 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (146, 220)
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" male at (150, 220) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (154, 219) facing West
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (70, 100, 150)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (145, 217) to (155, 224)
@@ -111,8 +116,8 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (133, 124) facing East
     And Beef Eaters Renew: I spawn a "PygmyBeefalo" male in life stage 0 at (131, 124) facing East
     And Nelim's Pickle Tools: "Nelim" stands at (136, 124) facing East
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (70, 100, 150)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Jacket" dyed rgb (92, 112, 82)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
@@ -134,8 +139,8 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (201, 237) facing East
     And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (202, 235) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (202, 239) facing South
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (70, 100, 150)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (105, 78, 52)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Jacket" dyed rgb (92, 112, 82)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
