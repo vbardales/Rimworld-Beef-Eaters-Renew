@@ -24,7 +24,7 @@ remaining:
   - unverified 2026-10-14: permission request to HannahBug for her HD reskin (Workshop 2943088425) posted by Virginie on 2026-10-14; her textures are not bundled before she answers. Yes: drop her 21 same-named PNGs into `Mod/Textures/` with credit (description, THANKS, ATTRIBUTION.md); she also may accept `nelim.beefeaters` as base. No answer or no: nothing changes
   - feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-10-18, the mod's own session - shootGallery[1.0.0], shotlist rated (lowest 2, redo 1, 2, 5), 0556 captures refused
+updated:      2026-10-18, the mod's own session - shootGallery[1.0.0], feature 12 rewritten against GALLERY.md a to k, all five at 4, ticket to file
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
 protocols_read_sha: b7ed0bd92ef9c1a1a5c74fa52332110b024377dd
 ---
@@ -332,7 +332,7 @@ Protocol update read first (AUDIT.md sentence on `protocols_read_sha` ERROR, AGE
 - Every red of 2026-10-02 replayed green alone on build holding fix: min EN rerun 6/6, min-fr-rerun 6/6, textures-rerun 3/3, original-rerun 1/1, animals-rerun 2/2; Animal Gear present passed (ad6a). Two passes without optional mods, four with. No `@wip`. A-P all covered or not applicable (`TEST_SCENARIOS.md`).
 - Code review (8.m), `code_review_sha` = `bedb34a`, range first commit to HEAD, read in full: `Mod/Defs` (one added trade tag), both patches (guards hold, predicates repeat `@Name=`), `About.xml`, French DefInjected (keys match defs), `Tests/Pickle/Source/TradeSteps.cs` (test-side only, never shipped). No defect found.
 - Open for later states: `10-gallery-animals` never played (ticket 743e was `invalid`), gallery images, echo review, `PUBLICATION.md` absent, and at publish a `drafted` row in `USE_THIS_INSTEAD.md` (Renew mod; source 1988048034, to be read from Workshop page).
-## Shotlist self-rating, 2026-10-18 (AUDIT 9.0, owner rule: 4/5 or more before playing)
+## Shotlist self-rating, 2026-10-18, FIRST VERSION (superseded below by the a to k rerating)
 
 Story (feature 12 header): one farm day, dawn to evening, Nelim leads the Belgian blue cow, her calf, the bull and the pygmy beefalo through the farm; one place per picture. Ratings read against run 0556 captures (read 2026-10-18, owner refused all three kept candidates; Moving Vanilla Eyes seed was missing, added, so Nelim's face is unproven until the rerun).
 
@@ -345,3 +345,17 @@ Story (feature 12 header): one farm day, dawn to evening, Nelim leads the Belgia
 | 5 | evening, both side by side | barn, 19 h | 2 | reads as hay floor with firepits and a yellow table, orange tint on the cow | other place or accepted composition `3-barn-both`, no firepits in frame |
 
 Lowest 2; scenes to redo 1, 2, 5. Older accepted `1-cow-calf`, `2-bull-face-on`, `3-barn-both` (undressed Nelim) stay until the farm day replaces them; feature 13 not needed.
+
+## Shotlist rerated against GALLERY.md a to k, 2026-10-18 (after Audit's reading of the lines)
+
+Feature 12 rewritten (header = story k plus one line per picture with time, decor, living, look, action, composition, risk and plan). Every picture has a different coat, hat, hair and face over Nelim's approved fixture kit; decor named and removed after each shot; cow, bull and beefalo all FACE the camera or are side by side; Show Hair under the hat. Not played, so the ratings are what the lines promise, to be read on the captures.
+
+| # | place, hour | look (coat, hat, hair, face) | action | decor | living | risk, plan | a-k |
+|---|---|---|---|---|---|---|---|
+| 1 | right-bank 07 h fog | duster oat brown, hat wheat, Long, calm | leads the cow, hay | TorchLamp lit, Plant_Daylily | cow facing South | cow small in grass: tight frame | 4 |
+| 2 | flower-garden 12 h | no coat, hat sky blue, Pigtails, smile | holds Milk to the calf | 2 PlantPot with Plant_Daylily | cow, calf | ghost, statues, bed: frame narrowed to (147,100)-(159,106) | 4 |
+| 3 | enclosure-south 15 h | jacket denim blue, hat leather brown, Bob, neutral | pours hay | trough, large bale | bull facing South | bare dirt: trough and bale as warm masses | 4 |
+| 4 | river-bridge 17 h | jacket moss green, beret burgundy, FancyBun, smug | walks them over | 2 TorchLamp lit | beefalo, calf | none big | 4 |
+| 5 | barn 19 h | cape plum, no hat, Long, her own face | sets down last hay | 1 TorchLamp lit, large bale, area cleared | cow, beefalo | campsite look: clear the area, one torch; else move to the pen at dusk | 4 (weakest) |
+
+Lowest 4. Cell coordinates outside the pen unverified until the run. Fixes of the first table all applied in the feature.
