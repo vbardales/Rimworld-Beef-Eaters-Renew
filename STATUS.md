@@ -353,9 +353,9 @@ Feature 12 rewritten (header = story k plus one line per picture with time, deco
 | # | place, hour | look (coat, hat, hair, face) | action | decor | living | risk, plan | a-k |
 |---|---|---|---|---|---|---|---|
 | 1 | right-bank 07 h fog | duster oat brown, hat wheat, Long, calm | leads the cow, hay | TorchLamp lit, Plant_Daylily | cow facing South | cow small in grass: tight frame | 4 |
-| 2 | flower-garden 12 h | no coat, hat sky blue, Pigtails, smile | holds Milk to the calf | 2 PlantPot with Plant_Daylily | cow, calf | ghost, statues, bed: frame narrowed to (147,100)-(159,106) | 4 |
-| 3 | enclosure-south 15 h | jacket denim blue, hat leather brown, Bob, neutral | pours hay | trough, large bale | bull facing South | bare dirt: trough and bale as warm masses | 4 |
-| 4 | river-bridge 17 h | jacket moss green, beret burgundy, FancyBun, smug | walks them over | 2 TorchLamp lit | beefalo, calf | none big | 4 |
+| 2 | flower-garden 12 h | no coat, hat sky blue, Long, smile | holds Milk to the calf | 2 PlantPot with Plant_Daylily | cow, calf | ghost, statues, bed: frame narrowed to (147,100)-(159,106) | 4 |
+| 3 | enclosure-south 15 h | jacket denim blue, hat leather brown, Long, neutral | pours hay | trough, large bale | bull facing South | bare dirt: trough and bale as warm masses | 4 |
+| 4 | river-bridge 17 h | jacket moss green, beret burgundy, Long, smug | walks them over | 2 TorchLamp lit | beefalo, calf | none big | 4 |
 | 5 | barn 19 h | cape plum, no hat, Long, her own face | sets down last hay | 1 TorchLamp lit, large bale, area cleared | cow, beefalo | campsite look: clear the area, one torch; else move to the pen at dusk | 4 (weakest) |
 
 Lowest 4. Cell coordinates outside the pen unverified until the run. Fixes of the first table all applied in the feature.

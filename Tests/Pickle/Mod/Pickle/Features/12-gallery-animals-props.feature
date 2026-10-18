@@ -7,7 +7,7 @@
 #
 # BASE LOOK (d). Nelim keeps her fixture kit, corset and trousers, grey and yellow (owner confirmed that look on nelim-fit, 2026-10-18);
 # each picture adds a different coat, hat, hair and face on top of it (Shell and Overhead layers do not move the corset).
-# Show Hair (RaccoonCuddler.ShowHair, already in the pass map) draws the hair under the hat. Faces by kit (smile, calm, neutral, smug,
+# Owner hat rule (GALLERY.md d, 2026-10-18): a pawn with a hat has long loose hair, never a ponytail or a bun; Show Hair (RaccoonCuddler.ShowHair, in the pass map) draws it under the hat; hair is Long in every picture. Faces by kit (smile, calm, neutral, smug,
 # the kit sets brows, mouth and lids); the barn picture keeps her own face (smirk).
 #
 # PLAN, one line per picture (a time/place, b decor named and removed after the shot, c living, d look, e action, f composition,
@@ -20,7 +20,7 @@
 #    RISK: the cow reads small and hunched in the grass (run 0556, note 3). PLAN: tight frame, cow facing South, cleaner grass patch.
 #  2 NOON 12 h, Clear, `flower-garden`, 60 ticks. Decor: the lily field behind, and two PlantPot
 #    with Plant_Daylily fully grown at (149,102) and (150,105) as foreground. Living: the cow, her calf (life stage 0), Nelim.
-#    Look: no coat, CowboyHat sky blue (90,140,190) against the orange lilies, hair Pigtails, face kit smile. Action: holds a jug,
+#    Look: no coat, CowboyHat sky blue (90,140,190) against the orange lilies, hair Long, face kit smile. Action: holds a jug,
 #    the item "Milk", towards the calf. Composition: rectangle (147,100)-(159,106) narrowed on purpose to leave the statues (south)
 #    and the wall bed (east) out of the frame, cow at (151,103), calf at (155,103), Nelim at (157,102), flowers behind.
 #    Says: the calf has its own look, and the cow gives milk. Mod: the calf stage and the milk.
@@ -29,13 +29,13 @@
 #  3 AFTERNOON 15 h, Clear, `enclosure-south` (the pen, fence along the north), 60 ticks, area (132,206)-(166,222) cleared first.
 #    Decor: AnimalFeedTroughSmall (148,218) and VFEPD_HayBaleLarge (146,220), props from the props map, nothing ships with the mod.
 #    Living: the Belgian blue BULL FACING THE CAMERA (South) at (150,220), Nelim. Look: Apparel_Jacket denim blue (70,100,150),
-#    CowboyHat leather brown (120,85,55), hair Bob, face kit neutral. Action: pours hay into the trough.
+#    CowboyHat leather brown (120,85,55), hair Long, face kit neutral. Action: pours hay into the trough.
 #    Composition: rectangle (145,217)-(155,224), the bull centred and facing us, the fence as a straight line on top.
 #    Says: this is the build, the point of the breed. Mod: the bull, from the front.
 #    RISK: bare dirt behind the bull. PLAN: trough and bale as the two warm masses, fence in frame; accepted as 4 in run 0556.
 #  4 LATE AFTERNOON 17 h, Clear, `river-bridge`, 60 ticks. Decor: two lit TorchLamp at (140,126) and (128,121), removed after.
 #    Living: the pygmy beefalo (adult female) and its calf behind Nelim. Look: Apparel_Jacket moss green (92,112,82), Apparel_Beret
-#    burgundy (130,40,60), hair FancyBun (the beret leaves the bun visible), face kit smug. Action: walks the two across the bridge.
+#    burgundy (130,40,60), hair Long (loose under the beret), face kit smug. Action: walks the two across the bridge.
 #    Composition: rectangle (127,119)-(141,129), the bridge as a horizontal band, animals left, Nelim right, river above and below.
 #    Says: the small horned pack animal is built for the road. Mod: the beefalo and its calf.
 #    RISK: none big (run 0556, note 4). PLAN: keep the cells.
@@ -104,7 +104,7 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Beef Eaters Renew: I spawn a "BelgianBlueCow" female in life stage 0 at (155, 103) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (157, 102) facing West
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (90, 140, 190)
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Pigtails"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" carries the item "Milk"
     And Nelim's Pickle Tools: I frame the rectangle from (147, 100) to (159, 106)
@@ -128,7 +128,7 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Nelim's Pickle Tools: "Nelim" stands at (154, 219) facing West
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Jacket" dyed rgb (70, 100, 150)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (120, 85, 55)
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Bob"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (145, 217) to (155, 224)
@@ -154,7 +154,7 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Nelim's Pickle Tools: "Nelim" stands at (136, 124) facing East
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Jacket" dyed rgb (92, 112, 82)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Beret" dyed rgb (130, 40, 60)
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "FancyBun"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
     And Nelim's Pickle Tools: "Nelim" face kit is "smug"
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (127, 119) to (141, 129)
