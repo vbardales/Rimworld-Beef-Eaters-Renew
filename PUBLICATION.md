@@ -11,7 +11,7 @@ anywhere. The workflow stage is `shootGallery[1.0.0]` (see `STATUS.md`).
 
 Only what is specific to this mod; the gates themselves are in `AUDIT.md`.
 
-- The gallery has no picture of the beefalo alone: the evening scene was refused, a new one is to be shot (see "Screenshots").
+- The gallery is being redone as one farm day, five pictures (`12-gallery-animals-props`, tickets 0156 and f8eb waiting, 2026-10-19); the beefalo alone is picture 4, the bridge. Nothing is accepted yet (see "Screenshots").
 - The echo review (`echo_review_sha`) and the owner's review of this file and `CHANGELOG.md`
   (`publication_changelog_review_sha`) are not done.
 - The rollback target cannot exist before the first publish (see "Fail fast").
@@ -127,7 +127,7 @@ owner is asked (`GALLERY.md`).
 | 2 | `2-bull-face-on.jpg` | Afternoon, the bull face on at the fence, Nelim for scale | run v8; accepted |
 | 3 | `3-barn-both.jpg` | Dusk, the barn: cow and beefalo side by side, the size gap | run v6b; accepted |
 
-The beefalo evening scene (v8, torch) was refused by the owner on 2026-10-17: the gallery has no beefalo-alone picture yet. A new staging is to be shot (props variant `12-gallery-animals-props`, ticket f557, may serve). Images are the subtitled ones; unsubtitled originals are in `Art/Gallery-clean/` (`.jpg`).
+The beefalo evening scene (v8, torch) was refused by the owner on 2026-10-17. The farm day replaces the three accepted pictures above once its captures are read and accepted: 1 dawn at the river with the cow, 2 noon at the lily field with the cow, her calf and a jug of milk, 3 the bull face on at the trough, 4 the pygmy beefalo and its calf on the bridge, 5 the barn at evening with both animals (the weakest, fallback in the feature header). Until then this table stays as accepted. Images are the subtitled ones; unsubtitled originals are in `Art/Gallery-clean/` (`.jpg`).
 ## Gallery subtitles
 
 One English line at the bottom of each scene without an interface window (`GALLERY.md`, "Sous-titres"). `0-` carries none. Lines describe what each capture shows; the hay lies on the ground in every pen image, so no line says Nelim feeds an animal. Applied 2026-10-17 with `scripts/Add-Subtitle.ps1` from the originals in `Art/Gallery-clean/`.
