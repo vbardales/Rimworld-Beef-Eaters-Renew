@@ -24,9 +24,9 @@ remaining:
   - unverified 2026-10-14: permission request to HannahBug for her HD reskin (Workshop 2943088425) posted by Virginie on 2026-10-14; her textures are not bundled before she answers. Yes: drop her 21 same-named PNGs into `Mod/Textures/` with credit (description, THANKS, ATTRIBUTION.md); she also may accept `nelim.beefeaters` as base. No answer or no: nothing changes
   - feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-10-19, the mod's own session - shootGallery[1.0.0], feature 12 rethought, ticket d055 waiting (0156 and f8eb cancelled)
+updated:      2026-10-19, the mod's own session - shootGallery[1.0.0], evidence sorted (Parked minified 48 to 0.6 MB), ticket d055 waiting
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
-protocols_read_sha: b4c2c58a55479ef3e5fb3f98d333e541cb105462
+protocols_read_sha: 7d3b1f5a26a32c297c2c12758979e0a909f674a1
 ---
 # Beef Eaters Renew — status
 
