@@ -18,8 +18,8 @@
 #    Composition: tight, rectangle (142,129)-(154,136), cow in the left third, fog behind, torch as the warm spot in the right third.
 #    Says: the breed is big, and the day begins. Mod: the cow, white-blue and muscled, seen from the front.
 #    RISK: the cow reads small and hunched in the grass (run 0556, note 3). PLAN: tight frame, cow facing South, cleaner grass patch.
-#  2 NOON 12 h, Clear, `flower-garden`, 60 ticks. Decor: the lily field behind, and two PlantPot
-#    with Plant_Daylily fully grown at (149,102) and (150,105) as foreground. Living: the cow, her calf (life stage 0), Nelim.
+#  2 NOON 12 h, Clear, `flower-garden`, 60 ticks. Decor: the lily field behind, and two
+#    Plant_Daylily fully grown at (149,102) and (150,105) as foreground. Living: the cow, her calf (life stage 0), Nelim.
 #    Look: no coat, CowboyHat sky blue (90,140,190) against the orange lilies, hair Long, face kit smile. Action: holds a jug,
 #    the item "Milk", towards the calf. Composition: rectangle (147,100)-(159,106) narrowed on purpose to leave the statues (south)
 #    and the wall bed (east) out of the frame, cow at (151,103), calf at (155,103), Nelim at (157,102), flowers behind.
@@ -96,9 +96,7 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I let 60 ticks pass
     And Beef Eaters Renew: time is paused
-    And Nelim's Pickle Tools: I place the decor "PlantPot" at (149, 102)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (149, 102) fully grown
-    And Nelim's Pickle Tools: I place the decor "PlantPot" at (150, 105)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (150, 105) fully grown
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (151, 103) facing East
     And Beef Eaters Renew: I spawn a "BelgianBlueCow" female in life stage 0 at (155, 103) facing West
