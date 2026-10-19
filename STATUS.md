@@ -382,3 +382,5 @@ Scene 5 moved from the barn to `gravel-yard` (run 8066 read the barn as 3 even w
 | 5 | gravel-yard 19 h | 2 TorchLamp lit, 2 Plant_YellowTallGrass, area cleared | cow, beefalo side by side | plum cape, no hat, Long, own face | sets down last hay | (167,141)-(177,150) | both home, huge and small | cow grey on gravel / ask NPT for a darker backdrop | 4 | barn version 3, redone |
 
 No ✘ cell. Weak points kept honest: Nelim's hair is Long in all five (owner hat rule), so the look varies by coat, hat and face; her action is carrying an item, no pose step exists.
+
+Correction after rereading SanctuaryBacklot `docs/GALERIE.md` (2026-10-19): Nelim's face is always her own (two brows, smirk, blink), called last before the shot, with the map at 20 degrees so she does not sweat; the face kits (calm, smile, neutral, smug) of the table above are dropped from feature 12. Her look varies by coat, hat and colour only; her expression no longer varies, column d loses its expression element. Hair stays Long under the hat (owner hat rule), Show Hair seed in place.

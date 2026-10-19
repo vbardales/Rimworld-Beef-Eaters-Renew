@@ -6,21 +6,20 @@
 # Each picture is one place, one episode, one look; the story moves from the water, to the field, to the pen, to the road, to the barn.
 #
 # BASE LOOK (d). Nelim keeps her fixture kit, corset and trousers, grey and yellow (owner confirmed that look on nelim-fit, 2026-10-18);
-# each picture adds a different coat, hat, hair and face on top of it (Shell and Overhead layers do not move the corset).
-# Owner hat rule (GALLERY.md d, 2026-10-18): a pawn with a hat has long loose hair, never a ponytail or a bun; Show Hair (RaccoonCuddler.ShowHair, in the pass map) draws it under the hat; hair is Long in every picture. Faces by kit (smile, calm, neutral, smug,
-# the kit sets brows, mouth and lids); the barn picture keeps her own face (smirk).
+# each picture adds a different coat and hat on top of it (Shell and Overhead layers do not move the corset).
+# Owner hat rule (GALLERY.md d, 2026-10-18): a pawn with a hat has long loose hair, never a ponytail or a bun; Show Hair (RaccoonCuddler.ShowHair, in the pass map) draws it under the hat; hair is Long in every picture. Face: always her own face (two brows, smirk, blink; SanctuaryBacklot/docs/GALERIE.md), called last before the shot; the look varies by coat, hat and colours, not by expression. Temperature 20 degrees keeps her from sweating.
 #
 # PLAN, one line per picture (a time/place, b decor named and removed after the shot, c living, d look, e action, f composition,
 # g what it says, h risk and plan, j what the mod shows):
 #  1 DAWN 07 h, FOG, `right-bank`, 60 ticks. Decor: one lit TorchLamp (146,134) and a Plant_Daylily fully grown (145,131).
 #    Living: the Belgian blue cow FACING THE CAMERA (South), Nelim beside her. Look: Apparel_Duster oat brown (112,96,78),
-#    CowboyHat wheat (205,175,105), hair Long, face kit calm. Action: leads the cow down to the water, hay in her arms.
+#    CowboyHat wheat (205,175,105), hair Long. Action: leads the cow down to the water, hay in her arms.
 #    Composition: tight, rectangle (142,129)-(154,136), cow in the left third, fog behind, torch as the warm spot in the right third.
 #    Says: the breed is big, and the day begins. Mod: the cow, white-blue and muscled, seen from the front.
 #    RISK: the cow reads small and hunched in the grass (run 0556, note 3). PLAN: tight frame, cow facing South, cleaner grass patch.
 #  2 NOON 12 h, Clear, `flower-garden`, 60 ticks. Decor: the lily field behind, and two
 #    Plant_Daylily fully grown at (149,102) and (150,105) as foreground. Living: the cow, her calf (life stage 0), Nelim.
-#    Look: no coat, CowboyHat sky blue (90,140,190) against the orange lilies, hair Long, face kit smile. Action: holds a jug,
+#    Look: no coat, CowboyHat sky blue (90,140,190) against the orange lilies, hair Long. Action: holds a jug,
 #    the item "Milk", towards the calf. Composition: rectangle (147,100)-(159,106) narrowed on purpose to leave the statues (south)
 #    and the wall bed (east) out of the frame, cow at (151,103), calf at (155,103), Nelim at (157,102), flowers behind.
 #    Says: the calf has its own look, and the cow gives milk. Mod: the calf stage and the milk.
@@ -29,13 +28,13 @@
 #  3 AFTERNOON 15 h, Clear, `enclosure-south` (the pen, fence along the north), 60 ticks, area (132,206)-(166,222) cleared first.
 #    Decor: AnimalFeedTroughSmall (148,218) and VFEPD_HayBaleLarge (146,220), props from the props map, nothing ships with the mod.
 #    Living: the Belgian blue BULL FACING THE CAMERA (South) at (150,220), Nelim. Look: Apparel_Jacket denim blue (70,100,150),
-#    CowboyHat leather brown (120,85,55), hair Long, face kit neutral. Action: pours hay into the trough.
+#    CowboyHat leather brown (120,85,55), hair Long. Action: pours hay into the trough.
 #    Composition: rectangle (145,217)-(155,224), the bull centred and facing us, the fence as a straight line on top.
 #    Says: this is the build, the point of the breed. Mod: the bull, from the front.
 #    RISK: bare dirt behind the bull. PLAN: trough and bale as the two warm masses, fence in frame; accepted as 4 in run 0556.
 #  4 LATE AFTERNOON 17 h, Clear, `river-bridge`, 60 ticks. Decor: two lit TorchLamp at (140,126) and (128,121), removed after.
 #    Living: the pygmy beefalo (adult female) and its calf behind Nelim. Look: Apparel_Jacket moss green (92,112,82), Apparel_Beret
-#    burgundy (130,40,60), hair Long (loose under the beret), face kit smug. Action: walks the two across the bridge.
+#    burgundy (130,40,60), hair Long (loose under the beret). Action: walks the two across the bridge.
 #    Composition: rectangle (127,119)-(141,129), the bridge as a horizontal band, animals left, Nelim right, river above and below.
 #    Says: the small horned pack animal is built for the road. Mod: the beefalo and its calf.
 #    RISK: none big (run 0556, note 4). PLAN: keep the cells.
@@ -48,7 +47,7 @@
 #    RISK: runs 0556 and 8066 showed the barn as a hay floor with fire pits, chairs and a tint on the cow; grey cow on grey gravel may lose contrast. PLAN: new place, area cleared, two torches as warm light, straw grass for colour; if the cow still melts into the gravel, ask NPT for a darker backdrop place.
 #
 # Ground, plants, fences, torches are vanilla Core; trough (Mlie.AnimalFeedTroughSmall) and bale (VanillaExpanded.VFEPropsandDecor) are
-# staged props from the props map, never shipped. Face kit names (smile, calm, neutral, smug) are those of ColonistRace docs.
+# staged props from the props map, never shipped. Face: always Nelim's own face (two brows, smirk, blink), last before the shot, temperature 20 degrees (SanctuaryBacklot/docs/GALERIE.md); the look varies by coat, hat and colour.
 # Pass: Submit-PickleRun.ps1 -Mod BeefEatersRenew -DepMap wsl-deps.sanctuary-props.map -Filter 12-gallery-animals-props
 # Each scenario is @review: open every capture, drop one that shows the launcher, a dev bar, another mod's animal or an empty frame.
 # All cell coordinates other than the pen are read on photographs and unverified until the run.
@@ -79,9 +78,9 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
-    And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (142, 129) to (154, 136)
+    And Nelim's Sanctuary: Nelim has her own face
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-1-dawn"
     And Beef Eaters Renew: the interface is shown again
@@ -102,9 +101,9 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Nelim's Pickle Tools: "Nelim" stands at (157, 102) facing West
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (90, 140, 190)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
-    And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" carries the item "Milk"
     And Nelim's Pickle Tools: I frame the rectangle from (147, 100) to (159, 106)
+    And Nelim's Sanctuary: Nelim has her own face
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-2-the-calf"
     And Beef Eaters Renew: the interface is shown again
@@ -126,9 +125,9 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Jacket" dyed rgb (70, 100, 150)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (120, 85, 55)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
-    And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (145, 217) to (155, 224)
+    And Nelim's Sanctuary: Nelim has her own face
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-3-the-bull"
     And Beef Eaters Renew: the interface is shown again
@@ -152,9 +151,9 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Jacket" dyed rgb (92, 112, 82)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Beret" dyed rgb (130, 40, 60)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
-    And Nelim's Pickle Tools: "Nelim" face kit is "smug"
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (127, 119) to (141, 129)
+    And Nelim's Sanctuary: Nelim has her own face
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-4-the-beefalo"
     And Beef Eaters Renew: the interface is shown again
