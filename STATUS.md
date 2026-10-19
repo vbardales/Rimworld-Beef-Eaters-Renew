@@ -368,3 +368,17 @@ Lowest 4. Cell coordinates outside the pen unverified until the run. Fixes of th
 - 4 bridge: 4. Beefalo and calf, burgundy beret, torches. Hay hides her face, hair not visible under the beret.
 - 5 barn: 3. Darker, still a hay floor with a chair pair and one fire pit at the left edge, cow reads grey. Nelim's long hair visible (no hat there).
 Defect: Show Hair does not draw the hair under the hat in 1, 3 and 4 (visible in 5 with no hat); probable missing settings seed for `RaccoonCuddler.ShowHair` (3255379190), to ask NPT. Evidence moved to `Tests/Pickle/Inbox/` per the owner rule of 2026-10-19; greens minified in `Evidence/` with RELEASE.md, reds and superseded runs deleted; `.gitignore` has Inbox and Parked.
+
+## Shotlist a to k, scene by scene, 2026-10-19 (write-shotlist; supersedes the table of 2026-10-18)
+
+Scene 5 moved from the barn to `gravel-yard` (run 8066 read the barn as 3 even with the area cleared and one torch). Estimates are for the written lines; verdicts are the real read of run 8066 (scene 2 failed on a step, fixed, not yet read).
+
+| # | a time frame | b decor | c living | d Nelim | e action | f composition | g subject | h risk / plan | est | verdict 8066 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | right-bank 07 h fog, 60 ticks | TorchLamp lit, Plant_Daylily | cow facing South, daylily | duster oat brown, hat wheat, Long, calm | leads the cow, hay | tight (142,129)-(154,136) | the breed is big, the day begins | cow small in grass / tight frame | 4 | 4 |
+| 2 | flower-garden 12 h clear | 2 Plant_Daylily, lily field | cow, calf | hat sky blue, no coat, Long, smile | holds Milk to the calf | (147,100)-(159,106), statues and bed out | calf and milk | ghost, statues, bed / narrowed frame | 4 | not read |
+| 3 | enclosure-south 15 h | trough, large bale | bull facing South | denim jacket, hat leather brown, Long, neutral | pours hay | (145,217)-(155,224), fence on top | the build | bare dirt / two warm masses | 4 | 4 |
+| 4 | river-bridge 17 h | 2 TorchLamp lit | beefalo, calf | moss jacket, burgundy beret, Long, smug | carries hay, walks them | (127,119)-(141,129) band | small pack animal | none big | 4 | 4 |
+| 5 | gravel-yard 19 h | 2 TorchLamp lit, 2 Plant_YellowTallGrass, area cleared | cow, beefalo side by side | plum cape, no hat, Long, own face | sets down last hay | (167,141)-(177,150) | both home, huge and small | cow grey on gravel / ask NPT for a darker backdrop | 4 | barn version 3, redone |
+
+No ✘ cell. Weak points kept honest: Nelim's hair is Long in all five (owner hat rule), so the look varies by coat, hat and face; her action is carrying an item, no pose step exists.

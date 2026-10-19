@@ -39,14 +39,13 @@
 #    Composition: rectangle (127,119)-(141,129), the bridge as a horizontal band, animals left, Nelim right, river above and below.
 #    Says: the small horned pack animal is built for the road. Mod: the beefalo and its calf.
 #    RISK: none big (run 0556, note 4). PLAN: keep the cells.
-#  5 EVENING 19 h, Clear, `barn`, 60 ticks, area (196,232)-(206,243) cleared first so the fire pits and the yellow table stay out of
-#    the picture. Decor: one lit TorchLamp (206,238), a hay bale VFEPD_HayBaleLarge (198,241). Living: the cow and the beefalo side by
+#  5 EVENING 19 h, Clear, `gravel-yard` (the barn read as a campsite in run 8066, so the place changes), 60 ticks, area (166,138)-(180,152) cleared
+#    first (the yard is strewn with furniture and lamps). Decor: two lit TorchLamp (176,142) and (168,148), two Plant_YellowTallGrass (169,142), (175,150) as straw. Living: the cow and the beefalo side by
 #    side, the beefalo facing West, the cow facing East, Nelim. Look: Apparel_Cape plum (95,60,100), no hat, hair Long, her own face.
-#    Action: sets down the last hay between the two animals. Composition: rectangle (197,233)-(205,242), the two animals as two
-#    sizes in one frame, the torch as the single warm light.
-#    Says: the day ends with both at home, one huge, one small. Mod: the size difference, body size 6.0 against 1.0.
-#    RISK: run 0556 showed a hay floor, fire pits, a yellow table and an orange tint on the cow. PLAN: clear the area, one torch
-#    only, tight frame; if the barn still reads as a campsite, move the scene to the pen at dusk and say so.
+#    Action: sets down the last hay between the two animals. Composition: rectangle (167,141)-(177,150), the two animals as two
+#    sizes in one frame, the two torches as the warm light on the left and right.
+#    Says: the day ends with both at home, one huge, one small (the barn was replaced by the gravel yard). Mod: the size difference, body size 6.0 against 1.0.
+#    RISK: runs 0556 and 8066 showed the barn as a hay floor with fire pits, chairs and a tint on the cow; grey cow on grey gravel may lose contrast. PLAN: new place, area cleared, two torches as warm light, straw grass for colour; if the cow still melts into the gravel, ask NPT for a darker backdrop place.
 #
 # Ground, plants, fences, torches are vanilla Core; trough (Mlie.AnimalFeedTroughSmall) and bale (VanillaExpanded.VFEPropsandDecor) are
 # staged props from the props map, never shipped. Face kit names (smile, calm, neutral, smug) are those of ColonistRace docs.
@@ -161,25 +160,28 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Beef Eaters Renew: the interface is shown again
     And Nelim's Pickle Tools: the decor is removed
 
-  Scenario: workshop 5 - evening in the barn, the farmer brings the last hay to the cow and the beefalo
+  Scenario: workshop 5 - evening in the gravel yard, the farmer brings the last hay to the cow and the beefalo
     Given I set the hour to 19
     And I set the weather to "Clear"
-    And Nelim's Sanctuary: I am at the sanctuary "barn"
+    And Nelim's Sanctuary: I am at the sanctuary "gravel-yard"
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I let 60 ticks pass
-    And Nelim's Pickle Tools: the area from (196, 232) to (206, 243) is cleared
+    And Nelim's Pickle Tools: the area from (166, 138) to (180, 152) is cleared
     And Beef Eaters Renew: time is paused
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (206, 238)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (206, 238) is lit
-    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (198, 241)
-    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (201, 237) facing East
-    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (202, 235) facing West
-    And Nelim's Pickle Tools: "Nelim" stands at (202, 239) facing South
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (176, 142)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (176, 142) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (168, 148)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (168, 148) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (169, 142) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (175, 150) fully grown
+    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female at (171, 146) facing East
+    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female at (173, 144) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (173, 148) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Cape" dyed rgb (95, 60, 100)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
-    And Nelim's Pickle Tools: I frame the rectangle from (197, 233) to (205, 242)
+    And Nelim's Pickle Tools: I frame the rectangle from (167, 141) to (177, 150)
     And Nelim's Sanctuary: Nelim has her own face
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-5-the-barn"
