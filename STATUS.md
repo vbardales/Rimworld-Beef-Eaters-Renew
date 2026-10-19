@@ -26,7 +26,7 @@ remaining:
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
 updated:      2026-10-19, the mod's own session - shootGallery[1.0.0], Show Hair seed added, full feature 12 refiled as 0156 (ba3f cancelled), evidence Tests/Pickle/Inbox/20261019-farm-day-hair
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
-protocols_read_sha: b7ed0bd92ef9c1a1a5c74fa52332110b024377dd
+protocols_read_sha: b4c2c58a55479ef3e5fb3f98d333e541cb105462
 ---
 # Beef Eaters Renew — status
 
