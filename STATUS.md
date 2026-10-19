@@ -24,7 +24,7 @@ remaining:
   - unverified 2026-10-14: permission request to HannahBug for her HD reskin (Workshop 2943088425) posted by Virginie on 2026-10-14; her textures are not bundled before she answers. Yes: drop her 21 same-named PNGs into `Mod/Textures/` with credit (description, THANKS, ATTRIBUTION.md); she also may accept `nelim.beefeaters` as base. No answer or no: nothing changes
   - feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-10-19, the mod's own session - shootGallery[1.0.0], tickets 0156 (feature 12) and f8eb (scene 2 alone) waiting, farm-day-ak parked, evidence in Inbox/Evidence/Parked
+updated:      2026-10-19, the mod's own session - shootGallery[1.0.0], feature 12 rethought (herd story, scene 5 at plant-garden, tighter frames), full ticket refiled
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
 protocols_read_sha: b4c2c58a55479ef3e5fb3f98d333e541cb105462
 ---
@@ -384,3 +384,7 @@ Scene 5 moved from the barn to `gravel-yard` (run 8066 read the barn as 3 even w
 No ✘ cell. Weak points kept honest: Nelim's hair is Long in all five (owner hat rule), so the look varies by coat, hat and face; her action is carrying an item, no pose step exists.
 
 Correction after rereading SanctuaryBacklot `docs/GALERIE.md` (2026-10-19): Nelim's face is always her own (two brows, smirk, blink), called last before the shot, with the map at 20 degrees so she does not sweat; the face kits (calm, smile, neutral, smug) of the table above are dropped from feature 12. Her look varies by coat, hat and colour only; her expression no longer varies, column d loses its expression element. Hair stays Long under the hat (owner hat rule), Show Hair seed in place.
+
+## Shotlist rethought, 2026-10-19 (supersedes the two tables above)
+
+Owner asked to think the weak points through. Done in feature 12 (ninth version, "the day the herd moved in"): story rewritten as a herd bought at the trader's and settled in a day (dawn walk to the river, noon milking, afternoon bull at the trough, late afternoon beefalo and wool on the bridge, evening both side by side). Scene 5 moved to `plant-garden` (chosen on its empty photograph: the barn was a hay floor with fire pits, the gravel yard a busy grass and pool yard); scene 2 frame computed from the flower-garden photograph (ghost building x 150-152 z 100-102 and bed x 157.5-159.5 z 101.5-103.5 stay out). Nelim framed tighter (width 9 to 10 cells) so her face shows; items small (Milk, WoolMuffalo, names read in `Mod/Defs/Race_*.xml`) in scenes 2 and 4 to show the mod's milk and wool, none in scene 1. Torches only at dawn and evening. Face: own face then held neutral. Still unverified: all cells outside the pen (photograph readings), Show Hair under the hat, grey cow on grass at dusk (plan: ask NPT for a darker backdrop place), and every estimate of 4 until the captures are read. Tickets 0156 and f8eb cancelled, one full ticket refiled.
