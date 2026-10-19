@@ -24,7 +24,7 @@ remaining:
   - unverified 2026-10-14: permission request to HannahBug for her HD reskin (Workshop 2943088425) posted by Virginie on 2026-10-14; her textures are not bundled before she answers. Yes: drop her 21 same-named PNGs into `Mod/Textures/` with credit (description, THANKS, ATTRIBUTION.md); she also may accept `nelim.beefeaters` as base. No answer or no: nothing changes
   - feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-10-18, the mod's own session - shootGallery[1.0.0], feature 12 rewritten (a to k, all 4), ticket 8066 filed (12-gallery-animals-props, map sanctuary-props, evidence 20261018-farm-day-ak)
+updated:      2026-10-19, the mod's own session - shootGallery[1.0.0], ticket 8066 read (1, 3, 4 at 4, 5 at 3, hat hair not shown), scene 2 refiled ba3f, evidence moved to Inbox
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
 protocols_read_sha: b7ed0bd92ef9c1a1a5c74fa52332110b024377dd
 ---
@@ -359,3 +359,12 @@ Feature 12 rewritten (header = story k plus one line per picture with time, deco
 | 5 | barn 19 h | cape plum, no hat, Long, her own face | sets down last hay | 1 TorchLamp lit, large bale, area cleared | cow, beefalo | campsite look: clear the area, one torch; else move to the pen at dusk | 4 (weakest) |
 
 Lowest 4. Cell coordinates outside the pen unverified until the run. Fixes of the first table all applied in the feature.
+
+## Ticket 8066 read, 2026-10-19 (farm day, a to k version)
+
+4 of 5 passed, scene 2 failed on a bad step (`the cell (149, 102) already holds PlantPot`: a pot and a plant on one cell); fixed (pots dropped), scene 2 refiled alone as ba3f (`Tests/Pickle/Inbox/20261019-farm-day-scene2`). Captures read (evidence `Tests/Pickle/Inbox/20261018-farm-day-ak`):
+- 1 dawn: 4. Cow faces the camera, torch and lily as the warm spot. Nelim small, face hidden by the hay, hair not visible under the hat.
+- 3 bull: 4. As before, trough and bale, bull face on, denim jacket.
+- 4 bridge: 4. Beefalo and calf, burgundy beret, torches. Hay hides her face, hair not visible under the beret.
+- 5 barn: 3. Darker, still a hay floor with a chair pair and one fire pit at the left edge, cow reads grey. Nelim's long hair visible (no hat there).
+Defect: Show Hair does not draw the hair under the hat in 1, 3 and 4 (visible in 5 with no hat); probable missing settings seed for `RaccoonCuddler.ShowHair` (3255379190), to ask NPT. Evidence moved to `Tests/Pickle/Inbox/` per the owner rule of 2026-10-19; greens minified in `Evidence/` with RELEASE.md, reds and superseded runs deleted; `.gitignore` has Inbox and Parked.
