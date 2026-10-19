@@ -47,7 +47,7 @@
 #    RISK: runs 0556 and 8066 showed the barn as a hay floor with fire pits, chairs and a tint on the cow; grey cow on grey gravel may lose contrast. PLAN: new place, area cleared, two torches as warm light, straw grass for colour; if the cow still melts into the gravel, ask NPT for a darker backdrop place.
 #
 # Ground, plants, fences, torches are vanilla Core; trough (Mlie.AnimalFeedTroughSmall) and bale (VanillaExpanded.VFEPropsandDecor) are
-# staged props from the props map, never shipped. Face: always Nelim's own face (two brows, smirk, blink), last before the shot, temperature 20 degrees (SanctuaryBacklot/docs/GALERIE.md); the look varies by coat, hat and colour.
+# staged props from the props map, never shipped. Face: always Nelim's own face (two brows, smirk, blink), last before the shot then held neutral (no job or mood expression, no sweat), temperature 20 degrees (SanctuaryBacklot/docs/GALERIE.md); the look varies by coat, hat and colour.
 # Pass: Submit-PickleRun.ps1 -Mod BeefEatersRenew -DepMap wsl-deps.sanctuary-props.map -Filter 12-gallery-animals-props
 # Each scenario is @review: open every capture, drop one that shows the launcher, a dev bar, another mod's animal or an empty frame.
 # All cell coordinates other than the pen are read on photographs and unverified until the run.
@@ -81,6 +81,7 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (142, 129) to (154, 136)
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-1-dawn"
     And Beef Eaters Renew: the interface is shown again
@@ -104,6 +105,7 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Nelim's Pickle Tools: "Nelim" carries the item "Milk"
     And Nelim's Pickle Tools: I frame the rectangle from (147, 100) to (159, 106)
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-2-the-calf"
     And Beef Eaters Renew: the interface is shown again
@@ -128,6 +130,7 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (145, 217) to (155, 224)
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-3-the-bull"
     And Beef Eaters Renew: the interface is shown again
@@ -154,6 +157,7 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (127, 119) to (141, 129)
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-4-the-beefalo"
     And Beef Eaters Renew: the interface is shown again
@@ -182,6 +186,7 @@ Feature: Beef Eaters Renew Workshop gallery, the farm day (props variant)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: I frame the rectangle from (167, 141) to (177, 150)
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-5-the-barn"
     And Beef Eaters Renew: the interface is shown again
