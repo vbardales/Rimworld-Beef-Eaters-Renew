@@ -24,7 +24,7 @@ remaining:
   - unverified 2026-10-14: permission request to HannahBug for her HD reskin (Workshop 2943088425) posted by Virginie on 2026-10-14; her textures are not bundled before she answers. Yes: drop her 21 same-named PNGs into `Mod/Textures/` with credit (description, THANKS, ATTRIBUTION.md); she also may accept `nelim.beefeaters` as base. No answer or no: nothing changes
   - feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
-updated:      2026-10-19, the mod's own session - shootGallery[1.0.0], ticket 8066 read (1, 3, 4 at 4, 5 at 3, hat hair not shown), scene 2 refiled ba3f, evidence moved to Inbox
+updated:      2026-10-19, the mod's own session - shootGallery[1.0.0], Show Hair seed added, full feature 12 refiled as 0156 (ba3f cancelled), evidence Tests/Pickle/Inbox/20261019-farm-day-hair
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
 protocols_read_sha: b7ed0bd92ef9c1a1a5c74fa52332110b024377dd
 ---
