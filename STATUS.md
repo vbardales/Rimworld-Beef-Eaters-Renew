@@ -26,7 +26,7 @@ remaining:
 session:      local_c1f0d325-e5cd-4552-abce-8d77af2f363d
 updated:      2026-10-19, the mod's own session - shootGallery[1.0.0], d055 lost to a docker port clash (exit 125, no report), refiled as 30d6
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
-protocols_read_sha: 7d3b1f5a26a32c297c2c12758979e0a909f674a1
+protocols_read_sha: 2442e211bd4516b10b1740009e11b7312c5e1c2b
 ---
 # Beef Eaters Renew — status
 
