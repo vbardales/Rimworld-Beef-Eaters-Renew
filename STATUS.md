@@ -26,7 +26,7 @@ remaining:
 session:      local_b7712ad8-66e4-4aa9-9c9d-e9a97e78cb35
 updated:      2026-10-21, the mod's own session - shootGallery[1.0.0], ticket 30d6 green 5/5 (feature 12 farm day); director verdict: refuse 1 dawn (cow small in clutter, torch in daylight, no walk to water readable), keep 2 noon milking, 3 bull face-on, 4 bridge beefalo, 5 evening herd as candidates in Art/Gallery (green blueprint ghost at the foot of 2 to crop); Virginie to accept or refuse; echo from echo-source.png regenerated, echo_review_sha not set
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
-protocols_read_sha: 2442e211bd4516b10b1740009e11b7312c5e1c2b
+protocols_read_sha: 86a8eb5aaf483fd95321f7c516d432ad44bd3fe7
 ---
 # Beef Eaters Renew — status
 
