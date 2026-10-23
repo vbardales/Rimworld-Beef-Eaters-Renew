@@ -1,52 +1,35 @@
 {
-  "title": "Beef Eaters Renew (unofficial)",
-  "titleSize": 46,
-  "titleParts": [
-    {
-      "text": "Beef Eaters",
-      "scale": 1
-    },
-    {
-      "text": "Renew",
-      "scale": 0.65,
-      "font": "ui",
-      "color": "secondary",
-      "breakBefore": true
-    }
-  ],
-  "suffix": "",
-  "tag": "(unofficial)",
-  "tagInline": true,
-  "copyLines": [
-    "A cow bred to be all meat, and a much smaller muffalo crossbreed."
-  ],
-  "layout": "panel",
-  "panelAnchor": "top-left",
+  "panel": {
+    "title": "Beef Eaters Renew (unofficial)",
+    "titleSize": 46,
+    "titleParts": [
+      {
+        "text": "Beef Eaters",
+        "scale": 1
+      },
+      {
+        "text": "Renew",
+        "scale": 0.65,
+        "font": "ui",
+        "color": "secondary",
+        "breakBefore": true
+      }
+    ],
+    "tag": "(unofficial)",
+    "tagInline": true,
+    "copyLines": [
+      "A cow bred to be all meat, and a much smaller muffalo crossbreed."
+    ]
+  },
   "backgroundFile": "Preview-source.png",
-  "backgroundPosition": "center",
-  "backgroundSize": "cover",
   "echo": {
     "file": "echo-source.png",
-    "preSized": true,
     "color": "var(--accent)",
     "width": 255,
-    "height": 170,
-    "opacity": 1,
-    "veil": false,
-    "panelTop": 5,
-    "panelRight": -4,
-    "panelWidth": 45,
-    "flipX": true
+    "height": 170
   },
-  "iconBadge": {
-    "file": "ModIcon-source.png",
-    "corner": "bottom-left",
-    "width": 220,
-    "outline": false,
-    "veil": "radial",
-    "veilSize": 275,
-    "veilLeft": -55,
-    "veilBottom": -61
+  "icon": {
+    "file": "ModIcon-source.png"
   },
   "palette": {
     "veil": "#493723",
