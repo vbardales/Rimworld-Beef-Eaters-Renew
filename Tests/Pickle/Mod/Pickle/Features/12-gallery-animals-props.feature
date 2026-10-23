@@ -1,58 +1,71 @@
-# THE DAY THE HERD MOVED IN, ninth version (2026-10-19), written against GALLERY.md "Shotlist : criteres d'une scene a 4/5" (a to k)
-# and against SanctuaryBacklot/docs/GALERIE.md (Nelim's own face, 20 degrees, hat rule).
+# THE DAY THE HERD MOVED IN, tenth version (2026-10-23), shotlist written against GALLERY.md "Shotlist : criteres d'une scene a 4/5" (a to k)
+# and SanctuaryBacklot/docs/GALERIE.md. Director pass by an Opus sub-agent (one call), remarks kept below. THE SCENARIOS BELOW ARE STILL THE NINTH
+# VERSION: rewrite them from this header (forced job, pause recipe, Hat Hair Control, names) before any ticket.
 #
-# STORY (k). Nelim has bought a small herd at the trader's: a Belgian blue cow with her calf, a Belgian blue bull, and a pygmy beefalo
-# with its calf as a pack animal. The pictures follow the day she settles them on her farm in the Sanctuary, each one an episode:
-#  1 dawn   the cow is walked down to the river to drink (the herd has just arrived);
-#  2 noon   in the lily field Nelim milks the cow while the calf waits (the milk the breed gives);
-#  3 afternoon  the bull is fed in the pen, face on (the build, the point of the breed);
-#  4 late afternoon  she walks the pygmy beefalo and its calf over the bridge, a tuft of wool in her hand (the small pack animal);
-#  5 evening  by the plant garden, torches lit, the cow and the beefalo stand side by side: both home, one huge, one small.
-# Time: one start hour per picture (07, 12, 15, 17, 19 h), each waits 60 ticks for the set-up (2,500 ticks make a game hour); same day,
-# the light and the weather follow the hours (fog at dawn, clear after).
+# STORY (k). Nelim buys a small herd at the trader's (a Belgian blue cow and her calf, a Belgian blue bull, a pygmy beefalo and its calf) and settles it
+# on her farm in the Sanctuary in one day: 07, 12, 15, 17, 19 h, one start hour per picture, 2,500 ticks per game hour, same day, fog at dawn then clear.
+#  1 dawn   WIDE opener: the cow is led down the river bank to drink, the herd has arrived;
+#  2 noon   CLOSE: in the lily field Nelim milks the cow while the calf waits;
+#  3 afternoon  MEDIUM: the bull, face on, at the trough in the pen;
+#  4 late afternoon  MEDIUM: the pygmy beefalo and its calf cross the bridge with her, a tuft of wool in her hands;
+#  5 evening  MEDIUM-WIDE closer: by the plant garden, torches lit, cow and beefalo side by side, one huge, one small.
+# Variety: wide (1), close (2), medium (3, 4), medium-wide (5). Rhythm: the frames never repeat the same width twice in a row.
 #
-# NELIM (d). She keeps her fixture kit, corset and trousers (owner confirmed that look on nelim-fit); each picture adds a different
-# coat and hat, in named colours. Hair is Long and loose in every picture (owner hat rule, GALLERY.md d: long loose hair under a hat, never a
-# ponytail or a bun), drawn under the hat by Show Hair (RaccoonCuddler.ShowHair, in the pass map, with its settings seed). Face: always her
-# own face (two brows, smirk, blink), called last before the shot, then held neutral (no job or mood expression); the map is at 20 degrees so
-# she does not sweat. So her look varies by coat, hat and colour, not by expression. Animals are spawned unnamed; every picture is framed so
-# that Nelim fills a visible part of the frame (a wide frame makes her a dot with no face).
+# NELIM (d), ONE OUTFIT FOR THE WHOLE DAY (continuity rule 2026-10-23). Fixture kit (corset, trousers); Apparel_CowboyHat wheat rgb (205, 175, 105) on all
+# five pictures, hair Long and loose under it (Hat Hair Control, lordfelix.HatHairControl 3760821540, replaces Show Hair Under Stuff; seed copied from
+# PickleTools Tests/Pickle/config/hat-hair-hhc with showHairDefs = Apparel_CowboyHat, hideHatsIndoors false); her own face held neutral
+# (Nelim's Sanctuary: Nelim has her own face, then face is held neutral; map at 20 degrees). The one change is justified by the day: Apparel_Duster oat
+# brown rgb (112, 96, 78) against the dawn fog (1), off while the day is warm (2, 3), back on in the late wind (4, 5).
 #
-# PLAN, one line per picture (a time and place, b decor, c living, d look, e action, f composition, g what it says, h risk and plan,
-# j what the mod shows). Cells read on the empty photographs of SanctuaryBacklot/Art/Gallery (a cell is 540/N px, N = root size); the
-# first run corrects them.
-#  1 DAWN 07 h, FOG, `right-bank` (candidate 34), 60 ticks. b: one lit TorchLamp (146,134) as the dawn lantern, one Plant_Daylily fully grown
-#    (145,131). c: the Belgian blue cow FACING THE CAMERA (South). d: Apparel_Duster oat brown (112,96,78), CowboyHat wheat (205,175,105).
-#    e: walks the cow down to the water, standing beside her, nothing in her hands (the face stays visible). f: rectangle (144,129)-(153,135),
-#    cow in the left third, Nelim right, torch as the warm spot, fog behind. g: the herd has arrived, the breed is big. j: the cow from the front.
-#    h RISK: the cow reads small and hunched in the grass (run 0556). PLAN: tight frame, cow facing South as in run 8066 (read: it worked).
-#  2 NOON 12 h, Clear, `flower-garden` (candidate 16, centre (154,105), N 5: x = 145.1 + px/72, z = 110 - py/72), 60 ticks. b: the lily and rose
-#    field behind (Plant_Daylily), one EggBox (156,104). c: cow, her calf (life stage 0). d: CowboyHat sky blue (90,140,190), no coat.
-#    e: holds a jug, the item "Milk", towards the calf. f: rectangle (147,103)-(157,108), all inside the lily field, so that the green ghost building
-#    (x 150-152, z 100-102), the statues and the bed (x 157.5-159.5, z 101.5-103.5), read on the photograph, stay out; cow (150,105) facing East,
-#    calf (153,105) facing West, Nelim (155,105) facing West; a close frame, Nelim large with her face. g: the cow gives milk, the calf has its own look.
-#    j: milk, the calf stage. h RISK: the ghost, the statues and the bed of run 0556. PLAN: the frame stays above z 103 and left of x 157.
-#  3 AFTERNOON 15 h, Clear, `enclosure-south`, 60 ticks, area (132,206)-(166,222) cleared first (the fixture strews braziers and bamboo there).
-#    b: AnimalFeedTroughSmall (148,218), VFEPD_HayBaleLarge (146,220), props from the props map, nothing ships with the mod. c: the Belgian blue BULL
-#    FACING THE CAMERA (South) at (150,220). d: Apparel_Jacket denim blue (70,100,150), CowboyHat leather brown (120,85,55). e: pours hay,
-#    the item "Hay", towards the trough. f: rectangle (145,217)-(155,224), fence on top, trough and bale as the two warm masses.
-#    g: the build, the point of the breed. j: the bull from the front. h RISK: bare dirt. PLAN: trough and bale, fence in frame (read 8066: 4).
-#  4 LATE AFTERNOON 17 h, Clear, `river-bridge` (candidate 36), 60 ticks. b: two Plant_YellowTallGrass fully grown at the bridge ends (140,126)
-#    and (128,121), no torch (torches belong to the evening picture). c: the pygmy beefalo (adult female) and its calf behind Nelim. d: Apparel_Jacket
-#    moss green (92,112,82), Apparel_Beret burgundy (130,40,60). e: walks them over the bridge, a tuft of wool in her hand, the item "WoolMuffalo"
-#    (the beefalo is shearable). f: rectangle (129,121)-(139,128), the bridge as a horizontal band, animals left, Nelim right. g: the small horned
-#    pack animal and its wool. j: the beefalo, its calf and its wool. h RISK: low (read 8066: 4). PLAN: tighter frame so that Nelim shows.
-#  5 EVENING 19 h, Clear, `plant-garden` (candidate 28, centre (190,85), N 11: x = 170.4 + px/32.7, z = 96 - py/32.7), 60 ticks. The barn and
-#    the gravel yard were rejected on their photographs (hay floor with fire pits and a tinted cow; a busy grass and pool yard). b: two lit
-#    TorchLamp (199,91) and (193,84), two Plant_YellowTallGrass fully grown (193,86) and (199,89); the garden fence and the fixture's own lit
-#    torches stand to the left. c: the cow and the beefalo side by side, the beefalo facing West, the cow facing East. d: Apparel_Cape plum (95,60,100),
-#    no hat. e: sets down the last hay between the two, the item "Hay". f: rectangle (192,84)-(201,91), green garden behind, torch light on
-#    the white cow. g: both home, huge and small (body size 6.0 against 1.0). j: the size gap of the two animals. h RISK: cow on grass at dusk may
-#    lose contrast; cells unverified. PLAN: torches both sides; if the cow melts into the grass, ask NPT for a darker backdrop place.
+# HOW THE GESTURE IS OBTAINED (e), for every picture: spawn and place everything, give Nelim her kit and face; then the forced job
+# (`"Nelim" is forced into the job "<JobDef>" on "<animal>"`, or `is forced to walk to` / `is forced to haul N of the item "<def>" to (x, z)`); then
+# `I let N ticks pass` (the N of the line); then `Beef Eaters Renew: time is paused`; then the frame, her face last, then the screenshot. The 60-tick
+# set-up of the ninth version comes BEFORE the job and freezes nothing. Animals need a name for the job and follow steps: own steps
+# `I spawn ... named "<name>"` (GallerySteps.cs, written 2026-10-23, not built or played).
+#
+# PLAN, one line per picture (a time, b decor, c living, d look, e action and instant, f composition, g what it says, j the mod at 268 px).
+# Thumbnail arithmetic (j): a cell is 540 / N px at 1080p, N = max(height / 2, width / 3.56); the Steam thumbnail is 268 px wide, so x 0.14.
+#  1 DAWN 07 h, Fog, `right-bank`, WIDE. a: 07 h, fog, 60 ticks set-up then 120 ticks of walk. b: TorchLamp lit (146,134), Plant_Daylily fully grown
+#    (145,131), removed after. c: Belgian blue cow "Rosa" (female adult) walking West toward the river, Nelim beside her. d: duster + hat. e: Nelim
+#    forced to walk to (141,132), the cow follows within 2 cells; INSTANT: the first steps toward the water, the herd has just come down from the road;
+#    pause after 120 ticks. f: rectangle (136,128)-(154,138), 18 x 10, N 5.06, torch as the warm spot, fog behind. g: the herd has arrived, the breed is
+#    big. j: the cow about 3 to 4 cells long, 107 px per cell, so 50 to 60 px in the thumbnail, the largest mass; Nelim a small dot, accepted (opener).
+#  2 NOON 12 h, Clear, `flower-garden`, CLOSE. a: 12 h, clear, 60 ticks then 100 ticks of milking. b: the lily and rose field behind (vanilla Plant_Daylily
+#    already there), nothing placed (no stool, no bucket: a forced job drops what she carries). c: cow "Rosa" facing East, calf "Petite" (life stage 0)
+#    at her flank facing West. d: hat only, duster off. e: `Milk` job (Core JobDef, JobDriver_Milk) on the cow, forced; INSTANT: kneeling at the flank,
+#    the calf waits its turn; pause 100 ticks after the job starts. f: rectangle (150,103)-(158,108), 8 x 5, N 2.5 (needs the Sanctuary frame step that lifts
+#    the camera limit, GALERIE.md "Zoom minimum"), cow and calf left, Nelim right with her face. g: the milk the breed gives. j: 216 px per cell, 30 px in
+#    the thumbnail, the cow about 100 px. RISK: the Milk job may refuse a cow whose milk is not full (not verified): fallback, the same pose with `is forced
+#    into the job "Wait"` beside the cow and the Milk item stated in the subtitle only.
+#  3 AFTERNOON 15 h, Clear, `enclosure-south`, MEDIUM. a: 15 h, clear, area (132,206)-(166,222) cleared, 60 ticks then 60 ticks of haul. b: AnimalFeedTroughSmall
+#    (148,218), VFEPD_HayBaleLarge (146,220), props map, nothing ships. c: Belgian blue bull "Taureau" FACING THE CAMERA (South) at (150,220), the one face-on
+#    animal of the series (c). d: hat only, duster off. e: forced to haul 1 of the item "Hay" to (149,218) from (154,219); INSTANT: she walks the hay over, the
+#    bull has already come; pause 60 ticks after the start. f: rectangle (145,217)-(155,224), 10 x 7, N 3.5, fence on top, trough and bale as the two warm
+#    masses. g: the build, the point of the breed. j: 154 px per cell, 21 px in the thumbnail, the bull about 65 px.
+#  4 LATE AFTERNOON 17 h, Clear, `river-bridge`, MEDIUM (not wide: a body size 1.0 animal would be a dot, j). a: 17 h, clear, wind, 60 ticks then 80 of walk.
+#    b: two Plant_YellowTallGrass fully grown at the bridge ends (140,126) and (128,121), no torch (torches belong to 1 and 5). c: pygmy beefalo "Pip" (adult
+#    female) and its calf "Minus" (male, life stage 0) following Nelim. d: duster + hat. e: forced to haul 1 of the item "WoolMuffalo" to the east end of
+#    the bridge, the beefalo follow; INSTANT: halfway over, the calf lags a step behind; pause when she is halfway. f: rectangle (132,121)-(140,127), 8 x 6,
+#    N 3, the bridge as a horizontal band, animals left, Nelim right. g: the small horned pack animal and its wool. j: 180 px per cell, 25 px in the
+#    thumbnail, the beefalo about 33 px, the calf about 20 px, white on brown planks. RISK: the calf may not follow (the follow step expects a colonist
+#    leader, not verified): fallback, the calf spawned already ahead of its mother and not forced.
+#  5 EVENING 19 h, Clear, `plant-garden`, MEDIUM-WIDE, closing. a: 19 h, clear, 60 ticks then 60 of haul. b: two TorchLamp lit (199,91) and (193,84), two
+#    Plant_YellowTallGrass fully grown (193,86) and (199,89); the garden fence and the fixture's own torches to the left. c: cow "Rosa" facing East and
+#    beefalo "Pip" facing West, both leaning toward the cell between them. d: duster + hat (kept on: outdoors). e: forced to haul 1 of the item "Hay" to
+#    (196,88); INSTANT: the hay is one cell from the ground between the animals; pause one cell before she arrives. f: rectangle (190,82)-(204,92),
+#    14 x 10, N 3.93, torch light on the white cow. g: both home, huge and small (body size 6.0 against 1.0). j: 108 px per cell, 15 px in the thumbnail,
+#    the cow about 55 px, the beefalo about 20 px: the size gap is the picture. RISK: cow on grass at dusk loses contrast; plan: torches both sides, else
+#    ask NPT for a darker backdrop place. Cells of 1, 4, 5 are read on photographs, unverified until the capture.
+#
+# DIRECTOR PASS (Opus), kept: forced walk and haul steps instead of Train (1), no stool and no bucket (2), haul with Hay and WoolMuffalo (3, 4, 5), the
+# wide shot moved to 1 and the bridge made medium (4), 5 widened to 14 cells, pause recipe written, own naming steps, HHC with its seed, the pixel
+# width of the subject written (j). Kept with a fallback: Milk job (2), calf following (4). Rewritten: "cold" is fog and wind, not temperature (the map
+# stays at 20 degrees for her face); the hat stays on at 19 h. NOT verified by anyone: that the forced-job, walk, haul, follow steps and
+# `the camera frames the head` were ever played (announced by NPT 2026-10-23); that the frame step reaches N 2.5; the milk fullness gate.
 #
 # Ground, plants, fences, torches are vanilla Core; trough (Mlie.AnimalFeedTroughSmall) and bale (VanillaExpanded.VFEPropsandDecor) are staged
 # props from the props map, never shipped. The item names Milk and WoolMuffalo are those of Mod/Defs/Race_*.xml of this mod.
-# Pass: Submit-PickleRun.ps1 -Mod BeefEatersRenew -DepMap wsl-deps.sanctuary-props.map -Filter 12-gallery-animals-props
+# Pass: Submit-PickleRun.ps1 -Mod BeefEatersRenew -DepMap wsl-deps.sanctuary-props.map (Hat Hair Control instead of Show Hair) -Filter 12-gallery-animals-props
 # Each scenario is @review: open every capture, drop one that shows the launcher, a dev bar, another mod's animal or an empty frame.
 @review @en-only @requires:nelim.pickletools.colonistrace @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.stagedecor
 Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props variant)

@@ -77,6 +77,23 @@ namespace Nelim.BeefEaters.PickleTests
             Spawn(ctx, Kind(ctx, kindDefName), stage, sex == "male" ? Gender.Male : Gender.Female, x, z, Facing(ctx, facing));
         }
 
+        [When("Beef Eaters Renew: I spawn an adult {string} {word} named {string} at \\({int}, {int}\\) facing {word}")]
+        public void AdultOfSexNamed(PickleContext ctx, string kindDefName, string sex, string name, int x, int z, string facing)
+        {
+            ctx.Require(sex == "male" || sex == "female", $"sex must be male or female, not {sex}");
+            var kind = Kind(ctx, kindDefName);
+            var pawn = Spawn(ctx, kind, kind.RaceProps.lifeStageAges.Count - 1, sex == "male" ? Gender.Male : Gender.Female, x, z, Facing(ctx, facing));
+            pawn.Name = new NameSingle(name);
+        }
+
+        [When("Beef Eaters Renew: I spawn a {string} {word} named {string} in life stage {int} at \\({int}, {int}\\) facing {word}")]
+        public void AtStageOfSexNamed(PickleContext ctx, string kindDefName, string sex, string name, int stage, int x, int z, string facing)
+        {
+            ctx.Require(sex == "male" || sex == "female", $"sex must be male or female, not {sex}");
+            var pawn = Spawn(ctx, Kind(ctx, kindDefName), stage, sex == "male" ? Gender.Male : Gender.Female, x, z, Facing(ctx, facing));
+            pawn.Name = new NameSingle(name);
+        }
+
         /// <summary>
         /// The map and nothing else: the game's own screenshot mode, every open window (the Pickle
         /// panel and the log viewer included) told not to draw in it.
