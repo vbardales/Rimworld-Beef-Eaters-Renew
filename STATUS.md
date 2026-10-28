@@ -26,7 +26,7 @@ remaining:
 session:      local_b7712ad8-66e4-4aa9-9c9d-e9a97e78cb35
 updated:      2026-10-25, BeE session: shotlist v10 (header of feature 12), scenarios rewritten (forced jobs, Hat Hair Control), ticket 60bd filed (5e6a507); NPT asked about smile, dressed animals, dusk place; Virginie allowed animal apparel, mouth override, smiling colonists; candidates 2-5 (ninth version) still await her. Earlier, 2026-10-21, the mod's own session - shootGallery[1.0.0], ticket 30d6 green 5/5 (feature 12 farm day); director verdict: refuse 1 dawn (cow small in clutter, torch in daylight, no walk to water readable), keep 2 noon milking, 3 bull face-on, 4 bridge beefalo, 5 evening herd as candidates in Art/Gallery (green blueprint ghost at the foot of 2 to crop); Virginie to accept or refuse; echo from echo-source.png regenerated, echo_review_sha not set
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
-protocols_read_sha: f71e1afda494b774e5e038cf55e5e67f24d2960a
+protocols_read_sha: cc1f93006ee3756009054a0389731cff310d8784
 ---
 # Beef Eaters Renew — status
 
@@ -413,3 +413,7 @@ Self-check: one story, variety wide/close/medium/medium-wide, opener (1) and clo
 - To ask (now sent to NPT, see above): TM, whether the Sanctuary map can load Animal Gear for one scene (beefalo armour); a darker or plainer dusk place than `plant-garden` (read `SANCTUAIRE-LIEUX.md`, else tell NPT the need; if NPT declines, Virginie arbitrates).
 - Hair: `NELIM-PROFIL.md` canon under a closed cover is `Roo_Royal_LongHD`; the feature sets `Long`. Check that Roo is in the map and that `Long` suits an open hat; wardrobe is only a suggestion, not validated.
 - Candidates `Art/Gallery/2-4..5-candidate-*.jpg` (ninth version, untracked) await Virginie, or replaced by the v10 captures. Then: reindex 1 to 5, subtitles in `PUBLICATION.md` and `Add-Subtitle.ps1`, echo review (`echo_review_sha`), `PUBLICATION.md` table.
+
+## Ticket 60bd read, 2026-10-29
+
+Red, exit 5, exitReason in-progress, 0 of 4 passed (scenario 5 never ran). Every scenario failed on `Undefined step: Beef Eaters Renew: I spawn an adult "<kind>" female/male named "<name>" at (x, z) facing <dir>`: the named spawn steps of `Tests/Pickle/Source/GallerySteps.cs` (6877db3) were not in the step assembly the run loaded. No capture proves anything (step0 frames only); evidence folder deleted. Next: ask NPT whether the mod's step assembly is rebuilt before a run (else how to build it), then refile feature 12. Scenario fixes of 2026-10-25 still to apply before the refile.
