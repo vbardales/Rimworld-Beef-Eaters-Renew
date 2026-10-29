@@ -9,7 +9,7 @@ repo:         Rimworld-Beef-Eaters-Renew
 visibility:   public
 detached:     yes
 workflow_stage: shootGallery[1.0.0]
-code_review_sha: 256a66d0aa5ca07ecc51f420cd9eb1353cf89443
+code_review_sha: 8a512a6f6f45ae9ac1a63c2d91de3a2478810e89
 licence:      silent
 licence_at:   browser-verified 2026-09-12; original files, live description, all 29 comments, 9 changelog entries and author profile; no reuse terms; last mod update 2023-03-11
 upstream_mod_remotes: N/A
@@ -421,3 +421,5 @@ Red, exit 5, exitReason in-progress, 0 of 4 passed (scenario 5 never ran). Every
 ## ChatGPT French review applied, 8.m redone, 2026-10-29
 
 Owner said "applique ce qui est pertinent" after reading the ChatGPT page 1 answer. Applied (256a66d): cow French description now opens with a verb ("La vache Blanc Bleu Belge est un énorme ongulé domestique..."), comma in the pygmy beefalo English description (`Mod/Defs/Race_PygmyBeefalo.xml`), "has existed since" in `PUBLICATION.md`. Not applied: the Animal Gear author sentence (not found in the current `PUBLICATION.md`). `FRENCH_REVIEW.md` regenerated; Check-Translations, Check-ModBasics, Check-DefInjected (21 keys, 0 errors) pass. Code review 8.m redone: `fe3c067..256a66d` under `Mod/` read in full (two French text edits, one English comma, Preview.png); no defect; `code_review_sha` = 256a66d. Ticket eba1 (feature 12, 1.6) queued: read at RUN_DONE.
+
+Second ChatGPT pass 2026-10-29, owner said to apply what is relevant: hyphen in "milk-producing" (`Mod/Defs/Race_PygmyBeefalo.xml`, one-word diff read, 8.m refreshed, `code_review_sha` = 8a512a6f6f45ae9ac1a63c2d91de3a2478810e89) and PUBLICATION.md status line limited to the Workshop page. The Steam block holds no "milk producing" text, nothing to change there.
