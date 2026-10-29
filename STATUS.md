@@ -9,7 +9,7 @@ repo:         Rimworld-Beef-Eaters-Renew
 visibility:   public
 detached:     yes
 workflow_stage: shootGallery[1.0.0]
-code_review_sha: fe3c067a35b4efc90318e51d7addefe07d51d326
+code_review_sha: 256a66d0aa5ca07ecc51f420cd9eb1353cf89443
 licence:      silent
 licence_at:   browser-verified 2026-09-12; original files, live description, all 29 comments, 9 changelog entries and author profile; no reuse terms; last mod update 2023-03-11
 upstream_mod_remotes: N/A
@@ -24,7 +24,7 @@ remaining:
   - unverified 2026-10-14: permission request to HannahBug for her HD reskin (Workshop 2943088425) posted by Virginie on 2026-10-14; her textures are not bundled before she answers. Yes: drop her 21 same-named PNGs into `Mod/Textures/` with credit (description, THANKS, ATTRIBUTION.md); she also may accept `nelim.beefeaters` as base. No answer or no: nothing changes
   - feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
 session:      local_b7712ad8-66e4-4aa9-9c9d-e9a97e78cb35
-updated:      2026-10-25, BeE session: shotlist v10 (header of feature 12), scenarios rewritten (forced jobs, Hat Hair Control), ticket 60bd filed (5e6a507); NPT asked about smile, dressed animals, dusk place; Virginie allowed animal apparel, mouth override, smiling colonists; candidates 2-5 (ninth version) still await her. Earlier, 2026-10-21, the mod's own session - shootGallery[1.0.0], ticket 30d6 green 5/5 (feature 12 farm day); director verdict: refuse 1 dawn (cow small in clutter, torch in daylight, no walk to water readable), keep 2 noon milking, 3 bull face-on, 4 bridge beefalo, 5 evening herd as candidates in Art/Gallery (green blueprint ghost at the foot of 2 to crop); Virginie to accept or refuse; echo from echo-source.png regenerated, echo_review_sha not set
+updated:      2026-10-29, BeE session: step DLL rebuilt (325a573), ticket eba1 filed (feature 12, v10 scenarios, 1.6); ChatGPT French review applied by owner order (256a66d); 8.m redone on the diff; candidates 2-5 (ninth version) still await Virginie. Older: 2026-10-25 shotlist v10, ticket 60bd red (undefined steps), scenario fixes of 2026-10-25 still to apply after eba1
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
 protocols_read_sha: cc1f93006ee3756009054a0389731cff310d8784
 ---
@@ -417,3 +417,7 @@ Self-check: one story, variety wide/close/medium/medium-wide, opener (1) and clo
 ## Ticket 60bd read, 2026-10-29
 
 Red, exit 5, exitReason in-progress, 0 of 4 passed (scenario 5 never ran). Every scenario failed on `Undefined step: Beef Eaters Renew: I spawn an adult "<kind>" female/male named "<name>" at (x, z) facing <dir>`: the named spawn steps of `Tests/Pickle/Source/GallerySteps.cs` (6877db3) were not in the step assembly the run loaded. No capture proves anything (step0 frames only); evidence folder deleted. Next: ask NPT whether the mod's step assembly is rebuilt before a run (else how to build it), then refile feature 12. Scenario fixes of 2026-10-25 still to apply before the refile.
+
+## ChatGPT French review applied, 8.m redone, 2026-10-29
+
+Owner said "applique ce qui est pertinent" after reading the ChatGPT page 1 answer. Applied (256a66d): cow French description now opens with a verb ("La vache Blanc Bleu Belge est un énorme ongulé domestique..."), comma in the pygmy beefalo English description (`Mod/Defs/Race_PygmyBeefalo.xml`), "has existed since" in `PUBLICATION.md`. Not applied: the Animal Gear author sentence (not found in the current `PUBLICATION.md`). `FRENCH_REVIEW.md` regenerated; Check-Translations, Check-ModBasics, Check-DefInjected (21 keys, 0 errors) pass. Code review 8.m redone: `fe3c067..256a66d` under `Mod/` read in full (two French text edits, one English comma, Preview.png); no defect; `code_review_sha` = 256a66d. Ticket eba1 (feature 12, 1.6) queued: read at RUN_DONE.
