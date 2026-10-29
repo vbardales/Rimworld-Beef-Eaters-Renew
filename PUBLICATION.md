@@ -4,8 +4,8 @@ What the Workshop page needs but the rest of the repository does not hold. It se
 first release, and for whoever takes the mod over.
 
 **Status: drafted, 2026-10-13.** The Workshop item has existed since 2026-10-01 (0.1.0 prepublication,
-`Mod/About/PublishedFileId.txt` = 3811290251, private). Nothing below has been posted or pasted
-anywhere. The workflow stage is `shootGallery[1.0.0]` (see `STATUS.md`).
+`Mod/About/PublishedFileId.txt` = 3811290251, private). Nothing of the Workshop page has been posted
+yet (the comments of the table below are tracked there). The workflow stage is `shootGallery[1.0.0]` (see `STATUS.md`).
 
 ## What blocks the publication
 

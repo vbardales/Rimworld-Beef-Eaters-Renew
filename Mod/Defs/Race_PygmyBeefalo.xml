@@ -4,7 +4,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>PygmyBeefalo</defName>
     <label>pygmy beefalo</label>
-    <description>With both genders having horns, this meandering cross between a bull and a muffalo has been bred for their milk producing hardiness in less-vegetative environments, and due to eons of husbandry has become quite intelligent, though remains about half the size of a standard cow.</description>
+    <description>With both genders having horns, this meandering cross between a bull and a muffalo has been bred for their milk-producing hardiness in less-vegetative environments, and due to eons of husbandry has become quite intelligent, though remains about half the size of a standard cow.</description>
     <statBases>
       <Wildness>0.5</Wildness>
       <MoveSpeed>4.2</MoveSpeed>
