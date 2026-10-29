@@ -425,3 +425,5 @@ Owner said "applique ce qui est pertinent" after reading the ChatGPT page 1 answ
 Second ChatGPT pass 2026-10-29, owner said to apply what is relevant: hyphen in "milk-producing" (`Mod/Defs/Race_PygmyBeefalo.xml`, one-word diff read, 8.m refreshed, `code_review_sha` = 8a512a6f6f45ae9ac1a63c2d91de3a2478810e89) and PUBLICATION.md status line limited to the Workshop page. The Steam block holds no "milk producing" text, nothing to change there.
 
 Third ChatGPT pass 2026-10-29, owner said to apply what is relevant: PUBLICATION.md "the beefalo alone is in picture 4, on the bridge" applied; "Belgian Blue" capital not applied (original Def wording, English label is lower case).
+
+Fourth ChatGPT pass 2026-10-29, owner said to apply what is relevant: PUBLICATION.md "as five pictures of one farm day" applied; "sélectionnée" not applied (sélectionné agrees with ongulé).

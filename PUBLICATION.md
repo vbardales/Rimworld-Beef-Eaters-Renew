@@ -11,7 +11,7 @@ yet (the comments of the table below are tracked there). The workflow stage is `
 
 Only what is specific to this mod; the gates themselves are in `AUDIT.md`.
 
-- The gallery is being redone as one farm day, five pictures (`12-gallery-animals-props`, tickets 0156 and f8eb waiting, 2026-10-19); the beefalo alone is in picture 4, on the bridge. Nothing is accepted yet (see "Screenshots").
+- The gallery is being redone as five pictures of one farm day (`12-gallery-animals-props`, tickets 0156 and f8eb waiting, 2026-10-19); the beefalo alone is in picture 4, on the bridge. Nothing is accepted yet (see "Screenshots").
 - The echo review (`echo_review_sha`) and the owner's review of this file and `CHANGELOG.md`
   (`publication_changelog_review_sha`) are not done.
 - The rollback target cannot exist before the first publish (see "Fail fast").
