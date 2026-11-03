@@ -26,7 +26,7 @@ remaining:
 session:      local_b7712ad8-66e4-4aa9-9c9d-e9a97e78cb35
 updated:      2026-10-29, BeE session: step DLL rebuilt (325a573), ticket eba1 filed (feature 12, v10 scenarios, 1.6); ChatGPT French review applied by owner order (256a66d); 8.m redone on the diff; candidates 2-5 (ninth version) still await Virginie. Older: 2026-10-25 shotlist v10, ticket 60bd red (undefined steps), scenario fixes of 2026-10-25 still to apply after eba1
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
-protocols_read_sha: cc1f93006ee3756009054a0389731cff310d8784
+protocols_read_sha: 41d262941096aae0bf063c8599109ddf0165c55d
 ---
 # Beef Eaters Renew — status
 
