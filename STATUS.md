@@ -24,9 +24,9 @@ remaining:
   - unverified 2026-10-14: permission request to HannahBug for her HD reskin (Workshop 2943088425) posted by Virginie on 2026-10-14; her textures are not bundled before she answers. Yes: drop her 21 same-named PNGs into `Mod/Textures/` with credit (description, THANKS, ATTRIBUTION.md); she also may accept `nelim.beefeaters` as base. No answer or no: nothing changes
   - feature 2026-10-10 (relayed rules, for `writeDocs` and `publish`): Renew mod, so write a BBCode comment for Mlie's Use This Instead page (3396308787) in PUBLICATION.md and hand it to Virginie as a paste step, row `drafted` then `posted` in USE_THIS_INSTEAD.md; CHANGELOG `## [Unreleased]` becomes `## [1.0.0] - <send date>` in the commit sent to the dry-run
 session:      local_b7712ad8-66e4-4aa9-9c9d-e9a97e78cb35
-updated:      2026-11-03, BeE session: ticket 3e82 filed (feature 12 workshop, v10 scenarios, docker, refile of eba1 exit 3 infra, no report); candidates 2-5 (21 Oct run 30d6, in Art/Gallery) await Virginie accept/refuse, she said later; Preview regenerate (7b) rendered wrong (echo overlaps summary text, ModIcon bottom-right hides beefalo) so NOT committed: fix Preview.config.json echo/iconBadge placement then render; new rule 2026-11-03: sweat or no smile costs 0.5 at criterion d
+updated:      2026-11-05, BeE session resumed: Preview rerendered (new Preview.config.json format, icon bottom-left so the beefalo stays free, echo clear of text) and committed, 7b done; Local-scripts conversion (AGENTS.md mission 2026-11-05) deferred while ticket 3e82 runs. Before: 2026-11-03, BeE session: ticket 3e82 filed (feature 12 workshop, v10 scenarios, docker, refile of eba1 exit 3 infra, no report); candidates 2-5 (21 Oct run 30d6, in Art/Gallery) await Virginie accept/refuse, she said later; Preview regenerate (7b) rendered wrong (echo overlaps summary text, ModIcon bottom-right hides beefalo) so NOT committed: fix Preview.config.json echo/iconBadge placement then render; new rule 2026-11-03: sweat or no smile costs 0.5 at criterion d
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
-protocols_read_sha: 41d262941096aae0bf063c8599109ddf0165c55d
+protocols_read_sha: 95f9ae9be72e607e03bbe62ae2db81add3ab0684
 ---
 # Beef Eaters Renew — status
 

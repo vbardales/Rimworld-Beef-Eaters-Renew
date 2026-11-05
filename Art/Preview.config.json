@@ -1,33 +1,15 @@
 {
   "panel": {
     "title": "Beef Eaters Renew (unofficial)",
-    "titleSize": 46,
     "titleParts": [
-      {
-        "text": "Beef Eaters",
-        "scale": 1
-      },
-      {
-        "text": "Renew",
-        "scale": 0.65,
-        "font": "ui",
-        "color": "secondary",
-        "breakBefore": true
-      }
-    ],
-    "tag": "(unofficial)",
-    "tagInline": true,
-    "copyLines": [
-      "A cow bred to be all meat, and a much smaller muffalo crossbreed."
-    ]
+      { "text": "Beef Eaters" },
+      { "text": "Renew (unofficial)", "suffix": true }
+    ],    
+    "description": "A cow bred to be all meat, and a much smaller muffalo crossbreed."
   },
-  "backgroundFile": "Preview-source.png",
-  "echo": {
-    "file": "echo-source.png"
-  },
-  "icon": {
-    "file": "ModIcon-source.png"
-  },
+  "background": { "file": "Preview-source.png" },
+  "echo": { "file": "echo-source.png" },
+  "icon": { "file": "ModIcon-source.png" },
   "palette": {
     "veil": "#493723",
     "inkPrimary": "#F2ECE1",
