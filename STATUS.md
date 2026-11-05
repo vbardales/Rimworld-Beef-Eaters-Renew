@@ -26,7 +26,7 @@ remaining:
 session:      local_b7712ad8-66e4-4aa9-9c9d-e9a97e78cb35
 updated:      2026-11-05, Preview validated by Virginie (commit after 773ea01); test-shape conversion done (773ea01, Audit confirmed, no local script). BeE session resumed: Preview rerendered (new Preview.config.json format, icon bottom-left so the beefalo stays free, echo clear of text) and committed, 7b done; Local-scripts conversion (AGENTS.md mission 2026-11-05) deferred while ticket 3e82 runs. Before: 2026-11-03, BeE session: ticket 3e82 filed (feature 12 workshop, v10 scenarios, docker, refile of eba1 exit 3 infra, no report); candidates 2-5 (21 Oct run 30d6, in Art/Gallery) await Virginie accept/refuse, she said later; Preview regenerate (7b) rendered wrong (echo overlaps summary text, ModIcon bottom-right hides beefalo) so NOT committed: fix Preview.config.json echo/iconBadge placement then render; new rule 2026-11-03: sweat or no smile costs 0.5 at criterion d
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
-protocols_read_sha: e7962b483699dc1410dce4b1bdd34b6393c84454
+protocols_read_sha: 4e6d7b694f3ae899b26ec15b743228a30a7dd519
 ---
 # Beef Eaters Renew — status
 
