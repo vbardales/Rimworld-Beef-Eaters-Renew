@@ -427,3 +427,28 @@ Second ChatGPT pass 2026-10-29, owner said to apply what is relevant: hyphen in 
 Third ChatGPT pass 2026-10-29, owner said to apply what is relevant: PUBLICATION.md "the beefalo alone is in picture 4, on the bridge" applied; "Belgian Blue" capital not applied (original Def wording, English label is lower case).
 
 Fourth ChatGPT pass 2026-10-29, owner said to apply what is relevant: PUBLICATION.md "as five pictures of one farm day" applied; "sélectionnée" not applied (sélectionné agrees with ongulé).
+
+## NSB
+
+Sync 2026-11-06 (first run of sync-nsb here; no earlier sync date). NSB docs read: CATALOGUE-ANIMAUX (full, updated 2026-11-05), SANCTUAIRE-LIEUX (sections "Qui une galerie peut utiliser", faune, the five named places, "Animaux mis en scène"), EMBELLISSEMENT-LIEUX and NELIM-PROFIL (lines for the places and the hat/hair/face only), DEPENDANCES-SANCTUAIRE (hat/hair mods only). Not opened: NSB-ROSTER, APPARENCES-CANON, LOOKS-VALIDATION. Changed in NSB: nothing moved or renamed for the places used; `git log -- Docs` on SanctuaryBacklot returned no commit (docs headers say 2026-11-05).
+
+Updated: scenarios of `12-gallery-animals-props` now set hair `Roo_Royal_LongHD` (NSB canon under a hat, owner 2026-10-21) instead of vanilla `Long`; `rooboid.hdhair.continued` 3559870636 added to `Tests/Pickle/wsl-deps.sanctuary-props.map`. Unverified: the def name resolves in the run (the step lists hairstyles on failure). Left alone: scene 5 still at `plant-garden` (NPT advised `bare-clearing` on 2026-10-25, to apply with the other scenario fixes above), face still "held neutral" (owner 2026-10-25 default smile, to apply). Ticket 3e82 holds the old tree: relaunch after these edits.
+
+Places read: 2026-11-06. Tribe read: 2026-11-06 (Nelim, animals catalogue).
+
+| Place | Shots | Changes for the gallery | Last read |
+|---|---|---|---|
+| `right-bank` (144,132) | 1 | TorchLamp lit, Plant_Daylily, removed after; NSB suggests willows and reeds there (not used) | 2026-11-06 |
+| `flower-garden` (154,105), estimate | 2 | none; frame (150,103)-(158,108) avoids statues, bed | 2026-11-06 |
+| `enclosure-south` (149,214) | 3 | trough, large bale (props map), area cleared | 2026-11-06 |
+| `river-bridge` (135,126) | 4 | 2 Plant_YellowTallGrass at the ends | 2026-11-06 |
+| `plant-garden` (190,85) | 5 | 2 TorchLamp, 2 Plant_YellowTallGrass; move to `bare-clearing` (195,152) pending | 2026-11-06 |
+
+| Colonist | Shots | Outfit per shot | Last read | Exceptions |
+|---|---|---|---|---|
+| Nelim (NSB) | 1-5 | fixture kit (corset, trousers) + Apparel_CowboyHat wheat all day; Apparel_Duster oat brown at dawn (1) and in the late wind (4, 5) | 2026-11-06 (partial) | hair `Roo_Royal_LongHD` = canon; face: own face, default smile 2026-10-25 (owner rule, in chat; not yet in the scenarios) |
+
+| Animal | Shots | Outfit | Last read | Exceptions |
+|---|---|---|---|---|
+| Rosa (Belgian blue cow), Petite (calf), Taureau (bull) | 1, 2, 3, 5 | none | n/a | outside NSB, mod subject, no NSB equivalent: PENDING |
+| Pip (pygmy beefalo), Minus (calf) | 4, 5 | none (AACaK scarf idea unverified) | n/a | outside NSB, mod subject, no NSB equivalent: PENDING |

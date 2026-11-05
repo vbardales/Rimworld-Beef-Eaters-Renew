@@ -12,7 +12,7 @@
 # Variety: wide (1), close (2), medium (3, 4), medium-wide (5). Rhythm: the frames never repeat the same width twice in a row.
 #
 # NELIM (d), ONE OUTFIT FOR THE WHOLE DAY (continuity rule 2026-10-23). Fixture kit (corset, trousers); Apparel_CowboyHat wheat rgb (205, 175, 105) on all
-# five pictures, hair Long and loose under it (Hat Hair Control, lordfelix.HatHairControl 3760821540, replaces Show Hair Under Stuff; seed copied from
+# five pictures, hair Roo_Royal_LongHD (NSB canon under a hat, NELIM-PROFIL.md) loose under it (Hat Hair Control, lordfelix.HatHairControl 3760821540, replaces Show Hair Under Stuff; seed copied from
 # PickleTools Tests/Pickle/config/hat-hair-hhc with showHairDefs = Apparel_CowboyHat, hideHatsIndoors false); her own face held neutral
 # (Nelim's Sanctuary: Nelim has her own face, then face is held neutral; map at 20 degrees). The one change is justified by the day: Apparel_Duster oat
 # brown rgb (112, 96, 78) against the dawn fog (1), off while the day is warm (2, 3), back on in the late wind (4, 5).
@@ -92,7 +92,7 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: "Nelim" stands at (150, 132) facing West
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Rosa" follows "Nelim" within 2 cells
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (141, 132)
     And Nelim's Pickle Tools: I let 60 ticks pass
@@ -116,7 +116,7 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Beef Eaters Renew: I spawn a "BelgianBlueCow" female named "Petite" in life stage 0 at (155, 106) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (152, 107) facing North
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Milk" on "Rosa"
     And Nelim's Pickle Tools: I let 100 ticks pass
     And Beef Eaters Renew: time is paused
@@ -141,7 +141,7 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" male named "Taureau" at (150, 220) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (154, 219) facing West
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Hay" to (149, 218)
     And Nelim's Pickle Tools: I let 60 ticks pass
     And Beef Eaters Renew: time is paused
@@ -167,7 +167,7 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: "Nelim" stands at (136, 124) facing East
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Pip" follows "Nelim" within 2 cells
     And Nelim's Pickle Tools: "Minus" follows "Pip" within 2 cells
     And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "WoolMuffalo" to (141, 124)
@@ -199,7 +199,7 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: "Nelim" stands at (196, 91) facing North
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Hay" to (196, 88)
     And Nelim's Pickle Tools: I let 40 ticks pass
     And Beef Eaters Renew: time is paused
