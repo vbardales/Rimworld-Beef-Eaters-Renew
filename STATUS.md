@@ -448,7 +448,7 @@ Places read: 2026-11-06. Tribe read: 2026-11-06.
 
 | Colonist | Shots | Outfit per shot | Last read | Exceptions |
 |---|---|---|---|---|
-| Nelim (NSB) | 1-5 | fixture kit (corset, trousers) + Apparel_CowboyHat wheat all day (farm day, open hat); Apparel_Duster oat brown at dawn (1, fog) and late wind (4, 5) | 2026-11-06 (profile whole) | hair `Roo_Royal_LongHD` = canon under a hat; mouth smile instead of canon `MouthLipsSmirk`: owner rule 2026-10-25 "default expression is smiling" (paraphrase, exact words to re-quote) |
+| Nelim (NSB) | 1-5 | fixture kit (corset, trousers) + Apparel_CowboyHat wheat all day (farm day, open hat); Apparel_Duster oat brown at dawn (1, fog) and late wind (4, 5) | 2026-11-06 (profile whole) | hair `Roo_Royal_LongHD` = canon under a hat; expression: validated by Virginie 2026-11-06: "Nelim sourit comme dans le canon, à moins qu'il ne soit mieux d'un point de vue mise en scène, qu'elle ait une autre expression. Mais par défaut, si pas d'expression fournie, elle sourit" (canon mouth `MouthLipsSmirk`; another expression allowed when the staging is better) |
 
 | Animal | Shots | Outfit | Last read | Exceptions |
 |---|---|---|---|---|
