@@ -430,15 +430,17 @@ Fourth ChatGPT pass 2026-10-29, owner said to apply what is relevant: PUBLICATIO
 
 ## NSB
 
-Sync 2026-11-06 (first run of sync-nsb here; no earlier sync date). NSB docs read: CATALOGUE-ANIMAUX (full, updated 2026-11-05), SANCTUAIRE-LIEUX (sections "Qui une galerie peut utiliser", faune, the five named places, "Animaux mis en scène"), EMBELLISSEMENT-LIEUX and NELIM-PROFIL (lines for the places and the hat/hair/face only), DEPENDANCES-SANCTUAIRE (hat/hair mods only). Not opened: NSB-ROSTER, APPARENCES-CANON, LOOKS-VALIDATION. Changed in NSB: nothing moved or renamed for the places used; `git log -- Docs` on SanctuaryBacklot returned no commit (docs headers say 2026-11-05).
+Sync 2026-11-06, second run the same day (first run read part of the docs; this one completes the tribe side). Rules (owner, 2026-11-05): everything in NSB is free; a colonist or domestic animal outside NSB needs express validation; a colonist's properties change only with express validation; every outfit is free.
 
-Updated: scenarios of `12-gallery-animals-props` now set hair `Roo_Royal_LongHD` (NSB canon under a hat, owner 2026-10-21) instead of vanilla `Long`; `rooboid.hdhair.continued` 3559870636 added to `Tests/Pickle/wsl-deps.sanctuary-props.map`. Unverified: the def name resolves in the run (the step lists hairstyles on failure). Left alone: scene 5 still at `plant-garden` (NPT advised `bare-clearing` on 2026-10-25, to apply with the other scenario fixes above), face still "held neutral" (owner 2026-10-25 default smile, to apply). Ticket 3e82 holds the old tree: relaunch after these edits.
+Read: CATALOGUE-ANIMAUX, SANCTUAIRE-LIEUX (colonists/animals/faune/named places/animal spawn steps), EMBELLISSEMENT-LIEUX and DEPENDANCES-SANCTUAIRE (our places and hat/hair mods), NELIM-PROFIL (whole), NSB-ROSTER and APPARENCES-CANON (Nelim lines only), HUMAINS-PROFILS, LOOKS-VALIDATION (head), GALERIE-COLONS. SANCTUAIRE-CASES has no line for our places. NSB changed since the first run: nothing (`git log --since=2026-11-06` empty); no Docs commit seen since 2026-10-18, docs headers say 2026-11-05.
 
-Places read: 2026-11-06. Tribe read: 2026-11-06 (Nelim, animals catalogue).
+Updated (first run): scenarios of `12-gallery-animals-props` set hair `Roo_Royal_LongHD` (canon under a hat), `rooboid.hdhair.continued` 3559870636 in `wsl-deps.sanctuary-props.map`. This run, no further file change. Left alone: scene 5 at `plant-garden` (NPT advised `bare-clearing` 2026-10-25; pending with the smile and gesture fixes); outfit "fixture kit (corset, trousers) + cowboy hat + duster" is not an NSB wardrobe row, allowed (rule 4, farm story, shotlist says why); NSB suggests willows and reeds at `river-bridge`/`right-bank`, not used. Mouth: canon is `MouthLipsSmirk`; the default smile is the owner rule of 2026-10-25 (recorded here as "default expression is smiling", exact words not kept: rule 3 wants them quoted, so the smile is a paraphrased validation until Virginie repeats it). Ticket 3e82 holds the old tree: relaunch after the scenario edits.
+
+Places read: 2026-11-06. Tribe read: 2026-11-06.
 
 | Place | Shots | Changes for the gallery | Last read |
 |---|---|---|---|
-| `right-bank` (144,132) | 1 | TorchLamp lit, Plant_Daylily, removed after; NSB suggests willows and reeds there (not used) | 2026-11-06 |
+| `right-bank` (144,132) | 1 | TorchLamp lit, Plant_Daylily, removed after | 2026-11-06 |
 | `flower-garden` (154,105), estimate | 2 | none; frame (150,103)-(158,108) avoids statues, bed | 2026-11-06 |
 | `enclosure-south` (149,214) | 3 | trough, large bale (props map), area cleared | 2026-11-06 |
 | `river-bridge` (135,126) | 4 | 2 Plant_YellowTallGrass at the ends | 2026-11-06 |
@@ -446,7 +448,7 @@ Places read: 2026-11-06. Tribe read: 2026-11-06 (Nelim, animals catalogue).
 
 | Colonist | Shots | Outfit per shot | Last read | Exceptions |
 |---|---|---|---|---|
-| Nelim (NSB) | 1-5 | fixture kit (corset, trousers) + Apparel_CowboyHat wheat all day; Apparel_Duster oat brown at dawn (1) and in the late wind (4, 5) | 2026-11-06 (partial) | hair `Roo_Royal_LongHD` = canon; face: own face, default smile 2026-10-25 (owner rule, in chat; not yet in the scenarios) |
+| Nelim (NSB) | 1-5 | fixture kit (corset, trousers) + Apparel_CowboyHat wheat all day (farm day, open hat); Apparel_Duster oat brown at dawn (1, fog) and late wind (4, 5) | 2026-11-06 (profile whole) | hair `Roo_Royal_LongHD` = canon under a hat; mouth smile instead of canon `MouthLipsSmirk`: owner rule 2026-10-25 "default expression is smiling" (paraphrase, exact words to re-quote) |
 
 | Animal | Shots | Outfit | Last read | Exceptions |
 |---|---|---|---|---|
