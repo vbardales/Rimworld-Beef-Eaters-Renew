@@ -136,24 +136,32 @@ Read: CATALOGUE-ANIMAUX, SANCTUAIRE-LIEUX (colonists/animals/faune/named places/
 
 Updated (first run): scenarios of `12-gallery-animals-props` set hair `Roo_Royal_LongHD` (canon under a hat), `rooboid.hdhair.continued` 3559870636 in `wsl-deps.sanctuary-props.map`. This run, no further file change. Left alone: scene 5 at `plant-garden` (NPT advised `bare-clearing` 2026-10-25; pending with the smile and gesture fixes); outfit "fixture kit (corset, trousers) + cowboy hat + duster" is not an NSB wardrobe row, allowed (rule 4, farm story, shotlist says why); NSB suggests willows and reeds at `river-bridge`/`right-bank`, not used. Mouth: canon is `MouthLipsSmirk`; the default smile is the owner rule of 2026-10-25 (recorded here as "default expression is smiling", exact words not kept: rule 3 wants them quoted, so the smile is a paraphrased validation until Virginie repeats it). Ticket 3e82 holds the old tree: relaunch after the scenario edits.
 
-Places read: 2026-11-06. Tribe read: 2026-11-06.
+Places read: 2026-11-06. Tribe read: 2026-11-06. Sync 3 of 2026-11-06 (after shotlist v12): NSB `Docs` unchanged since the first run (`git log --since=2026-11-06` empty), nothing re-opened; only the mod-side rows below follow v12.
 
 | Place | Shots | Changes for the gallery | Last read |
 |---|---|---|---|
-| `right-bank` (144,132) | 1 | TorchLamp lit, Plant_Daylily, removed after | 2026-11-06 |
-| `flower-garden` (154,105), estimate | 2 | none; frame (150,103)-(158,108) avoids statues, bed | 2026-11-06 |
-| `enclosure-south` (149,214) | 3 | trough, large bale (props map), area cleared | 2026-11-06 |
-| `river-bridge` (135,126) | 4 | 2 Plant_YellowTallGrass at the ends | 2026-11-06 |
-| `plant-garden` (190,85) | 5 | 2 TorchLamp, 2 Plant_YellowTallGrass; move to `bare-clearing` (195,152) pending | 2026-11-06 |
+| `right-bank` (144,132) | 1 | 07 h fog; TorchLamp lit (146,134), Plant_Daylily (145,131), removed after; rectangle (136,127)-(152,136) | 2026-11-06 |
+| `flower-garden` (154,105), estimate | 2 | 11 h (was 12); 2 Plant_Rose foreground; frame head of Nelim and Rosa avoids statues, bed | 2026-11-06 |
+| `enclosure-south` (149,214) | 3 | 13 h (was 15); trough (148,218), large bale moved to (144,221), area cleared | 2026-11-06 |
+| `river-bridge` (135,126) | 4 | 15 h (was 17); 2 Plant_YellowTallGrass moved to the east bank (143,123), (143,126) | 2026-11-06 |
+| `bare-clearing` (195,152) | 5 | 17 h (was 19, blue tint); 2 TorchLamp lit, 2 Plant_YellowTallGrass, large bale; rectangle (189,150)-(203,158); `plant-garden` dropped | 2026-11-06 |
 
 | Colonist | Shots | Outfit per shot | Last read | Exceptions |
 |---|---|---|---|---|
-| Nelim (NSB) | 1-5 | fixture kit (corset, trousers) + Apparel_CowboyHat wheat all day (farm day, open hat); Apparel_Duster oat brown at dawn (1, fog) and late wind (4, 5) | 2026-11-06 (profile whole) | hair `Roo_Royal_LongHD` = canon under a hat; expression: validated by Virginie 2026-11-06: "Nelim sourit comme dans le canon, à moins qu'il ne soit mieux d'un point de vue mise en scène, qu'elle ait une autre expression. Mais par défaut, si pas d'expression fournie, elle sourit" (canon mouth `MouthLipsSmirk`; another expression allowed when the staging is better) |
+| Nelim (NSB) | 1-5 | fixture kit (corset, trousers) + Apparel_CowboyHat wheat all day (farm day, open hat); Apparel_Duster oat brown at dawn (1, fog) and afternoon wind (4, 5); off in 2 and 3 | 2026-11-06 (profile whole) | hair `Roo_Royal_LongHD` = canon under a hat; expression: validated by Virginie 2026-11-06: "Nelim sourit comme dans le canon, à moins qu'il ne soit mieux d'un point de vue mise en scène, qu'elle ait une autre expression. Mais par défaut, si pas d'expression fournie, elle sourit" (canon mouth `MouthLipsSmirk`; another expression allowed when the staging is better) |
 
 | Animal | Shots | Outfit | Last read | Exceptions |
 |---|---|---|---|---|
-| Rosa (Belgian blue cow), Petite (calf), Taureau (bull) | 1, 2, 3, 5 | none | n/a | outside NSB, mod subject; validated by Virginie 2026-11-06: "Les animaux du mod DOIVENT être dans la gallery" |
-| Pip (pygmy beefalo), Minus (calf) | 4, 5 | none (AACaK scarf idea unverified) | n/a | outside NSB, mod subject; validated by Virginie 2026-11-06: "Les animaux du mod DOIVENT être dans la gallery" |
+| Rosa (Belgian blue cow) | 1, 2, 5 | none | n/a | outside NSB, mod subject; validated by Virginie 2026-11-06: "Les animaux du mod DOIVENT être dans la gallery" |
+| Petite (calf), Taureau (bull) | Petite 2, 5; Taureau 3, 5 | none | n/a | outside NSB, mod subject; same validation 2026-11-06 |
+| Pip (pygmy beefalo), Minus (calf) | Pip 4, 5; Minus 4 | none (AACaK scarf idea unverified) | n/a | outside NSB, mod subject; validated by Virginie 2026-11-06: "Les animaux du mod DOIVENT être dans la gallery" |
+
+Included animals (rule 5), from `Mod/Defs` (`BelgianBlueCow`, `PygmyBeefalo`; no coat variants):
+
+| Animal | Shots | |
+|---|---|---|
+| `BelgianBlueCow` (cow Rosa, calf Petite, bull Taureau) | 1, 2, 3, 5 | shown |
+| `PygmyBeefalo` (Pip, calf Minus) | 4, 5 | shown |
 
 ## Shotlist v11, 2026-11-06 (write-shotlist 2, 3, 4, 5; supersedes the v10 table for scenes 2 to 5)
 
