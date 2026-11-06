@@ -454,3 +454,17 @@ Places read: 2026-11-06. Tribe read: 2026-11-06.
 |---|---|---|---|---|
 | Rosa (Belgian blue cow), Petite (calf), Taureau (bull) | 1, 2, 3, 5 | none | n/a | outside NSB, mod subject; validated by Virginie 2026-11-06: "Les animaux du mod DOIVENT être dans la gallery" |
 | Pip (pygmy beefalo), Minus (calf) | 4, 5 | none (AACaK scarf idea unverified) | n/a | outside NSB, mod subject; validated by Virginie 2026-11-06: "Les animaux du mod DOIVENT être dans la gallery" |
+
+## Shotlist v11, 2026-11-06 (write-shotlist 2, 3, 4, 5; supersedes the v10 table for scenes 2 to 5)
+
+Header of `12-gallery-animals-props.feature` rewritten for scenes 2 to 5 (scene 1 only gets the smile lines), scenarios rewritten to match, Opus director pass kept in the header (kept, and kept differently, listed there). Changes: Nelim smiles (canon `MouthLipsSmirk` + `LidCheerful`, owner quote in the NSB section), `face is held neutral` dropped; frames by the camera steps (head of Nelim and the animal, or centered on the animal) at N 2.8, 3.5, 3.0, 3.6 so her face reads; exact tick pauses with `I advance the paused game by exactly N ticks`; scene 2 roses in the foreground and Nelim next to Rosa for the Milk job; scene 3 bull walks face on to the trough; scene 4 forced walks instead of `follows`; scene 5 moved to `bare-clearing`, herd gathered (cow, calf, beefalo, bull), beefalo walks toward the camera. Ticket 3e82 holds the old tree: refile.
+
+| # | a time | b decor | c living | d Nelim | e action and instant | f frame | g subject | j thumbnail | est | risk |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | right-bank 07 h fog, 60+60 ticks | TorchLamp lit, Plant_Daylily | Rosa walking West | duster + hat, Roo_Royal_LongHD, smile | forced walk, cow follows, first steps to the water | rect 18x10, N 5.06 | the herd has arrived | cow 50-60 px | 4.5 | follow step expects a colonist leader |
+| 2 | flower-garden 12 h clear, 60+150 | 2 Plant_Rose foreground | Rosa East, calf Petite West | hat only, smile | Milk job, bar half full, calf waits | head of Nelim and Rosa, N 2.8 | the milk | cow 94 px, face ~10 px | 4 | Milk may refuse a cow not full (fallback Wait); roses a thin decor |
+| 3 | enclosure-south 15 h clear, 60+25 | trough, large bale | bull Taureau face on, walking | hat only, smile | bull walks to the trough, Nelim hauls Hay to (147,218) | centered on Taureau, N 3.5 | the build | bull 47 px | 4.5 | bare dirt; Nelim at the frame edge |
+| 4 | river-bridge 17 h clear, wind, 60+40 | 2 Plant_YellowTallGrass (cells guessed) | Pip, Minus trailing | duster + hat, smile | haul WoolMuffalo, halfway, calf a step behind | head of Nelim and Pip, N 3.0 | small horned pack animal and its wool | beefalo 30 px, calf 18 px | 4 | grass cells may be water; 17 h read dim on v9 |
+| 5 | bare-clearing 19 h clear, 60+30 | 2 torches lit, 2 tall grass, large bale | Rosa, Pip (toward camera), Petite, Taureau | duster + hat, smile | cow and beefalo mid-stride toward the hay, Nelim sets it down | head of Nelim and Pip, N 3.6 | the herd has moved in | cow 74 px, beefalo 25 px | 4.5 | crowded frame, bull at the edge |
+
+Series k: ok (one story, wide / close / medium, opener 1 and closer 5, N 5.06, 2.8, 3.5, 3.0, 3.6). Self-score of the series 4.3 (mean of the estimates). Not verified: the advance, head-frame, walk, haul and `MouthLipsSmirk` steps and values, every cell outside the pen, the Milk gate. Needs no new step and no new owner question: Nelim's expression and the mod's animals are validated (NSB section).
