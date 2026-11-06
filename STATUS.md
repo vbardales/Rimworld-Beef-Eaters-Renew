@@ -450,5 +450,5 @@ Places read: 2026-11-06. Tribe read: 2026-11-06 (Nelim, animals catalogue).
 
 | Animal | Shots | Outfit | Last read | Exceptions |
 |---|---|---|---|---|
-| Rosa (Belgian blue cow), Petite (calf), Taureau (bull) | 1, 2, 3, 5 | none | n/a | outside NSB, mod subject, no NSB equivalent: PENDING |
-| Pip (pygmy beefalo), Minus (calf) | 4, 5 | none (AACaK scarf idea unverified) | n/a | outside NSB, mod subject, no NSB equivalent: PENDING |
+| Rosa (Belgian blue cow), Petite (calf), Taureau (bull) | 1, 2, 3, 5 | none | n/a | outside NSB, mod subject; validated by Virginie 2026-11-06: "Les animaux du mod DOIVENT être dans la gallery" |
+| Pip (pygmy beefalo), Minus (calf) | 4, 5 | none (AACaK scarf idea unverified) | n/a | outside NSB, mod subject; validated by Virginie 2026-11-06: "Les animaux du mod DOIVENT être dans la gallery" |
