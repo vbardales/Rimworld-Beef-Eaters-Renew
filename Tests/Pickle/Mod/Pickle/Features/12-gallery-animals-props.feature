@@ -126,7 +126,7 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: "Nelim" stands at (154, 108) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
-    And Nelim's Pickle Tools: "Nelim" is forced into the job "Milk" on "Rosa"
+    And Nelim's Pickle Tools: "Nelim" is forced into the job "Wait"
     And Nelim's Pickle Tools: I advance the paused game by exactly 150 ticks
     And Nelim's Pickle Tools: the camera frames the head of "Nelim" and "Rosa" at root size 2.8
     And Nelim's Sanctuary: Nelim has her own face

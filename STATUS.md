@@ -468,3 +468,7 @@ Header of `12-gallery-animals-props.feature` rewritten for scenes 2 to 5 (scene 
 | 5 | bare-clearing 19 h clear, 60+30 | 2 torches lit, 2 tall grass, large bale | Rosa, Pip (toward camera), Petite, Taureau | duster + hat, smile | cow and beefalo mid-stride toward the hay, Nelim sets it down | head of Nelim and Pip, N 3.6 | the herd has moved in | cow 74 px, beefalo 25 px | 4.5 | crowded frame, bull at the edge |
 
 Series k: ok (one story, wide / close / medium, opener 1 and closer 5, N 5.06, 2.8, 3.5, 3.0, 3.6). Self-score of the series 4.3 (mean of the estimates). Not verified: the advance, head-frame, walk, haul and `MouthLipsSmirk` steps and values, every cell outside the pen, the Milk gate. Needs no new step and no new owner question: Nelim's expression and the mod's animals are validated (NSB section).
+
+## Ticket 0096 read, 2026-11-06 (farm day v11)
+
+4 of 5 passed, scene 2 failed: `Nelim's job is RopeRoamerToHitchingPost, not Milk` (the cow's milk bar is not full, so Milk refused and the AI took a rope job). Captures read (step0 frames only): 1 dawn: cow faces East, Nelim seen from behind, smile unreadable; 3 bull: face on, hay bale and Nelim at the frame edge; 4 bridge: beefalo and calf good, hay hides her face; 5 evening: herd cut at the left edge, bull tinted blue, Nelim small. Scene 2 fallback applied (`Wait` job beside the cow, Milk only in the subtitle); refile scene 2 alone. Evidence in `Tests/Pickle/Inbox/20261106-farm-day-v11`. Not yet shown to Virginie.
