@@ -1,6 +1,10 @@
-# THE DAY THE HERD MOVED IN, twelfth version (2026-11-06, scenes 1, 3, 4, 5 reworked after ticket 0096, scene 2 refiled after dbbe), written against GALLERY.md "Shotlist : criteres d'une scene a 4/5" (a to k)
+# THE DAY THE HERD MOVED IN, thirteenth version (2026-11-06, v12 played as ticket 035b: kit steps, scenes 2, 3, 4, 5 recomposed), written against GALLERY.md "Shotlist : criteres d'une scene a 4/5" (a to k)
 # and SanctuaryBacklot/Docs/GALERIE.md. Director passes by an Opus sub-agent: v10 (2026-10-23), v11 and v12 (2026-11-06, one call each), remarks kept below.
 # THE SCENARIOS BELOW FOLLOW IT (not played; cells and forced-walk steps unverified until the first run).
+# V13 (2026-11-06, after ticket 035b, director pass 3): the fixture kit is put on explicitly in every scenario (`wears "Apparel_Pants" made of "Cloth"`, `also wears "Apparel_Corset"`, NPT 2026-11-06; Nelim rendered nude in v12);
+# scene 2 Nelim at (155,106), Rosa faces West, Petite at (151,107); scene 3 bull and Nelim on row 221, 20 ticks; scene 4 Pip (135,124), Minus (133,124) to (138,124), head frame N 2.8 so the calf stays in;
+# scene 5 tighter rectangle (190,150)-(202,156), Pip walks West in profile from (200,154) to (198,154) beside Nelim, torches (195,151) and (198,151), tall grass (193,151) and (201,153), Rosa (191,154); scene 1 unchanged from v12 fix.
+# THE PLAN LINES BELOW STILL SHOW THE v12 SCENE 5 TEXT where it differs from the scenario: the scenario file lines win for scene 5 cells.
 #
 # WHAT 0096 AND dbbe TAUGHT (read 2026-11-06): Nelim's face and smile did not read in 1, 3, 4, 5 (cow overlapped her, carried Hay or WoolMuffalo hid her face, she sat at the frame corner, the herd was cut
 # at the left edge); the 19 h light tinted the white coats blue (NPT: probably the dusk sky glow, neutral hours are 9 to 15 h); the Milk job ended at once (milk bar not full) and the bare step `is forced into
@@ -34,19 +38,19 @@
 #    two cells ahead of the cow (row 133), both in profile; INSTANT: she leads the cow down the bank toward the ford; advance 40 ticks. f: rectangle (136,127)-(152,136), 16 x 9 cells,
 #    torch as the warm spot, fog behind. g: the herd has arrived, the breed is big. j: 120 px per cell, the cow about 3.5 cells = 420 px, 58 px in the thumbnail; her smile reads at full size only.
 #  2 LATE MORNING 11 h, Clear, `flower-garden`, CLOSE. a: 11 h, clear, 60 ticks set-up then 150 ticks of milking. b: the lily and rose field behind (vanilla), two Plant_Rose fully grown in the foreground at
-#    (152,106) and (158,106), removed after. c: cow "Rosa" (154,107) facing East, made full of milk, calf "Petite" (157,108) facing West at her flank. d: hat only, duster off, smile. e: forced job `Milk`
+#    (152,106) and (158,106), removed after. c: cow "Rosa" (154,107) facing West, made full of milk, calf "Petite" (151,107) facing East by her head. d: hat only, duster off, smile. e: Nelim at (155,106) by the cow's hindquarters (drawn in front of her, v12 had her on the cow's back), forced job `Milk`
 #    on Rosa from (154,108); INSTANT: the milk bar is half full, the calf waits its turn; advance 150 ticks. f: the camera frames the head of "Nelim" and "Rosa" at root size 2.8 (ghost building x 150-152
 #    z 100-102 and bed x 157.5-159.5 z 101.5-103.5 stay out), cow and calf left, Nelim right. g: the milk the breed gives. j: 27 px per cell in the thumbnail, the cow about 94 px.
 #    RISK: Milk may still end at once (then the cause is the job, target or reservation: NPT reads the log); the face may be bent over the cow (the milking pose is not played yet).
-#  3 EARLY AFTERNOON 13 h, Clear, `enclosure-south`, MEDIUM. a: 13 h, clear, area (132,206)-(166,222) cleared, 60 ticks set-up then 30 of walk. b: AnimalFeedTroughSmall (148,218), VFEPD_HayBaleLarge (144,221)
-#    (moved off column 147, Nelim's path), props map, nothing ships. c: bull "Taureau" spawned (149,222) facing South, forced to walk to (149,219), the one face-on animal of the series (c). d: hat only,
+#  3 EARLY AFTERNOON 13 h, Clear, `enclosure-south`, MEDIUM. a: 13 h, clear, area (132,206)-(166,222) cleared, 60 ticks set-up then 20 of walk. b: AnimalFeedTroughSmall (148,218), VFEPD_HayBaleLarge (144,221)
+#    (moved off column 147, Nelim's path), props map, nothing ships. c: bull "Taureau" spawned (149,221) facing South, level with Nelim, forced to walk to (149,219), the one face-on animal of the series (c). d: hat only,
 #    duster off, smile. e: Nelim at (147,221) facing South is forced to walk to (147,218) (the cell west of the trough; the trough cell is not standable); INSTANT: she and the bull reach the trough side
-#    by side, both mid-stride; advance 30 ticks (target not reached). f: the camera frames the head of "Nelim" and "Taureau" at root size 3.6 (12.5 x 7 cells), fence on top, trough and bale as the warm masses.
+#    by side, both mid-stride; advance 20 ticks (target not reached). f: the camera frames the head of "Nelim" and "Taureau" at root size 3.6 (12.5 x 7 cells), fence on top, trough and bale as the warm masses.
 #    g: the build, the point of the breed. j: 21 px per cell in the thumbnail, the bull about 47 px. RISK: bare dirt; cells read on photographs.
 #  4 MID-AFTERNOON 15 h, Clear, `river-bridge`, MEDIUM. a: 15 h, clear, wind, 60 ticks set-up then 40 of walk. b: two Plant_YellowTallGrass fully grown on the east bank at (143,123) and (143,126)
-#    (the v11 capture showed grass and a tree on that bank, cells unverified), no torch. c: pygmy beefalo "Pip" (adult female) at (134,124) facing East, forced to walk to (139,124); calf "Minus"
-#    (male, life stage 0) at (132,124) facing East, forced to walk to (137,124), trailing behind. d: duster + hat, smile. e: Nelim at (141,127) facing South is forced to walk to (141,124), the bridge end;
-#    INSTANT: the beefalo cross the bridge toward her, the calf a step behind; advance 40 ticks. f: the camera frames the head of "Nelim" and "Pip" at root size 3.0 (10.7 x 6 cells), the bridge as a
+#    (the v11 capture showed grass and a tree on that bank, cells unverified), no torch. c: pygmy beefalo "Pip" (adult female) at (135,124) facing East, forced to walk to (139,124); calf "Minus"
+#    (male, life stage 0) at (133,124) facing East, forced to walk to (138,124), trailing behind. d: duster + hat, smile. e: Nelim at (141,127) facing South is forced to walk to (141,124), the bridge end;
+#    INSTANT: the beefalo cross the bridge toward her, the calf a step behind; advance 40 ticks. f: the camera frames the head of "Nelim" and "Pip" at root size 2.8 (10.7 x 6 cells), the bridge as a
 #    horizontal band. g: the small horned pack animal and its calf. j: 25 px per cell, the beefalo about 30 px, the calf about 18 px. RISK: grass cells may be water; river fog at the frame top and bottom (seen on v11).
 #  5 LATE AFTERNOON 17 h, Clear, `bare-clearing` (195,152), MEDIUM-WIDE, closing. a: 17 h, clear, 60 ticks set-up then 30 of walk. b: TorchLamp lit (191,151) and (198,151), Plant_YellowTallGrass fully grown
 #    (194,151) and (202,153), VFEPD_HayBaleLarge (201,151). c: cow "Rosa" (190,154) facing East, forced to walk to (194,154); pygmy beefalo "Pip" (199,156) facing South (face on, toward the camera), forced to walk
@@ -86,6 +90,8 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (145, 131) fully grown
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female named "Rosa" at (149, 133) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (147, 132) facing West
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Corset"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
@@ -112,10 +118,12 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Beef Eaters Renew: time is paused
     And Nelim's Pickle Tools: I place the decor "Plant_Rose" at (152, 106) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Rose" at (158, 106) fully grown
-    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female named "Rosa" at (154, 107) facing East
+    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female named "Rosa" at (154, 107) facing West
     And Nelim's Pickle Tools: the animal "Rosa" is full of milk
-    And Beef Eaters Renew: I spawn a "BelgianBlueCow" female named "Petite" in life stage 0 at (157, 108) facing West
-    And Nelim's Pickle Tools: "Nelim" stands at (154, 108) facing South
+    And Beef Eaters Renew: I spawn a "BelgianBlueCow" female named "Petite" in life stage 0 at (151, 107) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (155, 106) facing South
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Corset"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Milk" on "Rosa"
@@ -140,13 +148,15 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: the area from (132, 206) to (166, 222) is cleared
     And Nelim's Pickle Tools: I place the decor "AnimalFeedTroughSmall" at (148, 218)
     And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (144, 221)
-    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" male named "Taureau" at (149, 222) facing South
+    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" male named "Taureau" at (149, 221) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (147, 221) facing South
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Corset"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Taureau" is forced to walk to (149, 219)
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (147, 218)
-    And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
+    And Nelim's Pickle Tools: I advance the paused game by exactly 20 ticks
     And Nelim's Pickle Tools: the camera frames the head of "Nelim" and "Taureau" at root size 3.6
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
@@ -166,17 +176,19 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Beef Eaters Renew: time is paused
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 123) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 126) fully grown
-    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female named "Pip" at (134, 124) facing East
-    And Beef Eaters Renew: I spawn a "PygmyBeefalo" male named "Minus" in life stage 0 at (132, 124) facing East
+    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female named "Pip" at (135, 124) facing East
+    And Beef Eaters Renew: I spawn a "PygmyBeefalo" male named "Minus" in life stage 0 at (133, 124) facing East
     And Nelim's Pickle Tools: "Nelim" stands at (141, 127) facing South
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Corset"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Pip" is forced to walk to (139, 124)
-    And Nelim's Pickle Tools: "Minus" is forced to walk to (137, 124)
+    And Nelim's Pickle Tools: "Minus" is forced to walk to (138, 124)
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (141, 124)
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
-    And Nelim's Pickle Tools: the camera frames the head of "Nelim" and "Pip" at root size 3.0
+    And Nelim's Pickle Tools: the camera frames the head of "Nelim" and "Pip" at root size 2.8
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
@@ -193,26 +205,28 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I let 60 ticks pass
     And Beef Eaters Renew: time is paused
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (191, 151)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (191, 151) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (195, 151)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (195, 151) is lit
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (198, 151)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (198, 151) is lit
-    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (194, 151) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (202, 153) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (193, 151) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (201, 153) fully grown
     And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleLarge" at (201, 151)
-    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female named "Rosa" at (190, 154) facing East
-    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female named "Pip" at (199, 156) facing South
+    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female named "Rosa" at (191, 154) facing East
+    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female named "Pip" at (200, 154) facing West
     And Beef Eaters Renew: I spawn a "BelgianBlueCow" female named "Petite" in life stage 0 at (191, 156) facing East
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" male named "Taureau" at (192, 152) facing East
     And Nelim's Pickle Tools: "Nelim" stands at (197, 156) facing South
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Corset"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Rosa" is forced to walk to (194, 154)
-    And Nelim's Pickle Tools: "Pip" is forced to walk to (199, 153)
+    And Nelim's Pickle Tools: "Pip" is forced to walk to (198, 154)
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (197, 153)
     And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
-    And Nelim's Pickle Tools: I frame the rectangle from (189, 150) to (203, 158)
+    And Nelim's Pickle Tools: I frame the rectangle from (190, 150) to (202, 156)
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
