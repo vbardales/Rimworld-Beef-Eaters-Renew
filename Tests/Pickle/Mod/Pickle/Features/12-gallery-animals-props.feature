@@ -30,8 +30,8 @@
 #
 # PLAN, one line per picture (a time, b decor, c living, d look, e action and instant, f composition, g what it says, j the mod at 268 px).
 #  1 DAWN 07 h, Fog, `right-bank`, WIDE. a: 07 h, fog, 60 ticks set-up then 40 of walk. b: TorchLamp lit (146,134), Plant_Daylily fully grown (145,131), removed after. c: Belgian blue cow "Rosa"
-#    spawned (149,133) facing West, forced to walk to (142,133) (her side view shows the breed's bulk). d: duster + hat, smile. e: Nelim at (144,133) facing South is forced to walk to (144,129),
-#    ahead of the cow so the cow draws behind her; INSTANT: she turns down the bank toward the ford, the cow heads for the water; advance 40 ticks. f: rectangle (136,127)-(152,136), 16 x 9 cells,
+#    spawned (149,133) facing West, forced to walk to (142,133) (her side view shows the breed's bulk). d: duster + hat, smile. e: Nelim at (147,132) facing West is forced to walk to (141,132) (the cell of the v11 run, standable; (144,129) is a tree, ticket 035b),
+#    two cells ahead of the cow (row 133), both in profile; INSTANT: she leads the cow down the bank toward the ford; advance 40 ticks. f: rectangle (136,127)-(152,136), 16 x 9 cells,
 #    torch as the warm spot, fog behind. g: the herd has arrived, the breed is big. j: 120 px per cell, the cow about 3.5 cells = 420 px, 58 px in the thumbnail; her smile reads at full size only.
 #  2 LATE MORNING 11 h, Clear, `flower-garden`, CLOSE. a: 11 h, clear, 60 ticks set-up then 150 ticks of milking. b: the lily and rose field behind (vanilla), two Plant_Rose fully grown in the foreground at
 #    (152,106) and (158,106), removed after. c: cow "Rosa" (154,107) facing East, made full of milk, calf "Petite" (157,108) facing West at her flank. d: hat only, duster off, smile. e: forced job `Milk`
@@ -85,13 +85,13 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: the decor "TorchLamp" at (146, 134) is lit
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (145, 131) fully grown
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female named "Rosa" at (149, 133) facing West
-    And Nelim's Pickle Tools: "Nelim" stands at (144, 133) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (147, 132) facing West
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Beef Eaters Renew: time is paused
-    And Nelim's Pickle Tools: "Rosa" is forced to walk to (142, 133)
-    And Nelim's Pickle Tools: "Nelim" is forced to walk to (144, 129)
+    And Nelim's Pickle Tools: "Rosa" is forced to walk to (143, 133)
+    And Nelim's Pickle Tools: "Nelim" is forced to walk to (141, 132)
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Nelim's Pickle Tools: I frame the rectangle from (136, 127) to (152, 136)
     And Nelim's Sanctuary: Nelim has her own face
