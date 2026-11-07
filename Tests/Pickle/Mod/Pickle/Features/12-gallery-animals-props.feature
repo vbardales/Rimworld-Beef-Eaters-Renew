@@ -223,6 +223,7 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
+    And Nelim's Pickle Tools: the light of the map is logged
     And Beef Eaters Renew: the map is shown alone for a capture
     When I take a screenshot "workshop-4-the-beefalo"
     And Beef Eaters Renew: the interface is shown again
@@ -233,6 +234,7 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And I set the weather to "Clear"
     And Nelim's Sanctuary: I am at the sanctuary "bare-clearing"
     And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the painted zones are hidden
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I let 60 ticks pass
     And Beef Eaters Renew: time is paused
