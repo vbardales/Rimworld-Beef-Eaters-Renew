@@ -232,3 +232,5 @@ Header and scenarios of `12-gallery-animals-props.feature` rewritten (commit bel
 | 3 | enclosure-south 13h | head frame Nelim+Taureau N 3.6 | trough, bales, Hay, food box, logs, torch, daylilies, grass | Taureau face on | hat, smile, walks South to the trough | 5 |
 | 4 | river-bridge 15h | head frame Minus+Nelim N 3.0 | bale, logs, torch, daylily, grass | Pip, Minus cross toward her | duster+hat, smile, waits at the bridge end | 5 |
 | 5 | bare-clearing 17h | rectangle 15 x 8 | wagon, trough, bales, braziers, torches, apple tree, daylilies, grass | Rosa, Petite, Taureau, Pip | duster+hat, smile, walks South beside Pip | 5 |
+
+Ticket c4ba (`20261107-181435-930-c4ba`, feature 12 v14, tree b02e41d, map `wsl-deps.sanctuary-props.map`, evidence `Tests/Pickle/Inbox/20261107-farm-day-v14`) filed 2026-11-07. At RUN_DONE: summary.json, junit.xml, open every capture, `rate-gallery` (image, adequacy, understanding, decoration, all >= 4 or REDO and delete); NEW cells that fail are moved and refiled alone. Virginie sees only candidates.
