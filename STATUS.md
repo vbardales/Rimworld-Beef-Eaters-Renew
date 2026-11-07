@@ -136,15 +136,15 @@ Read: CATALOGUE-ANIMAUX, SANCTUAIRE-LIEUX (colonists/animals/faune/named places/
 
 Updated (first run): scenarios of `12-gallery-animals-props` set hair `Roo_Royal_LongHD` (canon under a hat), `rooboid.hdhair.continued` 3559870636 in `wsl-deps.sanctuary-props.map`. This run, no further file change. Left alone: scene 5 at `plant-garden` (NPT advised `bare-clearing` 2026-10-25; pending with the smile and gesture fixes); outfit "fixture kit (corset, trousers) + cowboy hat + duster" is not an NSB wardrobe row, allowed (rule 4, farm story, shotlist says why); NSB suggests willows and reeds at `river-bridge`/`right-bank`, not used. Mouth: canon is `MouthLipsSmirk`; the default smile is the owner rule of 2026-10-25 (recorded here as "default expression is smiling", exact words not kept: rule 3 wants them quoted, so the smile is a paraphrased validation until Virginie repeats it). Ticket 3e82 holds the old tree: relaunch after the scenario edits.
 
-Places read: 2026-11-06. Tribe read: 2026-11-06. Sync 3 of 2026-11-06 (after shotlist v12): NSB `Docs` unchanged since the first run (`git log --since=2026-11-06` empty), nothing re-opened; only the mod-side rows below follow v12.
+Places read: 2026-11-07. Tribe read: 2026-11-07 (diffs of the day for Nelim and the animals, roster and catalogue unchanged). Sync 4 of 2026-11-07 below the tables. Sync 3 of 2026-11-06 (after shotlist v12): NSB `Docs` unchanged since the first run (`git log --since=2026-11-06` empty), nothing re-opened; only the mod-side rows below follow v12.
 
 | Place | Shots | Changes for the gallery | Last read |
 |---|---|---|---|
-| `right-bank` (144,132) | 1 | 07 h fog; TorchLamp lit (146,134), Plant_Daylily (145,131), removed after; rectangle (136,127)-(152,136) | 2026-11-06 |
-| `flower-garden` (154,105), estimate | 2 | 11 h (was 12); 2 Plant_Rose foreground; frame head of Nelim and Rosa avoids statues, bed | 2026-11-06 |
-| `enclosure-south` (149,214) | 3 | 13 h (was 15); trough (148,218), large bale moved to (144,221), area cleared | 2026-11-06 |
-| `river-bridge` (135,126) | 4 | 15 h (was 17); 2 Plant_YellowTallGrass moved to the east bank (143,123), (143,126) | 2026-11-06 |
-| `bare-clearing` (195,152) | 5 | 17 h (was 19, blue tint); 2 TorchLamp lit, 2 Plant_YellowTallGrass, large bale; rectangle (189,150)-(203,158); `plant-garden` dropped | 2026-11-06 |
+| `right-bank` (144,132) | 1 | 07 h fog; TorchLamp lit (146,134), Plant_Daylily (145,131), removed after; rectangle (136,127)-(152,136) | 2026-11-07 (NSB: à embellir, pas encore jugée; NPT lot 4 launched) |
+| `flower-garden` (154,105), estimate | 2 | 11 h (was 12); 2 Plant_Rose foreground; frame head of Nelim and Rosa avoids statues, bed | 2026-11-07 (NSB: validé, revalidé photo 2e61) |
+| `enclosure-south` (149,214) | 3 | 13 h (was 15); trough (148,218), large bale moved to (144,221), area cleared | 2026-11-07 (NSB: refusé, à embellir; NPT lot 4 launched) |
+| `river-bridge` (135,126) | 4 | 15 h (was 17); 2 Plant_YellowTallGrass moved to the east bank (143,123), (143,126) | 2026-11-07 (NSB: validé 2026-11-06) |
+| `bare-clearing` (195,152) | 5 | 17 h (was 19, blue tint); 2 TorchLamp lit, 2 Plant_YellowTallGrass, large bale; rectangle (189,150)-(203,158); `plant-garden` dropped | 2026-11-07 (NSB: zone libre, decor around not inside) |
 
 | Colonist | Shots | Outfit per shot | Last read | Exceptions |
 |---|---|---|---|---|
@@ -218,3 +218,5 @@ Ticket cbad (`20261106-153646-184-cbad`, feature 12, tree 20d1e80, map `wsl-deps
 - 4 bridge: Pip and Minus blue in river fog, Nelim far on the grass, no link between them, calf cut at the left edge.
 - 5 evening: herd lined up at the left edge, bare brown earth, two torches and a bale only (b weak), Pip small beside Nelim.
 Evidence folder `Tests/Pickle/Inbox/20261106-farm-day-v13` deleted. Check-Status 2026-11-07: `nsb-sync` WARN (NSB changed after Tribe read 2026-11-06). Next, in the GALLERY.md order of 2026-11-07: `/mod-workflow:sync-nsb`, `write-shotlist` v14 (denser decor, face and action readable in the image, herd framed inside), `rate-gallery` to 5 per scene, scenarios, `Check-ShotlistVsScenario.ps1 -Mod BeefEatersRenew`, `review-gallery`, refile.
+
+Sync 4, 2026-11-07 (before shotlist v14). NSB changed on 2026-11-07 (valide lots, animals validated front/side/back, flower-garden revalidated, infirmary and free zones validated, vanometric cell of `emerald-clearing` to be removed). For this mod: `river-bridge` and `flower-garden` validated; `right-bank` and `enclosure-south` still to decorate (NPT lot 4 launched 2026-11-07, our props save carries none of it); `bare-clearing` is a free zone, decor goes around it. Nelim: canon and wardrobe unchanged for our outfit (fixture kit, cowboy hat, duster; every outfit free), hair `Roo_HD_Hair_Highpony`, `Roo_Royal_LongHD` under a hat. Included animals (rule 5) unchanged: BelgianBlueCow and PygmyBeefalo, both shown. No mod file changed by this sync. Consequence for v14: the 2026-11-07 rule on thin decor means the decor must come from our own scene steps (plants, props, torches grouped around the subject), not from NSB places.
