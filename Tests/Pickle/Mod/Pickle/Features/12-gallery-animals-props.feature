@@ -45,9 +45,10 @@
 #        g: feeding time, the huge bull comes to the trough beside her; readable by the trough, hay on the ground, bales, two faces toward the camera. j: the bull about 47 px.
 #        RISK: new cells may be occupied; dense layout may hide her legs (accepted).
 #  4. MID-AFTERNOON 15h, Clear, `river-bridge`, MEDIUM. a: 15h, clear, wind, 60 ticks set-up then 40 of walk. b: Plant_YellowTallGrass fully grown (143, 123) and (143, 126), VFEPD_HayBaleSmall (142, 125), Hay items (145, 125) and (146, 125) NEW (the hay she put out, just ahead of the animals),
-#        TorchLamp lit (142, 126), VFEPD_WoodenLogs (144, 123), Plant_Daylily fully grown (142, 122). v15 first run (b88d): the animals on the planks stayed blue-grey in the river fog, so they now stay on the EAST BANK, off the bridge. c: pygmy beefalo "Pip" (adult female) at (145, 128) facing South (face on),
-#        forced to walk to (145, 126); calf "Minus" (male, life stage 0) at (146, 128) facing South, forced to walk to (146, 127), trailing. d: duster + hat, smile. e: Nelim at (143, 127) facing South is forced to walk to (143, 126), she waits beside the animals and the bale;
-#        INSTANT: the beefalo come down the bank toward the hay, the calf a step behind; advance 40 ticks. f: the camera frames the head of "Minus" and "Nelim" at root size 3.0. g: the little beefalo and her calf come down to the hay beside the farmer; readable by the hay in front of them, the bale and torch, all faces to the camera, the river behind.
+# v16 read (c23b): the beefalo coat is natively blue-grey (sky glow 1.00, Clear, so not fog); scene 4 REDO on size: beefalo 18 px at 268 px, animals far from her; v17 moves them one cell closer and frames Pip and Nelim at 2.6.
+#        TorchLamp lit (142, 126), VFEPD_WoodenLogs (144, 123), Plant_Daylily fully grown (142, 122). v15 first run (b88d): the animals on the planks stayed blue-grey in the river fog, so they now stay on the EAST BANK, off the bridge. c: pygmy beefalo "Pip" (adult female) at (145, 127) facing South (face on),
+#        forced to walk to (144, 126); calf "Minus" (male, life stage 0) at (146, 127) facing South, forced to walk to (145, 126), trailing. d: duster + hat, smile. e: Nelim at (143, 127) facing South is forced to walk to (143, 126), she waits beside the animals and the bale;
+#        INSTANT: the beefalo come down the bank toward the hay, the calf a step behind; advance 40 ticks. f: the camera frames the head of "Pip" and "Nelim" at root size 2.6. g: the little beefalo and her calf come down to the hay beside the farmer; readable by the hay in front of them, the bale and torch, all faces to the camera, the river behind.
 #        j: Pip about 30 px, Minus about 18 px. RISK: east-bank cells (145-146, 124-129) unverified; planks may still show on the left edge, tint may reach the bank (then ask NPT with the cell); light log `the light of the map is logged` in the scenario.
 #  5. LATE AFTERNOON 17h, Clear, `bare-clearing`, WIDE, closing. a: 17h, clear, 60 ticks set-up then 40 of walk. b: AnimalFeedTroughSmall (196, 152) centre, Hay items (196, 154) and (196, 151) NEW (the small trough covers two cells, so the hay is one cell beyond each end), TorchLamp lit (193, 149) and (200, 149),
 #        Brazier lit (190, 152), Plant_YellowTallGrass fully grown (191, 151), (201, 150), (200, 153), VFEPD_HayBaleLarge (189, 154) and (202, 152), VFEPD_HayBaleSmall (198, 155), PlantAppletree fully grown (202, 154), VFEPD_WoodenLogs (190, 150),
@@ -205,19 +206,19 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: the decor "TorchLamp" at (142, 126) is lit
     And Nelim's Pickle Tools: I place the decor "VFEPD_WoodenLogs" at (144, 123)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (142, 122) fully grown
-    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female named "Pip" at (145, 128) facing South
-    And Beef Eaters Renew: I spawn a "PygmyBeefalo" male named "Minus" in life stage 0 at (146, 128) facing South
+    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female named "Pip" at (145, 127) facing South
+    And Beef Eaters Renew: I spawn a "PygmyBeefalo" male named "Minus" in life stage 0 at (146, 127) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (143, 127) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
     And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Corset"
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
-    And Nelim's Pickle Tools: "Pip" is forced to walk to (145, 126)
-    And Nelim's Pickle Tools: "Minus" is forced to walk to (146, 127)
+    And Nelim's Pickle Tools: "Pip" is forced to walk to (144, 126)
+    And Nelim's Pickle Tools: "Minus" is forced to walk to (145, 126)
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (143, 126)
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
-    And Nelim's Pickle Tools: the camera frames the head of "Minus" and "Nelim" at root size 3.0
+    And Nelim's Pickle Tools: the camera frames the head of "Pip" and "Nelim" at root size 2.6
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
