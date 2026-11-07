@@ -150,3 +150,15 @@ Ticket c4ba (`20261107-181435-930-c4ba`, feature 12 v14, tree b02e41d, map `wsl-
 Candidates `Art/Gallery/candidate-v14-2-calf.jpg` and `candidate-v14-3-bull.jpg` (JPEG q85, under 400 KB). Evidence folder deleted from Inbox (read; Inbox lifecycle rule 2026-11-07). Next: write-shotlist v15 for 1, 4, 5 (1: Nelim and Rosa closer together, cow facing her; 4: decor on the bridge, animals nearer to her, ask NPT to hide the river fog; 5: tell NPT about the green band, herd inside the frame), refile those three scenarios alone; Virginie sees 2 and 3 only after 1, 4, 5 are read.
 
 OptionalCompat pass 2026-11-07 (Audit 4.b, 4.e): `Mod/About/OptionalCompat.xml` now declares Animal Gear (`Dylan.AnimalGear`) and Dogs mate (`Mlie.DogsMate`, 2441132298, patch; guarded by `PatchOperationConditional`, which `Check-OptionalCompat.ps1` does not see, INFO only). ADS 2 stays out: `loadBefore` already declares its order. `Check-OptionalCompat.ps1`: OK.
+
+## Shotlist v15, 2026-11-07 (write-shotlist after c4ba; one Opus director pass, remarks kept in the feature header)
+
+Scenes 1, 4, 5 rewritten (feature 12 header and scenarios); 2 and 3 untouched, their candidates stay (`Art/Gallery/candidate-v14-2-calf.jpg`, `candidate-v14-3-bull.jpg`). `Art/Gallery` held no capture of 1, 4, 5, nothing to `git rm`. Drift check `Check-ShotlistVsScenario.ps1`: OK.
+
+| # | change | plan |
+|---|---|---|
+| 1 right-bank 7h, head frame N 3.8 | Rosa spawns (146,133) facing South, walks to (143,132), one cell behind Nelim (141,134) to (141,131): she leads, both face the camera; FoodBox (148,134) = trader's load | 5 |
+| 4 river-bridge 15h, head frame Minus+Nelim N 3.0 | Hay trail (139..141,124) to her bale (142,124), Nelim at (142,127) to (142,125); no deck decor | 5 on paper; blue fog unsolved |
+| 5 bare-clearing 17h, rectangle (188,147)-(203,155) | trough centre (196,152), Rosa and Taureau meet at it from both sides, Pip face on, Nelim steps out; top lowered by 2 against the green band; wagon replaced by a bale (the trader leaves) | 5 on paper; band cut unproven |
+
+Not verified: every new cell, the rectangle against the band height, the fog. Asked NPT 2026-11-07 (message to PickleTools): hide the river fog at `river-bridge` (request B) and what the green band is (request D). Ticket NOT filed: waiting for the answer (GALLERY.md rule: refile after the answer). Then: `file-pickle-ticket` feature 12, filter scenarios 1, 4, 5 alone, map `wsl-deps.sanctuary-props.map`.
