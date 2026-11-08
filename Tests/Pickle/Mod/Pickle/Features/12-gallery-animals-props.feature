@@ -19,7 +19,7 @@
 # Variety: close N 2.8 (2), medium N 3.0, 4.4, 3.6 (4, 1, 3), wide rectangle 16 x 9 (5).
 #
 # NELIM (d), ONE OUTFIT FOR THE WHOLE DAY (continuity rule 2026-10-23). Fixture kit (Apparel_Pants dyed rgb (110, 85, 60) dressed FIRST as in NSB looks, Apparel_Corset dyed rgb (232, 224, 208)), Apparel_CowboyHat dyed rgb (205, 175, 105) on all five pictures,
-# hair Roo_Royal_LongHD under it (Show Hair Under Stuff, 2026-11-08). Apparel_Duster dyed rgb (112, 96, 78) in 1, 4, 5 (morning and afternoon wind), off in 2 and 3 (warm hours). Expression (owner, 2026-11-06, quoted in STATUS.md):
+# hair Roo_Royal_LongHD under it (Hat Hair Control, NSB seed). Apparel_Duster dyed rgb (112, 96, 78) in 1, 4, 5 (morning and afternoon wind), off in 2 and 3 (warm hours). Expression (owner, 2026-11-06, quoted in STATUS.md):
 # she smiles by default: her own face, then `mouth is "MouthLipsSmirk"` and `lids are "LidCheerful"`, capture, no tick between. Map at 20 degrees. Nothing carried (a carried item hid her face).
 # ANIMALS: the mod's own, validated by the owner 2026-11-06 ("Les animaux du mod DOIVENT etre dans la gallery"). None dressed.
 #
