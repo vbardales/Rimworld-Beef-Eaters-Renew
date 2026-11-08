@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Seed for Show Hair Under Stuff (RaccoonCuddler.ShowHair, 3255379190), from NPT's answer of 2026-11-08: both options default to false without a settings file,
+  so hair vanished under the cowboy hat. Both options on.
+-->
+<SettingsBlock>
+  <ModSettings Class="ShowHair.ShowHairSettings">
+    <showUnderUpperHeadGear>True</showUnderUpperHeadGear>
+    <showUnderFullHeadGear>True</showUnderFullHeadGear>
+  </ModSettings>
+</SettingsBlock>

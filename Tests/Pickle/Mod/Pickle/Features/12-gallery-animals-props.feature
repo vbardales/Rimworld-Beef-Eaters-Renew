@@ -96,11 +96,11 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (150, 131) fully grown
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female named "Rosa" at (146, 133) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (142, 134) facing South
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
-    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Corset"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Corset" dyed rgb (232, 224, 208)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
     And Beef Eaters Renew: time is paused
     And Nelim's Pickle Tools: "Rosa" is forced to walk to (144, 132)
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (142, 131)
@@ -122,6 +122,7 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: all animals are removed
     And Nelim's Pickle Tools: I let 60 ticks pass
     And Beef Eaters Renew: time is paused
+    And Nelim's Pickle Tools: the area from (150, 104) to (160, 110) is cleared
     And Nelim's Pickle Tools: I place the decor "Plant_Rose" at (152, 106) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Rose" at (158, 106) fully grown
     And Nelim's Pickle Tools: I place the decor "Milk" at (155, 109)
@@ -133,10 +134,10 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: the animal "Rosa" is full of milk
     And Beef Eaters Renew: I spawn a "BelgianBlueCow" female named "Petite" in life stage 0 at (151, 107) facing East
     And Nelim's Pickle Tools: "Nelim" stands at (157, 107) facing West
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
-    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Corset"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Corset" dyed rgb (232, 224, 208)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Milk" on "Rosa"
     And Nelim's Pickle Tools: I advance the paused game by exactly 150 ticks
     And Nelim's Pickle Tools: the camera frames the head of "Nelim" and "Rosa" at root size 2.8
@@ -173,10 +174,10 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (151, 216) fully grown
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" male named "Taureau" at (149, 221) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (147, 221) facing South
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
-    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Corset"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Corset" dyed rgb (232, 224, 208)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
     And Nelim's Pickle Tools: "Taureau" is forced to walk to (149, 219)
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (147, 218)
     And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
@@ -209,11 +210,11 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female named "Pip" at (145, 127) facing South
     And Beef Eaters Renew: I spawn a "PygmyBeefalo" male named "Minus" in life stage 0 at (146, 127) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (143, 127) facing South
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
-    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Corset"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Corset" dyed rgb (232, 224, 208)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
     And Nelim's Pickle Tools: "Pip" is forced to walk to (144, 126)
     And Nelim's Pickle Tools: "Minus" is forced to walk to (145, 126)
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (143, 126)
@@ -263,11 +264,11 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Beef Eaters Renew: I spawn a "BelgianBlueCow" female named "Petite" in life stage 0 at (192, 150) facing East
     And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" male named "Taureau" at (201, 152) facing West
     And Nelim's Pickle Tools: "Nelim" stands at (196, 150) facing South
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
-    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Corset"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Corset" dyed rgb (232, 224, 208)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" made of "Cloth"
     And Nelim's Pickle Tools: "Rosa" is forced to walk to (195, 152)
     And Nelim's Pickle Tools: "Petite" is forced to walk to (194, 150)
     And Nelim's Pickle Tools: "Taureau" is forced to walk to (197, 152)
