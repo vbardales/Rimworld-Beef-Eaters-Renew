@@ -123,11 +123,11 @@ owner is asked (`GALLERY.md`).
 | Order | File | What it shows | Source |
 |---|---|---|---|
 | 0 | `0-preview.png` | Copy of `Mod/About/Preview.png`, byte for byte | Done |
-| 1 | `1-dawn-herd.jpg` | Dawn on the river bank, Nelim leads the Belgian blue cow in | Pickle `12-gallery-animals-props`, scene 1, run v16; candidate, awaits the owner |
-| 2 | `2-milk-calf.jpg` | Noon in the lily field, Nelim milks the cow, her calf looks on | scene 2, run v14; candidate, awaits the owner |
-| 3 | `3-bull-trough.jpg` | Afternoon, the bull face on behind the trough | scene 3, run v14; candidate, awaits the owner |
-| 4 | `4-beefalo-bridge.jpg` | Mid-afternoon, the pygmy beefalo and her calf come down to the hay | scene 4, run v17; candidate, awaits the owner |
-| 5 | `5-herd-evening.jpg` | Evening, the whole herd meets at the trough | scene 5, run v16; candidate, awaits the owner |
+| 1 | (to redo) | Dawn on the river bank, Nelim leads the Belgian blue cow in | refused by the owner 2026-11-08 (no hair under the hat, no trousers); deleted, scene to refile |
+| 2 | (to redo) | Noon in the lily field, Nelim milks the cow, her calf looks on | refused by the owner 2026-11-08 (lip bug, no trousers, no hair); deleted, scene to refile |
+| 3 | (to redo) | Afternoon, the bull face on behind the trough | refused by the owner 2026-11-08 (no hair, no trousers); deleted, scene to refile |
+| 4 | (to redo) | Mid-afternoon, the pygmy beefalo and her calf come down to the hay | refused by the owner 2026-11-08 (no hair, no trousers); deleted, scene to refile |
+| 5 | (to redo) | Evening, the whole herd meets at the trough | refused by the owner 2026-11-08 (no hair, no trousers); deleted, scene to refile |
 
 The farm day (2026-11-08, five pictures of one day) replaced the three pictures accepted on 2026-10-17 (`1-cow-calf`, `2-bull-face-on`, `3-barn-both`, removed with `git rm`; git keeps them). The owner has not yet accepted or refused the five; subtitles are burned in ahead of her answer, redo from `Art/Gallery-clean/` if one changes or is refused. Images in `Art/Gallery/` are the subtitled ones; unsubtitled originals are in `Art/Gallery-clean/` (`.jpg`, same names).
 ## Gallery subtitles
@@ -136,11 +136,11 @@ One English line at the bottom of each scene without an interface window (`GALLE
 
 | Index | File | Line |
 |---|---|---|
-| 1 | `1-dawn-herd.jpg` | Dawn on the river bank: Nelim leads the Belgian blue cow in. |
-| 2 | `2-milk-calf.jpg` | Noon in the lily field: Nelim milks the cow while her calf looks on. |
-| 3 | `3-bull-trough.jpg` | Afternoon: the Belgian blue bull, face on, behind the trough. |
-| 4 | `4-beefalo-bridge.jpg` | Mid-afternoon: the pygmy beefalo and her calf come down to the hay. |
-| 5 | `5-herd-evening.jpg` | Evening: the whole herd meets at the trough. |
+| 1 | (to redo) | Dawn on the river bank: Nelim leads the Belgian blue cow in. |
+| 2 | (to redo) | Noon in the lily field: Nelim milks the cow while her calf looks on. |
+| 3 | (to redo) | Afternoon: the Belgian blue bull, face on, behind the trough. |
+| 4 | (to redo) | Mid-afternoon: the pygmy beefalo and her calf come down to the hay. |
+| 5 | (to redo) | Evening: the whole herd meets at the trough. |
 
 ## Dependencies and DLCs
 
