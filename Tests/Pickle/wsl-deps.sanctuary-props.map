@@ -42,4 +42,6 @@ OskarPotocki.VanillaFactionsExpanded.Core 2023507013
 dismarzero.VGP.VGPVegetableGarden 2007061826
 Mlie.AnimalFeedTrough 2071757940
 VanillaExpanded.VFEPropsandDecor 2102143149
+# Vanilla Hair Expanded: Roo's HD Hairstyles builds on it (NSB map lists it; this map lacked it, 2026-11-08: Roo_Royal_LongHD may not have loaded, no hair in the captures).
+VanillaExpanded.VHE 1888705256
 rooboid.hdhair.continued 3559870636
