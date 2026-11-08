@@ -4,7 +4,7 @@
     "titleParts": [
       { "text": "Beef Eaters" },
       { "text": "Renew (unofficial)", "suffix": true }
-    ],    
+    ],
     "description": "A cow bred to be all meat, and a much smaller muffalo crossbreed."
   },
   "background": { "file": "Preview-source.png" },
