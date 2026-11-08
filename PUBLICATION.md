@@ -123,20 +123,24 @@ owner is asked (`GALLERY.md`).
 | Order | File | What it shows | Source |
 |---|---|---|---|
 | 0 | `0-preview.png` | Copy of `Mod/About/Preview.png`, byte for byte | Done |
-| 1 | `1-cow-calf.jpg` | Noon, the Belgian blue cow and her calf in the pen | Pickle `10-gallery-animals`, run v6b; accepted |
-| 2 | `2-bull-face-on.jpg` | Afternoon, the bull face on at the fence, Nelim for scale | run v8; accepted |
-| 3 | `3-barn-both.jpg` | Dusk, the barn: cow and beefalo side by side, the size gap | run v6b; accepted |
+| 1 | `1-dawn-herd.jpg` | Dawn on the river bank, Nelim leads the Belgian blue cow in | Pickle `12-gallery-animals-props`, scene 1, run v16; candidate, awaits the owner |
+| 2 | `2-milk-calf.jpg` | Noon in the lily field, Nelim milks the cow, her calf looks on | scene 2, run v14; candidate, awaits the owner |
+| 3 | `3-bull-trough.jpg` | Afternoon, the bull face on behind the trough | scene 3, run v14; candidate, awaits the owner |
+| 4 | `4-beefalo-bridge.jpg` | Mid-afternoon, the pygmy beefalo and her calf come down to the hay | scene 4, run v17; candidate, awaits the owner |
+| 5 | `5-herd-evening.jpg` | Evening, the whole herd meets at the trough | scene 5, run v16; candidate, awaits the owner |
 
-The beefalo evening scene (v8, torch) was refused by the owner on 2026-10-17. The farm day replaces the three accepted pictures above once its captures are read and accepted: 1 dawn at the river with the cow, 2 noon at the lily field with the cow, her calf and a jug of milk, 3 the bull face on at the trough, 4 the pygmy beefalo and its calf on the bridge, 5 the plant garden at evening with both animals side by side (the weakest, fallback in the feature header). Until then this table stays as accepted. Images are the subtitled ones; unsubtitled originals are in `Art/Gallery-clean/` (`.jpg`).
+The farm day (2026-11-08, five pictures of one day) replaced the three pictures accepted on 2026-10-17 (`1-cow-calf`, `2-bull-face-on`, `3-barn-both`, removed with `git rm`; git keeps them). The owner has not yet accepted or refused the five; subtitles are burned in ahead of her answer, redo from `Art/Gallery-clean/` if one changes or is refused. Images in `Art/Gallery/` are the subtitled ones; unsubtitled originals are in `Art/Gallery-clean/` (`.jpg`, same names).
 ## Gallery subtitles
 
-One English line at the bottom of each scene without an interface window (`GALLERY.md`, "Sous-titres"). `0-` carries none. Lines describe what each capture shows; the hay lies on the ground in every pen image, so no line says Nelim feeds an animal. Applied 2026-10-17 with `scripts/Add-Subtitle.ps1` from the originals in `Art/Gallery-clean/`.
+One English line at the bottom of each scene without an interface window (`GALLERY.md`, "Sous-titres"). `0-` carries none. Lines describe what each capture shows; the hay lies on the ground in every pen image, so no line says Nelim feeds an animal. Applied 2026-11-08 with `scripts/Add-Subtitle.ps1` from the originals in `Art/Gallery-clean/`.
 
 | Index | File | Line |
 |---|---|---|
-| 1 | `1-cow-calf.jpg` | Noon: the Belgian blue cow and her calf in the pen. |
-| 2 | `2-bull-face-on.jpg` | Afternoon: the Belgian blue bull, face on, at the fence. |
-| 3 | `3-barn-both.jpg` | Dusk in the barn: the cow and the beefalo side by side. |
+| 1 | `1-dawn-herd.jpg` | Dawn on the river bank: Nelim leads the Belgian blue cow in. |
+| 2 | `2-milk-calf.jpg` | Noon in the lily field: Nelim milks the cow while her calf looks on. |
+| 3 | `3-bull-trough.jpg` | Afternoon: the Belgian blue bull, face on, behind the trough. |
+| 4 | `4-beefalo-bridge.jpg` | Mid-afternoon: the pygmy beefalo and her calf come down to the hay. |
+| 5 | `5-herd-evening.jpg` | Evening: the whole herd meets at the trough. |
 
 ## Dependencies and DLCs
 
