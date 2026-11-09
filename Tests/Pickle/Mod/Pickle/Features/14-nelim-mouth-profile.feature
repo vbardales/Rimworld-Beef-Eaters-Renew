@@ -44,3 +44,34 @@ Feature: Nelim mouth in profile (diagnostic)
     And Nelim's Pickle Tools: "Nelim" faces West
     And I wait 30 ticks
     And I take a screenshot "mouth-B-west"
+
+  # Beauty2 mouth patch (SaB, Harmony postfix, 2026-11-09): sweep of D, east then west, four values. Head untouched (Beauty2, her SaB head).
+  Scenario: mouth-sweep - Beauty2 mouth offset 0.02 0.03 0.04 0.05, east then west
+    Given Nelim's Pickle Tools: the face parts of "Nelim" are logged
+    And Nelim's Pickle Tools: "Nelim" waits in place
+    And Nelim's Pickle Tools: the Beauty2 mouth offset is 0.02
+    And I wait 60 ticks
+    When Nelim's Pickle Tools: the camera frames the head of "Nelim" at root size 2
+    And I wait 30 ticks
+    And I take a screenshot "sweep-020-east"
+    And Nelim's Pickle Tools: "Nelim" faces West
+    And I wait 30 ticks
+    And I take a screenshot "sweep-020-west"
+    And Nelim's Pickle Tools: the Beauty2 mouth offset is 0.03
+    And I wait 10 ticks
+    And I take a screenshot "sweep-030-west"
+    And Nelim's Pickle Tools: "Nelim" faces East
+    And I wait 30 ticks
+    And I take a screenshot "sweep-030-east"
+    And Nelim's Pickle Tools: the Beauty2 mouth offset is 0.04
+    And I wait 10 ticks
+    And I take a screenshot "sweep-040-east"
+    And Nelim's Pickle Tools: "Nelim" faces West
+    And I wait 30 ticks
+    And I take a screenshot "sweep-040-west"
+    And Nelim's Pickle Tools: the Beauty2 mouth offset is 0.05
+    And I wait 10 ticks
+    And I take a screenshot "sweep-050-west"
+    And Nelim's Pickle Tools: "Nelim" faces East
+    And I wait 30 ticks
+    And I take a screenshot "sweep-050-east"
