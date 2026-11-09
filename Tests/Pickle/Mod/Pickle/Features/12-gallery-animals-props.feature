@@ -33,7 +33,7 @@
 #        e: Nelim at (142, 134) facing South is forced to walk to (142, 131), a step ahead; INSTANT: she has just led the cow off the trader's wagon, both mid-stride toward the camera; advance 60 ticks. f: the camera frames the head of "Nelim" and "Rosa" at root size 4.4
 #        (about 12 x 7 cells), wagon and fires behind them. g: a farmer leads her new cow down from the trader's wagon at dawn; readable by the wagon and its load behind, the cow following her, both faces to the camera, the lit fires. j: the cow about 68 px.
 #        RISK: (146, 133) or (141, 134) may not be standable (v12: (144, 129) is a tree); 07 h may tint the coat (then 08 h); flat fog on the water side (frame shifted east by the cow cell).
-#  2. LATE MORNING 11h, Clear, `flower-garden`, CLOSE. a: 11h, clear, 60 ticks set-up then 150 of milking. b: the lily and rose field behind (vanilla), Plant_Rose fully grown (152, 106) and (158, 106), Milk item (155, 109) (moved 2026-11-08 off the rose row, owner refusal) NEW (reads as a jug),
+#  2. LATE MORNING 11h, Clear, `flower-garden`, CLOSE. a: 11h, clear, 60 ticks set-up then 150 of milking. b: the lily and rose field behind (vanilla), Plant_Rose fully grown (152, 106) and (158, 106), Milk item (157, 107) (moved 2026-11-09 beside the stool, v23 showed it on her hat; head shape HeadPointy after her own face: lips stay inside the outline in profile, ticket a953) NEW (reads as a jug),
 #        Stool (156, 108) NEW, VFEPD_HayBaleSmall (151, 109) NEW, TorchLamp lit (158, 108) NEW. c: cow "Rosa" (154, 107) facing West (v23: flank to the north, so the milker stands north and faces the camera), made full of milk; calf "Petite" (life stage 0) (151, 107) facing East, looking at her mother.
 #        d: hat only, duster off, smile. e: Nelim at (154, 108) NEW facing South, forced job `Milk` on Rosa (v22 capture: she stood east of the cow, face hidden by hat and cow flank, lips in profile; now north of the cow, face to the camera); INSTANT: milking half done, the calf waits; advance 150 ticks.
 #        f: the camera frames the head of "Nelim" and "Rosa" at root size 2.8 (statues and the building ghost stay out). g: she milks the new cow while the calf waits; readable by her side pose at the flank, the jug, the stool, the calf looking on.
@@ -126,7 +126,7 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: the area from (154, 108) to (157, 110) is cleared
     And Nelim's Pickle Tools: I place the decor "Plant_Rose" at (152, 106) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Rose" at (158, 106) fully grown
-    And Nelim's Pickle Tools: I place the decor "Milk" at (155, 109)
+    And Nelim's Pickle Tools: I place the decor "Milk" at (157, 107)
     And Nelim's Pickle Tools: I place the decor "Stool" at (156, 108)
     And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleSmall" at (151, 109)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (158, 108)
@@ -143,6 +143,7 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: I advance the paused game by exactly 150 ticks
     And Nelim's Pickle Tools: the camera frames the head of "Nelim" and "Rosa" at root size 2.8
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" face head shape is "HeadPointy"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
