@@ -34,8 +34,8 @@
 #        (about 12 x 7 cells), wagon and fires behind them. g: a farmer leads her new cow down from the trader's wagon at dawn; readable by the wagon and its load behind, the cow following her, both faces to the camera, the lit fires. j: the cow about 68 px.
 #        RISK: (146, 133) or (141, 134) may not be standable (v12: (144, 129) is a tree); 07 h may tint the coat (then 08 h); flat fog on the water side (frame shifted east by the cow cell).
 #  2. LATE MORNING 11h, Clear, `flower-garden`, CLOSE. a: 11h, clear, 60 ticks set-up then 150 of milking. b: the lily and rose field behind (vanilla), Plant_Rose fully grown (152, 106) and (158, 106), Milk item (155, 109) (moved 2026-11-08 off the rose row, owner refusal) NEW (reads as a jug),
-#        Stool (156, 108) NEW, VFEPD_HayBaleSmall (151, 109) NEW, TorchLamp lit (158, 108) NEW. c: cow "Rosa" (154, 107) facing South (the face-on animal of the series), made full of milk; calf "Petite" (life stage 0) (151, 107) facing East, looking at her mother.
-#        d: hat only, duster off, smile. e: Nelim at (157, 107) NEW facing West, forced job `Milk` on Rosa (she milks from the side, in profile); INSTANT: milking half done, the calf waits; advance 150 ticks.
+#        Stool (156, 108) NEW, VFEPD_HayBaleSmall (151, 109) NEW, TorchLamp lit (158, 108) NEW. c: cow "Rosa" (154, 107) facing West (v23: flank to the north, so the milker stands north and faces the camera), made full of milk; calf "Petite" (life stage 0) (151, 107) facing East, looking at her mother.
+#        d: hat only, duster off, smile. e: Nelim at (154, 108) NEW facing South, forced job `Milk` on Rosa (v22 capture: she stood east of the cow, face hidden by hat and cow flank, lips in profile; now north of the cow, face to the camera); INSTANT: milking half done, the calf waits; advance 150 ticks.
 #        f: the camera frames the head of "Nelim" and "Rosa" at root size 2.8 (statues and the building ghost stay out). g: she milks the new cow while the calf waits; readable by her side pose at the flank, the jug, the stool, the calf looking on.
 #        j: the cow head about 90 px. RISK: the Milk job may pick another cell (behind the cow): request to NPT for `"Nelim" milks "Rosa" from (x, z)`; the Milk item may not place as decor.
 #  3. EARLY AFTERNOON 13h, Clear, `enclosure-south`, MEDIUM. a: 13h, clear, area (132, 206)-(166, 222) cleared, 60 ticks set-up then 30 of walk. b: AnimalFeedTroughSmall (148, 218), VFEPD_HayBaleLarge (144, 221), VFEPD_HayBaleSmall (146, 218) NEW,
@@ -131,10 +131,10 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleSmall" at (151, 109)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (158, 108)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (158, 108) is lit
-    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female named "Rosa" at (154, 107) facing South
+    And Beef Eaters Renew: I spawn an adult "BelgianBlueCow" female named "Rosa" at (154, 107) facing West
     And Nelim's Pickle Tools: the animal "Rosa" is full of milk
     And Beef Eaters Renew: I spawn a "BelgianBlueCow" female named "Petite" in life stage 0 at (151, 107) facing East
-    And Nelim's Pickle Tools: "Nelim" stands at (157, 107) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (154, 108) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (110, 85, 60)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Corset" dyed rgb (232, 224, 208)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
