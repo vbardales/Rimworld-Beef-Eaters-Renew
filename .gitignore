@@ -34,3 +34,6 @@ Art/.render/
 
 Tests/Pickle/Inbox/
 Tests/Pickle/Parked/
+
+# Local reskin test copy of HannahBug Workshop 2943088425 (never committed, permission not answered)
+Tests/Pickle/Reskin/
