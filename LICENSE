@@ -1,0 +1,24 @@
+MIT License, limited to the parts written by Nelim
+
+Copyright (c) 2026 Nelim
+
+MIT for the parts written by Nelim: the 1.6 update fixes and patches, the French translation,
+the Pickle test suite and scenarios, and the documentation of this repository.
+Third-party material (the Belgian blue cow and the pygmy beefalo, by TheGoofyOne) stays under
+its authors' terms, see ATTRIBUTION.md. The original mod states no licence: this licence is not
+a permission to redistribute it.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of the parts
+named above (the "Software"), to deal in the Software without restriction, including without
+limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or
+substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
