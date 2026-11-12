@@ -15,19 +15,19 @@ First release of the 1.6 update of **Beef Eaters**, by TheGoofyOne.
 
 - **`wildness` moved to `<Wildness>` under `statBases`, on both animals.** It stopped being a field
   of `RaceProperties` in 1.6 and became a StatDef. The old form is not an error, it is simply never
-  read, and the stat's default is `-1` — outside the range the game uses. The Belgian blue's 0.05,
+  read, and the stat's default is `-1` — outside the range the game uses. The Belgian Blue's 0.05,
   which is what makes it nearly born tame, and the pygmy beefalo's 0.5 were both doing nothing.
 - **The pygmy beefalo can be traded.** Its only tag was `StandardAnimal`, which no trader def in
   Core or in any expansion reads — nothing in the game data declares it at all — so the animal could
   be neither bought nor sold in either direction. It now also carries `AnimalFarm`, the tag of the
-  vanilla cow, sheep and chicken, which the Belgian blue already had. Design rather than porting,
+  vanilla cow, sheep and chicken, which the Belgian Blue already had. Design rather than porting,
   and the only change here that is not a repair.
 
 ### Added
 
 - **RimWorld 1.7 declared** in `supportedVersions` after a green 1.7 run (wildness of both animals survives the load, 2 of 2).
 
-- **Optional patches for A Dog Said... Animal Prosthetics 2 and Dogs mate (Continued).** Both are guarded by their own targets and do nothing, and log nothing, without the mod; neither is a dependency. ADS 2: the Belgian blue cow follows the vanilla cow, the pygmy beefalo the muffalo; `loadBefore` ADS 2 in About. Dogs mate: the cow joins the cattle group, the pygmy beefalo the bison group.
+- **Optional patches for A Dog Said... Animal Prosthetics 2 and Dogs mate (Continued).** Both are guarded by their own targets and do nothing, and log nothing, without the mod; neither is a dependency. ADS 2: the Belgian Blue cow follows the vanilla cow, the pygmy beefalo the muffalo; `loadBefore` ADS 2 in About. Dogs mate: the cow joins the cattle group, the pygmy beefalo the bison group.
 
 - **`incompatibleWith` naming `TheGoofyOne.BeefEaters`.** Both mods define `BelgianBlueCow` and
   `PygmyBeefalo` under those names, so with both enabled the last one loaded would win in silence and the

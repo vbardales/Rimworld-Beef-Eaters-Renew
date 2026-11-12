@@ -39,7 +39,7 @@ Two livestock animals, brought forward to the latest RimWorld version: the Belgi
 
 No DLC, no dependency, no assembly. Two animals and a few guarded XML patches.
 
-I am not the author of this mod. Both animals are TheGoofyOne's. All I did was the work needed to make them run on the current game, and write the French. Credit goes to them; mistakes in the update are mine.
+I am not the author of this mod. Both animals are TheGoofyOne's. All I did was the work needed to make them run on the current game, and provide the French translation. Credit goes to them; mistakes in the update are mine.
 
 Original mod: [Beef Eaters](https://steamcommunity.com/sharedfiles/filedetails/?id=1988048034), last updated in March 2023. Abandoned, not withdrawn.
 
@@ -170,7 +170,7 @@ drawn from `TEST_SCENARIOS.md`; it is hers to change.
 
 ## Mature content checkboxes
 
-**None of them.** The mod adds two livestock animals. The Preview and ModIcon were opened; the three
+**None of them.** The mod adds two livestock animals. The Preview and ModIcon were opened; the five
 gallery images were refused on 2026-11-08 and are being redone; each new image must be opened before
 this answer is final.
 
