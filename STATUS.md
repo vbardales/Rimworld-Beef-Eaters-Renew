@@ -262,3 +262,11 @@ Reskin captures 2026-11-09 (Virginie: "fais également des captures avec le resk
 ## Resume 2026-11-12
 
 Protocols read to 52ea911e (`Mark-ProtocolsRead -Force`: only `docs/inventory/summary.md` was dirty, not read). Inbox checked: `20261109-mouth-patch-d03` (dd2c + c09b, 2/2 passed) and `20261109-farm-day-reskin` (a25a, scenes 1 and 2 passed, `exitReason` in-progress in summary.json, evidence-complete). Lip patch: east captures of mouth-A (D 0.03) and sweep 0.02, 0.03, 0.05 are pixel-identical to the eye, lower lip still past the outline; Player.log has no Harmony error nor "GetOffsetInner", so the run shows no patch effect (run of 2026-11-09, patch state then unproven). SaB has since filed its own ticket b25c (`sanctuary-beauty2-mouth.feature`): the lip test is now SaB's; this mod waits for its verdict, then refiles scene 2 (feature 12, no HeadPointy). Mouth evidence deleted after reading. Reskin captures (comparison only, nothing bundled, HannahBug unanswered) sent to Virginie; evidence kept until she has seen them. Gallery state unchanged: candidates v22 1, 3, 4, 5 not yet subtitled, scene 2 REDO. Check-Status warns: `nsb-sync` and `npt-sync` (run `/mod-workflow:sync-nsb-npt` before the scene 2 rewrite), STATUS.md 61 KB (journal to `docs/runs/`).
+
+## Ecosystem, 2026-11-12 (AUDIT 8.0, scan of 2026-11-12)
+
+| packageId | type | relation |
+|---|---|---|
+| `Mlie.NoVersionWarning` | link | its `1.5/ModIdsToFix.xml` lists the original id (matched_on original-id): version-warning helper, nothing to play or patch. |
+
+Not in the worklist of item 24 (not one of the 20 mods). TM missions 2026-11-12 read: done here = items 0, 3 (Inbox checked), 14 (.gitignore holds desktop.ini, Inbox, Parked, Evidence), 15, 23; item 7 checked (no `layout: panel`, no "Nelim's" title change made: not told by Audit that this mod is one of the 16). Not done: item 5 test shape (waits the 0.1.0 prepublication gate), item 2 and 13 review-translation (translation_fr complete, validated review stands per 2b, next run regenerates `TRANSLATION_REVIEW.md` and removes `FRENCH_REVIEW.md`), replay-audit (item 6).
