@@ -6,7 +6,7 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>BelgianBlueCow</defName>
     <label>belgian blue cow</label>
-    <description>A huge domesticated ungulate, belgian blue cows have been bred to produce huge amounts of milk and muscle. They are exceptionally slow and gentle creatures and will never seek revenge, no matter how many times they are harmed. Most of them are so adapted to farm life that they cannot survive in the wild.</description>
+    <description>A huge domesticated ungulate, Belgian Blue cows have been bred to produce huge amounts of milk and muscle. They are exceptionally slow and gentle creatures and will never seek revenge, no matter how many times they are harmed. Most of them are so adapted to farm life that they cannot survive in the wild.</description>
     <statBases>
       <Wildness>0.05</Wildness>
       <MoveSpeed>0.8</MoveSpeed>

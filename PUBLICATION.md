@@ -11,7 +11,7 @@ yet (the comments of the table below are tracked there). The workflow stage is `
 
 Only what is specific to this mod; the gates themselves are in `AUDIT.md`.
 
-- The gallery is being redone as five pictures of one farm day (`12-gallery-animals-props`, tickets 0156 and f8eb waiting, 2026-10-19); the beefalo alone is in picture 4, on the bridge. Nothing is accepted yet (see "Screenshots").
+- The gallery is being redone as five pictures of one farm day (`12-gallery-animals-props`, tickets 0156 and f8eb waiting, 2026-10-19); the pygmy beefalo and her calf are in picture 4, near the hay. The five first pictures were refused on 2026-11-08 and deleted; nothing is accepted yet (see "Screenshots").
 - The echo review (`echo_review_sha`) and the owner's review of this file and `CHANGELOG.md`
   (`publication_changelog_review_sha`) are not done.
 - The rollback target cannot exist before the first publish (see "Fail fast").
@@ -129,7 +129,7 @@ owner is asked (`GALLERY.md`).
 | 4 | (to redo) | Mid-afternoon, the pygmy beefalo and her calf come down to the hay | refused by the owner 2026-11-08 (no hair, no trousers); deleted, scene to refile |
 | 5 | (to redo) | Evening, the whole herd meets at the trough | refused by the owner 2026-11-08 (no hair, no trousers); deleted, scene to refile |
 
-The farm day (2026-11-08, five pictures of one day) replaced the three pictures accepted on 2026-10-17 (`1-cow-calf`, `2-bull-face-on`, `3-barn-both`, removed with `git rm`; git keeps them). The owner has not yet accepted or refused the five; subtitles are burned in ahead of her answer, redo from `Art/Gallery-clean/` if one changes or is refused. Images in `Art/Gallery/` are the subtitled ones; unsubtitled originals are in `Art/Gallery-clean/` (`.jpg`, same names).
+The farm day (2026-11-08, five pictures of one day) replaced the three pictures accepted on 2026-10-17 (`1-cow-calf`, `2-bull-face-on`, `3-barn-both`, removed with `git rm`; git keeps them). The five farm-day images were refused by the owner on 2026-11-08 and deleted; any replacement is recreated from its scene, and the subtitled images go in `Art/Gallery/` with the clean originals in `Art/Gallery-clean/` (`.jpg`, same names).
 ## Gallery subtitles
 
 One English line at the bottom of each scene without an interface window (`GALLERY.md`, "Sous-titres"). `0-` carries none. Lines describe what each capture shows; the hay lies on the ground in every pen image, so no line says Nelim feeds an animal. Applied 2026-11-08 with `scripts/Add-Subtitle.ps1` from the originals in `Art/Gallery-clean/`.
@@ -171,8 +171,8 @@ drawn from `TEST_SCENARIOS.md`; it is hers to change.
 ## Mature content checkboxes
 
 **None of them.** The mod adds two livestock animals. The Preview and ModIcon were opened; the three
-accepted gallery images were opened on 2026-10-17; a picture of the beefalo alone is still to be shot,
-and it must be opened too before this answer is final.
+gallery images were refused on 2026-11-08 and are being redone; each new image must be opened before
+this answer is final.
 
 ## Steam change notes
 

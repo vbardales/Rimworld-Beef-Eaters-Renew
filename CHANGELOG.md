@@ -33,7 +33,7 @@ First release of the 1.6 update of **Beef Eaters**, by TheGoofyOne.
   `PygmyBeefalo` under those names, so with both enabled the last one loaded would win in silence and the
   wildness fault came back with it.
 - **French translation**, covering both animals' names, descriptions, bull/calf labels and
-  plurals, named attacks, and the optional Animal Gear armour: 21 owned text fields, all covered.
+  plurals, named attacks, and the optional Animal Gear armour: 19 owned text fields, all covered.
   English is supplied by the original Def values; no redundant English DefInjected file.
 - **`Mod/About/Preview.png`** (896×504), composed per `STYLE_RIMWORLD.md`, and **`Mod/About/ModIcon.png`** (128×128), made from the owner's own source image. Full-resolution sources and the composition page are kept in
   `Art/`, never in `About/`.
@@ -57,7 +57,7 @@ First release of the 1.6 update of **Beef Eaters**, by TheGoofyOne.
 - **`packageId` dropped its `renew` suffix**: `nelim.beefeatersrenew` → `nelim.beefeaters`.
 - **The mod's own name gained an `(unofficial)` suffix**: `Beef Eaters Renew (unofficial)`.
 - **The description links the original Workshop item and closes with** the exact Steam-formatted
-  `[url=...]Source code on GitHub[/url]` line publication requires.
+  `[url=...]Source code on GitHub[/url]` line required for publication.
 - **The pygmy beefalo was described as the opposite of what it is.** The description called it a
   pen animal rather than a caravan animal: it has no `roamMtbDays`, so it needs no pen, and it
   carries `packAnimal`, so it hauls in a caravan like the muffalo it comes from. It was also
