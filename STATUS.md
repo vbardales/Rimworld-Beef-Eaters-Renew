@@ -276,3 +276,5 @@ Replay-audit 2026-11-12 (ledger ../.replays/BeefEatersRenew-20261112.tsv, Check-
 ## Next (2026-11-13)
 
 - 2026-11-14: read HannahBug's Workshop page and comments (answer to the 2026-10-14 permission request, item 2943088425; `WORKSHOP_COMMENTS.md`). Then test her mod next to ours: is the missing-dependency message only a warning, and does her texture override work with `loadBefore` on her packageId. Owner decided 2026-11-13: no selector, her mod stays separate; nothing bundled before her yes.
+
+- Ecosystem scan 2026-11-13 (owner asked, scoped to this mod: `Search-Workshop.sh -p "nelim\.beefeaters|TheGoofyOne\.BeefEaters|1988048034|3811290251" -i "*.xml" -n beefeaters-eco`, 5166 folders read, 9 hits): only the original, our own two copies (Workshop and Mods), and Mlie.NoVersionWarning (ModIdsToFix.xml, link). No patch, retexture, translation or fork of ours in the installed corpus. HannahBug's reskin (2943088425) is not installed here, so the scan cannot see it. Not the full AUDIT 8.0 pass (that is Audit's, shared, writes docs/inventory/ecosystem.tsv).
