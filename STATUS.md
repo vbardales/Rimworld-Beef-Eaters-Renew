@@ -292,3 +292,5 @@ Replay-audit 2026-11-12 (ledger ../.replays/BeefEatersRenew-20261112.tsv, Check-
 - Titles: French title decided (Mangeurs de bœuf, renouvelés, non-officiels), in `Docs/review-names.md` and the registry; not used in game text. Other mod names kept in English (`Docs/review-refusals.md`). Steam ecosystem study by PiI copied above.
 - Gallery: v22 candidates 1, 3, 4, 5 sit unsubtitled in `Art/Gallery/` (named candidate-v22-*); `Art/Gallery-clean/` does not exist yet. To do: create it, move the clean originals, write the lines in PUBLICATION.md, burn subtitles with Add-Subtitle.ps1, review, one message to Virginie.
 - STATUS.md is 67 KB: move the journal to docs/runs/. About.xml description lacks the "Source code on GitHub" footer (ModBasics warning). Re-read changed protocols (Check-Status INFO) then Mark-ProtocolsRead.ps1.
+
+- 2026-11-14 languages (owner question): PiI (`ecosystem-steam/BeefEatersRenew.md`) found no translation of the original; the original (1988048034) has no `Languages/` (English only in Defs). Nothing to integrate under AUDIT 6.c (2026-11-14). Mod ships English (Defs) and `Mod/Languages/French/`.
