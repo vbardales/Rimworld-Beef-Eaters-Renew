@@ -195,6 +195,8 @@ First release. Port of TheGoofyOne's Beef Eaters to the current RimWorld version
 [/list]
 
 No balance value was changed.
+
+[url=https://github.com/vbardales/Rimworld-Beef-Eaters-Renew/blob/main/CHANGELOG.md]Full changelog[/url]
 ```
 
 ## Fail fast: the rollback target
