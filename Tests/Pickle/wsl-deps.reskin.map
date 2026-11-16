@@ -1,0 +1,3 @@
+# HannahBug reskin compat pass (AUDIT 8.f, 2026-11-17): nelim.beefeaters plus the local test copy of the reskin (Workshop 2943088425), loading after.
+nelim.pickletools.textureowner   path:PickleTools/TextureOwner/Mod
+HB.Reskin.BeefEaters path:BeefEatersRenew/Tests/Pickle/Reskin/HB
