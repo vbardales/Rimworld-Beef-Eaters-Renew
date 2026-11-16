@@ -129,3 +129,7 @@ Protocols read to ef3f76cd (AUDIT 8.m: `Mod/ATTRIBUTION.md` and `Mod/LICENSE*` n
 
 - Closed 2026-11-17: ticket 476e (`06-labels-french`) passed 2/2; SaB lip verdict received (c4f2 green).
 - Stage `playTests[1.0.0]` (replay 2026-11-16): still open 8.f (combined pass with the HannahBug reskin 2943088425, a row of the ecosystem-links block; a25a evidence in `Tests/Pickle/Parked/20261109-farm-day-reskin`), 8.b (Virginie reading of the 2026-11-12 wording not recorded), 8.a (freeze the tested version once 476e and 8.f are green). 8.m done (review clean, `code_review_sha` at cf0bf11 tree). Then back to `writeShotlist`/`shootGallery` (candidates v22 1, 3, 4, 5 to move to `Art/Gallery-clean/` under final names and subtitle, ONE message to Virginie).
+
+## Ticket ca9d, 2026-11-17 (8.f)
+
+Reskin compat scenario `15-reskin-compat.feature` + `wsl-deps.reskin.map` committed (ab966fd): local test copy of HannahBug's reskin (Tests/Pickle/Reskin/HB, gitignored, loads after nelim.beefeaters) answers the three textures, wildness repair still holds. Ticket ca9d (20261117-001809-334-ca9d, tree ab966fd, evidence `Tests/Pickle/Inbox/20261117-reskin-compat`) waiting RUN_DONE. At RUN_DONE read summary.json and junit.xml; green closes 8.f, then 8.a. Parked reskin evidence can then be deleted.
