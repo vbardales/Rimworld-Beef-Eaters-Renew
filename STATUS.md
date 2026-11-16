@@ -9,7 +9,7 @@ repo:         Rimworld-Beef-Eaters-Renew
 visibility:   public
 detached:     yes
 workflow_stage: playTests[1.0.0]
-code_review_sha: f4fe3e1c5a640fc5bd029f024c1f5b7ac43482dd
+code_review_sha: b351785746ee3636667b39fafed240994c78f5d3
 licence:      silent
 licence_at:   browser-verified 2026-09-12; original files, live description, all 29 comments, 9 changelog entries and author profile; no reuse terms; last mod update 2023-03-11
 upstream_mod_remotes: N/A
@@ -133,3 +133,7 @@ Protocols read to ef3f76cd (AUDIT 8.m: `Mod/ATTRIBUTION.md` and `Mod/LICENSE*` n
 ## Ticket ca9d, 2026-11-17 (8.f)
 
 Reskin compat scenario `15-reskin-compat.feature` + `wsl-deps.reskin.map` committed (ab966fd): local test copy of HannahBug's reskin (Tests/Pickle/Reskin/HB, gitignored, loads after nelim.beefeaters) answers the three textures, wildness repair still holds. Ticket ca9d (20261117-001809-334-ca9d, tree ab966fd, evidence `Tests/Pickle/Inbox/20261117-reskin-compat`) waiting RUN_DONE. At RUN_DONE read summary.json and junit.xml; green closes 8.f, then 8.a. Parked reskin evidence can then be deleted.
+
+## Review-translation round 1, 2026-11-17
+
+ChatGPT page 1 answered: no proper noun to decide; 1 applied (French `PygmyBeefalo.description` "particulièrement intelligent" to "assez intelligent", matches English "quite intelligent"), 1 rejected as nothing to do (regenerate report: done, `TRANSLATION_REVIEW.md` regenerated). Round recorded with Applied 1: run /review-translation 1 again. 8.m: diff read, one French word in a DefInjected text, no code or defName: `code_review_sha` set to b351785746ee3636667b39fafed240994c78f5d3 ("revue du diff : texte seul"). Ticket ca9d unaffected (scenarios do not read that text).
