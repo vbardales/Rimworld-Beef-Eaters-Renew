@@ -11,4 +11,4 @@ Feature: Beef Eaters Renew — DefInjected labels reach the def in French
     Then Beef Eaters Renew: the animal "BelgianBlueCow" has the label "vache Blanc Bleu Belge"
 
   Scenario: the pygmy beefalo's label is in French
-    Then Beef Eaters Renew: the animal "PygmyBeefalo" has the label "beefalo pygmée"
+    Then Beef Eaters Renew: the animal "PygmyBeefalo" has the label "bœufalo pygmée"
