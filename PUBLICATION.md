@@ -3,17 +3,15 @@
 What the Workshop page needs but the rest of the repository does not hold. It serves twice: for the
 first release, and for whoever takes the mod over.
 
-**Status: drafted, 2026-10-13.** The Workshop item has existed since 2026-10-01 (0.1.0 prepublication,
+**Status: drafted, reread for release 2026-11-17.** The Workshop item has existed since 2026-10-01 (0.1.0 prepublication,
 `Mod/About/PublishedFileId.txt` = 3811290251, Workshop item private, repository public). Nothing of the Workshop page has been posted
-yet (the comments of the table below are tracked there). The workflow stage is `shootGallery[1.0.0]` (see `STATUS.md`).
+yet (the comments of the table below are tracked there). The workflow stage is `writeReleaseDocs[1.0.0]` (see `STATUS.md`).
 
 ## What blocks the publication
 
 Only what is specific to this mod; the gates themselves are in `AUDIT.md`.
 
-- The gallery is being redone as five pictures of one farm day (`12-gallery-animals-props`, tickets 0156 and f8eb waiting, 2026-10-19); the pygmy beefalo and her calf are in picture 4, near the hay. The first five pictures were refused on 2026-11-08 and deleted; nothing is accepted yet (see "Screenshots").
-- The echo review (`echo_review_sha`) and the owner's review of this file and `CHANGELOG.md`
-  (`publication_changelog_review_sha`, last reviewed at 0.1.x, due again for 1.0.x before publish) are not done.
+- The owner's review of this file and `CHANGELOG.md` (`publication_changelog_review_sha`, last reviewed at 0.1.x, due again for 1.0.x before publish) is not done. The gallery (images 0 to 6) and the Preview and echo are validated (2026-11-17).
 - The rollback target cannot exist before the first publish (see "Fail fast").
 - The owner's manual validations (see below).
 
