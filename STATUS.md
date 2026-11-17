@@ -44,7 +44,7 @@ updated:      2026-11-17 (shotlist v25 rated 5, stage writeShotlist to shootGall
 publication_changelog_review_sha: 8d473e4d7d63c0d1752e423ad7f9e79cf976fff0
 echo_review_sha: 1b1623e0b78eba7b585368d2529b1253ba42a7e1
 social_preview_sha256: b37b9090bde9d351414dcbdf05a3134dd586ff75eab7a51e44dbf809d0798744
-protocols_read_sha: 161d23ea994de6aab35c3cabe5af940316d80e1b
+protocols_read_sha: 0599469975dba18dbcba820a237a2e09b993681f
 ---
 # Beef Eaters Renew — status
 
