@@ -128,7 +128,7 @@ owner is asked (`GALLERY.md`).
 | 3 | `3-bull-trough.jpg` | Early afternoon, the bull, face-on, behind the trough | Candidate 2026-11-17 (v22, ticket 8182), subtitled, validated by the owner 2026-11-17 |
 | 4 | `4-beefalo-hay.jpg` | Mid-afternoon, the pygmy beefalo and her calf come down to the hay | Candidate 2026-11-17 (v29, ticket 89db), subtitled, validated by the owner 2026-11-17 |
 | 5 | `5-herd-evening.jpg` | Evening, the whole herd meets at the trough | Candidate 2026-11-17 (v25, ticket f3f5), subtitled, validated by the owner 2026-11-17 |
-| 6 | `6-reskin-herd.jpg` | Early afternoon, the herd at the trough drawn with the HannahBug reskin (2943088425), capture only, nothing of hers bundled | Bonus candidate 2026-11-17 (frame 6 v2, ticket 7468, tree 5057d04), subtitled, awaiting the owner |
+| 6 | `6-reskin-herd.jpg` | Early afternoon, the herd at the trough drawn with the HannahBug reskin (2943088425), capture only, nothing of hers bundled | Bonus candidate 2026-11-17 (frame 6 v2, ticket 7468, tree 5057d04), subtitled, validated by the owner 2026-11-17 (adequacy 3.5, accepted as is) |
 
 The farm day (2026-11-08, five pictures of one day) replaced the three pictures accepted on 2026-10-17 (`1-cow-calf`, `2-bull-face-on`, `3-barn-both`, removed with `git rm`; git keeps them). The five farm-day images were refused by the owner on 2026-11-08 and deleted; any replacement is recreated from its scene, and the subtitled images go in `Art/Gallery/` with the clean originals in `Art/Gallery-clean/` (`.jpg`, same names).
 ## Gallery subtitles
