@@ -14,7 +14,7 @@ First release of the 1.6 update of **Beef Eaters**, by TheGoofyOne.
 ### Fixed
 
 - **`wildness` moved to `<Wildness>` under `statBases`, on both animals.** It stopped being a field
-  of `RaceProperties` in 1.6 and became a StatDef. The old form is not an error, it is simply never
+  of `RaceProperties` in 1.6 and became a StatDef. The old form is not an error; it is simply never
   read, and the stat's default is `-1` — outside the range the game uses. The Belgian Blue's 0.05,
   which is what makes it nearly born tame, and the pygmy beefalo's 0.5 were both doing nothing.
 - **The pygmy beefalo can be traded.** Its only tag was `StandardAnimal`, which no trader def in

@@ -49,7 +49,7 @@ Original mod: [Beef Eaters](https://steamcommunity.com/sharedfiles/filedetails/?
 
 ## What changed
 
-**The repair.** Wildness stopped being a field of the animal and became a stat. The old form is not an error, it is simply never read, and the stat defaults to -1, outside the range the game uses, so the cow written to be nearly born-tame and the beefalo at 50 % both behaved like any other animal. It is now a stat under `statBases` on both, written the way vanilla's own animals write it.
+**The repair.** Wildness stopped being a field of the animal and became a stat. The old form is not an error; it is simply never read, and the stat defaults to -1, outside the range the game uses, so the cow written to be nearly born-tame and the beefalo at 50 % both behaved like any other animal. It is now a stat under `statBases` on both, written the way vanilla's own animals write it.
 
 **On purpose, and not a repair.** The pygmy beefalo's only trade tag was one no trader in the game reads, so nobody could buy or sell it. It now carries AnimalFarm as well, the tag of the vanilla cow, which the Belgian Blue already had. That is design, not porting, and it is said here rather than buried.
 
