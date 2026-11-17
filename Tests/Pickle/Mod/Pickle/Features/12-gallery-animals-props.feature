@@ -1,4 +1,4 @@
-# THE DAY THE HERD MOVED IN, v28 2026-11-17 (score-gallery of v27, ticket 860a 3/3: 1, 2, 4 REDO again: 1 Nelim 12 px at 268, cow far from the wagon story; 2 Nelim stood NORTH of the cow (z 108 is north, the udder is south), drawn on its back, stool empty behind the cow; 4 Pip arrived and stood face on beside Nelim, no approach, Pip 21 px; 1 frame 9 x 4 cells (141, 132)-(149, 135); 2 Nelim at the udder SOUTH of the cow at (154, 106) facing North, stool (153, 106), jug (155, 106); 4 frame 4 x 2 cells (143, 126)-(146, 127), Pip and Minus walk in from the east edge toward the hay, Nelim waits by the bale); before: v27 2026-11-17 (score-gallery of v26, ticket 3caa 3/3: 1, 2, 4 REDO again: 1 Nelim apart from the cow and facing away, 2 Nelim at the cow head not the udder with an empty stool, 4 animals 14 and 20 px at 268; 1 Nelim and Rosa one cell apart walking West together, wagon east in a 11 x 6 frame; 2 Rosa in profile facing West, Nelim at her south flank facing North at the stool, calf east; 4 rectangle 5 x 3 cells, animals walk in from the east edge); before: v26 2026-11-17 (score-gallery of v25, ticket f3f5 4/4: 5 candidate, 1, 2, 4 REDO: Nelim stood still facing the camera in 1 and 4, milker half hidden behind the cow in 2; 1 Nelim and Rosa walk West in profile, wagon in a rectangle frame; 2 Rosa faces South, Nelim at her west flank facing East; 4 Nelim walks East toward the animals, rectangle frame; ); before: v25 2026-11-17 (score-gallery of v22: scenes 1 and 4 REDO on j, frames tightened to 3.0 and 1.8; orientations varied in 4 (Minus West) and 5 (Petite from behind); scene 2 unchanged since v24, SaB lip fix c4f2 green; scene 3 v22 candidate kept); before: sixteenth version (v15b played as ticket 541f, 3/3 passed, 1, 4, 5 REDO again: wagon cropped, no hay in frame in 4, green band at the bottom of 5; 2026-11-07: v14 played as ticket c4ba, 5/5 passed; 2 and 3 are candidates and are NOT rewritten, 1, 4, 5 REDO and rewritten here), written against GALLERY.md "Shotlist : criteres d'une scene a 4/5" (a to k)
+# THE DAY THE HERD MOVED IN, v29 2026-11-17 (score-gallery of v28, ticket c94f 3/3: 2 candidate; 1 REDO: Nelim 15 px stands beside the cow, walk finished, no lead read; 4 REDO: Nelim tiny at the top edge of the frame, no wait read; 1 walk cut to 25 ticks so both are mid-stride, frame 7 x 3 cells (142, 132)-(148, 134), brazier (143, 134), food box (147, 132), targets (139, 133) and (140, 133); 4 Nelim moved to the Pip row (143, 126), bale (143, 127), Pip (148, 126), Minus (149, 127), 20 ticks, frame 6 x 3 cells (142, 125)-(147, 127)); before: v28 2026-11-17 (score-gallery of v27, ticket 860a 3/3: 1, 2, 4 REDO again: 1 Nelim 12 px at 268, cow far from the wagon story; 2 Nelim stood NORTH of the cow (z 108 is north, the udder is south), drawn on its back, stool empty behind the cow; 4 Pip arrived and stood face on beside Nelim, no approach, Pip 21 px; 1 frame 9 x 4 cells (141, 132)-(149, 135); 2 Nelim at the udder SOUTH of the cow at (154, 106) facing North, stool (153, 106), jug (155, 106); 4 frame 4 x 2 cells (143, 126)-(146, 127), Pip and Minus walk in from the east edge toward the hay, Nelim waits by the bale); before: v27 2026-11-17 (score-gallery of v26, ticket 3caa 3/3: 1, 2, 4 REDO again: 1 Nelim apart from the cow and facing away, 2 Nelim at the cow head not the udder with an empty stool, 4 animals 14 and 20 px at 268; 1 Nelim and Rosa one cell apart walking West together, wagon east in a 11 x 6 frame; 2 Rosa in profile facing West, Nelim at her south flank facing North at the stool, calf east; 4 rectangle 5 x 3 cells, animals walk in from the east edge); before: v26 2026-11-17 (score-gallery of v25, ticket f3f5 4/4: 5 candidate, 1, 2, 4 REDO: Nelim stood still facing the camera in 1 and 4, milker half hidden behind the cow in 2; 1 Nelim and Rosa walk West in profile, wagon in a rectangle frame; 2 Rosa faces South, Nelim at her west flank facing East; 4 Nelim walks East toward the animals, rectangle frame; ); before: v25 2026-11-17 (score-gallery of v22: scenes 1 and 4 REDO on j, frames tightened to 3.0 and 1.8; orientations varied in 4 (Minus West) and 5 (Petite from behind); scene 2 unchanged since v24, SaB lip fix c4f2 green; scene 3 v22 candidate kept); before: sixteenth version (v15b played as ticket 541f, 3/3 passed, 1, 4, 5 REDO again: wagon cropped, no hay in frame in 4, green band at the bottom of 5; 2026-11-07: v14 played as ticket c4ba, 5/5 passed; 2 and 3 are candidates and are NOT rewritten, 1, 4, 5 REDO and rewritten here), written against GALLERY.md "Shotlist : criteres d'une scene a 4/5" (a to k)
 # and SanctuaryBacklot/docs/GALERIE.md. Director passes by an Opus sub-agent: v10 (2026-10-23), v11, v12, v13 (2026-11-06), v14 (2026-11-07, one call each), remarks kept below.
 # THE SCENARIOS BELOW FOLLOW IT (not played; every cell marked NEW is unverified until the first run).
 # WHAT c4ba TAUGHT (captures opened 2026-11-07): 1 Nelim small at the far left, cow far right in profile, no link; 4 beefalo blue in river fog on bare planks; 5 green zone band at the top, herd stacked at the left edge over the wagon and brazier. v15 answer: 1 the cow follows Nelim, both face the camera; 4 a hay trail leads the animals to her; 5 herd spread around a central trough, rectangle top lowered, no wagon.
@@ -27,11 +27,11 @@
 # then `I advance the paused game by exactly N ticks`; then the camera, her face, the screenshot.
 #
 # PLAN, one line per picture (a time, b decor, c living, d look, e action and instant, f composition, g what it says and what makes it readable without a caption, j the mod at 268 px).
-#  1. DAWN 7h, Clear, `right-bank`, OPENER. a: 7h, clear, 60 ticks set-up then 60 of walk. b: TorchLamp lit (146, 134), Brazier lit (143, 135), Plant_Daylily fully grown (145, 131), VFEPD_WoodenWagon (148, 134),
-#        VFEPD_WoodenLogs (139, 134), VFEPD_HayBaleMedium (147, 130), VFEPD_FoodBox (146, 136) (the trader's load), Plant_YellowTallGrass fully grown (142, 130), (139, 131), (150, 131); the existing tree on the bank stays as natural decor.
-#        c: Belgian blue cow "Rosa" spawned (146, 133) at the wagon's rear facing West, forced to walk to (142, 133), one cell behind Nelim, so the cow plainly follows her. d: duster + hat, smile.
-#        e: Nelim at (145, 133) facing West is forced to walk to (141, 133), the cow in her tracks, one cell apart (v26: three cells apart, she faced away, REDO; v27 capture: already one cell apart, but 11 x 6 frame made her 12 px, REDO); INSTANT: she has just led the cow off the trader's wagon, both mid-stride along the bank (v25 capture: she stood still facing the camera, REDO); advance 60 ticks. f: rectangle (141, 132)-(149, 135), 9 x 4 cells (v27: 11 x 6), wagon in frame at the east edge, both walkers in profile, about 213 px per cell at 1920.
-#        g: a farmer leads her new cow away from the trader's wagon at dawn; readable by the wagon and its load behind, the cow following her rope-less but in her steps, the lit fires. j: the cow about 77 px at 268 px (v27: about 50 px at the 11 x 6 frame), Nelim about 17 px. RISK: (141..146, 133) may not be standable; wagon moved to (148, 134), footprint unverified; 07 h may tint the coat (then 08 h); flat fog on the water side.
+#  1. DAWN 7h, Clear, `right-bank`, OPENER. a: 7h, clear, 60 ticks set-up then 60 of walk. b: TorchLamp lit (146, 134), Brazier lit (143, 134), Plant_Daylily fully grown (145, 131), VFEPD_WoodenWagon (148, 134),
+#        VFEPD_WoodenLogs (139, 134), VFEPD_HayBaleMedium (147, 130), VFEPD_FoodBox (147, 132) (the trader's load), Plant_YellowTallGrass fully grown (142, 130), (139, 131), (150, 131); the existing tree on the bank stays as natural decor.
+#        c: Belgian blue cow "Rosa" spawned (146, 133) at the wagon's rear facing West, forced to walk to (140, 133), one cell behind Nelim, so the cow plainly follows her. d: duster + hat, smile.
+#        e: Nelim at (145, 133) facing West is forced to walk to (139, 133), the cow in her tracks, one cell apart (v26: three cells apart, she faced away, REDO; v27 capture: already one cell apart, but 11 x 6 frame made her 12 px, REDO); INSTANT: she has just led the cow off the trader's wagon, both mid-stride along the bank (v25 capture: she stood still facing the camera, REDO); advance 25 ticks (v28: 60 ticks, both had arrived and stood, REDO), so both are mid-stride at the west half of the frame. f: rectangle (142, 132)-(148, 134), 7 x 3 cells (v28: 9 x 4, Nelim 15 px), wagon in frame at the east edge, both walkers in profile, about 274 px per cell at 1920.
+#        g: a farmer leads her new cow away from the trader's wagon at dawn; readable by the wagon and its load behind, the cow following her rope-less but in her steps, the lit fires. j: the cow about 85 px at 268 px, Nelim about 19 px (v28: 15 px); the wagon stays at the east edge. RISK: (141..146, 133) may not be standable; wagon moved to (148, 134), footprint unverified; 07 h may tint the coat (then 08 h); flat fog on the water side.
 #  2. LATE MORNING 11h, Clear, `flower-garden`, CLOSE. a: 11h, clear, 60 ticks set-up then 150 of milking. b: the lily and rose field behind (vanilla), Plant_Rose fully grown (152, 105) and (158, 106), Milk item (155, 106) at her feet NEW (reads as a jug),
 #        Stool (153, 106) NEW, VFEPD_HayBaleSmall (151, 109) NEW, TorchLamp lit (158, 108) NEW; Nelim keeps her SanctuaryBacklot head (owner 2026-11-09). c: cow "Rosa" (154, 107) facing West (profile, udder side seen, v26: South face on hid the udder), made full of milk; calf "Petite" (life stage 0) (157, 107) facing West, looking at her mother.
 #        d: hat only, duster off, smile. e: Nelim already STANDS at (154, 106), SOUTH of the cow (z 106 is south of z 107: the udder hangs on the south side, v27 put her at z 108, NORTH, on the cow's back, stool behind the head, REDO), beside the stool, facing North toward the udder, forced job `Milk` on Rosa (she starts adjacent so the cell should not change); INSTANT: milking half done, the calf waits; advance 150 ticks.
@@ -43,13 +43,13 @@
 #        e: Nelim at (147, 221) facing South is forced to walk to (147, 218); INSTANT: she and the bull reach the trough together, about to eat; advance 30 ticks. f: the camera frames the head of "Nelim" and "Taureau" at root size 3.6, fence on top.
 #        g: feeding time, the huge bull comes to the trough beside her; readable by the trough, hay on the ground, bales, two faces toward the camera. j: the bull about 47 px.
 #        RISK: new cells may be occupied; dense layout may hide her legs (accepted).
-#  4. MID-AFTERNOON 15h, Clear, `river-bridge`, MEDIUM. a: 15h, clear, wind, 60 ticks set-up then 40 of walk. b: Plant_YellowTallGrass fully grown (143, 123) and (145, 127), VFEPD_HayBaleSmall (143, 126), Hay items (144, 126) and (145, 126) NEW (the hay she put out, on the animals' path),
+#  4. MID-AFTERNOON 15h, Clear, `river-bridge`, MEDIUM. a: 15h, clear, wind, 60 ticks set-up then 40 of walk. b: Plant_YellowTallGrass fully grown (143, 123) and (145, 127), VFEPD_HayBaleSmall (143, 127), Hay items (144, 126) and (145, 126) NEW (the hay she put out, on the animals' path),
 # v16 read (c23b): the beefalo coat is natively blue-grey (sky glow 1.00, Clear, so not fog). v25 read (f3f5): Nelim stood still facing the camera and Minus was tiny at the back: REDO. v27 read (860a): Pip had ARRIVED and stood face on beside Nelim, no approach read, Pip 21 px, REDO.
-#        TorchLamp lit (144, 127), Plant_Daylily fully grown (142, 122). The animals stay on the EAST BANK, off the bridge. c: pygmy beefalo "Pip" (adult female) spawned (147, 126) OUTSIDE the frame facing West,
-#        forced to walk to (145, 126) onto the hay; calf "Minus" (male, life stage 0) spawned (148, 127) facing West, forced to walk to (146, 127), trailing. d: duster + hat, smile.
-#        e: Nelim STANDS at (143, 127) facing East by the bale, still, waiting with the hay she put out (v27: she walked, Pip arrived beside her);
-#        INSTANT: the beefalo walk in from the east toward the hay and her, mid-stride in profile, the calf a step behind; advance 30 ticks, so Pip has not arrived. f: rectangle (143, 126)-(146, 127), 4 x 2 cells (v27: 5 x 3 gave Pip 21 px, REDO), Nelim, hay, bale, torch, Pip and Minus all in frame. g: the little beefalo and her calf come in to the hay where the farmer waits; readable by the hay in front of them, the bale and torch, both walking West, the river behind.
-#        j: Pip about 27 px, Minus about 33 px at 268 px. RISK: east-bank cells (145-148, 126-127) unverified; planks may show on the left edge, tint may reach the bank (then ask NPT with the cell); light log `the light of the map is logged` in the scenario.
+#        TorchLamp lit (144, 127), Plant_Daylily fully grown (142, 122). The animals stay on the EAST BANK, off the bridge. c: pygmy beefalo "Pip" (adult female) spawned (148, 126) OUTSIDE the frame facing West,
+#        forced to walk to (145, 126) onto the hay; calf "Minus" (male, life stage 0) spawned (149, 127) facing West, forced to walk to (146, 127), trailing. d: duster + hat, smile.
+#        e: Nelim STANDS at (143, 126) facing East in the row of the hay (v28: z 127 put her at the top edge, tiny), still, waiting with the hay she put out (v27: she walked, Pip arrived beside her);
+#        INSTANT: the beefalo walk in from the east toward the hay and her, mid-stride in profile, the calf a step behind; advance 20 ticks, so Pip has not arrived. f: rectangle (142, 125)-(147, 127), 6 x 3 cells with room above and below Nelim (v28: 4 x 2 cut her at the top), Nelim, hay, bale, torch, Pip and Minus all in frame. g: the little beefalo and her calf come in to the hay where the farmer waits; readable by the hay in front of them, the bale and torch, both walking West, the river behind.
+#        j: Pip about 40 px, Minus about 30 px at 268 px. RISK: east-bank cells (145-148, 126-127) unverified; planks may show on the left edge, tint may reach the bank (then ask NPT with the cell); light log `the light of the map is logged` in the scenario.
 #  5. LATE AFTERNOON 17h, Clear, `bare-clearing`, WIDE, closing. a: 17h, clear, 60 ticks set-up then 40 of walk. b: AnimalFeedTroughSmall (196, 152) centre, Hay items (196, 154) and (196, 151) NEW (the small trough covers two cells, so the hay is one cell beyond each end), TorchLamp lit (193, 149) and (200, 149),
 #        Brazier lit (190, 152), Plant_YellowTallGrass fully grown (191, 151), (201, 150), (200, 153), VFEPD_HayBaleLarge (189, 154) and (202, 152), VFEPD_HayBaleSmall (198, 155), PlantAppletree fully grown (202, 154), VFEPD_WoodenLogs (190, 150),
 #        Plant_Daylily fully grown (192, 148), (197, 148), (202, 148), (203, 150) (the trader's wagon of 1 is NOT here: it left with the trader). c: cow "Rosa" (192, 152) facing East, forced to walk to (195, 152); calf "Petite" (life stage 0) (194, 153) facing North (seen from behind: Rosa East, Taureau West, Petite from behind),
@@ -84,13 +84,13 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: I let 60 ticks pass
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (146, 134)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (146, 134) is lit
-    And Nelim's Pickle Tools: I place the decor "Brazier" at (143, 135)
-    And Nelim's Pickle Tools: the decor "Brazier" at (143, 135) is lit
+    And Nelim's Pickle Tools: I place the decor "Brazier" at (143, 134)
+    And Nelim's Pickle Tools: the decor "Brazier" at (143, 134) is lit
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (145, 131) fully grown
     And Nelim's Pickle Tools: I place the decor "VFEPD_WoodenWagon" at (148, 134)
     And Nelim's Pickle Tools: I place the decor "VFEPD_WoodenLogs" at (139, 134)
     And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleMedium" at (147, 130)
-    And Nelim's Pickle Tools: I place the decor "VFEPD_FoodBox" at (146, 136)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_FoodBox" at (147, 132)
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (142, 130) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (139, 131) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (150, 131) fully grown
@@ -102,10 +102,10 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CowboyHat" dyed rgb (205, 175, 105)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Beef Eaters Renew: time is paused
-    And Nelim's Pickle Tools: "Rosa" is forced to walk to (142, 133)
-    And Nelim's Pickle Tools: "Nelim" is forced to walk to (141, 133)
-    And Nelim's Pickle Tools: I advance the paused game by exactly 60 ticks
-    And Nelim's Pickle Tools: I frame the rectangle from (141, 132) to (149, 135)
+    And Nelim's Pickle Tools: "Rosa" is forced to walk to (140, 133)
+    And Nelim's Pickle Tools: "Nelim" is forced to walk to (139, 133)
+    And Nelim's Pickle Tools: I advance the paused game by exactly 25 ticks
+    And Nelim's Pickle Tools: I frame the rectangle from (142, 132) to (148, 134)
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
@@ -203,15 +203,15 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Beef Eaters Renew: time is paused
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 123) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (145, 127) fully grown
-    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleSmall" at (143, 126)
+    And Nelim's Pickle Tools: I place the decor "VFEPD_HayBaleSmall" at (143, 127)
     And Nelim's Pickle Tools: I place the decor "Hay" at (144, 126)
     And Nelim's Pickle Tools: I place the decor "Hay" at (145, 126)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (144, 127)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (144, 127) is lit
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (142, 122) fully grown
-    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female named "Pip" at (147, 126) facing West
-    And Beef Eaters Renew: I spawn a "PygmyBeefalo" male named "Minus" in life stage 0 at (148, 127) facing West
-    And Nelim's Pickle Tools: "Nelim" stands at (143, 127) facing East
+    And Beef Eaters Renew: I spawn an adult "PygmyBeefalo" female named "Pip" at (148, 126) facing West
+    And Beef Eaters Renew: I spawn a "PygmyBeefalo" male named "Minus" in life stage 0 at (149, 127) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (143, 126) facing East
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Pants" dyed rgb (110, 85, 60)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Corset" dyed rgb (232, 224, 208)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_Duster" dyed rgb (112, 96, 78)
@@ -219,8 +219,8 @@ Feature: Beef Eaters Renew Workshop gallery, the day the herd moved in (props va
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Pip" is forced to walk to (145, 126)
     And Nelim's Pickle Tools: "Minus" is forced to walk to (146, 127)
-    And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
-    And Nelim's Pickle Tools: I frame the rectangle from (143, 126) to (146, 127)
+    And Nelim's Pickle Tools: I advance the paused game by exactly 20 ticks
+    And Nelim's Pickle Tools: I frame the rectangle from (142, 125) to (147, 127)
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmirk"
     And Nelim's Pickle Tools: "Nelim" lids are "LidCheerful"
