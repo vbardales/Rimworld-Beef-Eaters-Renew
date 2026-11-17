@@ -5,16 +5,17 @@
       { "text": "Beef Eaters" },
       { "text": "Renew (unofficial)", "suffix": true }
     ],
-    "description": "A cow bred to be all meat, and a much smaller muffalo crossbreed."
+    "description": "A cow bred to be all meat, and a much smaller muffalo crossbreed.",
+    "panelBare": true
   },
   "background": { "file": "Preview-source.png" },
   "echo": { "file": "echo-source.png" },
   "icon": { "file": "ModIcon-source.png", "corner": "bottom-left" },
   "palette": {
-    "veil": "#493723",
+    "veil": "#653C23",
     "inkPrimary": "#F2ECE1",
-    "inkSecondary": "#F0C17E",
-    "accent": "#42C6BB",
+    "inkSecondary": "#F3B680",
+    "accent": "#E8702A",
     "badgeInk": "#17120E"
   }
 }
