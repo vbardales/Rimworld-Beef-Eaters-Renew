@@ -20,7 +20,7 @@ Two livestock animals.
 - **Pygmy beefalo** — a muffalo scaled down to body size 1.0 rather than the muffalo's own 2.4.
   Fifteen years, move speed 4.2, wildness 0.5, trainable to Advanced where the muffalo is trainable
   to nothing at all, milkable and shearable for muffalo wool. It needs no pen, unlike the cow, and
-  it carries a pack in a caravan like the muffalo it comes from.
+  it carries cargo in a caravan, like the muffalo it comes from.
 - An **Animal Gear** patch ships with them, guarded so it only applies when that mod is present.
 
 No DLC required. No Harmony, no framework, no dependency of any kind.
