@@ -1,9 +1,9 @@
 # Publication
 
 What the Workshop page needs but the rest of the repository does not hold. It serves twice: for the
-first release, and for whoever takes the mod over.
+first release, and for whoever takes over the mod.
 
-**Status: drafted, reread for release 2026-11-17.** The Workshop item has existed since 2026-10-01 (0.1.0 prepublication,
+**Status: drafted, release text written 2026-11-17; the owner's review (11.j) is still to do.** The Workshop item has existed since 2026-10-01 (0.1.0 prepublication,
 `Mod/About/PublishedFileId.txt` = 3811290251, Workshop item private, repository public). Nothing of the Workshop page has been posted
 yet (the comments of the table below are tracked there). The workflow stage is `writeReleaseDocs[1.0.0]` (see `STATUS.md`).
 
