@@ -123,11 +123,11 @@ owner is asked (`GALLERY.md`).
 | Order | File | What it shows | Source |
 |---|---|---|---|
 | 0 | `0-preview.png` | Copy of `Mod/About/Preview.png`, byte for byte | Done |
-| 1 | (to redo) | Dawn on the river bank, Nelim leads the Belgian blue cow in | refused by the owner 2026-11-08 (no hair under the hat, no trousers); deleted, scene to refile |
-| 2 | (to redo) | Noon in the lily field, Nelim milks the cow, her calf looks on | refused by the owner 2026-11-08 (lip bug, no trousers, no hair); deleted, scene to refile |
-| 3 | (to redo) | Afternoon, the bull, face-on, behind the trough | refused by the owner 2026-11-08 (no hair, no trousers); deleted, scene to refile |
-| 4 | (to redo) | Mid-afternoon, the pygmy beefalo and her calf come down to the hay | refused by the owner 2026-11-08 (no hair, no trousers); deleted, scene to refile |
-| 5 | (to redo) | Evening, the whole herd meets at the trough | refused by the owner 2026-11-08 (no hair, no trousers); deleted, scene to refile |
+| 1 | `1-dawn-cow.jpg` | Dawn on the river bank, Nelim leads the Belgian blue cow in | Candidate 2026-11-17 (v29, ticket 89db), subtitled, waiting for the owner |
+| 2 | `2-milking-calf.jpg` | Late morning in the lily field, Nelim milks the cow, her calf looks on | Candidate 2026-11-17 (v28, ticket c94f), subtitled, waiting for the owner |
+| 3 | `3-bull-trough.jpg` | Early afternoon, the bull, face-on, behind the trough | Candidate 2026-11-17 (v22, ticket 8182), subtitled, waiting for the owner |
+| 4 | `4-beefalo-hay.jpg` | Mid-afternoon, the pygmy beefalo and her calf come down to the hay | Candidate 2026-11-17 (v29, ticket 89db), subtitled, waiting for the owner |
+| 5 | `5-herd-evening.jpg` | Evening, the whole herd meets at the trough | Candidate 2026-11-17 (v25, ticket f3f5), subtitled, waiting for the owner |
 
 The farm day (2026-11-08, five pictures of one day) replaced the three pictures accepted on 2026-10-17 (`1-cow-calf`, `2-bull-face-on`, `3-barn-both`, removed with `git rm`; git keeps them). The five farm-day images were refused by the owner on 2026-11-08 and deleted; any replacement is recreated from its scene, and the subtitled images go in `Art/Gallery/` with the clean originals in `Art/Gallery-clean/` (`.jpg`, same names).
 ## Gallery subtitles
@@ -136,11 +136,11 @@ One English line at the bottom of each scene without an interface window (`GALLE
 
 | Index | File | Line |
 |---|---|---|
-| 1 | (to redo) | Dawn on the river bank: Nelim leads the Belgian blue cow in. |
-| 2 | (to redo) | Noon in the lily field: Nelim milks the cow while her calf looks on. |
-| 3 | (to redo) | Afternoon: the Belgian blue bull, face-on, behind the trough. |
-| 4 | (to redo) | Mid-afternoon: the pygmy beefalo and her calf come down to the hay. |
-| 5 | (to redo) | Evening: the whole herd meets at the trough. |
+| 1 | `1-dawn-cow.jpg` | Dawn on the river bank: Nelim leads the Belgian blue cow away from the trader's wagon. |
+| 2 | `2-milking-calf.jpg` | Late morning in the lily field: Nelim milks the cow while her calf looks on. |
+| 3 | `3-bull-trough.jpg` | Early afternoon: the Belgian blue bull comes to the trough beside Nelim. |
+| 4 | `4-beefalo-hay.jpg` | Mid-afternoon: the pygmy beefalo and her calf come in to the hay. |
+| 5 | `5-herd-evening.jpg` | Evening: the whole herd is home at the trough. |
 
 ## Dependencies and DLCs
 
