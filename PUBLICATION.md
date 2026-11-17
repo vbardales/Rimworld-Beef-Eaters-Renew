@@ -85,7 +85,7 @@ If I do not answer within a reasonable time after being contacted, anyone may fr
 
 ## AI-generated
 
-The port work (the XML, the patches, the tests, the documentation and the pictures) was done with the help of an AI assistant, Claude (Anthropic), under human direction.
+The port work (the XML, the patches, the tests, the documentation and the pictures) was done with the help of an AI assistant, Claude (Anthropic), under human direction. The Preview image and its line-art echo were generated with DALL-E from screenshots of the game.
 
 ## Thanks
 
