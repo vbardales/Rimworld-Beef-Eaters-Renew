@@ -33,7 +33,7 @@ Stats below were read from `Mod/Defs/Race_BelgianBlueCows.xml` and `Mod/Defs/Rac
 ```markdown
 **UNOFFICIAL.** This mod is published without the original author's explicit consent. If the original author contacts me to request its removal, I undertake to take it down promptly.
 
-Two livestock animals, brought forward to the latest RimWorld version: the Belgian blue cow, all meat and no speed, and the pygmy beefalo, a much smaller muffalo crossbreed.
+Two livestock animals, brought forward to the latest RimWorld version: the Belgian Blue cow, all meat and no speed, and the pygmy beefalo, a much smaller muffalo crossbreed.
 
 No DLC, no dependency, no assembly. Two animals and a few guarded XML patches.
 
@@ -43,7 +43,7 @@ Original mod: [Beef Eaters](https://steamcommunity.com/sharedfiles/filedetails/?
 
 ## What's in it
 
-- The Belgian blue cow. The double-muscled breed, and the stats say so: body size 6.0, the largest thing in most colonies, and a move speed of 0.8, slower than a walking colonist. Wildness 5 %, as close to born-tame as the game allows. Milkable. It needs a pen.
+- The Belgian Blue cow. The double-muscled breed, and the stats say so: body size 6.0, the largest thing in most colonies, and a move speed of 0.8, slower than a walking colonist. Wildness 5 %, as close to born-tame as the game allows. Milkable. It needs a pen.
 - The pygmy beefalo. A muffalo scaled down to body size 1.0 instead of the muffalo's 2.4: fifteen years of life, move speed 4.2, wildness 50 %, trainable to Advanced where the muffalo is not trainable at all, milkable and shearable for muffalo wool. It needs no pen, and it carries a pack in a caravan like the muffalo it comes from.
 - An Animal Gear armour patch, carried over as the author wrote it. It applies only when that mod is present.
 
@@ -51,7 +51,7 @@ Original mod: [Beef Eaters](https://steamcommunity.com/sharedfiles/filedetails/?
 
 **The repair.** Wildness stopped being a field of the animal and became a stat. The old form is not an error, it is simply never read, and the stat defaults to -1, outside the range the game uses, so the cow written to be nearly born-tame and the beefalo at 50 % both behaved like any other animal. It is now a stat under `statBases` on both, written the way vanilla's own animals write it.
 
-**On purpose, and not a repair.** The pygmy beefalo's only trade tag was one no trader in the game reads, so nobody could buy or sell it. It now carries AnimalFarm as well, the tag of the vanilla cow, which the Belgian blue already had. That is design, not porting, and it is said here rather than buried.
+**On purpose, and not a repair.** The pygmy beefalo's only trade tag was one no trader in the game reads, so nobody could buy or sell it. It now carries AnimalFarm as well, the tag of the vanilla cow, which the Belgian Blue already had. That is design, not porting, and it is said here rather than buried.
 
 The original is declared incompatible: both mods define the same two animals under the same names, and the last one loaded would win in silence. Run one or the other.
 
@@ -71,7 +71,7 @@ Nocturnal Animals needed nothing: the cow and the muffalo it follows are both di
 
 TheGoofyOne declared no licence: no file in the mod, nothing in its About.xml, no linked repository, nothing on its Steam page. It is republished here under the usual convention for abandoned mods: full credit, a link to the original, and removal on request. If they would rather this port did not exist, say so and it comes down, no argument, no delay.
 
-Content mod: removing it mid-save destroys any Belgian blue cow or pygmy beefalo already in the colony.
+Content mod: removing it mid-save destroys any Belgian Blue cow or pygmy beefalo already in the colony.
 
 ## Languages
 
@@ -87,7 +87,7 @@ The port work (the XML, the patches, the tests, the documentation and the pictur
 
 ## Thanks
 
-- TheGoofyOne, for the Belgian blue cow and the pygmy beefalo.
+- TheGoofyOne, for the Belgian Blue cow and the pygmy beefalo.
 - SamBucher, for A Dog Said... Animal Prosthetics 2.
 - Mlie, who maintains Dogs mate (Continued), and Revoluss, its original author.
 - The authors of [Pickle](https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678), used to test the port in game. It is for development only and never a dependency of this mod.
@@ -106,7 +106,7 @@ nothing" rests on the 2026-10-01 reading in `STATUS.md`.
 
 - **Preview** (`Mod/About/Preview.png`, 896 x 504, 591 KB): composed by `node ../scripts/Render-Preview.cjs`
   from `Art/Preview-source.png`, `Art/echo-preview.png` and `Art/Preview.config.json`. Known defect noted in
-  `STATUS.md`: it does not show the Belgian blue cow.
+  `STATUS.md`: it does not show the Belgian Blue cow.
 - **ModIcon** (`Mod/About/ModIcon.png`, 128 x 128): from the owner's `Art/ModIcon-source.png`, never edited
   by a session.
 
@@ -121,7 +121,7 @@ owner is asked (`GALLERY.md`).
 | Order | File | What it shows | Source |
 |---|---|---|---|
 | 0 | `0-preview.png` | Copy of `Mod/About/Preview.png`, byte for byte | Done |
-| 1 | `1-dawn-cow.jpg` | Dawn on the river bank, Nelim leads the Belgian blue cow in | Candidate 2026-11-17 (v29, ticket 89db), subtitled, validated by the owner 2026-11-17 |
+| 1 | `1-dawn-cow.jpg` | Dawn on the river bank, Nelim leads the Belgian Blue cow in | Candidate 2026-11-17 (v29, ticket 89db), subtitled, validated by the owner 2026-11-17 |
 | 2 | `2-milking-calf.jpg` | Late morning in the lily field, Nelim milks the cow, her calf looks on | Candidate 2026-11-17 (v28, ticket c94f), subtitled, validated by the owner 2026-11-17 |
 | 3 | `3-bull-trough.jpg` | Early afternoon, the bull, face-on, behind the trough | Candidate 2026-11-17 (v22, ticket 8182), subtitled, validated by the owner 2026-11-17 |
 | 4 | `4-beefalo-hay.jpg` | Mid-afternoon, the pygmy beefalo and her calf come down to the hay | Candidate 2026-11-17 (v29, ticket 89db), subtitled, validated by the owner 2026-11-17 |
@@ -135,9 +135,9 @@ One English line at the bottom of each scene without an interface window (`GALLE
 
 | Index | File | Line |
 |---|---|---|
-| 1 | `1-dawn-cow.jpg` | Dawn on the river bank: Nelim leads the Belgian blue cow away from the trader's wagon. |
+| 1 | `1-dawn-cow.jpg` | Dawn on the river bank: Nelim leads the Belgian Blue cow away from the trader's wagon. |
 | 2 | `2-milking-calf.jpg` | Late morning in the lily field: Nelim milks the cow while her calf looks on. |
-| 3 | `3-bull-trough.jpg` | Early afternoon: the Belgian blue bull comes to the trough beside Nelim. |
+| 3 | `3-bull-trough.jpg` | Early afternoon: the Belgian Blue bull comes to the trough beside Nelim. |
 | 4 | `4-beefalo-hay.jpg` | Mid-afternoon: the pygmy beefalo and her calf come in to the hay. |
 | 5 | `5-herd-evening.jpg` | Evening: the whole herd is home at the trough. |
 | 6 | `6-reskin-herd.jpg` | Early afternoon at the trough, with HannahBug's separate reskin. |
@@ -162,7 +162,7 @@ drawn from `TEST_SCENARIOS.md`; it is hers to change.
 
 | # | What to look at | Why a test cannot |
 |---|---|---|
-| 1 | Subscribe to the item once it exists, start a game with the installed copy, tame a Belgian blue cow: the information card reads Wildness 5 % | The installed copy is what players get; the suite plays the working tree |
+| 1 | Subscribe to the item once it exists, start a game with the installed copy, tame a Belgian Blue cow: the information card reads Wildness 5 % | The installed copy is what players get; the suite plays the working tree |
 | 2 | A real save with either animal, then the mod removed: the animal is destroyed | A changed mod list is the game's handling |
 | 3 | The gallery: which captures, in which order | A composition is a choice |
 | 4 | The description pasted on the page, read once more | The page is edited by hand after creation |
@@ -236,7 +236,7 @@ drafts below are starting points to rewrite, not text to paste.
 ### Dogs mate (Continued), 2441132298
 
 ```
-My Beef Eaters port adds a Belgian blue cow and a pygmy beefalo. The cow joins your cattle group, the beefalo the bison group (its description makes it a bull x muffalo cross). Optional patch, silent without your mod. Thanks! [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811290251]Beef Eaters Renew (unofficial)[/url]
+My Beef Eaters port adds a Belgian Blue cow and a pygmy beefalo. The cow joins your cattle group, the beefalo the bison group (its description makes it a bull x muffalo cross). Optional patch, silent without your mod. Thanks! [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811290251]Beef Eaters Renew (unofficial)[/url]
 ```
 
 ### Beef Eaters (original), 1988048034
@@ -248,7 +248,7 @@ Hi TheGoofyOne! I ported your two animals to the current game (unofficially, cre
 ### Animal Feed Trough (Continued), 2071757940
 
 ```
-The herd of my Beef Eaters port gathers at your trough in the gallery pictures, hay and all. A Belgian blue cow, a bull and a pygmy beefalo, all at one of your troughs, so thank you, and thanks for keeping BaconBits' idea alive. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811290251]Beef Eaters Renew (unofficial)[/url]
+The herd of my Beef Eaters port gathers at your trough in the gallery pictures, hay and all. A Belgian Blue cow, a bull and a pygmy beefalo, all at one of your troughs, so thank you, and thanks for keeping BaconBits' idea alive. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811290251]Beef Eaters Renew (unofficial)[/url]
 ```
 
 Check the last comments of each page first, and whether it takes comments, as `WORKSHOP_COMMENTS.md` asks.

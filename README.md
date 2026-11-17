@@ -2,7 +2,7 @@
 
 UNOFFICIAL. This mod is published without the original author's explicit consent. If the original author contacts me to request its removal, I undertake to take it down promptly.
 
-The Belgian blue cow and the pygmy beefalo, brought forward to RimWorld 1.6.
+The Belgian Blue cow and the pygmy beefalo, brought forward to RimWorld 1.6.
 
 **I am not the author of this mod.** Both animals are TheGoofyOne's; all I did was the work needed
 to make them run on 1.6. Credit goes to them, mistakes in the update are mine.
@@ -14,7 +14,7 @@ Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=1988048034 
 
 Two livestock animals.
 
-- **Belgian blue cow** — the double-muscled breed, and the stats say so. Body size 6.0, the largest
+- **Belgian Blue cow** — the double-muscled breed, and the stats say so. Body size 6.0, the largest
   thing in most colonies, at a move speed of 0.8, slower than a walking colonist. Wildness 0.05,
   about as close to born-tame as the game allows. Milkable.
 - **Pygmy beefalo** — a muffalo scaled down to body size 1.0 rather than the muffalo's own 2.4.
@@ -28,7 +28,7 @@ No DLC required. No Harmony, no framework, no dependency of any kind.
 Languages: English and French. French covers animal names and descriptions, calves, attack
 labels, and the optional Animal Gear armour.
 
-Content mod: removing it mid-save will lose any Belgian blue cow or pygmy beefalo already in play.
+Content mod: removing it mid-save will lose any Belgian Blue cow or pygmy beefalo already in play.
 
 ## What changed in the 1.6 update
 
@@ -40,7 +40,7 @@ One line, twice, and two things found on the way.
   the point of the animal, was doing nothing at all.
 - **`AnimalFarm` added to the pygmy beefalo's trade tags.** Its only tag was `StandardAnimal`, which
   no trader in the game reads, so the animal could be neither bought nor sold by anybody. The
-  Belgian blue already carried `AnimalFarm`. This one is design rather than porting, and
+  Belgian Blue already carried `AnimalFarm`. This one is design rather than porting, and
   [ATTRIBUTION.md](ATTRIBUTION.md) says so in those words.
 - **The original is declared incompatible.** Both mods define the same two animals under the same
   names; with both enabled the last one loaded wins in silence.
