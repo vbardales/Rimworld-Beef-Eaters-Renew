@@ -137,3 +137,5 @@ Reskin compat scenario `15-reskin-compat.feature` + `wsl-deps.reskin.map` commit
 ## Review-translation round 1, 2026-11-17
 
 ChatGPT page 1 answered: no proper noun to decide; 1 applied (French `PygmyBeefalo.description` "particulièrement intelligent" to "assez intelligent", matches English "quite intelligent"), 1 rejected as nothing to do (regenerate report: done, `TRANSLATION_REVIEW.md` regenerated). Round recorded with Applied 1: run /review-translation 1 again. 8.m: diff read, one French word in a DefInjected text, no code or defName: `code_review_sha` set to b351785746ee3636667b39fafed240994c78f5d3 ("revue du diff : texte seul"). Ticket ca9d unaffected (scenarios do not read that text).
+
+Review-translation round 2, 2026-11-17: 1 applied (PUBLICATION.md "must be told" to "must be notified"), 1 rejected (French `BelgianBlueCow.description` "sélectionné": it agrees with the noun "ongulé", correct as written). Round recorded Applied 1: run /review-translation 1 again.
