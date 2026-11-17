@@ -170,9 +170,8 @@ drawn from `TEST_SCENARIOS.md`; it is hers to change.
 
 ## Mature content checkboxes
 
-**None of them.** The mod adds two livestock animals. The Preview and ModIcon were opened; the five
-gallery images were refused on 2026-11-08 and are being redone; each new image must be opened before
-this answer is final.
+**None of them.** The mod adds two livestock animals. The Preview, the ModIcon and the six
+gallery images (1 to 6, validated 2026-11-17) were opened: animals, one dressed colonist, props, no nudity, no gore.
 
 ## Steam change notes
 
