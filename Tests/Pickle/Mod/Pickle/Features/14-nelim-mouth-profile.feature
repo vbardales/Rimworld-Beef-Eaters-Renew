@@ -2,6 +2,7 @@
 # Steps and order given by NPT 2026-11-09 (compiled, not played in a valid run: first real test, report the exact error to NPT if a step breaks).
 # A: head shape untouched (the face-parts log says which HeadTypeDef she has). B: face head shape HeadPointy (as in PickleTools pickletools-nelim-mouth-diagnostic.feature).
 # Answer wanted by NPT: east and west views, does the lower lip stay inside the head outline in B?
+@requires:nelim.pickletools.colonistrace @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.camerazoom
 Feature: Nelim mouth in profile (diagnostic)
 
   Background:
