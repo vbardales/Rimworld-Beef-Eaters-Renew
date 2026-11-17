@@ -210,7 +210,7 @@ first real target is the SHA of the 1.0.0 that passes its dry-run; write it here
 
 ## Use This Instead
 
-Renew mod: Mlie's Use This Instead page must be told once, after the item is public (`USE_THIS_INSTEAD.md`).
+Renew mod: Mlie's Use This Instead page must be notified once, after the item is public (`USE_THIS_INSTEAD.md`).
 The row goes in the register as `drafted` at `publish`, then `posted` once the owner has pasted this on
 [the page](https://steamcommunity.com/sharedfiles/filedetails/?id=3396308787). Old name (`Beef Eaters`) and Workshop id read through the Steam API (GetPublishedFileDetails) on 2026-10-13; the author name `TheGoofyOne` and the packageId come from `ATTRIBUTION.md` and the About.xml `incompatibleWith`. `oldVersions` is 1.4 (the page: Version 1.1, updated to 1.4).
 
