@@ -1,46 +1,32 @@
 # In-game scenarios, run by Pickle
 
-Played inside a running RimWorld by [Pickle](https://github.com/RimWorks/Rimworld-Pickle)
-(`rimworks.pickle`, Workshop 3791648678). `Mod/` is a companion mod, **Beef Eaters Renew - Pickle
-tests**, never published: it holds the feature files. Everything here is a built-in Pickle step
-except the texture pass, which stages Nelim's Pickle Tools' `TextureOwner` for that one pass only.
-Nothing here clicks through OS input.
+Played inside running RimWorld by [Pickle](https://github.com/RimWorks/Rimworld-Pickle)
+(`rimworks.pickle`, Workshop 3791648678). `Mod/` = companion mod **Beef Eaters Renew - Pickle
+tests**, never published, holds feature files. All built-in Pickle steps except texture pass, which stages Nelim's Pickle Tools' `TextureOwner` for that pass only. No OS input clicks.
 
-Written 2026-09-27, applying `AUDIT.md`'s `preTest -> done` Gherkin criterion after the owner
-confirmed the scope (relayed through TicketDispatcher): script only what only a running game
-proves and what is about a decision this port made — not what the offline checker already
-confirms, and not the vanilla engine's own reaction to a value the mod merely declares (see
-`Authoring/README.md`, "do not duplicate an offline assertion... test the mod's declaration
-offline and its own behavior in the relevant pass").
+Written 2026-09-27, applying `AUDIT.md`'s `preTest -> done` Gherkin criterion after owner confirmed scope (relayed via TicketDispatcher): script only what only running game proves and what concerns a decision this port made. Not what offline checker already confirms, not vanilla engine's reaction to value mod merely declares (see `Authoring/README.md`, "do not duplicate an offline assertion... test the mod's declaration offline and its own behavior in the relevant pass").
 
 | Feature | Pass | Checks |
 | --- | --- | --- |
-| `01-wildness-defs` | minimal | `<Wildness>` under `statBases` survives the game's own load, computed and raw, on both animals — the fault this port exists to fix, and the one thing static XML parsing cannot rule out by itself (patches, inheritance) |
-| `02-textures-load` | `wsl-deps.textures.map` | Each of the three own textures (bull, cow, beefalo) is answered by this mod's own packageId, not shadowed |
-| `03-save-roundtrip` | minimal | A spawned animal of each kind, and its wildness stat, survive a real save/load round trip |
-| `04-animal-gear-absent` | minimal | With Animal Gear not loaded, the guarded armour def does not exist and nothing was logged about it |
-| `05-collision-with-original` | `wsl-deps.incompat-original.map` | With TheGoofyOne's original also loaded, RimWorld's own "Adding duplicate" warning still names both defNames — `@requires:TheGoofyOne.BeefEaters` skips it in every other pass |
-| `08-animal-gear-present` | `wsl-deps.animalgear.map` | With Animal Gear (`Dylan.AnimalGear`, Workshop 1541438907) loaded, the guarded armour def exists and nothing is logged; `@requires` skips it elsewhere |
-| `06-labels-english` / `06-labels-french` | minimal, one launch per language | The animal labels reach the def as the active language's text, not just that a DefInjected path resolves offline |
-| `07-trade` | minimal | A local step (`Tests/Pickle/Source/TradeSteps.cs`) calls `TraderKindDef.WillTrade(ThingDef)` directly — the method the trade window itself calls — to prove `Base_Outlander_Standard` trades both animals on their declared tags, without forcing a trader or rolling RNG |
-| `15-reskin-compat` | `wsl-deps.reskin.map` | AUDIT 8.f: with the local test copy of HannahBug's reskin (Workshop 2943088425, loads after) the reskin answers the three textures and the wildness repair still holds; `@requires` skips it elsewhere |
-| `10-gallery-animals` | `wsl-deps.sanctuary.map` (English) | Not a test: five staged pictures for the Workshop gallery, played at the Sanctuary Backlot (`enclosure-south`, `barn`) with Nelim as the farmer; `@review`, the images are read by eye. Local steps in `Source/GallerySteps.cs`. Rewritten 2026-10-10 (the studio meadow no longer exists) |
+| `01-wildness-defs` | minimal | `<Wildness>` under `statBases` survives game's own load, computed and raw, both animals. This is the fault port exists to fix, and static XML parsing alone can't rule it out (patches, inheritance) |
+| `02-textures-load` | `wsl-deps.textures.map` | Each of three own textures (bull, cow, beefalo) answered by this mod's own packageId, not shadowed |
+| `03-save-roundtrip` | minimal | Spawned animal of each kind + its wildness stat survive real save/load round trip |
+| `04-animal-gear-absent` | minimal | Animal Gear not loaded: guarded armour def doesn't exist, nothing logged about it |
+| `05-collision-with-original` | `wsl-deps.incompat-original.map` | TheGoofyOne's original also loaded: RimWorld's own "Adding duplicate" warning still names both defNames. `@requires:TheGoofyOne.BeefEaters` skips it in all other passes |
+| `08-animal-gear-present` | `wsl-deps.animalgear.map` | Animal Gear (`Dylan.AnimalGear`, Workshop 1541438907) loaded: guarded armour def exists, nothing logged. `@requires` skips elsewhere |
+| `06-labels-english` / `06-labels-french` | minimal, one launch per language | Animal labels reach def as active language's text, not just DefInjected path resolving offline |
+| `07-trade` | minimal | Local step (`Tests/Pickle/Source/TradeSteps.cs`) calls `TraderKindDef.WillTrade(ThingDef)` directly (method trade window itself calls) to prove `Base_Outlander_Standard` trades both animals on declared tags, no forced trader, no RNG |
+| `15-reskin-compat` | `wsl-deps.reskin.map` | AUDIT 8.f: with local test copy of HannahBug's reskin (Workshop 2943088425, loads after), reskin answers three textures and wildness repair still holds. `@requires` skips elsewhere |
+| `10-gallery-animals` | `wsl-deps.sanctuary.map` (English) | Not a test: five staged pictures for Workshop gallery, played at Sanctuary Backlot (`enclosure-south`, `barn`) with Nelim as farmer. `@review`, images read by eye. Local steps in `Source/GallerySteps.cs`. Rewritten 2026-10-10 (studio meadow gone) |
 
 ## The local step, and why it is not in PickleTools
 
-Written 2026-09-27, closing what had been the one real, undone gap: no step in Pickle's built-in
-catalogue or in `PickleTools/docs/steps.md` reads a trader's generated stock or checks whether a
-`TraderKindDef` would handle a given `ThingDef`. Rather than force a trader and roll RNG — flaky,
-and provable only probabilistically — `TradeSteps.cs` calls
-`RimWorld.TraderKindDef.WillTrade(ThingDef)` itself, which is static def data decided once loading
-finishes: no save, no forced trader, no RNG roll. Confirmed by decompiling the installed
-`Assembly-CSharp.dll` with `ilspycmd` (RimWorld 1.6.4871 rev590, 2026-09-27) before writing a line
-of the step, per the authoring guide's "Add C# only for a missing observation or action."
+Written 2026-09-27, closing the one real undone gap: no step in Pickle's built-in catalogue or `PickleTools/docs/steps.md` reads trader's generated stock or checks whether `TraderKindDef` would handle a given `ThingDef`. Instead of forcing trader and rolling RNG (flaky, only probabilistically provable), `TradeSteps.cs` calls
+`RimWorld.TraderKindDef.WillTrade(ThingDef)` itself: static def data decided once loading finishes. No save, no forced trader, no RNG roll. Confirmed by decompiling installed
+`Assembly-CSharp.dll` with `ilspycmd` (RimWorld 1.6.4871 rev590, 2026-09-27) before writing step, per authoring guide's "Add C# only for a missing observation or action."
 
-It lives in `Tests/Pickle/Source/`, local to this mod, not in `PickleTools`: the question is
-generic enough that another mod's suite could want it, but promoting a step to shared
-infrastructure is the owner's call, not this session's. `dotnet build -c Release` from
-`Tests/Pickle/Source/` compiles it straight into `Tests/Pickle/Mod/Pickle/Assemblies/`.
+Lives in `Tests/Pickle/Source/`, local to this mod, not `PickleTools`: question generic enough other suites could want it, but promoting step to shared infrastructure is owner's call, not this session's. `dotnet build -c Release` from
+`Tests/Pickle/Source/` compiles straight into `Tests/Pickle/Mod/Pickle/Assemblies/`.
 
 ## Checking the suite before it is queued
 
@@ -48,38 +34,22 @@ infrastructure is the owner's call, not this session's. `dotnet build -c Release
 powershell -ExecutionPolicy Bypass -File ..\scripts\Check-Steps.ps1 -Mod BeefEatersRenew
 ```
 
-Compiles the local step patterns with Pickle's own Cucumber engine, then matches every step line
-of every feature against Pickle's vocabulary, the engine's save steps, the TextureOwner tool and
-the local steps: each line must resolve to **exactly one** step. An invalid pattern makes a run play
-zero scenarios, and a step that does not exist or matches twice fails a healthy scenario, so all
-three are cheaper to find here than in a queued run. Exit code 1 on any problem. It reads the
-installed Pickle (Workshop 3791648678), Mono.Cecil from the NuGet cache and `PickleTools/TextureOwner`.
+Compiles local step patterns with Pickle's own Cucumber engine, then matches every step line of every feature against Pickle's vocabulary, engine's save steps, TextureOwner tool and local steps: each line must resolve to **exactly one** step. Invalid pattern makes run play zero scenarios; nonexistent or double-matching step fails healthy scenario. All three cheaper to find here than in queued run. Exit code 1 on any problem. Reads installed Pickle (Workshop 3791648678), Mono.Cecil from NuGet cache and `PickleTools/TextureOwner`.
 
-Run 2026-09-28 (31 step lines, 8 features): all resolve. It first reported `the save round trips`
-unresolved, which was the checker's fault, not the suite's: the runner handles the save steps
-without an attribute the extraction can see, and the installed Pickle's own `save-reload.feature`
-uses each verbatim; the checker now lists them with that evidence. Seen failing on a deliberately
-broken copy (an invalid pattern, two nonexistent lines): it reported exactly those.
+Run 2026-09-28 (31 step lines, 8 features): all resolve. First reported `the save round trips` unresolved: checker's fault, not suite's. Runner handles save steps without attribute extraction can see, and installed Pickle's own `save-reload.feature` uses each verbatim; checker now lists them with that evidence. Seen failing on deliberately broken copy (invalid pattern, two nonexistent lines): reported exactly those.
 
-It proves a line can be dispatched, never that it passes. Nothing here has run in a game.
+Proves line can be dispatched, never that it passes. Nothing here run in game.
 
 ## What is deliberately not here
 
-**Scenarios A, C, D, E, F (partly), G, H (partly), J, L**, TEST_SCENARIOS.md: reading a declared stat, a
-training flag, a comfy-temperature value, a litter curve, or a biome weight is either already
-proven by `Tools/Check-Mod.ps1` (no game needed), or is the vanilla engine reacting to a value
-this mod merely supplies (`CompMilkable` producing milk, Biotech's gestation math, the trainer
-reading `trainability`) — the authoring guide's own rule against testing that. `H`'s procedural,
-multi-day biome spawn and `L`'s full breeding cycle stay out for the same reason as `NewColony`
-in `PickleTools`: real in-game time nothing here can compress, not worth the machine-hours for
-what a declared-value check already covers.
+**Scenarios A, C, D, E, F (partly), G, H (partly), J, L**, TEST_SCENARIOS.md: reading declared stat, training flag, comfy-temperature value, litter curve, or biome weight is either already proven by `Tools/Check-Mod.ps1` (no game needed), or is vanilla engine reacting to value mod merely supplies (`CompMilkable` producing milk, Biotech gestation math, trainer reading `trainability`). Authoring guide's own rule forbids testing that. `H`'s procedural multi-day biome spawn and `L`'s full breeding cycle out for same reason as `NewColony` in `PickleTools`: real in-game time nothing here can compress, not worth machine-hours for what declared-value check already covers.
 
-**Animal Gear present.** Covered by `08`. The mod was downloaded through `scripts/download-workshop-wsl.sh` under `Use-Wsl.ps1` on 2026-09-28 and its packageId read from its own `About.xml`: `Dylan.AnimalGear` (framework, name "Animal Gear", supports 1.6, hard dependency Harmony only). `Dylan.AnimalGearBasic` (1541439112) is content, not the guard target, and is not staged. The earlier search guess `dylan.animalgear` was right but unverified; it is now read.
+**Animal Gear present.** Covered by `08`. Mod downloaded via `scripts/download-workshop-wsl.sh` under `Use-Wsl.ps1` on 2026-09-28, packageId read from its own `About.xml`: `Dylan.AnimalGear` (framework, name "Animal Gear", supports 1.6, hard dependency Harmony only). `Dylan.AnimalGearBasic` (1541439112) is content, not guard target, not staged. Earlier search guess `dylan.animalgear` was right but unverified; now read.
 
 ## Setup, once
 
 1. Enable Pickle and RimLogging.
-2. Stage this suite through the shared launcher (below); the minimal pass needs no other mod.
+2. Stage suite through shared launcher (below); minimal pass needs no other mod.
 
 ## Run
 
@@ -92,27 +62,15 @@ powershell.exe -ExecutionPolicy Bypass -File scripts/Run-PickleWsl.ps1 -Mod Beef
 powershell.exe -ExecutionPolicy Bypass -File scripts/Run-PickleWsl.ps1 -Mod BeefEatersRenew -Filter 06-labels-french -Language French
 ```
 
-None of this has been run yet — see `AUDIT.md`'s absolute rule against a session launching
-RimWorld itself. Submit it through `Submit-PickleRun.ps1` per `AUDIT.md`, "Déposer un run au lieu
+None run yet. See `AUDIT.md`'s absolute rule against session launching RimWorld itself. Submit via `Submit-PickleRun.ps1` per `AUDIT.md`, "Déposer un run au lieu
 de le lancer", one request per pass above.
 
 ## Evidence
 
-Per `AGENTS.md` and `AUDIT.md`: `Tests/Pickle/Evidence/` is disk-only, gitignored, never
-committed — a run's captures and `Player.log` go there, not in Git. What belongs in the repository
-is a short summary line per run under `docs/runs/` (`docs/runs/<date>-<short-sha>-summary.md`),
-cited from `STATUS.md`. Keep, per pass, only the latest report for the revision now in the
-repository, plus any older report that is the sole proof of a check the latest run did not
-repeat; delete the rest as soon as a newer report supersedes it.
+Per `AGENTS.md` and `AUDIT.md`: `Tests/Pickle/Evidence/` disk-only, gitignored, never committed. Run's captures and `Player.log` go there, not Git. Repo gets short summary line per run under `docs/runs/` (`docs/runs/<date>-<short-sha>-summary.md`), cited from `STATUS.md`. Per pass, keep only latest report for revision now in repo, plus any older report that is sole proof of check latest run didn't repeat; delete rest once newer report supersedes.
 
 ## Language and the two label features
 
-`06-labels-english` and `06-labels-french` each assert one language, and a pass runs in one language
-(`-Language`, default English). A full pass in English therefore shows `06-labels-french` red, and the
-reverse: that red is the pass, not the mod. Play the English passes with `-Filter '!06-labels-french'`
-and the French pass with `-Filter '06-labels-french'` (the other features do not depend on language).
-Found 2026-10-02 (run b655): the texture pass, in English, ran the French feature.
+`06-labels-english` and `06-labels-french` each assert one language; pass runs in one language (`-Language`, default English). Full English pass therefore shows `06-labels-french` red, and reverse: red is the pass, not the mod. Play English passes with `-Filter '!06-labels-french'` and French pass with `-Filter '06-labels-french'` (other features language-independent). Found 2026-10-02 (run b655): texture pass, in English, ran French feature.
 
-Same shape for Animal Gear: `04-animal-gear-absent` is red by construction in the pass that stages Animal
-Gear (run ad6a, 2026-10-02: the armour def exists there, which `08-animal-gear-present` proves green). Play
-that pass with `-Filter '!04-animal-gear-absent,!06-labels-french'`.
+Same for Animal Gear: `04-animal-gear-absent` red by construction in pass staging Animal Gear (run ad6a, 2026-10-02: armour def exists there, which `08-animal-gear-present` proves green). Play that pass with `-Filter '!04-animal-gear-absent,!06-labels-french'`.
