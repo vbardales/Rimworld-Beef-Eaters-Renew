@@ -139,3 +139,8 @@ Reskin compat scenario `15-reskin-compat.feature` + `wsl-deps.reskin.map` commit
 ChatGPT page 1 answered: no proper noun to decide; 1 applied (French `PygmyBeefalo.description` "particulièrement intelligent" to "assez intelligent", matches English "quite intelligent"), 1 rejected as nothing to do (regenerate report: done, `TRANSLATION_REVIEW.md` regenerated). Round recorded with Applied 1: run /review-translation 1 again. 8.m: diff read, one French word in a DefInjected text, no code or defName: `code_review_sha` set to b351785746ee3636667b39fafed240994c78f5d3 ("revue du diff : texte seul"). Ticket ca9d unaffected (scenarios do not read that text).
 
 Review-translation round 2, 2026-11-17: 1 applied (PUBLICATION.md "must be told" to "must be notified"), 1 rejected (French `BelgianBlueCow.description` "sélectionné": it agrees with the noun "ongulé", correct as written). Round recorded Applied 1: run /review-translation 1 again.
+
+## Open at sleep (2026-11-17, final)
+
+- Waiting (white pastille ... green ticket): ca9d (`15-reskin-compat`, tree ab966fd, evidence `Tests/Pickle/Inbox/20261117-reskin-compat`): at RUN_DONE read summary.json and junit.xml; green closes 8.f, then 8.a, then delete Parked `20261109-farm-day-reskin`.
+- Review-translation page 1: rounds 1 and 2 each applied 1 change; run `/review-translation 1` again and record the round (`record-round.ps1 -Page 1 -Applied n`) until a round applies 0. 8.b (Virginie reading of the 2026-11-12 wording) still open.
