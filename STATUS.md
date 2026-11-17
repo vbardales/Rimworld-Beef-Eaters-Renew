@@ -150,3 +150,16 @@ Review-translation round 2, 2026-11-17: 1 applied (PUBLICATION.md "must be told"
 ## Resume 2026-11-17 (second), ticket ca9d read
 
 Protocols read to 0340cb1a (only inventory and replay rows changed). Ticket ca9d RUN_DONE found in Inbox: `15-reskin-compat` 2/2 passed, exitReason passed, set `reskin` (reskin loads after this mod and its textures answer for the three animals; repaired wildness still holds). 8.f closed. Evidence minified to `Tests/Pickle/Evidence/20261117-reskin-compat` (RELEASE.md written), Inbox empty, Parked `20261109-farm-day-reskin` deleted. 8.a: tested tree = ab966fd; later commits are text only (review rounds 1 and 2); code_review_sha b351785. Open at `playTests[1.0.0]`: 8.b only (Virginie reading of the 2026-11-12 wording, plus review-translation page 1 run again until a round applies 0).
+
+## Shotlist rating, 2026-11-17 (score-gallery, writeShotlist entry)
+
+Shotlist v24 unchanged (header of `12-gallery-animals-props.feature`); scene 2 already without HeadPointy (SaB c4f2 green, lip inside the outline), refile waits for `shootGallery`. No Opus pass this time: no new draft, the last one is v15 (2026-11-07).
+
+Plan confidence (k ok on the series: wide 5, medium 1/3/4, close 2, opener 1, closer 5, rhythm moves on): 1 = 5, 2 = 5, 3 = 5, 4 = 4.5 (f: Pip and Minus both face South, no profile, rule 2026-11-15), 5 = 4.5 (f: Rosa and Petite both face East, no back view of the three Belgian blue). Mean 4.8. Not read: Check-ShotlistVsScenario not rerun yet.
+
+Captures v22 opened (`Art/Gallery/candidate-v22-*`, shrunk to 268 px with ffmpeg and opened):
+- 1 dawn: Nelim about 100 px at 1920, cow head down and about 24 px at 268; no motion read. j weak (the cow is a grey blob at thumbnail size) so REDO whatever the notes: plan said the cow about 68 px, the frame gives about 24 px.
+- 3 bull: bull about 40 px at 268, trough, hay, fence, bales readable; Nelim and bull static. j ok, candidate.
+- 4 bridge: Pip about 20 px and Minus about 15 px at 268 (Nelim larger than the animals). j weak so REDO.
+- 5 evening: two cows about 40 px, Pip and calf, Nelim, fires, trough: readable herd, ground bare in the upper half. j ok, candidate.
+Not verified: the four notes (image, adequacy, understanding, decoration) of each capture were not computed in full; only criterion j and the first look. Next: recompose 1 and 4 tighter (smaller root size), orientations of 4 and 5 varied, rewrite, delete the old captures of 1 and 4 in the same commit, gate to 5, then Check-ShotlistVsScenario.
