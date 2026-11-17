@@ -231,7 +231,9 @@ drafts below are starting points to rewrite, not text to paste.
 | A Dog Said... Animal Prosthetics 2 | 3238353862 | already `posted` | Only `Covers` changes: add `Beef Eaters Renew`. Post nothing |
 | Pickle | 3791648678 | already `posted` | Add `Beef Eaters Renew` to `Covers` |
 | Dogs mate (Continued) | 2441132298 | `drafted` | Draft below. Add this mod to `Covers` |
-| Beef Eaters (original) | 1988048034 | to add as `drafted` | Draft below. Also the way TheGoofyOne can reach the owner |
+| Beef Eaters (original) | 1988048034 | `drafted` (register row added 2026-11-17) | Draft below. Also the way TheGoofyOne can reach the owner |
+| Animal Feed Trough (Continued) | 2071757940 | `drafted` (register row added 2026-11-17) | Draft below. Gallery prop, not a dependency |
+| The gallery stack (Harmony, bodies, pants, Facial Animation set, Hat Hair Control, Roo's HD Hairstyles, VGP Vegetable Garden, Vanilla Furniture Expanded - Props and Decor) | 24 ids | already `posted` | Post nothing: `Beef Eaters Renew` added to `Covers` of each row (2026-11-17) |
 | [HB] Beef Eaters Reskin | 2943088425 | `posted` 2026-10-14, awaiting her answer (register row added 2026-10-14) | **Permission request**, not a thank-you. Post it now (the item need not be public: the link is the GitHub repository). Nothing of the reskin is bundled before she answers |
 
 ### Dogs mate (Continued), 2441132298
@@ -244,6 +246,12 @@ My Beef Eaters port adds a Belgian blue cow and a pygmy beefalo. The cow joins y
 
 ```
 Hi TheGoofyOne! I ported your two animals to the current game (unofficially, credit and a link to your page are in the description). Wildness moved to a stat in 1.6, so I fixed that on both, and I gave the pygmy beefalo a trade tag a trader actually reads. No balance value changed, the cow is still too heavy to walk. If you would rather I take it down, say so and it is gone. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811290251]Beef Eaters Renew (unofficial)[/url]
+```
+
+### Animal Feed Trough (Continued), 2071757940
+
+```
+The herd of my Beef Eaters port gathers at your trough in the gallery pictures, hay and all. A Belgian blue cow, a bull and a pygmy beefalo, all at one of your troughs, so thank you, and thanks for keeping BaconBits' idea alive. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811290251]Beef Eaters Renew (unofficial)[/url]
 ```
 
 Check the last comments of each page first, and whether it takes comments, as `WORKSHOP_COMMENTS.md` asks.
