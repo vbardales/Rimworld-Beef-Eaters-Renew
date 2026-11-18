@@ -274,3 +274,11 @@ Hi HannahBug! Love your HD reskin :) I made a continued version of Beef Eaters f
 ```
 
 Check her last comments first, and whether the page takes comments (`WORKSHOP_COMMENTS.md`). About 700 characters.
+
+### [HB] Beef Eaters Reskin (HannahBug), 2943088425: thank-you for the gallery picture
+
+Separate from the permission request above (a permission request is not a thank-you). Drafted 2026-11-18, to post by the owner once the item is public.
+
+```
+Hi HannahBug! Your HD reskin is in the gallery of my Beef Eaters port: the last picture shows the herd drawn with your textures, loaded after my mod. Nothing of yours is included, and the description credits you with a link to your page :) Thank you for the lovely cows! [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811290251]Beef Eaters Renew (unofficial)[/url]
+```
