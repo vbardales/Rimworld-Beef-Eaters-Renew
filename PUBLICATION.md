@@ -207,6 +207,10 @@ failed>". Version numbers only go up and an existing tag is refused. Visibility 
 **The rollback target is not chosen and cannot be yet**: no validated release has been published. The
 first real target is the SHA of the 1.0.0 that passes its dry-run; write it here at that moment.
 
+## Collection "RimWorld through Nelim's eyes"
+
+For the owner, at 13.c (collection https://steamcommunity.com/sharedfiles/filedetails/?id=3815982565): add this item, https://steamcommunity.com/sharedfiles/filedetails/?id=3811290251 (`Beef Eaters Renew (unofficial)`). Dependencies that are Nelim's mods: none (this mod has no dependency; its optional patches target A Dog Said... Animal Prosthetics 2 and Dogs mate (Continued), which are not Nelim's). DLC required: none. Workshop tags sent by the upload: Mod, 1.6, 1.7.
+
 ## Use This Instead
 
 Renew mod: Mlie's Use This Instead page must be notified once, after the item is public (`USE_THIS_INSTEAD.md`).
