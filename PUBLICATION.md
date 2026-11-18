@@ -2,18 +2,7 @@
 
 What the Workshop page needs but the rest of the repository does not hold. It serves twice: for the
 first release, and for whoever takes over the mod.
-
-**Status: drafted, release text written 2026-11-17; the owner's review (11.j) is still to do.** The Workshop item has existed since 2026-10-01 (0.1.0 prepublication,
-`Mod/About/PublishedFileId.txt` = 3811290251, Workshop item private, repository public). Nothing of the Workshop page has been posted
-yet (the comments of the table below are tracked there). The workflow stage is `writeReleaseDocs[1.0.0]` (see `STATUS.md`).
-
-## What blocks the publication
-
-Only what is specific to this mod; the gates themselves are in `AUDIT.md`.
-
-- The owner's review of this file and `CHANGELOG.md` (`publication_changelog_review_sha`, last reviewed at 0.1.x, due again for 1.0.x before publish) is not done. The gallery (images 0 to 6) and the Preview and echo are validated (2026-11-17).
-- The rollback target cannot exist before the first publish (see "Fail fast").
-- The owner's manual validations (see below).
+**Status: 1.0.0 published 2026-11-18** (run 44208035673, tag `v1.0.0` on `50785f3`, item 3811290251, public). The Steam description was edited by hand by the owner after the upload; this file holds the same text. The workflow stage is `cleanUp[1.0.0]` (see `STATUS.md`).
 
 ## Description
 
@@ -163,19 +152,6 @@ One English line at the bottom of each scene without an interface window (`GALLE
 Animal Gear and Dogs mate are named only by a `PatchOperationFindMod` or by the target def of a
 `PatchOperationConditional`, so nothing is logged when either is absent or renamed.
 
-## Manual validations of the owner
-
-`AUDIT.md` lists them among the things a `publish` does not skip without saying which. A proposal
-drawn from `TEST_SCENARIOS.md`; it is hers to change.
-
-| # | What to look at | Why a test cannot |
-|---|---|---|
-| 1 | Subscribe to the item once it exists, start a game with the installed copy, tame a Belgian Blue cow: the information card reads Wildness 5 % | The installed copy is what players get; the suite plays the working tree |
-| 2 | A real save with either animal, then the mod removed: the animal is destroyed | A changed mod list is the game's handling |
-| 3 | The gallery: which captures, in which order | A composition is a choice |
-| 4 | The description pasted on the page, read once more | The page is edited by hand after creation |
-| 5 | Then, and only then, the visibility, the comments subscription and "Watch all activity" (`PUBLISHING.md`) | Steam, by hand, by the owner |
-
 ## Mature content checkboxes
 
 **None of them.** The mod adds two livestock animals. The Preview, the ModIcon and the six
@@ -183,28 +159,7 @@ gallery images (1 to 6, validated 2026-11-17) were opened: animals, one dressed 
 
 ## Steam change notes
 
-Written at upload time. Unlike the description, they go out again on every update. The version stands
-alone on the first line, in BBCode, or the CI refuses the note.
-
-### 1.0.0
-
-```
-[b]1.0.0[/b]
-
-First release. Port of TheGoofyOne's Beef Eaters to the current RimWorld version.
-
-[list]
-[*]Wildness is a stat now, so both animals read 5% and 50% instead of defaulting to -1.
-[*]The pygmy beefalo can be bought and sold: it carries the AnimalFarm trade tag.
-[*]Optional patches for A Dog Said... Animal Prosthetics 2 and Dogs mate (Continued).
-[*]The original mod is declared incompatible.
-[*]English and French.
-[/list]
-
-No balance value was changed.
-
-[url=https://github.com/vbardales/Rimworld-Beef-Eaters-Renew/blob/main/CHANGELOG.md]Full changelog[/url]
-```
+Written at upload time and sent again on every update. The version stands alone on the first line, in BBCode, or the CI refuses the note. The text of 1.0.0 (sent 2026-11-18) is in `Docs/runs/publication-testing-history-2026-11-18.md`; the next one starts from `CHANGELOG.md`.
 
 ## Fail fast: the rollback target
 
@@ -212,26 +167,12 @@ A rollback is a **new publication**: the workflow is dispatched with `ref` = the
 good commit and the next patch number, and the note reads "Rolls back to <what>, because <what
 failed>". Version numbers only go up and an existing tag is refused. Visibility is not touched by the CI.
 
-**The rollback target is not chosen and cannot be yet**: no validated release has been published. The
-first real target is the SHA of the 1.0.0 that passes its dry-run; write it here at that moment.
-
-## Collection "RimWorld through Nelim's eyes"
-
-For the owner, at 13.c (collection https://steamcommunity.com/sharedfiles/filedetails/?id=3815982565): add this item, https://steamcommunity.com/sharedfiles/filedetails/?id=3811290251 (`Beef Eaters Renew (unofficial)`). Dependencies that are Nelim's mods: none (this mod has no dependency; its optional patches target A Dog Said... Animal Prosthetics 2 and Dogs mate (Continued), which are not Nelim's). DLC required: none. Workshop tags sent by the upload: Mod, 1.6, 1.7.
-
-## Use This Instead
-
-Renew mod: Mlie's Use This Instead page must be notified once, after the item is public (`USE_THIS_INSTEAD.md`).
-The row goes in the register as `drafted` at `publish`, then `posted` once the owner has pasted this on
-[the page](https://steamcommunity.com/sharedfiles/filedetails/?id=3396308787). Old name (`Beef Eaters`) and Workshop id read through the Steam API (GetPublishedFileDetails) on 2026-10-13; the author name `TheGoofyOne` and the packageId come from `ATTRIBUTION.md` and the About.xml `incompatibleWith`. `oldVersions` is 1.4 (the page: Version 1.1, updated to 1.4).
-
-```
-Hi Mlie! A replacement for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1988048034]Beef Eaters[/url] (TheGoofyOne, packageId TheGoofyOne.BeefEaters, RimWorld 1.4): [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3811290251]Beef Eaters Renew (unofficial)[/url] by Nelim (packageId nelim.beefeaters, RimWorld 1.6 and 1.7). Declared incompatible with the original. Thanks for the list!
-```
+**Rollback target: `50785f3ebc5b6ed2bb3526208006013cbeb37290`**, the commit of the published 1.0.0 (tag `v1.0.0`, non-regression green 29/29 on 2026-11-18). A later release replaces
+it here once its own non-regression is green.
 
 ## Comments on other mods' pages
 
-`WORKSHOP_COMMENTS.md` decides; it is keyed by Workshop id. To post **only once the item is public**,
+`WORKSHOP_COMMENTS.md` decides; it is keyed by Workshop id. Posted 2026-11-18 (the owner's word) except the permission request to HannahBug (posted 2026-10-14, no answer yet). The texts below are the drafts as retained; to post only once public,
 under 1000 characters each, BBCode link hidden behind the mod's name, in the owner's own voice. The
 drafts below are starting points to rewrite, not text to paste.
 
@@ -239,9 +180,9 @@ drafts below are starting points to rewrite, not text to paste.
 |---|---|---|---|
 | A Dog Said... Animal Prosthetics 2 | 3238353862 | already `posted` | Only `Covers` changes: add `Beef Eaters Renew`. Post nothing |
 | Pickle | 3791648678 | already `posted` | Add `Beef Eaters Renew` to `Covers` |
-| Dogs mate (Continued) | 2441132298 | `drafted` | Draft below. Add this mod to `Covers` |
-| Beef Eaters (original) | 1988048034 | `drafted` (register row added 2026-11-17) | Draft below. Also the way TheGoofyOne can reach the owner |
-| Animal Feed Trough (Continued) | 2071757940 | `drafted` (register row added 2026-11-17) | Draft below. Gallery prop, not a dependency |
+| Dogs mate (Continued) | 2441132298 | `posted` 2026-11-18 | Draft below (text retained). Add this mod to `Covers` |
+| Beef Eaters (original) | 1988048034 | `posted` 2026-11-18 | Draft below. Also the way TheGoofyOne can reach the owner |
+| Animal Feed Trough (Continued) | 2071757940 | `posted` 2026-11-18 | Draft below. Gallery prop, not a dependency |
 | The gallery stack (Harmony, bodies, pants, Facial Animation set, Hat Hair Control, Roo's HD Hairstyles, VGP Vegetable Garden, Vanilla Furniture Expanded - Props and Decor) | 24 ids | already `posted` | Post nothing: `Beef Eaters Renew` added to `Covers` of each row (2026-11-17) |
 | [HB] Beef Eaters Reskin | 2943088425 | `posted` 2026-10-14, awaiting her answer (register row added 2026-10-14) | **Permission request**, not a thank-you. Post it now (the item need not be public: the link is the GitHub repository). Nothing of the reskin is bundled before she answers |
 

@@ -84,26 +84,11 @@ Le champ `session:` ne se touche pas, il vient du balayage.
 Le balayage écrit parfois des champs cassés — `licence: licence_ou:`, une clé `vitrine:` avalée par
 `licence_at:`. Les réparer au passage plutôt que les recopier.
 
-## Reste à faire avant publication
+## État de publication
 
-Le mod est en `1.0.0` **non publié**. Manquent, et rien d'autre :
+Le mod est publié en `1.0.0` depuis le 2026-11-18 (tag `v1.0.0` sur `50785f3`, item Workshop 3811290251, public, non-régression verte 29/29). Les essais Pickle sont joués (`STATUS.md`, `Docs/runs/`). Reste à suivre : la permission de HannahBug (reskin, rien d'inclus avant sa réponse). `About/Preview.png` (896x504) et `About/ModIcon.png` (128x128) sont composées depuis `Art/` par le moteur partagé de Preview (`Art/Preview.config.json`, `Art/Preview-source.png`, `Art/echo-source.png`) ; les sources restent dans `Art/`, jamais dans `About/`.
 
-1. L'essai en jeu. Rien n'a jamais tourné. Seize scénarios en prose dans `TEST_SCENARIOS.md`, sept
-   features Pickle dans `Tests/Pickle/` (écrites, jamais jouées). Les décisions de F, I et N sont
-   prises et appliquées, voir `CHANGELOG.md`. Reste aussi la moitié « Animal Gear présent » du
-   scénario M, écrite (`08`, `wsl-deps.animalgear.map`, `Dylan.AnimalGear`) mais jamais jouée.
-2. Le tag `v1.0.0` et la release GitHub.
-3. La `1.0.0` sur l'item Workshop 3811290251, créé en privé par la prépublication `0.1.0` du 2026-10-01 (`PublishedFileId.txt` commité). Il reste privé tant que Virginie ne l'a pas basculé elle-même.
-
-Les deux images sont faites depuis le 2026-09-12 : `About/Preview.png` en 896x504 et
-`About/ModIcon.png` en 128x128, composées depuis `Art/` par le moteur partagé de Preview : `Art/Preview.config.json` (textes, typographie, mise en page, palette) et ses entrées `Art/Preview-source.png`, `Art/echo-preview.png`, `Art/ModIcon-source.png`. Les diagnostics vont dans `Art/.render/`, ignoré par git. L'ancienne chaîne locale (`preview.html`, `render-preview.cjs`) a disparu le 2026-10-02 : les sections datées de `STATUS.md` qui la citent restent de l'historique. **Les sources pleine
-résolution restent dans `Art/`, jamais dans `About/`** — c'est de là qu'on regrave, et une source
-laissée dans `About/` partirait vers Steam. La vitrine a un défaut connu, noté dans `STATUS.md` :
-elle ne montre pas la vache blanc-bleu.
-
-Les deux guides qui commandent ces étapes vivent hors du dépôt, dans le monorepo :
-`..\STYLE_RIMWORLD.md` pour la vitrine et l'icône, `..\PUBLISHING.md` pour l'envoi. Les lire avant,
-pas après : la description et le packageId ne se corrigent pas une fois envoyés.
+Les guides qui commandent ces étapes vivent hors du dépôt, dans le monorepo : `../docs/STYLE_RIMWORLD.md` pour la vitrine et l'icône, `../docs/PUBLISHING.md` pour l'envoi.
 
 ## Langue
 

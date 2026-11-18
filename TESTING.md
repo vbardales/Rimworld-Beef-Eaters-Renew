@@ -313,87 +313,6 @@ selection: map gen reading biome list, trader stock gen reading trade tags. Read
 shows one door open, other not, never who walks through. Everything else here is info
 card reading, exactly where silent fault hid.
 
-## Pickle scope — written 2026-09-27
-
-**Gap found applying `AUDIT.md`, closed same day after owner's call.** The
-`preTest -> done` transition requires Gherkin scenarios, scoped to what only running
-game shows. A through P had none. Reading `PickleTools/docs/steps.md` and Pickle's
-built-in catalogue changed first proposed count (B, I, M, N — four) after checking each
-need against what exists:
-
-- **B** (wildness) — `def raw stat` / `def stat`, at main menu, no save. Written.
-- **K** (textures) — `TextureOwner`'s "answered by the mod" step, missed by first pass:
-  cheap, no save, proves file actually read, not merely present. Written.
-- **M** (Animal Gear) — only absent half written (no def, no log, Animal Gear not staged
-  here). Present half needs that mod's packageId/Workshop id, not yet looked up.
-- **N** (collision with original) — `mod ... is loaded` + `mod ... loads before ...` + repaired wildness still read (run 3cad found no duplicate warning logged; was
-  `a warning matching`), staged against original itself (Workshop 1988048034, packageId
-  read from installed copy), not assumed. Written.
-- **O** (save round trip) — not in first proposal, added on inspection: `the save round trips`
-  is built-in step, concern real (stat survives save, not just load).
-  Narrowed to one process; two separate mod installs in one save not Pickle scenario. Written.
-- **P** (English/French display) — added same way: DefInjected overwrites def field at
-  load, so reading after load proves display, not just injection path resolving.
-  Two feature files, one expected text per language, run under `-Language English` /
-  `-Language French`. Written.
-- **I** (pygmy beefalo trade tag) — only one no built-in or shared step covered; closed
-  with local step, not forced onto wrong one. `Tests/Pickle/Source/TradeSteps.cs` calls
-  `RimWorld.TraderKindDef.WillTrade(ThingDef)` directly — method trade window calls,
-  found by decompiling installed `Assembly-CSharp.dll` — so no save, no forced trader,
-  no RNG: static def data, decided once loading ends. Written.
-- **A, C, D, E, F (partly), G, H (partly), J, L** — left as prose. Each either proven
-  offline by `Tools/Check-Mod.ps1`, or vanilla engine reacting to value mod merely
-  supplies (`CompMilkable`, Biotech's gestation math, `trainability`), out of scope per
-  authoring guide's rule. `H`'s procedural multi-day biome spawn and `L`'s full breeding
-  cycle stay out for same reason `NewColony` in `PickleTools` optional and costly: real
-  in-game time nothing compresses, for what declared-value check already covers.
-
-See `Tests/Pickle/README.md` for eight feature files, passes, full reasoning table.
-None executed: `preTest -> done` requires scenarios exist and scoped, not run —
-`done -> tested` is where execution and captures required. `STATUS.md` tracks
-unexecuted state and remainder (Animal Gear present half only, now I written).
-
-## Evidence to keep, once a suite exists
-
-Written before any suite, so suite author need not guess. Per `AGENTS.md` and
-`AUDIT.md`: `Tests/Pickle/Evidence/` is disk-only, gitignored, never committed — run
-captures and `Player.log` go there, not Git. Repo gets short one-line text summary per
-run under `docs/runs/`, named like `SkillIcons`
-(`docs/runs/<date>-<short-sha>-summary.md`), cited from `STATUS.md`. Per mod and
-scenario, keep only latest report for revision currently in repo, plus any older report
-that is sole proof of check latest run didn't repeat; delete rest once newer report
-supersedes. Report on superseded build proves nothing about shipping one.
-
-### What to keep from a run
-
-Per run, pass, scenario. Keep on disk, in `Tests/Pickle/Evidence/<run>/`, only:
-`summary.md`/`junit.xml` (carries `exitReason`, discovered vs played counts, `setName`),
-`@review` captures of scenarios having them, and `Player.log` only when scenario failed
-or logged warning scenario asserts. Delete `report.html`, `messages.ndjson`, captures of
-scenarios without `@review`, every superseded-revision report once new one in place.
-Never delete report `STATUS.md` still cites: repoint first. In git: one line per run in
-`docs/runs/history.md`, nothing else.
-
-## Gate for `tested` (AUDIT.md text of 2026-09-29)
-
-`done -> tested` needs all, none met yet:
-
-1. No scenario tagged `@wip`. None today; scenario set aside gets repaired and replayed
-   or deleted with reason, never left tagged.
-2. Every conditional scenario run on map mounting its mod, report read (suite name and
-   `setName` checked, report folder shared machine-wide):
-   `02-textures-load` (`@requires:nelim.pickletools.textureowner`, map `wsl-deps.textures.map`),
-   `05-collision-with-original` (`@requires:TheGoofyOne.BeefEaters`, map
-   `wsl-deps.incompat-original.map`), `08-animal-gear-present` (`@requires:Dylan.AnimalGear`, map
-   `wsl-deps.animalgear.map`). Scenario skipped for missing condition has not passed.
-3. No manual test left to tick. Each of sixteen prose scenarios A-P covered by green
-   Pickle scenario (table in `Tests/Pickle/README.md` says which) or listed here not
-   applicable with reason. Still prose-only today: see `STATUS.md` `remaining`.
-   `@review` captures still viewed, but that is reading image of state scenario already
-   proved, not another manual test.
-4. Minimal pass and every `@requires` pass green, `exitReason: passed` read before
-   counts; English and French each own pass (`-Language`).
-
 ## Scenarios A-P: what covers each, and what is not applicable (2026-10-02)
 
 `tested` gate requires no manual test left. Each prose scenario above covered by Pickle
@@ -419,3 +338,6 @@ once value itself asserted.
 | N, collision with the original | `05-collision-with-original` (passed, run b0a3) | none |
 | O, saves | `03-save-roundtrip` | Adding mod to colony, swapping original for port, removing mod: game's mod list handling, not this mod |
 | P, display, Workshop page | `06-labels-english`, `06-labels-french` (passed, runs e01a, f86e); owner's French review | Workshop page and mod-list entry look: audit's offline checks, page exists only after publication (listed for Virginie) |
+## What ran on the current revision (published 1.0.0, tag `v1.0.0` on `50785f3`)
+
+Non-regression of 2026-11-18, RimWorld 1.6, seven small tickets, 29 scenarios, 29 passed, 0 failed, 0 skipped (min EN 18, 06-fr 2, textures 3, original 1, animal gear 1, animals mods 2, reskin compat 2). Detail in `Docs/runs/nonreg-1.0.0-2026-11-18.md`. Gallery features 10, 12, 13, 14 and 16 are captures, not regression, and were not replayed. Evidence stays on disk only, in `Tests/Pickle/Evidence/20261118-nonreg-*`.
