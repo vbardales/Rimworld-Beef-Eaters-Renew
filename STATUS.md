@@ -37,7 +37,7 @@ publication_changelog_review_sha: c9243f50f02778107ad0324859c0816ee09caed1
 thanks_drafted_line: 1.0
 echo_review_sha: 696818791f049767c05025f77988f70042be3385
 social_preview_sha256: b37b9090bde9d351414dcbdf05a3134dd586ff75eab7a51e44dbf809d0798744
-protocols_read_sha: 8df42b9eaaf54291c1f3cd2ad6b9762e319b1c6a
+protocols_read_sha: ba5bc2537242b9d2c7d46e7dd6db6046f7c1387b
 ---
 # Beef Eaters Renew — status
 
