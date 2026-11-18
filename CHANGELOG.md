@@ -6,9 +6,6 @@ in game.
 
 ## [1.0.0] - 2026-11-17
 
-After final in-game validation, create the `v1.0.0` tag and the matching GitHub release, then
-publish to the Workshop. See `STATUS.md` for what remains.
-
 First release of the 1.6 update of **Beef Eaters**, by TheGoofyOne.
 
 ### Fixed
