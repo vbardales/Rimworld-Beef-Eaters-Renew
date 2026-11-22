@@ -9,7 +9,7 @@ repo:         Rimworld-Beef-Eaters-Renew
 remote:       https://github.com/vbardales/Rimworld-Beef-Eaters-Renew.git
 visibility:   public
 detached:     yes
-workflow_stage: writeShotlist[1.0.0]
+workflow_stage: shootGallery[1.0.0]
 code_review_sha: e0d2feecb5063792779fe6bc3a4f3bb3bc65fde0
 licence:      silent
 licence_at:   browser-verified 2026-09-12; original files, live description, all 29 comments, 9 changelog entries and author profile; no reuse terms; last mod update 2023-03-11
@@ -22,18 +22,18 @@ tested_on:     2026-10-02 cefade3 (min EN/FR, textures, original, Animal Gear, A
 tested_1_7:   yes
 workshop:     3811290251
 remaining:
-  - REPLAY 2026-11-23 (9.0): write the gallery shotlist (skill write-shotlist) and score it with score-gallery (5 per scene) before any capture change; 9.e gallery table in STATUS; 9.f gallery_validated_sha needs Virginie oui on the gallery.
+  - REPLAY 2026-11-23 (9.a): recapture shots 1, 4, 6 (v29 REDO, scenarios v30 written, drift check OK), then rate with score-gallery; 9.e gallery table of accepted images; 9.f gallery_validated_sha needs Virginie oui on the gallery.
   - REPLAY 2026-11-22 (5.f, 8.h): unverified, no in-game scenario confirms the absence of a settings page; source checks only (Check-SettingsContract PASS).
   - CLEANUP 2026-11-18 (14.c to 14.e): STATUS.md, PUBLICATION.md, TESTING.md and Docs/CLAUDE.md cleaned (removed text in Docs/runs/status-journal-2026-11c.md and Docs/runs/publication-testing-history-2026-11-18.md; Docs/PROTOCOLS-READ.md deleted, replaced by protocols_read_sha). 14.d: no branch but `main`, nothing to delete. WSL cleanup DONE 2026-11-18 under the machine lock: Animal Gear 1541438907 removed from ~/workshop-cache (the original 1988048034 was not in the WSL cache); kept Dogs mate 2441132298, ADS 2 3238353862 and the 32 gallery ids; PiI scan of 727 wsl-deps maps: no other mod names 1541438907 or 1988048034. Both Steam items unsubscribed by PiI 2026-11-18 (kept protected: maps animalgear and incompat-original serve scenarios 08 and 05 of the next non-regression). Stage moved to dormant[1.0.0] (14.e).
   - RESKIN STUDY 2026-11-19: Cow Variety 2905859638, Cows Retexture 3202197467 and [HB] Pygmy Muffalo Reskin 2943377809 do not apply to BelgianBlueCow or PygmyBeefalo (vanilla Cow, or dismarzero Pygmy muffalo). Red cross set in `docs/inventory/ecosystem-steam/BeefEatersRenew.md` (protocols root). PiI told to unprotect the 3 ids; no answer needed. Nothing to capture.
   - HANNAHBUG: permission request for her HD reskin (Workshop 2943088425) posted by Virginie 2026-10-14, still unanswered; her textures are not bundled. Yes: drop her 21 same-named PNGs into `Mod/Textures/` with credit (description, THANKS, ATTRIBUTION.md). No answer or no: nothing changes.
 session:      local_31dd62a7-7e6f-466f-9966-b470033a5a45
-updated:      2026-11-23 (replay code.., stage writeShotlist[1.0.0]; older history in git)
+updated:      2026-11-23 (replay writeShotlist.., stage shootGallery[1.0.0]; older history in git)
 publication_changelog_review_sha: c9243f50f02778107ad0324859c0816ee09caed1
 thanks_drafted_line: 1.0
 echo_review_sha: 696818791f049767c05025f77988f70042be3385
 social_preview_sha256: b37b9090bde9d351414dcbdf05a3134dd586ff75eab7a51e44dbf809d0798744
-protocols_read_sha: b2bd7dae81e381b1e70c71de105fd625702ab286
+protocols_read_sha: cdff1930a141a28e4579afc958d5e8b141bcab4a
 ---
 # Beef Eaters Renew — status
 
