@@ -124,14 +124,14 @@ Shotlist: header of `Tests/Pickle/Mod/Pickle/Features/12-gallery-animals-props.f
 
 | Shot | a time | b decor | c living | d pawn | e action | f composition | g subject | j at 268 px | Plan |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 dawn, `right-bank` | 7h clear, 60+25 ticks | lamp, brazier, wagon, logs, bale, food box | cow Rosa | hat, duster, smile | leads the cow, mid-stride | 7 x 3 cells | farmer leads the new cow from the wagon | ok, cow 85 px | 5 |
-| 2 late morning, `flower-garden` | 11h clear | roses, stool, jug, bale, torch | cow and calf | hat, smile | milks, calf looks on | cow and calf both profile West: weak | she milks, calf waits | ok, cow 360 px | 4.5 |
+| 1 dawn, `right-bank` | 7h clear, 60+25 ticks | lamp, brazier, wagon, logs, bale, food box | cow Rosa | hat, duster, smile | leads the cow, mid-stride | 8 x 3 cells, wagon in frame at the east edge | farmer leads the new cow from the wagon | ok, cow 85 px | 5 |
+| 2 late morning, `flower-garden` | 11h clear | roses, stool, jug, bale, torch | cow and calf | hat, smile | milks, calf looks on | cow and calf cow profile West, calf face on | she milks, calf waits | ok, cow 360 px | 5 |
 | 3 early afternoon, `enclosure-south` | 13h clear | trough, bales, logs, food box, lamp, grass | bull face on | hat, smile | walks to the trough with the bull | head frame 3.6 | feeding time | ok, bull 47 px | 5 |
 | 4 mid-afternoon, `river-bridge` | 15h clear, wind | hay, bale, torch, grass | Pip and calf | duster, hat, smile | waits, herd walks in | both animals profile West: weak | beefalo come to the hay | ok on paper, Pip 40 px, calf 30 px | 4.5 |
 | 5 late afternoon, `bare-clearing` | 17h clear | trough, bales, fires, apple tree, daylilies | whole herd, varied facings | duster, hat, smile | steps out toward the camera | wide 16 x 9 | herd home at the trough | ok, cow 63 px | 5 |
-| 6 bonus, `enclosure-south`, reskin | 14h clear | trough, bale, hay, food box, lamp | cow, bull, Pip, all facing South: weak | hat, smile | walks in with the herd | 10 x 5 | herd drawn with the reskin | weak, Pip 30 px | 4 |
+| 6 bonus, `enclosure-south`, reskin | 14h clear | trough, bale, hay, food box, lamp | cow face on, bull profile, Pip from behind | hat, smile | walks in with the herd | 10 x 5 | herd drawn with the reskin | ok on paper, cow 54 px, Pip 30 px (weak on image) | 4.5 |
 
-Series k: ok (one story, one day, rhythm named, close 2.8 and 1.8, medium 3.0 and 3.6, wide 16 x 9, opener 1, closer 5). Plan mean 4.67 over 6.
+Series k: ok (one story, one day, rhythm named, close 2.8 and 1.8, medium 3.0 and 3.6, wide 16 x 9, opener 1, closer 5). Plan after the v30 recomposition (2026-11-23, header and scenarios of shots 1, 2, 4, 6 rewritten, `Check-ShotlistVsScenario` OK): 1: 5, 2: 5, 3: 5, 4: 5, 5: 5, 6: 4.5 (j weak assumed: Pip about 30 px, a bonus frame). Mean 4.92. Captures below are of v29 and stale against the new plan.
 
 Captures (image / adequacy / understanding / decoration, decision): 1: 4.0 / 3.5 / 4.0 / 4.0, REDO (the trader's wagon is not in frame, only the food box; the walk does not read as mid-stride, Nelim's head overlaps the cow's muzzle). 2: 4.0 / 5.0 / 5.0 / 4.0, candidate. 3: 4.5 / 4.5 / 4.5 / 4.5, candidate (Nelim stands still facing the camera). 4: 4.0 / 4.5 / 4.0 / 4.5, REDO (j weak: Pip about 25 px and the calf cut at the right edge at 268 px). 5: 4.0 / 4.5 / 4.0 / 4.0, candidate (Nelim and herd stand, small animals). 6: 4.0 / 4.5 / 4.0 / 3.5, REDO (decoration 3.5: bare ground, few props; the reskin is not distinguishable from shot 3 at this scale). Capture means: image 4.1, adequacy 4.3. Not verified: the reskin textures in shot 6, the Hay and Milk items as decor beyond what the images show.
 
