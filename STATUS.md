@@ -10,7 +10,7 @@ remote:       https://github.com/vbardales/Rimworld-Beef-Eaters-Renew.git
 visibility:   public
 detached:     yes
 workflow_stage: code[1.0.0]
-code_review_sha: ecd49e2e370427ed67cff68ea658cad8ce165d62
+code_review_sha: e0d2feecb5063792779fe6bc3a4f3bb3bc65fde0
 licence:      silent
 licence_at:   browser-verified 2026-09-12; original files, live description, all 29 comments, 9 changelog entries and author profile; no reuse terms; last mod update 2023-03-11
 upstream_mod_remotes: N/A
@@ -37,6 +37,8 @@ protocols_read_sha: 96ca113d0a938b49075e84e8cefbedcb4fdf45da
 # Beef Eaters Renew — status
 
 Published 1.0.0 on 2026-11-18 (tag `v1.0.0` on `50785f3`, Workshop 3811290251, public), non-regression green 29/29 (`Docs/runs/nonreg-1.0.0-2026-11-18.md`). Older dated sections are in `Docs/runs/status-journal-2026-11c.md` (2026-11-17 to 2026-11-18), `status-journal-2026-11b.md` (2026-11-12 to 2026-11-17), `status-journal-2026-11.md` (2026-11-06 to 2026-11-09), `status-journal-2026-10b.md`, `status-journal-2026-10.md`.
+
+Code review 2026-11-23: diff of Mod since ecd49e2 read, French texts only (Languages, two description sentences), Check-Translations green: revue du diff : images et texte seuls, no new playTests pass.
 
 ## NSB
 
