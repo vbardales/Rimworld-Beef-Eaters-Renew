@@ -22,7 +22,7 @@ tested_on:     2026-10-02 cefade3 (min EN/FR, textures, original, Animal Gear, A
 tested_1_7:   yes
 workshop:     3811290251
 remaining:
-  - REPLAY 2026-11-22 (6.g, 6.h): write the Translation audit section (where the French lives, doubtful texts) and record Virginie French review (reviewer, date, revision, corrections); translation_fr complete stays unproven until then.
+  - REPLAY 2026-11-22 (6.g): Virginie French review of the descriptions not recorded; add a dated line in Translation audit once she has reviewed (reviewer, date, revision, corrections).
   - REPLAY 2026-11-22 (5.f, 8.h): unverified, no in-game scenario confirms the absence of a settings page; source checks only (Check-SettingsContract PASS).
   - CLEANUP 2026-11-18 (14.c to 14.e): STATUS.md, PUBLICATION.md, TESTING.md and Docs/CLAUDE.md cleaned (removed text in Docs/runs/status-journal-2026-11c.md and Docs/runs/publication-testing-history-2026-11-18.md; Docs/PROTOCOLS-READ.md deleted, replaced by protocols_read_sha). 14.d: no branch but `main`, nothing to delete. WSL cleanup DONE 2026-11-18 under the machine lock: Animal Gear 1541438907 removed from ~/workshop-cache (the original 1988048034 was not in the WSL cache); kept Dogs mate 2441132298, ADS 2 3238353862 and the 32 gallery ids; PiI scan of 727 wsl-deps maps: no other mod names 1541438907 or 1988048034. Both Steam items unsubscribed by PiI 2026-11-18 (kept protected: maps animalgear and incompat-original serve scenarios 08 and 05 of the next non-regression). Stage moved to dormant[1.0.0] (14.e).
   - RESKIN STUDY 2026-11-19: Cow Variety 2905859638, Cows Retexture 3202197467 and [HB] Pygmy Muffalo Reskin 2943377809 do not apply to BelgianBlueCow or PygmyBeefalo (vanilla Cow, or dismarzero Pygmy muffalo). Red cross set in `docs/inventory/ecosystem-steam/BeefEatersRenew.md` (protocols root). PiI told to unprotect the 3 ids; no answer needed. Nothing to capture.
@@ -81,3 +81,15 @@ Access and shortcut: no Mod options page exists and none is registered; the mod 
 Application timing and scope: not applicable, nothing is configurable. Game versions: 1.6 and 1.7 declared. Integrations: none touch settings (ADS 2, Dogs mate, Animal Gear are patched at load).
 
 Evidence: in-game absence of a settings page was not observed by a dedicated scenario; the source checks above are the proof, and the load-time logs of the Pickle runs listed in `tested_on` show no settings-related error. Recorded as `unverified` in `remaining` for `playTests` (8.h).
+
+## Translation audit, 2026-11-22 (AUDIT 6.a to 6.h; revision ecd49e2)
+
+Where the text lives: English is the source side, written in the Defs (`Mod/Defs/Race_BelgianBlueCows.xml`, `Race_PygmyBeefalo.xml`; the Animal Gear armour label and description included). French is `Mod/Languages/French/DefInjected/PawnKindDef/BeefEaters.xml` and `ThingDef/BeefEaters.xml`: 19 keys, 0 missing against English (`TRANSLATION_REVIEW.md`, regenerated today). No C#, no Keyed key, no Strings file. Other languages: none; no translation of the original exists (PiI delta 2026-11-22).
+
+Checks: `Check-Translations.ps1` PASS (9 source texts plus 10 nested, French coverage, duplicates, formatting tokens), 2 French paths flagged as nested or inherited texts (NOTE). French read in full today: no tu, vous, nous or `(e)`, no gendered text.
+
+Proper names decided by the owner: `Docs/review-names.md` (Belgian Blue becomes `Blanc Bleu Belge`, pygmy beefalo becomes `bœufalo pygmée`, `muffalo` kept). ChatGPT review (`/review-translation`) run 2026-11-12 and applied (commits 1cf25b1, 558eaf3, b351785); refused proposals in `Docs/review-refusals.md`. French labels checked in game by Pickle `06-labels-french` (2/2 on 2026-11-16, run 476e).
+
+Doubtful texts: none flagged (no `Docs/translation-review-flags.json`).
+
+Virginie's French review: no dated record of it exists in the repository (reviewer, date, revision, corrections). Her decisions on names are recorded above, but they are not a review of the descriptions. `translation_fr: complete` therefore stays unproven until she reviews and the line is added here.
