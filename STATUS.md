@@ -22,7 +22,7 @@ tested_on:     2026-10-02 cefade3 (min EN/FR, textures, original, Animal Gear, A
 tested_1_7:   yes
 workshop:     3811290251
 remaining:
-  - REPLAY 2026-11-22 (5.a to 5.g): write the settings inventory and decision (no C#, no settings expected: verify no empty page or MainButtons shortcut), a Settings audit section, settings_audit stays not_applicable once justified.
+  - REPLAY 2026-11-22 (5.f, 8.h): unverified, no in-game scenario confirms the absence of a settings page; source checks only (Check-SettingsContract PASS).
   - CLEANUP 2026-11-18 (14.c to 14.e): STATUS.md, PUBLICATION.md, TESTING.md and Docs/CLAUDE.md cleaned (removed text in Docs/runs/status-journal-2026-11c.md and Docs/runs/publication-testing-history-2026-11-18.md; Docs/PROTOCOLS-READ.md deleted, replaced by protocols_read_sha). 14.d: no branch but `main`, nothing to delete. WSL cleanup DONE 2026-11-18 under the machine lock: Animal Gear 1541438907 removed from ~/workshop-cache (the original 1988048034 was not in the WSL cache); kept Dogs mate 2441132298, ADS 2 3238353862 and the 32 gallery ids; PiI scan of 727 wsl-deps maps: no other mod names 1541438907 or 1988048034. Both Steam items unsubscribed by PiI 2026-11-18 (kept protected: maps animalgear and incompat-original serve scenarios 08 and 05 of the next non-regression). Stage moved to dormant[1.0.0] (14.e).
   - RESKIN STUDY 2026-11-19: Cow Variety 2905859638, Cows Retexture 3202197467 and [HB] Pygmy Muffalo Reskin 2943377809 do not apply to BelgianBlueCow or PygmyBeefalo (vanilla Cow, or dismarzero Pygmy muffalo). Red cross set in `docs/inventory/ecosystem-steam/BeefEatersRenew.md` (protocols root). PiI told to unprotect the 3 ids; no answer needed. Nothing to capture.
   - HANNAHBUG: permission request for her HD reskin (Workshop 2943088425) posted by Virginie 2026-10-14, still unanswered; her textures are not bundled. Yes: drop her 21 same-named PNGs into `Mod/Textures/` with credit (description, THANKS, ATTRIBUTION.md). No answer or no: nothing changes.
@@ -66,3 +66,17 @@ Optional integrations, from `Mod/About/OptionalCompat.xml` (Animal Gear, Dogs ma
 | Animal Gear (`Dylan.AnimalGear`) | 1541438907 | patched, `Patches/Armor.xml` | armour patch carried over from the original, guarded by `PatchOperationFindMod` |
 
 Check: `Check-OptionalCompat.ps1` OK (2 declared, 1 patched target ordered by metadata).
+
+## Settings audit, 2026-11-22 (AUDIT 5.a to 5.g; revision ecd49e2, Mod last changed 2026-11-18)
+
+Result: `settings_audit: not_applicable`.
+
+Inventory: the mod ships two race ThingDefs and their PawnKindDefs (`Mod/Defs/Race_BelgianBlueCows.xml`, `Race_PygmyBeefalo.xml`), three guarded XML patches (`Mod/Patches/ADS2.xml`, `DogsMate.xml`, `Armor.xml`) and DefInjected French texts. No assembly, no C# in `Mod/` (`git ls-files Mod` holds no `.dll` and no `.cs`; the only C# in the repository is the Pickle test steps under `Tests/Pickle/Source/`, never shipped). No behaviour is configurable at runtime: every value (wildness, body size, move speed, trader tags) is a Def field the player edits through the game's own mod tools, not a mod option.
+
+Decision: no setting would have a concrete use. A body size or wildness slider would change balance values the update deliberately left untouched (PUBLICATION.md: "No balance value was changed"), and a toggle for the optional integrations is redundant, since each patch is already guarded and does nothing without its mod.
+
+Access and shortcut: no Mod options page exists and none is registered; the mod defines no `MainButtonDef` and carries no settings API text (grep of `Mod/` for `MainButtonDef`, `ModSettings`, `SettingsCategory` finds nothing). No empty page, no MainButtons shortcut, so nothing to hide and nothing for RIMMSQOL to reveal.
+
+Application timing and scope: not applicable, nothing is configurable. Game versions: 1.6 and 1.7 declared. Integrations: none touch settings (ADS 2, Dogs mate, Animal Gear are patched at load).
+
+Evidence: in-game absence of a settings page was not observed by a dedicated scenario; the source checks above are the proof, and the load-time logs of the Pickle runs listed in `tested_on` show no settings-related error. Recorded as `unverified` in `remaining` for `playTests` (8.h).
