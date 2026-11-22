@@ -51,10 +51,10 @@ Places read: 2026-11-23 Tribe read: 2026-11-23 Steps read: 2026-11-23
 
 | Place | Shots that use it | Changes made for the gallery | Last read |
 |---|---|---|---|
-| river bank, near `river-bridge` (135, 124) and `left-bank` (112, 111); cells (146, 133) and (148, 126) | 1 (dawn, cow leaves the trader's wagon), 4 (beefalo and calf come down) | dense decor grouped around the subject: wagon, logs, bales, torches, flowers, tall grass, food box (scenario `12-gallery-animals-props`) | 2026-11-23 |
-| lily field, cell (154, 107), not a named NSB place | 2 (milking, calf looks on) | daylilies, hay | 2026-11-23 |
+| `right-bank` (144, 132) (refused 2026-11-08 as empty, now dressed), cells (146, 133); and `river-bridge` (135, 124), cells (148, 126) | 1 (dawn, cow leaves the trader's wagon), 4 (beefalo and calf come down) | dense decor grouped around the subject: wagon, logs, bales, torches, flowers, tall grass, food box (`12-gallery-animals-props`) | 2026-11-23 |
+| `flower-garden` (154, 110), cell (154, 107) | 2 (milking, calf looks on) | roses, stool, hay bale, torch, milk jug | 2026-11-23 |
 | pen, `enclosure-south` (149, 214), cells 140-155 x 217-222 | 3 (bull at the trough), 6 (reskin herd) | trough, hay bales, daylilies, torch lamp | 2026-11-23 |
-| clearing, trough with hay bales and fires | 5 (evening, whole herd) | bales, fires, trough | 2026-11-23 |
+| `bare-clearing` (195, 152) | 5 (evening, whole herd) | trough, bales, fires, apple tree | 2026-11-23 |
 
 | Colonist | Shots | Outfit per shot | Last read of profile | Exceptions |
 |---|---|---|---|---|
@@ -117,3 +117,22 @@ Proper names decided by the owner: `Docs/review-names.md` (Belgian Blue becomes 
 Doubtful texts: none flagged (no `Docs/translation-review-flags.json`).
 
 Virginie's French review: validated 2026-11-22 (reviewer Virginie, chat of this session), revision `6baf2e6` (French texts as of that commit, 19 keys: "éons d'élevage" and "ne cherchent jamais à se venger" applied from the ChatGPT rounds of 2026-11-22). Corrections: none from her. ChatGPT `/review-translation` page 1: three rounds on 2026-11-22, the last with nothing applied (1/1 pages clean). Her decisions on proper names stay in `Docs/review-names.md`.
+
+## Shotlist and plan score, 2026-11-23 (AUDIT 9.0; score-gallery)
+
+Shotlist: header of `Tests/Pickle/Mod/Pickle/Features/12-gallery-animals-props.feature` (story "the day the herd moved in", 07, 11, 13, 15, 17 h, 2,500 ticks per game hour, one outfit all day; director passes by Opus v10 to v14, kept) and of `16-gallery-reskin.feature` (bonus frame 6). `Check-ShotlistVsScenario` OK. Gallery already shot 2026-11-17; this run rates plan and the six captures in `Art/Gallery-clean/` (all opened, shrunk to 268 px).
+
+| Shot | a time | b decor | c living | d pawn | e action | f composition | g subject | j at 268 px | Plan |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 dawn, `right-bank` | 7h clear, 60+25 ticks | lamp, brazier, wagon, logs, bale, food box | cow Rosa | hat, duster, smile | leads the cow, mid-stride | 7 x 3 cells | farmer leads the new cow from the wagon | ok, cow 85 px | 5 |
+| 2 late morning, `flower-garden` | 11h clear | roses, stool, jug, bale, torch | cow and calf | hat, smile | milks, calf looks on | cow and calf both profile West: weak | she milks, calf waits | ok, cow 360 px | 4.5 |
+| 3 early afternoon, `enclosure-south` | 13h clear | trough, bales, logs, food box, lamp, grass | bull face on | hat, smile | walks to the trough with the bull | head frame 3.6 | feeding time | ok, bull 47 px | 5 |
+| 4 mid-afternoon, `river-bridge` | 15h clear, wind | hay, bale, torch, grass | Pip and calf | duster, hat, smile | waits, herd walks in | both animals profile West: weak | beefalo come to the hay | ok on paper, Pip 40 px, calf 30 px | 4.5 |
+| 5 late afternoon, `bare-clearing` | 17h clear | trough, bales, fires, apple tree, daylilies | whole herd, varied facings | duster, hat, smile | steps out toward the camera | wide 16 x 9 | herd home at the trough | ok, cow 63 px | 5 |
+| 6 bonus, `enclosure-south`, reskin | 14h clear | trough, bale, hay, food box, lamp | cow, bull, Pip, all facing South: weak | hat, smile | walks in with the herd | 10 x 5 | herd drawn with the reskin | weak, Pip 30 px | 4 |
+
+Series k: ok (one story, one day, rhythm named, close 2.8 and 1.8, medium 3.0 and 3.6, wide 16 x 9, opener 1, closer 5). Plan mean 4.67 over 6.
+
+Captures (image / adequacy / understanding / decoration, decision): 1: 4.0 / 3.5 / 4.0 / 4.0, REDO (the trader's wagon is not in frame, only the food box; the walk does not read as mid-stride, Nelim's head overlaps the cow's muzzle). 2: 4.0 / 5.0 / 5.0 / 4.0, candidate. 3: 4.5 / 4.5 / 4.5 / 4.5, candidate (Nelim stands still facing the camera). 4: 4.0 / 4.5 / 4.0 / 4.5, REDO (j weak: Pip about 25 px and the calf cut at the right edge at 268 px). 5: 4.0 / 4.5 / 4.0 / 4.0, candidate (Nelim and herd stand, small animals). 6: 4.0 / 4.5 / 4.0 / 3.5, REDO (decoration 3.5: bare ground, few props; the reskin is not distinguishable from shot 3 at this scale). Capture means: image 4.1, adequacy 4.3. Not verified: the reskin textures in shot 6, the Hay and Milk items as decor beyond what the images show.
+
+The owner validated all six images on 2026-11-17, before the rule that she validates no image (2026-11-19); `gallery_validated_sha` is not written (9.f needs her oui on the gallery, none given since).
