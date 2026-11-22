@@ -43,7 +43,29 @@ Code review 2026-11-23: diff of Mod since ecd49e2 read, French texts only (Langu
 
 ## NSB
 
-Rules (owner, 2026-11-05): everything in NSB is free; a colonist or domestic animal outside NSB needs express validation (mod animals authorized by default); a colonist's properties change only with express validation; every outfit is free. Gallery done 2026-11-17 (images 1 to 6 in `Art/Gallery/`); places, outfits and the sync log are in the journal.
+Rules (owner, 2026-11-05): everything in NSB is free; a colonist or domestic animal outside NSB needs express validation (mod animals authorized by default, 2026-11-07); a colonist's properties change only with express validation; every outfit is free; every animal the mod includes is shown in the gallery (2026-11-06).
+
+Since the last sync (gallery done 2026-11-17), NSB changed only in registers and one plan: `VALIDE.md` (bridge railings, Jiro wardrobe photos, 2026-11-22), `RECONSTRUCTION-SAUVEGARDE.md` (plan to rebuild the save as `Nelims-tribe-v2`, 2026-11-18, not started: gates first), Iori profile (2026-11-17). None touches Nelim, the pen or the river bank used here. NPT: `steps.md` gained roster steps for Miel and Soren (2026-11-22) and the face-parts catalogue a vanilla-face section (2026-11-17): none serves a shot. Nothing updated in the shotlist or scenarios, nothing left to relaunch. Watch: if the save is rebuilt, every cell below (pen 140-155 x 217-222, river bank, lily field) must be re-read before the gallery scenarios are played again.
+
+Places read: 2026-11-23 Tribe read: 2026-11-23 Steps read: 2026-11-23
+
+| Place | Shots that use it | Changes made for the gallery | Last read |
+|---|---|---|---|
+| river bank, near `river-bridge` (135, 124) and `left-bank` (112, 111); cells (146, 133) and (148, 126) | 1 (dawn, cow leaves the trader's wagon), 4 (beefalo and calf come down) | dense decor grouped around the subject: wagon, logs, bales, torches, flowers, tall grass, food box (scenario `12-gallery-animals-props`) | 2026-11-23 |
+| lily field, cell (154, 107), not a named NSB place | 2 (milking, calf looks on) | daylilies, hay | 2026-11-23 |
+| pen, `enclosure-south` (149, 214), cells 140-155 x 217-222 | 3 (bull at the trough), 6 (reskin herd) | trough, hay bales, daylilies, torch lamp | 2026-11-23 |
+| clearing, trough with hay bales and fires | 5 (evening, whole herd) | bales, fires, trough | 2026-11-23 |
+
+| Colonist | Shots | Outfit per shot | Last read of profile | Exceptions |
+|---|---|---|---|---|
+| Nelim | 1 to 6 | farm kit: `Apparel_Pants` (110, 85, 60), `Apparel_Corset` (232, 224, 208), `Apparel_CowboyHat` (205, 175, 105), duster in 1 only; every outfit is free | 2026-11-23 (`NELIM-PROFIL.md`: hair `Roo_Royal_LongHD` under a closed hat, owner 2026-10-21, matches the scenarios) | none declared; mouth and lid expressions are scene expressions, to confirm against rule 3 at write-shotlist |
+
+| Animal | Shots | Outfit | Last read of its sheet | Exceptions |
+|---|---|---|---|---|
+| BelgianBlueCow (cow Rosa, bull Taureau, calf Petite), the mod's own | 1, 2, 3, 5, 6 | none | mod defs, 2026-11-23 | none (mod animal, authorized by default) |
+| PygmyBeefalo (adult Pip and calf), the mod's own | 4, 5, 6 | none | mod defs, 2026-11-23 | none (mod animal, authorized by default) |
+
+Included animals (rule 5): BelgianBlueCow adult female: shots 1, 2, 5. Adult male: shots 3, 5. Calf: shot 2. PygmyBeefalo adult: shots 4, 5. Calf: shot 4. No row MISSING.
 
 ## Ecosystem, 2026-11-12 (AUDIT 8.0, scan of 2026-11-12)
 
