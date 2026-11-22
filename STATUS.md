@@ -15,12 +15,12 @@ licence:      silent
 licence_at:   browser-verified 2026-09-12; original files, live description, all 29 comments, 9 changelog entries and author profile; no reuse terms; last mod update 2023-03-11
 upstream_mod_remotes: N/A
 dependencies: none
+ecosystem_line: 1.0
 showcase:     complete
 tested_on:     2026-10-02 cefade3 (min EN/FR, textures, original, Animal Gear, ADS 2 + Dogs mate, green after rerun) and 2026-10-10 bedb34a (11-def-values 9/9), RimWorld 1.6 (WSL); gallery pending; and 2026-10-13 (p17-beefeaters-01-wildness-defs, ticket 88c2, 2/2) RimWorld 1.7 (WSL, validated by Audit); and 2026-11-16 036c22b (476e, 06-labels-french 2/2) and 2026-11-17 ab966fd (ca9d, 15-reskin-compat 2/2), RimWorld 1.6 (WSL)
 tested_1_7:   yes
 workshop:     3811290251
 remaining:
-  - REPLAY 2026-11-22 (2.h): ecosystem_line missing. Ask PiI `ECOSYSTEM? BeefEatersRenew | DELTA depuis 2026-11-12`, copy the summary into Ecosystem, write `ecosystem_line: 1.0`, then replay (expected: dormant, but 9.f needs gallery_validated_sha: absent, so shootGallery until Virginie validates the gallery).
   - CLEANUP 2026-11-18 (14.c to 14.e): STATUS.md, PUBLICATION.md, TESTING.md and Docs/CLAUDE.md cleaned (removed text in Docs/runs/status-journal-2026-11c.md and Docs/runs/publication-testing-history-2026-11-18.md; Docs/PROTOCOLS-READ.md deleted, replaced by protocols_read_sha). 14.d: no branch but `main`, nothing to delete. WSL cleanup DONE 2026-11-18 under the machine lock: Animal Gear 1541438907 removed from ~/workshop-cache (the original 1988048034 was not in the WSL cache); kept Dogs mate 2441132298, ADS 2 3238353862 and the 32 gallery ids; PiI scan of 727 wsl-deps maps: no other mod names 1541438907 or 1988048034. Both Steam items unsubscribed by PiI 2026-11-18 (kept protected: maps animalgear and incompat-original serve scenarios 08 and 05 of the next non-regression). Stage moved to dormant[1.0.0] (14.e).
   - RESKIN STUDY 2026-11-19: Cow Variety 2905859638, Cows Retexture 3202197467 and [HB] Pygmy Muffalo Reskin 2943377809 do not apply to BelgianBlueCow or PygmyBeefalo (vanilla Cow, or dismarzero Pygmy muffalo). Red cross set in `docs/inventory/ecosystem-steam/BeefEatersRenew.md` (protocols root). PiI told to unprotect the 3 ids; no answer needed. Nothing to capture.
   - HANNAHBUG: permission request for her HD reskin (Workshop 2943088425) posted by Virginie 2026-10-14, still unanswered; her textures are not bundled. Yes: drop her 21 same-named PNGs into `Mod/Textures/` with credit (description, THANKS, ATTRIBUTION.md). No answer or no: nothing changes.
@@ -41,6 +41,8 @@ Published 1.0.0 on 2026-11-18 (tag `v1.0.0` on `50785f3`, Workshop 3811290251, p
 Rules (owner, 2026-11-05): everything in NSB is free; a colonist or domestic animal outside NSB needs express validation (mod animals authorized by default); a colonist's properties change only with express validation; every outfit is free. Gallery done 2026-11-17 (images 1 to 6 in `Art/Gallery/`); places, outfits and the sync log are in the journal.
 
 ## Ecosystem, 2026-11-12 (AUDIT 8.0, scan of 2026-11-12)
+
+Ecosystem (Steam, 2026-11-22, delta): parent Beef Eaters 1988048034; no new fork, patch or translation. Source: PiI, `docs/inventory/ecosystem-steam/BeefEatersRenew.md`, section "Delta 2026-11-22".
 
 | packageId | type | relation |
 |---|---|---|
