@@ -15,14 +15,13 @@ licence:      silent
 licence_at:   browser-verified 2026-09-12; original files, live description, all 29 comments, 9 changelog entries and author profile; no reuse terms; last mod update 2023-03-11
 upstream_mod_remotes: N/A
 dependencies: none
+workshop_required_items: n/a, no mandatory Workshop dependency (About.xml has no modDependencies)
 ecosystem_line: 1.0
 showcase:     complete
 tested_on:     2026-10-02 cefade3 (min EN/FR, textures, original, Animal Gear, ADS 2 + Dogs mate, green after rerun) and 2026-10-10 bedb34a (11-def-values 9/9), RimWorld 1.6 (WSL); gallery pending; and 2026-10-13 (p17-beefeaters-01-wildness-defs, ticket 88c2, 2/2) RimWorld 1.7 (WSL, validated by Audit); and 2026-11-16 036c22b (476e, 06-labels-french 2/2) and 2026-11-17 ab966fd (ca9d, 15-reskin-compat 2/2), RimWorld 1.6 (WSL)
 tested_1_7:   yes
 workshop:     3811290251
 remaining:
-  - REPLAY 2026-11-22 (4.f): record the four animal integrations (ADS 2, Nocturnal Animals, Dogs mate, Better Crossbreeding) with reasons in STATUS.md.
-  - REPLAY 2026-11-22 (4.g): record dependencies, optional integrations and DLC with date and revision in STATUS.md.
   - CLEANUP 2026-11-18 (14.c to 14.e): STATUS.md, PUBLICATION.md, TESTING.md and Docs/CLAUDE.md cleaned (removed text in Docs/runs/status-journal-2026-11c.md and Docs/runs/publication-testing-history-2026-11-18.md; Docs/PROTOCOLS-READ.md deleted, replaced by protocols_read_sha). 14.d: no branch but `main`, nothing to delete. WSL cleanup DONE 2026-11-18 under the machine lock: Animal Gear 1541438907 removed from ~/workshop-cache (the original 1988048034 was not in the WSL cache); kept Dogs mate 2441132298, ADS 2 3238353862 and the 32 gallery ids; PiI scan of 727 wsl-deps maps: no other mod names 1541438907 or 1988048034. Both Steam items unsubscribed by PiI 2026-11-18 (kept protected: maps animalgear and incompat-original serve scenarios 08 and 05 of the next non-regression). Stage moved to dormant[1.0.0] (14.e).
   - RESKIN STUDY 2026-11-19: Cow Variety 2905859638, Cows Retexture 3202197467 and [HB] Pygmy Muffalo Reskin 2943377809 do not apply to BelgianBlueCow or PygmyBeefalo (vanilla Cow, or dismarzero Pygmy muffalo). Red cross set in `docs/inventory/ecosystem-steam/BeefEatersRenew.md` (protocols root). PiI told to unprotect the 3 ids; no answer needed. Nothing to capture.
   - HANNAHBUG: permission request for her HD reskin (Workshop 2943088425) posted by Virginie 2026-10-14, still unanswered; her textures are not bundled. Yes: drop her 21 same-named PNGs into `Mod/Textures/` with credit (description, THANKS, ATTRIBUTION.md). No answer or no: nothing changes.
@@ -50,3 +49,19 @@ Ecosystem (Steam, 2026-11-22, delta): parent Beef Eaters 1988048034; no new fork
 |---|---|---|
 | `Mlie.NoVersionWarning` | link | its `1.5/ModIdsToFix.xml` lists the original id (matched_on original-id): version-warning helper, nothing to play or patch. |
 
+
+## Dependencies and integrations, 2026-11-22 (AUDIT 4.f, 4.g; revision ecd49e2, Mod last changed 2026-11-18)
+
+Hard dependencies: none (`modDependencies` absent, `dependencies: none`). DLC required: none; `loadAfter` lists Core and the five DLCs for ordering only. Incompatible: `TheGoofyOne.BeefEaters` (the original, same defNames). `loadBefore`: `SamBucher.ADogSaidAnimalProsthetics2`.
+
+Optional integrations, from `Mod/About/OptionalCompat.xml` (Animal Gear, Dogs mate) plus ADS 2 declared by `loadBefore`:
+
+| Mod | Workshop | Status | Reason |
+|---|---|---|---|
+| A Dog Said... Animal Prosthetics 2 (`SamBucher.ADogSaidAnimalProsthetics2`) | 3238353862 | patched, `Patches/ADS2.xml` | vanilla Cow is in ADS_Cat2 and ADS_Cat1, Muffalo in all three: BelgianBlueCow gets Cat1 and Cat2, PygmyBeefalo Cat1, Cat2 and Cat3 |
+| Dogs mate (Continued) (`Mlie.DogsMate`) | 2441132298 | patched, `Patches/DogsMate.xml` | BelgianBlueCow into group `Cow`, PygmyBeefalo into group `Bison` (bull and muffalo cross) |
+| [XND] Nocturnal Animals (Continued) (`Mlie.XNDNocturnalAnimals`) | 2269731409 | not applicable, no patch | its Core patches name neither Cow nor Muffalo: both analogues stay diurnal, so do these animals |
+| Better Crossbreeding (`DizzyEevee.BetterCrossbreeding`) | 3520675842 | not applicable, no patch | no vanilla analogue crosses: a crossbreed would be new design, not porting; revisit on Virginie's call (decided 2026-10-01) |
+| Animal Gear (`Dylan.AnimalGear`) | 1541438907 | patched, `Patches/Armor.xml` | armour patch carried over from the original, guarded by `PatchOperationFindMod` |
+
+Check: `Check-OptionalCompat.ps1` OK (2 declared, 1 patched target ordered by metadata).
