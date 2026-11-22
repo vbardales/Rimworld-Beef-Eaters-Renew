@@ -22,7 +22,6 @@ tested_on:     2026-10-02 cefade3 (min EN/FR, textures, original, Animal Gear, A
 tested_1_7:   yes
 workshop:     3811290251
 remaining:
-  - REPLAY 2026-11-22 (6.g): Virginie French review of the descriptions not recorded; add a dated line in Translation audit once she has reviewed (reviewer, date, revision, corrections).
   - REPLAY 2026-11-22 (5.f, 8.h): unverified, no in-game scenario confirms the absence of a settings page; source checks only (Check-SettingsContract PASS).
   - CLEANUP 2026-11-18 (14.c to 14.e): STATUS.md, PUBLICATION.md, TESTING.md and Docs/CLAUDE.md cleaned (removed text in Docs/runs/status-journal-2026-11c.md and Docs/runs/publication-testing-history-2026-11-18.md; Docs/PROTOCOLS-READ.md deleted, replaced by protocols_read_sha). 14.d: no branch but `main`, nothing to delete. WSL cleanup DONE 2026-11-18 under the machine lock: Animal Gear 1541438907 removed from ~/workshop-cache (the original 1988048034 was not in the WSL cache); kept Dogs mate 2441132298, ADS 2 3238353862 and the 32 gallery ids; PiI scan of 727 wsl-deps maps: no other mod names 1541438907 or 1988048034. Both Steam items unsubscribed by PiI 2026-11-18 (kept protected: maps animalgear and incompat-original serve scenarios 08 and 05 of the next non-regression). Stage moved to dormant[1.0.0] (14.e).
   - RESKIN STUDY 2026-11-19: Cow Variety 2905859638, Cows Retexture 3202197467 and [HB] Pygmy Muffalo Reskin 2943377809 do not apply to BelgianBlueCow or PygmyBeefalo (vanilla Cow, or dismarzero Pygmy muffalo). Red cross set in `docs/inventory/ecosystem-steam/BeefEatersRenew.md` (protocols root). PiI told to unprotect the 3 ids; no answer needed. Nothing to capture.
@@ -92,4 +91,4 @@ Proper names decided by the owner: `Docs/review-names.md` (Belgian Blue becomes 
 
 Doubtful texts: none flagged (no `Docs/translation-review-flags.json`).
 
-Virginie's French review: no dated record of it exists in the repository (reviewer, date, revision, corrections). Her decisions on names are recorded above, but they are not a review of the descriptions. `translation_fr: complete` therefore stays unproven until she reviews and the line is added here.
+Virginie's French review: validated 2026-11-22 (reviewer Virginie, chat of this session), revision `6baf2e6` (French texts as of that commit, 19 keys: "éons d'élevage" and "ne cherchent jamais à se venger" applied from the ChatGPT rounds of 2026-11-22). Corrections: none from her. ChatGPT `/review-translation` page 1: three rounds on 2026-11-22, the last with nothing applied (1/1 pages clean). Her decisions on proper names stay in `Docs/review-names.md`.
