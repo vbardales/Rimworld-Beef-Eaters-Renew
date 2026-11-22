@@ -4,6 +4,13 @@ Format inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 This file serves the repository and the writing of Steam patch notes; RimWorld does not display it
 in game.
 
+## [Unreleased]
+
+### Changed
+
+- **French wording of two descriptions**, after a ChatGPT review: the Belgian Blue cow "ne cherche jamais à se venger" (closer to the English "will never seek revenge", was "ne riposte jamais"), and the pygmy beefalo's "Des éons d'élevage" (follows the English "éons", was "millénaires"). No key added or removed.
+- **Description credits**: the Thanks entries link to their Workshop pages, and the mods seen in the gallery (reskin, trough, props, hair, bodies) are credited as not required and not included. Text only.
+
 ## [1.0.0] - 2026-11-17
 
 First release of the 1.6 update of **Beef Eaters**, by TheGoofyOne.
